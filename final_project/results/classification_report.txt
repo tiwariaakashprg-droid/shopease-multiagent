@@ -1,0 +1,14 @@
+Classification Report
+============================================================
+                        precision    recall  f1-score   support
+
+         Refund Policy      0.975     0.667     0.792       117
+         Return Policy      0.841     0.776     0.807       116
+       Shipping Policy      0.914     1.000     0.955       117
+   Cancellation Policy      0.912     0.880     0.896       117
+Damaged Product Policy      0.892     0.907     0.899       118
+               Unknown      0.000     0.000     0.000         5
+
+             micro avg      0.832     0.839     0.835       590
+             macro avg      0.756     0.705     0.725       590
+          weighted avg      0.899     0.839     0.863       590

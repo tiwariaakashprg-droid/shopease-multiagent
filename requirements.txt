@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-core
+langchain-ollama
+langchain-community
+langchain-text-splitters
+langgraph
+faiss-cpu
+pandas
+rank-bm25
