@@ -555,7 +555,7 @@ for enterprise customer-support automation.
 
 # 👨‍💻 Author
 
-**Akash Kumar Tiwari**
+**Aakash Kumar Tiwari**
 
 M.Tech — Computer Science and Data Processing
 Indian Institute of Technology Kharagpur
