@@ -1,0 +1,31 @@
+ORDER TRACKING POLICY
+
+Every shipped order receives a unique tracking ID.
+
+Customers can monitor the movement of their parcel using the tracking number.
+
+Tracking information becomes available within 24 hours of dispatch.
+
+A shipment may remain in transit for several days depending on the destination.
+
+Customers can check the current status of their package through the ShopEase tracking portal.
+
+If tracking information is unavailable, customers should wait at least 24 hours after shipping.
+
+Packages moving between logistics hubs may not show frequent updates.
+
+Customers may contact support if the parcel location has not changed for more than 72 hours.
+
+Tracking status such as 'In Transit', 'Out for Delivery', and 'Delivered' are automatically updated.
+
+Orders that are delayed due to weather conditions or transportation issues may experience slower tracking updates.
+
+The expected arrival date is an estimate and may change.
+
+Tracking IDs are sent through email and SMS after dispatch.
+
+Customers can inquire about shipment progress using their order number.
+
+International shipments may have limited tracking information in certain countries.
+
+A parcel that has not reached the destination may still be in transit.

@@ -1,0 +1,591 @@
+query,expected,predicted,correct,confidence,retrieval_method,latency
+What is the refund policy for damaged products?,Damaged Product Policy,Damaged Product Policy,1,0.68926746,faiss,0.6289331912994385
+My laptop arrived broken. What should I do?,Damaged Product Policy,Damaged Product Policy,1,0.59497017,faiss,0.03416085243225098
+What happens if my product is damaged?,Damaged Product Policy,Damaged Product Policy,1,0.64042246,faiss,0.026530027389526367
+Can I get a replacement for a defective product?,Damaged Product Policy,Damaged Product Policy,1,0.6749793,faiss,0.02979278564453125
+My package arrived damaged. Can I return it?,Damaged Product Policy,Return Policy,0,0.6249571,faiss,0.02887749671936035
+What is your refund policy?,Refund Policy,Refund Policy,1,0.63919485,faiss,0.03187370300292969
+Can I get my money back?,Refund Policy,Refund Policy,1,0.62899303,faiss,0.031087875366210938
+How long does it take to receive a refund?,Refund Policy,Refund Policy,1,0.6815055,faiss,0.033217668533325195
+When will my refund be processed?,Refund Policy,Refund Policy,1,0.6618378,faiss,0.03176426887512207
+I want a refund for my order.,Refund Policy,Refund Policy,1,0.6513359,faiss,0.031173229217529297
+Can I return my laptop?,Return Policy,Return Policy,1,0.6175697,faiss,0.031450510025024414
+I want to return my order.,Return Policy,Return Policy,1,0.6604357,faiss,0.030585765838623047
+What is your return policy?,Return Policy,Return Policy,1,0.64147645,faiss,0.030502796173095703
+Can I return a product after delivery?,Return Policy,Return Policy,1,0.68792987,faiss,0.045609235763549805
+How many days do I have to return an item?,Return Policy,Return Policy,1,0.66574556,faiss,0.04724621772766113
+How long does shipping take?,Shipping Policy,Shipping Policy,1,0.6742042,faiss,0.033150672912597656
+When will my package arrive?,Shipping Policy,Shipping Policy,1,0.6472117,faiss,0.03435921669006348
+What are your shipping charges?,Shipping Policy,Shipping Policy,1,0.651412,faiss,0.04284834861755371
+Do you provide free shipping?,Shipping Policy,Shipping Policy,1,0.6188089,faiss,0.042200565338134766
+Can I track my shipment?,Shipping Policy,Shipping Policy,1,0.68202347,faiss,0.04547882080078125
+Can I cancel my order?,Cancellation Policy,Cancellation Policy,1,0.69235295,faiss,0.04380083084106445
+What is your cancellation policy?,Cancellation Policy,Cancellation Policy,1,0.6249153,faiss,0.039360761642456055
+Can I cancel after placing an order?,Cancellation Policy,Cancellation Policy,1,0.70351166,faiss,0.0498349666595459
+How do I cancel my order?,Cancellation Policy,Cancellation Policy,1,0.6522009,faiss,0.04578351974487305
+Can I cancel before shipment?,Cancellation Policy,Cancellation Policy,1,0.7156826,faiss,0.039896488189697266
+What is the company's quantum computing policy?,Unknown,Damaged Product Policy,0,0.5386177,faiss,0.048746585845947266
+What is your Mars colony insurance policy?,Unknown,Damaged Product Policy,0,0.52096456,faiss,0.04929614067077637
+Do you reimburse cryptocurrency mining expenses?,Unknown,Refund Policy,0,0.5740219,faiss,0.05823945999145508
+What is your space travel policy?,Unknown,Shipping Policy,0,0.5496587,faiss,0.04747748374938965
+Explain your artificial consciousness policy.,Unknown,Return Policy,0,0.53386295,faiss,0.0418858528137207
+Where can I request a refund?,Refund Policy,Refund Policy,1,0.61765826,faiss,0.048267364501953125
+I received the wrong item and need my money back.,Refund Policy,Refund Policy,1,0.64035374,faiss,0.053788185119628906
+Can I receive a refund for a defective product?,Refund Policy,Damaged Product Policy,0,0.6719962,faiss,0.049770355224609375
+What is the process for getting a refund?,Refund Policy,Refund Policy,1,0.6332665,faiss,0.04979562759399414
+Is my refund credited to the original payment method?,Refund Policy,Refund Policy,1,0.62967914,faiss,0.049309730529785156
+How many days will it take to receive my refund?,Refund Policy,Refund Policy,1,0.68939346,faiss,0.05439448356628418
+Can I request a partial refund?,Refund Policy,Refund Policy,1,0.6257108,faiss,0.044254302978515625
+I accidentally ordered the wrong item. Can I get a refund?,Refund Policy,Return Policy,0,0.63359827,faiss,0.04450201988220215
+I have not received my refund yet.,Refund Policy,Refund Policy,1,0.61075795,faiss,0.0379486083984375
+What are the conditions for receiving a refund?,Refund Policy,Refund Policy,1,0.6542593,faiss,0.04094886779785156
+Can I exchange my product instead of returning it?,Return Policy,Return Policy,1,0.65602565,faiss,0.04213857650756836
+What documents are required for returning a product?,Return Policy,Return Policy,1,0.6576455,faiss,0.040949344635009766
+Can I return an item without the invoice?,Return Policy,Return Policy,1,0.62544334,faiss,0.04399371147155762
+Is there a return window for electronics?,Return Policy,Return Policy,1,0.631264,faiss,0.03623676300048828
+Can I return an item purchased during a sale?,Return Policy,Return Policy,1,0.66409755,faiss,0.04432940483093262
+Can I return an opened product?,Return Policy,Return Policy,1,0.676373,faiss,0.04040241241455078
+How can I initiate a return request?,Return Policy,Return Policy,1,0.6271684,faiss,0.04318666458129883
+What happens after I submit a return request?,Return Policy,Return Policy,1,0.6328161,faiss,0.04039144515991211
+Can I return a damaged accessory?,Return Policy,Return Policy,1,0.64464915,faiss,0.03668045997619629
+Is pickup available for returned products?,Return Policy,Return Policy,1,0.6922992,faiss,0.04707002639770508
+Do you provide express delivery?,Shipping Policy,Shipping Policy,1,0.62772876,faiss,0.039868831634521484
+How much do you charge for shipping?,Shipping Policy,Shipping Policy,1,0.63494396,faiss,0.039963483810424805
+Can I track my order online?,Shipping Policy,Shipping Policy,1,0.6323563,faiss,0.0401461124420166
+Do you offer same-day delivery?,Shipping Policy,Shipping Policy,1,0.6144248,faiss,0.041701555252075195
+How long does standard shipping take?,Shipping Policy,Shipping Policy,1,0.6727698,faiss,0.047956228256225586
+What if my package is delayed?,Shipping Policy,Shipping Policy,1,0.6722281,faiss,0.04181504249572754
+Can I change my shipping address after placing the order?,Shipping Policy,Shipping Policy,1,0.5955565,faiss,0.04925203323364258
+Do you ship internationally?,Shipping Policy,Shipping Policy,1,0.6819464,faiss,0.04388260841369629
+Will I receive a tracking ID?,Shipping Policy,Shipping Policy,1,0.6743395,faiss,0.04455232620239258
+What are your delivery timelines?,Shipping Policy,Shipping Policy,1,0.636643,faiss,0.042391300201416016
+Can I cancel my order after payment?,Cancellation Policy,Cancellation Policy,1,0.6788712,faiss,0.035950660705566406
+Can I cancel an order that has not been shipped?,Cancellation Policy,Cancellation Policy,1,0.71122146,faiss,0.043874502182006836
+What happens if I cancel my order?,Cancellation Policy,Cancellation Policy,1,0.6621858,faiss,0.04304814338684082
+Will I receive a refund after cancellation?,Cancellation Policy,Cancellation Policy,1,0.61593086,faiss,0.04999732971191406
+Can I cancel only one item from my order?,Cancellation Policy,Cancellation Policy,1,0.6355036,faiss,0.04779362678527832
+Is there a cancellation fee?,Cancellation Policy,Cancellation Policy,1,0.6059959,faiss,0.037679433822631836
+Can I cancel an order after dispatch?,Cancellation Policy,Cancellation Policy,1,0.7177803,faiss,0.04699873924255371
+How do I withdraw my purchase request?,Cancellation Policy,Cancellation Policy,1,0.64461094,faiss,0.042824745178222656
+Can I modify my order instead of cancelling it?,Cancellation Policy,Cancellation Policy,1,0.6531723,faiss,0.049848079681396484
+What is the deadline for order cancellation?,Cancellation Policy,Cancellation Policy,1,0.6975666,faiss,0.042677879333496094
+My phone arrived with a cracked screen. What should I do?,Damaged Product Policy,Damaged Product Policy,1,0.59145755,faiss,0.05852532386779785
+The product was broken during delivery.,Damaged Product Policy,Damaged Product Policy,1,0.6369329,faiss,0.047471046447753906
+I received a defective charger.,Damaged Product Policy,Damaged Product Policy,1,0.59514165,faiss,0.04612588882446289
+Can I replace a damaged product?,Damaged Product Policy,Damaged Product Policy,1,0.65844524,faiss,0.04546689987182617
+What if my package arrives in poor condition?,Damaged Product Policy,Damaged Product Policy,1,0.6276843,faiss,0.04325103759765625
+I received an item with missing parts.,Damaged Product Policy,Damaged Product Policy,1,0.62569654,faiss,0.04338526725769043
+How do I report a damaged item?,Damaged Product Policy,Damaged Product Policy,1,0.6322613,faiss,0.04331707954406738
+Can I claim compensation for a broken product?,Damaged Product Policy,Damaged Product Policy,1,0.66558146,faiss,0.046591997146606445
+What proof is required for a damaged product claim?,Damaged Product Policy,Damaged Product Policy,1,0.64304304,faiss,0.04748654365539551
+I received a faulty product and need assistance.,Damaged Product Policy,Damaged Product Policy,1,0.6478231,faiss,0.04612112045288086
+I need my money returned because the item is unusable.,Refund Policy,Return Policy,0,0.6330381,faiss,0.04792189598083496
+The screen shattered during shipping.,Damaged Product Policy,Damaged Product Policy,1,0.5841629,faiss,0.04117012023925781
+I no longer want this purchase.,Cancellation Policy,Cancellation Policy,1,0.6109655,faiss,0.03925132751464844
+The charger is not functioning properly.,Damaged Product Policy,Damaged Product Policy,1,0.5644721,faiss,0.03723478317260742
+I wish to send the item back.,Return Policy,Return Policy,1,0.6057885,faiss,0.03645014762878418
+The package has not reached me yet.,Shipping Policy,Shipping Policy,1,0.6432517,faiss,0.03486752510070801
+Can I withdraw my purchase request?,Cancellation Policy,Cancellation Policy,1,0.67226434,faiss,0.038498640060424805
+I received an item with parts missing.,Damaged Product Policy,Damaged Product Policy,1,0.6268393,faiss,0.040464162826538086
+How do I get reimbursed?,Refund Policy,Refund Policy,1,0.6039454,faiss,0.05030417442321777
+My parcel is taking too long to arrive.,Shipping Policy,Shipping Policy,1,0.67272955,faiss,0.049292802810668945
+Urgent: Can I recover my payment? because I am confused.,Refund Policy,Refund Policy,1,0.5994701,faiss,0.05090689659118652
+I need help: The product is not functioning properly.,Damaged Product Policy,Damaged Product Policy,1,0.62780166,faiss,0.04892849922180176
+Can I return the order after delivery? for my recent order.,Return Policy,Return Policy,1,0.6614393,faiss,0.04990077018737793
+"Could you explain, My device became unusable.",Damaged Product Policy,Damaged Product Policy,1,0.5760757,faiss,0.05122804641723633
+"Please tell me, Can I give this item back? as soon as possible.",Return Policy,Return Policy,1,0.63255686,faiss,0.05465340614318848
+I need help: Where is my parcel? as soon as possible.,Shipping Policy,Shipping Policy,1,0.64770466,faiss,0.05034232139587402
+Can I get a refnd?,Refund Policy,Refund Policy,1,0.6058904,faiss,0.045590877532958984
+Urgent: The product is not functioning properly. please.,Damaged Product Policy,Damaged Product Policy,1,0.6347858,faiss,0.04801154136657715
+I need help: Can I receive compensation for this order? as soon as possible.,Refund Policy,Refund Policy,1,0.65599775,faiss,0.05608773231506348
+I placed the wrong order and want to cancel it. as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.6746249,faiss,0.06580662727355957
+"Please tell me, How do I send back the product? because I am confused.",Return Policy,Return Policy,1,0.64583653,faiss,0.05744147300720215
+Urgent: How do I withdraw my order? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.6743215,faiss,0.055350303649902344
+I need help: Can I return this purchase? as soon as possible.,Return Policy,Return Policy,1,0.65559375,faiss,0.056416988372802734
+I need help: Can I return the order after delivery? please.,Return Policy,Return Policy,1,0.66638726,faiss,0.04403948783874512
+Urgent: Can I retrn this item? for my recent order.,Return Policy,Return Policy,1,0.6369329,faiss,0.09431314468383789
+Can I get my mony back? please.,Refund Policy,Refund Policy,1,0.5880521,faiss,0.04048800468444824
+Urgent: The item is defective. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.61394584,faiss,0.04443216323852539
+Urgent: How long for delivry? as soon as possible.,Shipping Policy,Shipping Policy,1,0.5581926,faiss,0.04289698600769043
+Urgent: Can I revoke my order? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.69400764,faiss,0.04455757141113281
+"Please tell me, I wish to send this item back. because I am confused.",Return Policy,Return Policy,1,0.57922286,faiss,0.0499727725982666
+The screen shattered during shipping. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.58742714,faiss,0.031618595123291016
+Where is my parcel? because I am confused.,Shipping Policy,Shipping Policy,1,0.6332187,faiss,0.03174138069152832
+"Please tell me, Can I get my mony back?",Refund Policy,Refund Policy,1,0.58176255,faiss,0.043097734451293945
+"Could you explain, I want reimbursement for my purchase.",Refund Policy,Refund Policy,1,0.62558377,faiss,0.039330482482910156
+I need help: Can I get my mony back? for my recent order.,Refund Policy,Refund Policy,1,0.61807734,faiss,0.045560598373413086
+Urgent: I placed the wrong order and want to cancel it.,Cancellation Policy,Cancellation Policy,1,0.6588148,faiss,0.03865981101989746
+Is there any way to reverse this payment? as soon as possible.,Refund Policy,Refund Policy,1,0.5861072,faiss,0.04123187065124512
+I need help: Can I get my money back? please.,Refund Policy,Refund Policy,1,0.61180085,faiss,0.043112754821777344
+I need help: Can I cancle before shiping? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.64668787,faiss,0.0423130989074707
+"Please tell me, I don't need this purchase anymore. as soon as possible.",Cancellation Policy,Cancellation Policy,1,0.5432287,faiss,0.04101300239562988
+"Please tell me, The product has a manufacturing fault. please.",Damaged Product Policy,Damaged Product Policy,1,0.60040474,faiss,0.042075395584106445
+"Please tell me, How long does a refund take? for my recent order.",Refund Policy,Refund Policy,1,0.6796298,faiss,0.04420924186706543
+I need help: The product is not functioning properly. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.6047961,faiss,0.042092323303222656
+"Please tell me, When can I expect my order? for my recent order.",Shipping Policy,Shipping Policy,1,0.5807907,faiss,0.041227102279663086
+"Could you explain, I no longer want this product and want to return it. please.",Return Policy,Cancellation Policy,0,0.6166728,faiss,0.041542768478393555
+Urgent: Can I retrn this item? please.,Return Policy,Return Policy,1,0.6205818,faiss,0.03487253189086914
+"Could you explain, Can I return this purchase? as soon as possible.",Return Policy,Return Policy,1,0.66456443,faiss,0.04377865791320801
+I need help: Can I exchange this product? please.,Return Policy,Return Policy,1,0.64117205,faiss,0.03786873817443848
+I need help: The product has a manufacturing fault.,Damaged Product Policy,Damaged Product Policy,1,0.6179653,faiss,0.03873252868652344
+"Could you explain, Can I retrn this item? please.",Return Policy,Return Policy,1,0.6358654,faiss,0.042833805084228516
+"Please tell me, When can I expect my order? as soon as possible.",Shipping Policy,Shipping Policy,1,0.58398527,faiss,0.04053163528442383
+Can I track my shipment? for my recent order.,Shipping Policy,Shipping Policy,1,0.6778533,faiss,0.03850412368774414
+Can I retrn this item? as soon as possible.,Return Policy,Return Policy,1,0.6422658,faiss,0.03927969932556152
+"Please tell me, Is there any way to reverse this payment? for my recent order.",Refund Policy,Refund Policy,1,0.6141025,faiss,0.04450821876525879
+Urgent: Can I stop this order from being processed? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.6447242,faiss,0.03955554962158203
+I need help: The product is not functioning properly. please.,Damaged Product Policy,Damaged Product Policy,1,0.62423044,faiss,0.04253745079040527
+"Could you explain, The product is not functioning properly. for my recent order.",Damaged Product Policy,Damaged Product Policy,1,0.63270956,faiss,0.04555845260620117
+"Please tell me, The product has a manufacturing fault. please.",Damaged Product Policy,Damaged Product Policy,1,0.60040474,faiss,0.041980743408203125
+I need help: My device became unusable. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.57130206,faiss,0.049634456634521484
+Urgent: Can I retrn this item? for my recent order.,Return Policy,Return Policy,1,0.6369329,faiss,0.046762704849243164
+I need help: I don't need this purchase anymore. for my recent order.,Cancellation Policy,Cancellation Policy,1,0.55895704,faiss,0.05303764343261719
+"Could you explain, Can I get my mony back? as soon as possible.",Refund Policy,Refund Policy,1,0.61301035,faiss,0.05271625518798828
+I need help: Can I exchange this product?,Return Policy,Return Policy,1,0.64196527,faiss,0.05275559425354004
+"Please tell me, I received an item with parts missing. for my recent order.",Damaged Product Policy,Damaged Product Policy,1,0.61103654,faiss,0.059155941009521484
+"Could you explain, Can I cancle before shiping? because I am confused.",Cancellation Policy,Cancellation Policy,1,0.65224665,faiss,0.06123924255371094
+I need help: Can I return this purchase? for my recent order.,Return Policy,Return Policy,1,0.6507088,faiss,0.05731916427612305
+Is there any way to reverse this payment?,Refund Policy,Refund Policy,1,0.5779627,faiss,0.04255104064941406
+Can I cancle before shiping? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.70045567,faiss,0.04726576805114746
+"Could you explain, Can I recover my payment? for my recent order.",Refund Policy,Refund Policy,1,0.6211449,faiss,0.04688692092895508
+My pakage has not arived. for my recent order.,Shipping Policy,Shipping Policy,1,0.6085278,faiss,0.05330371856689453
+Urgent: Why is my package delayed? please.,Shipping Policy,Shipping Policy,1,0.6472053,faiss,0.0481114387512207
+"Could you explain, The item is defective. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.6100125,faiss,0.09977507591247559
+Urgent: The laptop arrived broken. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.61762416,faiss,0.047704458236694336
+"Please tell me, How long does a refund take? because I am confused.",Refund Policy,Refund Policy,1,0.653128,faiss,0.05419111251831055
+Urgent: How long does a refund take? because I am confused.,Refund Policy,Refund Policy,1,0.6610405,faiss,0.0519404411315918
+"Could you explain, Can I return the order after delivery? for my recent order.",Return Policy,Return Policy,1,0.660518,faiss,0.05417132377624512
+Urgent: How do I send back the product? please.,Return Policy,Return Policy,1,0.66141987,faiss,0.04764389991760254
+Urgent: I no longer want this product and want to return it. for my recent order.,Return Policy,Cancellation Policy,0,0.6576008,faiss,0.06153130531311035
+"Please tell me, How do I get reimbursed?",Refund Policy,Refund Policy,1,0.60276663,faiss,0.049246788024902344
+"Could you explain, Can I get my mony back?",Refund Policy,Refund Policy,1,0.5996244,faiss,0.04786992073059082
+Can I rescind the order? please.,Cancellation Policy,Cancellation Policy,1,0.66264737,faiss,0.04435229301452637
+"Please tell me, Can I retrn this item? for my recent order.",Return Policy,Return Policy,1,0.62699664,faiss,0.05713033676147461
+"Could you explain, My pakage has not arived.",Shipping Policy,Shipping Policy,1,0.6070382,faiss,0.05177903175354004
+Urgent: Can I return this purchase? for my recent order.,Return Policy,Return Policy,1,0.6521326,faiss,0.05051898956298828
+Urgent: Can I return this purchase? for my recent order.,Return Policy,Return Policy,1,0.6521326,faiss,0.0467982292175293
+"Could you explain, Can I track my shipment? please.",Shipping Policy,Shipping Policy,1,0.68099225,faiss,0.05196046829223633
+"Could you explain, What is the return process? please.",Return Policy,Return Policy,1,0.64037824,faiss,0.048351287841796875
+Urgent: I placed the wrong order and want to cancel it. please.,Cancellation Policy,Cancellation Policy,1,0.64734966,faiss,0.046469926834106445
+Urgent: Can I recover my payment? please.,Refund Policy,Refund Policy,1,0.5971413,faiss,0.043463945388793945
+"Could you explain, The item is damged. please.",Damaged Product Policy,Damaged Product Policy,1,0.56396264,faiss,0.04999566078186035
+I need help: Can I cancel after payment?,Cancellation Policy,Cancellation Policy,1,0.62850225,faiss,0.04727768898010254
+My screan is crackd. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.55790854,faiss,0.047277212142944336
+I need help: Can I cancel after payment? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.62011826,faiss,0.04782581329345703
+I need help: I need to send the package back. as soon as possible.,Return Policy,Shipping Policy,0,0.6159015,faiss,0.05378556251525879
+"Could you explain, My device became unusable. for my recent order.",Damaged Product Policy,Damaged Product Policy,1,0.6158247,faiss,0.05089282989501953
+How long does a refund take?,Refund Policy,Refund Policy,1,0.68099856,faiss,0.04645943641662598
+Urgent: Can I exchange this product? because I am confused.,Return Policy,Return Policy,1,0.6435881,faiss,0.05338692665100098
+I need help: How do I withdraw my order? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.6365679,faiss,0.05561423301696777
+"Could you explain, I want reimbursement for my purchase. for my recent order.",Refund Policy,Refund Policy,1,0.64174694,faiss,0.06072998046875
+"Could you explain, How long for delivry? for my recent order.",Shipping Policy,Shipping Policy,1,0.57828337,faiss,0.05246853828430176
+My screan is crackd. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.53855324,faiss,0.050980329513549805
+"Could you explain, I wish to send this item back. for my recent order.",Return Policy,Return Policy,1,0.61558264,faiss,0.06176042556762695
+Can I exchange this product? as soon as possible.,Return Policy,Return Policy,1,0.6672729,faiss,0.07706809043884277
+I need help: Can I retrn this item? as soon as possible.,Return Policy,Return Policy,1,0.6340671,faiss,0.04747629165649414
+Urgent: Can I trak my shipmnt? because I am confused.,Shipping Policy,Shipping Policy,1,0.5918461,faiss,0.05462360382080078
+"Could you explain, I need my payment returned. because I am confused.",Refund Policy,Return Policy,0,0.6338406,faiss,0.05206584930419922
+"Please tell me, The item is damged. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.5595614,faiss,0.043645381927490234
+Urgent: I need to send the package back. please.,Return Policy,Return Policy,1,0.59958863,faiss,0.04729127883911133
+I need help: Can I revoke my order?,Cancellation Policy,Cancellation Policy,1,0.6565649,faiss,0.04094886779785156
+I need help: The item is defective. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.61649656,faiss,0.039731502532958984
+I need my payment returned. for my recent order.,Refund Policy,Return Policy,0,0.6540351,faiss,0.04074597358703613
+I need help: Can I get my money back?,Refund Policy,Refund Policy,1,0.6126508,faiss,0.041997671127319336
+I received an item with parts missing. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.6382044,faiss,0.042336225509643555
+Urgent: I received an item with parts missing. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.61500376,faiss,0.03757596015930176
+"Please tell me, The product has a manufacturing fault. as soon as possible.",Damaged Product Policy,Damaged Product Policy,1,0.6214133,faiss,0.04308724403381348
+"Could you explain, Can I cancle before shiping?",Cancellation Policy,Cancellation Policy,1,0.6639788,faiss,0.04555821418762207
+"Could you explain, The charger stopped functioning. as soon as possible.",Damaged Product Policy,Damaged Product Policy,1,0.5513228,faiss,0.051288604736328125
+"Please tell me, The product has a manufacturing fault. as soon as possible.",Damaged Product Policy,Damaged Product Policy,1,0.6214133,faiss,0.05856966972351074
+Urgent: Can I cancel after payment? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.6393618,faiss,0.05511879920959473
+"Please tell me, The laptop arrived broken. for my recent order.",Damaged Product Policy,Damaged Product Policy,1,0.5974956,faiss,0.05310368537902832
+My package has not reached me.,Shipping Policy,Shipping Policy,1,0.63568985,faiss,0.04364180564880371
+"Please tell me, Can I receive compensation for this order?",Refund Policy,Refund Policy,1,0.62195665,faiss,0.07340741157531738
+I placed the wrong order and want to cancel it. because I am confused.,Cancellation Policy,Cancellation Policy,1,0.636352,faiss,0.0501711368560791
+"Please tell me, Can I recover my payment? because I am confused.",Refund Policy,Refund Policy,1,0.58315635,faiss,0.0508880615234375
+"Could you explain, Can I retrn this item? as soon as possible.",Return Policy,Return Policy,1,0.64724576,faiss,0.058873891830444336
+Is there any way to reverse this payment? as soon as possible.,Refund Policy,Refund Policy,1,0.5861072,faiss,0.051283836364746094
+I need help: How much time will delivery take? please.,Shipping Policy,Shipping Policy,1,0.686686,faiss,0.04955697059631348
+I need help: Can I cancel after payment? please.,Cancellation Policy,Cancellation Policy,1,0.63018143,faiss,0.05089735984802246
+Urgent: Can I return this purchase?,Return Policy,Return Policy,1,0.6444607,faiss,0.04532051086425781
+"Please tell me, Can I rescind the order?",Cancellation Policy,Cancellation Policy,1,0.6437119,faiss,0.05052518844604492
+I need help: The product is not functioning properly. please.,Damaged Product Policy,Damaged Product Policy,1,0.62423044,faiss,0.051362037658691406
+How do I send back the product?,Return Policy,Return Policy,1,0.65678793,faiss,0.04991722106933594
+"Could you explain, How do I get reimbursed? please.",Refund Policy,Refund Policy,1,0.6103261,faiss,0.058017730712890625
+"Please tell me, My package has not reached me. as soon as possible.",Shipping Policy,Shipping Policy,1,0.648502,faiss,0.0779259204864502
+Can I give this item back?,Return Policy,Return Policy,1,0.6446077,faiss,0.06176328659057617
+I placed the wrong order and want to cancel it.,Cancellation Policy,Cancellation Policy,1,0.6508358,faiss,0.05804562568664551
+"Please tell me, The item is damged.",Damaged Product Policy,Damaged Product Policy,1,0.56524503,faiss,0.05747246742248535
+I need help: Can I revoke my order? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.6596989,faiss,0.15465569496154785
+The product has a manufacturing fault. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.62211883,faiss,0.24402594566345215
+"Please tell me, I placed the wrong order and want to cancel it. for my recent order.",Cancellation Policy,Cancellation Policy,1,0.63422036,faiss,0.10666656494140625
+Urgent: How do I cancle my order? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.661651,faiss,0.05269742012023926
+I need help: The item is damged. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.6002058,faiss,0.05671381950378418
+"Please tell me, My package has not reached me. please.",Shipping Policy,Shipping Policy,1,0.6253167,faiss,0.05580258369445801
+Urgent: My pakage has not arived. please.,Shipping Policy,Shipping Policy,1,0.6069854,faiss,0.05106019973754883
+I need help: My pakage has not arived. for my recent order.,Shipping Policy,Shipping Policy,1,0.6132375,faiss,0.05369281768798828
+"Please tell me, My package has not reached me. for my recent order.",Shipping Policy,Shipping Policy,1,0.6372241,faiss,0.057993412017822266
+I need help: My package has not reached me. please.,Shipping Policy,Shipping Policy,1,0.6246977,faiss,0.06609106063842773
+Urgent: Can I recover my payment? because I am confused.,Refund Policy,Refund Policy,1,0.5994701,faiss,0.06066751480102539
+I need help: Can I receive compensation for this order? as soon as possible.,Refund Policy,Refund Policy,1,0.65599775,faiss,0.07109475135803223
+"Could you explain, How do I cancle my order? for my recent order.",Cancellation Policy,Cancellation Policy,1,0.65536684,faiss,0.0695960521697998
+Urgent: The screen shattered during shipping. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.5886851,faiss,0.06174802780151367
+"Could you explain, My package has not reached me. please.",Shipping Policy,Shipping Policy,1,0.6294078,faiss,0.0751807689666748
+"Please tell me, Can I stop this order from being processed? for my recent order.",Cancellation Policy,Cancellation Policy,1,0.6286372,faiss,0.06690502166748047
+I need help: How do I send back the product? please.,Return Policy,Return Policy,1,0.65074146,faiss,0.07441473007202148
+"Please tell me, What is the return process? for my recent order.",Return Policy,Return Policy,1,0.6430306,faiss,0.060120582580566406
+"Could you explain, I wish to send this item back.",Return Policy,Return Policy,1,0.58871925,faiss,0.05592513084411621
+"Please tell me, I need to send the package back. because I am confused.",Return Policy,Shipping Policy,0,0.5987207,faiss,0.054212331771850586
+"Could you explain, How do I cancle my order? for my recent order.",Cancellation Policy,Cancellation Policy,1,0.65536684,faiss,0.05625104904174805
+I need help: Can I revoke my order? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.6465133,faiss,0.05575966835021973
+"Could you explain, The item is defective. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.6100125,faiss,0.052875518798828125
+I need help: How do I get reimbursed? because I am confused.,Refund Policy,Refund Policy,1,0.60044557,faiss,0.06310701370239258
+"Could you explain, How long for delivry? for my recent order.",Shipping Policy,Shipping Policy,1,0.57828337,faiss,0.058251380920410156
+"Please tell me, Do you deliver internationally? as soon as possible.",Shipping Policy,Shipping Policy,1,0.67676336,faiss,0.06157231330871582
+Urgent: The screen shattered during shipping. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.5886851,faiss,0.0655372142791748
+Urgent: Can I rescind the order? please.,Cancellation Policy,Cancellation Policy,1,0.6673823,faiss,0.06301569938659668
+Urgent: My package has not reached me.,Shipping Policy,Shipping Policy,1,0.6380496,faiss,0.06127667427062988
+"Could you explain, Can I give this item back?",Return Policy,Return Policy,1,0.64773065,faiss,0.07256221771240234
+Urgent: The item is damged. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.5643268,faiss,0.059557437896728516
+Can I give this item back? as soon as possible.,Return Policy,Return Policy,1,0.65354216,faiss,0.06607794761657715
+I need help: How do I send back the product? for my recent order.,Return Policy,Return Policy,1,0.6582268,faiss,0.06572556495666504
+I need help: Can I cancel after payment?,Cancellation Policy,Cancellation Policy,1,0.62850225,faiss,0.05704021453857422
+"Please tell me, The product is not functioning properly. please.",Damaged Product Policy,Damaged Product Policy,1,0.6063115,faiss,0.06792044639587402
+I need help: I need my payment returned.,Refund Policy,Return Policy,0,0.6424726,faiss,0.04838705062866211
+I wish to send this item back. as soon as possible.,Return Policy,Return Policy,1,0.61007255,faiss,0.04812479019165039
+I need help: Can I get my money back? for my recent order.,Refund Policy,Refund Policy,1,0.64652425,faiss,0.059171438217163086
+I need help: I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.5958527,faiss,0.06220269203186035
+"Could you explain, Can I give this item back? please.",Return Policy,Return Policy,1,0.64347583,faiss,0.05231595039367676
+The product has a manufacturing fault. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.5992995,faiss,0.05718231201171875
+"Please tell me, Can I get a refnd?",Refund Policy,Refund Policy,1,0.6009286,faiss,0.050159454345703125
+Can I trak my shipmnt? please.,Shipping Policy,Shipping Policy,1,0.60691327,faiss,0.05054306983947754
+I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.6032807,faiss,0.0568084716796875
+"Please tell me, Is there any way to reverse this payment? for my recent order.",Refund Policy,Refund Policy,1,0.6141025,faiss,0.06140279769897461
+The item is defective. please.,Damaged Product Policy,Damaged Product Policy,1,0.6277099,faiss,0.051285505294799805
+Can I rescind the order? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.66160077,faiss,0.048967599868774414
+"Please tell me, I placed the wrong order and want to cancel it. for my recent order.",Cancellation Policy,Cancellation Policy,1,0.63422036,faiss,0.056169748306274414
+"Could you explain, I wish to send this item back. as soon as possible.",Return Policy,Return Policy,1,0.60898244,faiss,0.0557708740234375
+Can I cancle before shiping?,Cancellation Policy,Cancellation Policy,1,0.6744887,faiss,0.047731876373291016
+"Could you explain, Can I get a refnd? for my recent order.",Refund Policy,Refund Policy,1,0.6458616,faiss,0.06248354911804199
+I need help: Can I cancle before shiping? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.6747646,faiss,0.05293416976928711
+"Please tell me, The charger stopped functioning. please.",Damaged Product Policy,Damaged Product Policy,1,0.5413088,faiss,0.045262813568115234
+I need help: When can I expect my order? because I am confused.,Shipping Policy,Shipping Policy,1,0.5728499,faiss,0.05534720420837402
+Urgent: I placed the wrong order and want to cancel it.,Cancellation Policy,Cancellation Policy,1,0.6588148,faiss,0.053066253662109375
+"Please tell me, I don't need this purchase anymore. for my recent order.",Cancellation Policy,Cancellation Policy,1,0.5548199,faiss,0.06457090377807617
+I need help: I placed the wrong order and want to cancel it. for my recent order.,Cancellation Policy,Cancellation Policy,1,0.63922817,faiss,0.06688642501831055
+I need help: The screen shattered during shipping.,Damaged Product Policy,Damaged Product Policy,1,0.59274244,faiss,0.06152224540710449
+I need help: Can I track my shipment? for my recent order.,Shipping Policy,Shipping Policy,1,0.6723869,faiss,0.06220269203186035
+Urgent: How do I send back the product? for my recent order.,Return Policy,Return Policy,1,0.66977435,faiss,0.0687108039855957
+"Please tell me, Do you deliver internationally? because I am confused.",Shipping Policy,Shipping Policy,1,0.6770744,faiss,0.0691983699798584
+"Please tell me, How do I withdraw my order? for my recent order.",Cancellation Policy,Cancellation Policy,1,0.64193267,faiss,0.0668036937713623
+Can I get my money back? because I am confused.,Refund Policy,Refund Policy,1,0.6322997,faiss,0.06253576278686523
+Urgent: How do I cancle my order? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.6659128,faiss,0.06628799438476562
+"Please tell me, How much time will delivery take? for my recent order.",Shipping Policy,Shipping Policy,1,0.680258,faiss,0.0721442699432373
+I need help: I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,0.6462223,faiss,0.06542730331420898
+"Could you explain, I received an item with parts missing. as soon as possible.",Damaged Product Policy,Damaged Product Policy,1,0.62556523,faiss,0.33185696601867676
+How long for delivry? because I am confused.,Shipping Policy,Shipping Policy,1,0.54242104,faiss,0.06843805313110352
+The screen shattered during shipping. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.58742714,faiss,0.08320045471191406
+"Could you explain, My package has not reached me.",Shipping Policy,Shipping Policy,1,0.63698137,faiss,0.08186650276184082
+I need help: Can I trak my shipmnt? please.,Shipping Policy,Shipping Policy,1,0.5874183,faiss,0.14000153541564941
+"Could you explain, When can I expect my order? because I am confused.",Shipping Policy,Shipping Policy,1,0.5685115,faiss,0.10744023323059082
+"Please tell me, The screen shattered during shipping. please.",Damaged Product Policy,Damaged Product Policy,1,0.58506924,faiss,0.08378100395202637
+Urgent: My device became unusable. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.63138115,faiss,0.061691999435424805
+The item is damged. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.59488267,faiss,0.057111263275146484
+"Could you explain, Can I cancel after payment? please.",Cancellation Policy,Cancellation Policy,1,0.6295307,faiss,0.05916237831115723
+Is there any way to reverse this payment? because I am confused.,Refund Policy,Refund Policy,1,0.581192,faiss,0.06395173072814941
+"Please tell me, The product has a manufacturing fault. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.59037054,faiss,0.08510327339172363
+"Please tell me, My screan is crackd. please.",Damaged Product Policy,Damaged Product Policy,1,0.5234745,faiss,0.07551193237304688
+Urgent: How do I send back the product? please.,Return Policy,Return Policy,1,0.66141987,faiss,0.05456686019897461
+"Please tell me, My screan is crackd. for my recent order.",Damaged Product Policy,Damaged Product Policy,1,0.56106555,faiss,0.05878019332885742
+Urgent: The laptop arrived broken. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.61762416,faiss,0.048383474349975586
+Urgent: Can I get a refnd? please.,Refund Policy,Refund Policy,1,0.61453444,faiss,0.05225014686584473
+Can I get my mony back?,Refund Policy,Refund Policy,1,0.58970827,faiss,0.04781079292297363
+Where is my parcel? because I am confused.,Shipping Policy,Shipping Policy,1,0.6332187,faiss,0.05177426338195801
+Urgent: My package has not reached me.,Shipping Policy,Shipping Policy,1,0.6380496,faiss,0.051790714263916016
+"Could you explain, I need my payment returned. because I am confused.",Refund Policy,Return Policy,0,0.6338406,faiss,0.06350231170654297
+I need help: My pakage has not arived.,Shipping Policy,Shipping Policy,1,0.60137737,faiss,0.06800413131713867
+"Could you explain, Can I stop this order from being processed? as soon as possible.",Cancellation Policy,Cancellation Policy,1,0.6320624,faiss,0.06890082359313965
+Urgent: How long for delivry?,Shipping Policy,Shipping Policy,1,0.5554772,faiss,0.0695028305053711
+The screen shattered during shipping. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.58742714,faiss,0.06140780448913574
+The charger stopped functioning. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.52236295,faiss,0.055463552474975586
+I need help: Why is my package delayed? for my recent order.,Shipping Policy,Shipping Policy,1,0.64668494,faiss,0.06388354301452637
+Do you deliver internationally? for my recent order.,Shipping Policy,Shipping Policy,1,0.6829608,faiss,0.07442378997802734
+My pakage has not arived. for my recent order.,Shipping Policy,Shipping Policy,1,0.6085278,faiss,0.07134580612182617
+I need help: Do you deliver internationally? because I am confused.,Shipping Policy,Shipping Policy,1,0.6702274,faiss,0.07159900665283203
+Can I exchange this product?,Return Policy,Return Policy,1,0.64871395,faiss,0.06302285194396973
+How do I get reimbursed? please.,Refund Policy,Refund Policy,1,0.60466474,faiss,0.1444540023803711
+I need help: I placed the wrong order and want to cancel it. please.,Cancellation Policy,Cancellation Policy,1,0.63384837,faiss,0.08115673065185547
+How do I get reimbursed? as soon as possible.,Refund Policy,Refund Policy,1,0.6269996,faiss,0.04531288146972656
+Can I cancle before shiping?,Cancellation Policy,Cancellation Policy,1,0.6744887,faiss,0.04324078559875488
+"Please tell me, I need my payment returned. as soon as possible.",Refund Policy,Return Policy,0,0.6346236,faiss,0.05613374710083008
+Urgent: The item is damged. please.,Damaged Product Policy,Damaged Product Policy,1,0.5702908,faiss,0.04594898223876953
+The product is not functioning properly. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.6066703,faiss,0.05183839797973633
+I need help: My package has not reached me. because I am confused.,Shipping Policy,Shipping Policy,1,0.62796533,faiss,0.056532859802246094
+Where is my parcel? please.,Shipping Policy,Shipping Policy,1,0.6340253,faiss,0.06397581100463867
+Urgent: My device became unusable. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.59647554,faiss,0.04985690116882324
+"Please tell me, I no longer want this product and want to return it. because I am confused.",Return Policy,Cancellation Policy,0,0.5999714,faiss,0.057205915451049805
+Urgent: Can I give this item back? because I am confused.,Return Policy,Return Policy,1,0.6394344,faiss,0.0573420524597168
+"Could you explain, Can I return the order after delivery? please.",Return Policy,Return Policy,1,0.667791,faiss,0.06089210510253906
+Urgent: May I withdraw my purchase request?,Cancellation Policy,Cancellation Policy,1,0.67688483,faiss,0.044843196868896484
+"Please tell me, Can I retrn this item? because I am confused.",Return Policy,Return Policy,1,0.6203626,faiss,0.06202340126037598
+I need help: What is the return process? for my recent order.,Return Policy,Return Policy,1,0.6441435,faiss,0.05653786659240723
+Urgent: I need my payment returned.,Refund Policy,Return Policy,0,0.6427713,faiss,0.06951141357421875
+"Could you explain, How do I withdraw my order? please.",Cancellation Policy,Cancellation Policy,1,0.65391505,faiss,0.06235170364379883
+Urgent: How long does a refund take? please.,Refund Policy,Refund Policy,1,0.6723335,faiss,0.06879353523254395
+"Please tell me, Why is my package delayed?",Shipping Policy,Shipping Policy,1,0.6440756,faiss,0.10318970680236816
+"Could you explain, When can I expect my order? as soon as possible.",Shipping Policy,Shipping Policy,1,0.5868917,faiss,0.06757879257202148
+Urgent: I want reimbursement for my purchase. please.,Refund Policy,Refund Policy,1,0.6243163,faiss,0.06655287742614746
+"Could you explain, I received an item with parts missing. as soon as possible.",Damaged Product Policy,Damaged Product Policy,1,0.62556523,faiss,0.07722234725952148
+"Could you explain, The product is not functioning properly. please.",Damaged Product Policy,Damaged Product Policy,1,0.6147282,faiss,0.06679058074951172
+Urgent: May I withdraw my purchase request? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.7019946,faiss,0.08403635025024414
+"Please tell me, Can I recover my payment? please.",Refund Policy,Refund Policy,1,0.57779604,faiss,0.0954740047454834
+Urgent: Can I give this item back? please.,Return Policy,Return Policy,1,0.6326421,faiss,0.08041000366210938
+I need help: How do I cancle my order? please.,Cancellation Policy,Cancellation Policy,1,0.644546,faiss,0.061095476150512695
+"Could you explain, Can I get my mony back? as soon as possible.",Refund Policy,Refund Policy,1,0.61301035,faiss,0.0754389762878418
+"Please tell me, I want reimbursement for my purchase. for my recent order.",Refund Policy,Refund Policy,1,0.63407123,faiss,0.06110644340515137
+"Could you explain, Can I recover my payment?",Refund Policy,Refund Policy,1,0.582229,faiss,0.16406702995300293
+I need help: How do I cancle my order? please.,Cancellation Policy,Cancellation Policy,1,0.644546,faiss,0.22649216651916504
+How do I withdraw my order? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.6498996,faiss,0.0970461368560791
+Urgent: How long for delivry? please.,Shipping Policy,Shipping Policy,1,0.5524014,faiss,0.08700251579284668
+Urgent: The charger stopped functioning. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.57381165,faiss,0.06158185005187988
+"Please tell me, Can I trak my shipmnt? as soon as possible.",Shipping Policy,Shipping Policy,1,0.60676575,faiss,0.07253670692443848
+Can I return the order after delivery? because I am confused.,Return Policy,Return Policy,1,0.65846837,faiss,0.07305335998535156
+"Please tell me, Can I get a refnd?",Refund Policy,Refund Policy,1,0.6009286,faiss,0.07422041893005371
+I need help: Can I return this purchase? please.,Return Policy,Return Policy,1,0.6362849,faiss,0.06612491607666016
+I need help: Can I get a refnd? for my recent order.,Refund Policy,Refund Policy,1,0.6452776,faiss,0.0670783519744873
+"Could you explain, Where is my parcel?",Shipping Policy,Shipping Policy,1,0.6415155,faiss,0.052876949310302734
+"Please tell me, How long for delivry? for my recent order.",Shipping Policy,Shipping Policy,1,0.57894754,faiss,0.05893754959106445
+I need help: How much time will delivery take? for my recent order.,Shipping Policy,Shipping Policy,1,0.6856714,faiss,0.05992293357849121
+"Please tell me, How much time will delivery take? for my recent order.",Shipping Policy,Shipping Policy,1,0.680258,faiss,0.055556297302246094
+Can I retrn this item? for my recent order.,Return Policy,Return Policy,1,0.63898355,faiss,0.054920196533203125
+"Could you explain, Can I trak my shipmnt? please.",Shipping Policy,Shipping Policy,1,0.60272616,faiss,0.06718111038208008
+I need help: How do I send back the product? because I am confused.,Return Policy,Return Policy,1,0.6497656,faiss,0.06150245666503906
+Urgent: May I withdraw my purchase request? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.6896479,faiss,0.05983424186706543
+"Please tell me, I received an item with parts missing. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.6008311,faiss,0.062285661697387695
+"Could you explain, Can I rescind the order?",Cancellation Policy,Cancellation Policy,1,0.66010565,faiss,0.05921649932861328
+I need help: Is there any way to reverse this payment?,Refund Policy,Refund Policy,1,0.58280414,faiss,0.05556893348693848
+Urgent: Can I trak my shipmnt?,Shipping Policy,Shipping Policy,1,0.58791995,faiss,0.058206796646118164
+"Please tell me, I need my payment returned.",Refund Policy,Return Policy,0,0.63387144,faiss,0.05542731285095215
+I need help: I wish to send this item back.,Return Policy,Return Policy,1,0.59656143,faiss,0.057012081146240234
+Urgent: How long for delivry? because I am confused.,Shipping Policy,Shipping Policy,1,0.5431091,faiss,0.060411691665649414
+Urgent: My package has not reached me. as soon as possible.,Shipping Policy,Shipping Policy,1,0.6534118,faiss,0.061818838119506836
+"Please tell me, Can I return the order after delivery? please.",Return Policy,Return Policy,1,0.6565263,faiss,0.06430697441101074
+I need help: Can I revoke my order? please.,Cancellation Policy,Cancellation Policy,1,0.65454334,faiss,0.05109810829162598
+"Could you explain, The charger stopped functioning. please.",Damaged Product Policy,Damaged Product Policy,1,0.543992,faiss,0.05013537406921387
+How long for delivry?,Shipping Policy,Shipping Policy,1,0.5377218,faiss,0.0476226806640625
+"Could you explain, The product is not functioning properly. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.60106057,faiss,0.052826881408691406
+Urgent: Is there any way to reverse this payment?,Refund Policy,Refund Policy,1,0.5959307,faiss,0.10831117630004883
+I need help: Can I give this item back?,Return Policy,Return Policy,1,0.6390208,faiss,0.15935730934143066
+Urgent: Can I return this purchase?,Return Policy,Return Policy,1,0.6444607,faiss,0.06445908546447754
+Can I exchange this product? as soon as possible.,Return Policy,Return Policy,1,0.6672729,faiss,0.05072140693664551
+Urgent: My screan is crackd. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.5793115,faiss,0.05442929267883301
+Can I revoke my order? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.6644651,faiss,0.04833865165710449
+"Please tell me, How much time will delivery take? for my recent order.",Shipping Policy,Shipping Policy,1,0.680258,faiss,0.05636787414550781
+Urgent: My pakage has not arived. because I am confused.,Shipping Policy,Shipping Policy,1,0.6030989,faiss,0.05779528617858887
+"Please tell me, Can I trak my shipmnt? please.",Shipping Policy,Shipping Policy,1,0.59962136,faiss,0.06021928787231445
+I need help: Where is my parcel? as soon as possible.,Shipping Policy,Shipping Policy,1,0.64770466,faiss,0.05905461311340332
+I need help: My package has not reached me.,Shipping Policy,Shipping Policy,1,0.6296979,faiss,0.05382537841796875
+Urgent: When can I expect my order? for my recent order.,Shipping Policy,Shipping Policy,1,0.594636,faiss,0.05612611770629883
+I need help: Can I cancel after payment? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.62011826,faiss,0.05854392051696777
+My device became unusable. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.57496053,faiss,0.05796194076538086
+"Please tell me, What is the return process? because I am confused.",Return Policy,Return Policy,1,0.6340509,faiss,0.0670924186706543
+"Please tell me, The product has a manufacturing fault. for my recent order.",Damaged Product Policy,Damaged Product Policy,1,0.6055102,faiss,0.0618743896484375
+Do you deliver internationally? for my recent order.,Shipping Policy,Shipping Policy,1,0.6829608,faiss,0.061296701431274414
+"Please tell me, I don't need this purchase anymore. please.",Cancellation Policy,Cancellation Policy,1,0.521291,faiss,0.06741094589233398
+What is the return process?,Return Policy,Return Policy,1,0.63262075,faiss,0.05622291564941406
+My screan is crackd. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.5190229,faiss,0.05518603324890137
+I need help: Can I rescind the order?,Cancellation Policy,Cancellation Policy,1,0.64502597,faiss,0.06354331970214844
+Urgent: I no longer want this product and want to return it. because I am confused.,Return Policy,Cancellation Policy,0,0.613847,faiss,0.06913185119628906
+"Please tell me, Can I get a refnd? because I am confused.",Refund Policy,Refund Policy,1,0.59449273,faiss,0.06710505485534668
+I need help: I placed the wrong order and want to cancel it. because I am confused.,Cancellation Policy,Cancellation Policy,1,0.6299095,faiss,0.06689715385437012
+I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,0.6505698,faiss,0.062181949615478516
+Urgent: When can I expect my order? because I am confused.,Shipping Policy,Shipping Policy,1,0.57765865,faiss,0.06093096733093262
+Is there any way to reverse this payment?,Refund Policy,Refund Policy,1,0.5779627,faiss,0.06637358665466309
+When can I expect my order? as soon as possible.,Shipping Policy,Shipping Policy,1,0.5944934,faiss,0.061807870864868164
+"Could you explain, How do I cancle my order?",Cancellation Policy,Cancellation Policy,1,0.65755326,faiss,0.049541473388671875
+"Please tell me, How do I withdraw my order? please.",Cancellation Policy,Cancellation Policy,1,0.64182395,faiss,0.04477572441101074
+I need my payment returned.,Refund Policy,Return Policy,0,0.6522328,faiss,0.0446932315826416
+"Could you explain, The screen shattered during shipping. please.",Damaged Product Policy,Damaged Product Policy,1,0.5914715,faiss,0.05138349533081055
+Urgent: When can I expect my order?,Shipping Policy,Shipping Policy,1,0.5933577,faiss,0.1515941619873047
+"Please tell me, Can I cancle before shiping?",Cancellation Policy,Cancellation Policy,1,0.6555296,faiss,0.17412519454956055
+"Could you explain, What is the return process? as soon as possible.",Return Policy,Return Policy,1,0.65385437,faiss,0.0754861831665039
+I need help: Can I track my shipment? for my recent order.,Shipping Policy,Shipping Policy,1,0.6723869,faiss,0.06655049324035645
+How long does a refund take? because I am confused.,Refund Policy,Refund Policy,1,0.6595234,faiss,0.061847686767578125
+"Please tell me, The product has a manufacturing fault.",Damaged Product Policy,Damaged Product Policy,1,0.6030482,faiss,0.05891275405883789
+How much time will delivery take?,Shipping Policy,Shipping Policy,1,0.6941696,faiss,0.053987741470336914
+"Could you explain, I want reimbursement for my purchase. as soon as possible.",Refund Policy,Refund Policy,1,0.6398675,faiss,0.06631922721862793
+Urgent: I need my payment returned. for my recent order.,Refund Policy,Refund Policy,1,0.6525281,faiss,0.06468796730041504
+The charger stopped functioning. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.52236295,faiss,0.05324578285217285
+"Please tell me, Can I get my mony back?",Refund Policy,Refund Policy,1,0.58176255,faiss,0.053009986877441406
+Urgent: I need to send the package back.,Return Policy,Shipping Policy,0,0.60816664,faiss,0.04936647415161133
+Urgent: I received an item with parts missing. please.,Damaged Product Policy,Damaged Product Policy,1,0.6238553,faiss,0.04704546928405762
+"Please tell me, The product is not functioning properly. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.59292537,faiss,0.054795265197753906
+"Could you explain, Is there any way to reverse this payment?",Refund Policy,Refund Policy,1,0.57673854,faiss,0.0548396110534668
+Urgent: Can I revoke my order? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.69400764,faiss,0.05473661422729492
+How do I withdraw my order?,Cancellation Policy,Cancellation Policy,1,0.6588572,faiss,0.04273414611816406
+Can I recover my payment? please.,Refund Policy,Refund Policy,1,0.58670926,faiss,0.04629182815551758
+"Please tell me, The product has a manufacturing fault. for my recent order.",Damaged Product Policy,Damaged Product Policy,1,0.6055102,faiss,0.04440736770629883
+"Could you explain, Can I retrn this item?",Return Policy,Return Policy,1,0.63651896,faiss,0.05139517784118652
+"Please tell me, I wish to send this item back. for my recent order.",Return Policy,Return Policy,1,0.60183024,faiss,0.05488419532775879
+Urgent: How do I cancle my order? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.64866394,faiss,0.05568242073059082
+"Please tell me, Is there any way to reverse this payment?",Refund Policy,Refund Policy,1,0.56993145,faiss,0.05083632469177246
+"Please tell me, I wish to send this item back. because I am confused.",Return Policy,Return Policy,1,0.57922286,faiss,0.05538177490234375
+"Could you explain, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,0.6515817,faiss,0.05421900749206543
+I need help: Can I cancle before shiping? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.64668787,faiss,0.05997061729431152
+I need help: How much time will delivery take? for my recent order.,Shipping Policy,Shipping Policy,1,0.6856714,faiss,0.0619204044342041
+My screan is crackd. please.,Damaged Product Policy,Damaged Product Policy,1,0.5212995,faiss,0.05491232872009277
+Urgent: Can I retrn this item?,Return Policy,Return Policy,1,0.6260748,faiss,0.05817103385925293
+"Please tell me, Can I stop this order from being processed? as soon as possible.",Cancellation Policy,Cancellation Policy,1,0.62898225,faiss,0.05582737922668457
+"Could you explain, Where is my parcel? for my recent order.",Shipping Policy,Shipping Policy,1,0.6458625,faiss,0.05134463310241699
+"Please tell me, My pakage has not arived. as soon as possible.",Shipping Policy,Shipping Policy,1,0.61709,faiss,0.06160545349121094
+"Please tell me, Can I get my money back?",Refund Policy,Refund Policy,1,0.6085387,faiss,0.05612373352050781
+"Please tell me, I need to send the package back. as soon as possible.",Return Policy,Shipping Policy,0,0.618844,faiss,0.05823659896850586
+I need help: Can I revoke my order?,Cancellation Policy,Cancellation Policy,1,0.6565649,faiss,0.04827570915222168
+I need help: Where is my parcel? as soon as possible.,Shipping Policy,Shipping Policy,1,0.64770466,faiss,0.05344057083129883
+Can I trak my shipmnt? for my recent order.,Shipping Policy,Shipping Policy,1,0.62126756,faiss,0.052684783935546875
+Can I track my shipment? please.,Shipping Policy,Shipping Policy,1,0.6824767,faiss,0.04947066307067871
+Urgent: I need my payment returned. please.,Refund Policy,Return Policy,0,0.63653326,faiss,0.0531156063079834
+"Please tell me, How do I withdraw my order? please.",Cancellation Policy,Cancellation Policy,1,0.64182395,faiss,0.05250382423400879
+What is the return process?,Return Policy,Return Policy,1,0.63262075,faiss,0.04322075843811035
+"Could you explain, I want reimbursement for my purchase. for my recent order.",Refund Policy,Refund Policy,1,0.64174694,faiss,0.06256270408630371
+How long for delivry?,Shipping Policy,Shipping Policy,1,0.5377218,faiss,0.04436087608337402
+How do I get reimbursed?,Refund Policy,Refund Policy,1,0.6039454,faiss,0.05542898178100586
+Urgent: How long for delivry? please.,Shipping Policy,Shipping Policy,1,0.5524014,faiss,0.04677629470825195
+Urgent: How do I cancle my order? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.64866394,faiss,0.054053544998168945
+"Please tell me, My device became unusable. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.56712836,faiss,0.05404329299926758
+The screen shattered during shipping. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.57841307,faiss,0.0688471794128418
+Urgent: My device became unusable. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.57855767,faiss,0.055170536041259766
+How do I withdraw my order? please.,Cancellation Policy,Cancellation Policy,1,0.6521757,faiss,0.04763960838317871
+Urgent: I need to send the package back. for my recent order.,Return Policy,Shipping Policy,0,0.62359035,faiss,0.053322792053222656
+I need help: Is there any way to reverse this payment? for my recent order.,Refund Policy,Refund Policy,1,0.6255605,faiss,0.05847930908203125
+"Could you explain, The item is damged.",Damaged Product Policy,Damaged Product Policy,1,0.5676157,faiss,0.04845476150512695
+"Please tell me, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,0.63771963,faiss,0.056926727294921875
+The item is defective. please.,Damaged Product Policy,Damaged Product Policy,1,0.6277099,faiss,0.043407440185546875
+Can I stop this order from being processed? please.,Cancellation Policy,Cancellation Policy,1,0.61988235,faiss,0.05281853675842285
+"Could you explain, My pakage has not arived. please.",Shipping Policy,Shipping Policy,1,0.60386133,faiss,0.05579328536987305
+Urgent: Can I receive compensation for this order? for my recent order.,Refund Policy,Refund Policy,1,0.65026206,faiss,0.05492353439331055
+Urgent: May I withdraw my purchase request? please.,Cancellation Policy,Cancellation Policy,1,0.66928345,faiss,0.04826807975769043
+Urgent: Can I rescind the order?,Cancellation Policy,Cancellation Policy,1,0.67092323,faiss,0.04963421821594238
+Urgent: My pakage has not arived.,Shipping Policy,Shipping Policy,1,0.60682786,faiss,0.052813053131103516
+Urgent: I no longer want this product and want to return it. as soon as possible.,Return Policy,Cancellation Policy,0,0.6350359,faiss,0.06183314323425293
+I need help: My screan is crackd. please.,Damaged Product Policy,Damaged Product Policy,1,0.5333629,faiss,0.05711483955383301
+Urgent: The product is not functioning properly. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.6162922,faiss,0.047498464584350586
+"Please tell me, The charger stopped functioning. as soon as possible.",Damaged Product Policy,Damaged Product Policy,1,0.5542024,faiss,0.05824899673461914
+Urgent: The item is defective. because I am confused.,Damaged Product Policy,Damaged Product Policy,1,0.61394584,faiss,0.05700969696044922
+Urgent: I need my payment returned.,Refund Policy,Return Policy,0,0.6427713,faiss,0.054451704025268555
+I need help: Can I stop this order from being processed? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.6229217,faiss,0.05608844757080078
+"Could you explain, Can I retrn this item? please.",Return Policy,Return Policy,1,0.6358654,faiss,0.0534360408782959
+Urgent: I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.60347056,faiss,0.054596900939941406
+"Please tell me, Why is my package delayed? please.",Shipping Policy,Shipping Policy,1,0.6429133,faiss,0.05894279479980469
+Urgent: Can I return the order after delivery? as soon as possible.,Return Policy,Return Policy,1,0.66599274,faiss,0.05450630187988281
+"Could you explain, Can I cancle before shiping? for my recent order.",Cancellation Policy,Cancellation Policy,1,0.69067323,faiss,0.05469346046447754
+The charger stopped functioning. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.5632072,faiss,0.049630165100097656
+"Please tell me, How do I get reimbursed? please.",Refund Policy,Refund Policy,1,0.602713,faiss,0.05822277069091797
+I need help: How much time will delivery take? because I am confused.,Shipping Policy,Shipping Policy,1,0.676863,faiss,0.13865280151367188
+I need help: How much time will delivery take?,Shipping Policy,Shipping Policy,1,0.6871623,faiss,0.10837078094482422
+"Please tell me, Can I give this item back? please.",Return Policy,Return Policy,1,0.6150909,faiss,0.05626082420349121
+Is there any way to reverse this payment? because I am confused.,Refund Policy,Refund Policy,1,0.581192,faiss,0.049391746520996094
+I need help: I placed the wrong order and want to cancel it. because I am confused.,Cancellation Policy,Cancellation Policy,1,0.6299095,faiss,0.058402061462402344
+"Please tell me, The charger stopped functioning.",Damaged Product Policy,Damaged Product Policy,1,0.5401133,faiss,0.04741215705871582
+My package has not reached me. because I am confused.,Shipping Policy,Shipping Policy,1,0.6311405,faiss,0.05279207229614258
+"Please tell me, My pakage has not arived.",Shipping Policy,Shipping Policy,1,0.5992667,faiss,0.05811595916748047
+"Please tell me, I want reimbursement for my purchase. please.",Refund Policy,Refund Policy,1,0.6131071,faiss,0.05910205841064453
+Urgent: Can I track my shipment? please.,Shipping Policy,Shipping Policy,1,0.6782284,faiss,0.04923510551452637
+Can I give this item back? because I am confused.,Return Policy,Return Policy,1,0.6473429,faiss,0.051998138427734375
+I need help: Can I retrn this item? for my recent order.,Return Policy,Return Policy,1,0.6349778,faiss,0.06297016143798828
+I need help: Can I cancle before shiping? please.,Cancellation Policy,Cancellation Policy,1,0.65287155,faiss,0.05785632133483887
+"Could you explain, The item is damged. please.",Damaged Product Policy,Damaged Product Policy,1,0.56396264,faiss,0.053316593170166016
+"Could you explain, How do I get reimbursed? as soon as possible.",Refund Policy,Refund Policy,1,0.6330478,faiss,0.05916595458984375
+Can I stop this order from being processed? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.61673105,faiss,0.04974937438964844
+"Please tell me, Can I return this purchase?",Return Policy,Return Policy,1,0.624088,faiss,0.05127549171447754
+I need help: I wish to send this item back. please.,Return Policy,Return Policy,1,0.59229225,faiss,0.05469393730163574
+I need help: I want reimbursement for my purchase. because I am confused.,Refund Policy,Refund Policy,1,0.619676,faiss,0.05995678901672363
+I need help: I don't need this purchase anymore. as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.54494256,faiss,0.05964922904968262
+"Please tell me, How long for delivry?",Shipping Policy,Shipping Policy,1,0.5370943,faiss,0.04814338684082031
+"Please tell me, How do I send back the product? for my recent order.",Return Policy,Return Policy,1,0.65518034,faiss,0.05666399002075195
+"Could you explain, I need to send the package back. please.",Return Policy,Shipping Policy,0,0.6007546,faiss,0.05289149284362793
+I need help: When can I expect my order? for my recent order.,Shipping Policy,Shipping Policy,1,0.58966184,faiss,0.057428598403930664
+The laptop arrived broken. please.,Damaged Product Policy,Damaged Product Policy,1,0.593036,faiss,0.04583454132080078
+"Could you explain, Do you deliver internationally? please.",Shipping Policy,Shipping Policy,1,0.68676555,faiss,0.05118274688720703
+"Could you explain, I placed the wrong order and want to cancel it. because I am confused.",Cancellation Policy,Cancellation Policy,1,0.6350512,faiss,0.05887198448181152
+Can I cancel after payment? please.,Cancellation Policy,Cancellation Policy,1,0.6397239,faiss,0.04436802864074707
+Can I receive compensation for this order? for my recent order.,Refund Policy,Refund Policy,1,0.6408144,faiss,0.05115699768066406
+My pakage has not arived. please.,Shipping Policy,Shipping Policy,1,0.60243535,faiss,0.05111503601074219
+Urgent: My package has not reached me. because I am confused.,Shipping Policy,Shipping Policy,1,0.63219875,faiss,0.05805373191833496
+"Please tell me, The laptop arrived broken. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.5698196,faiss,0.054264068603515625
+"Please tell me, The product has a manufacturing fault. because I am confused.",Damaged Product Policy,Damaged Product Policy,1,0.59037054,faiss,0.05223560333251953
+Urgent: Can I receive compensation for this order?,Refund Policy,Refund Policy,1,0.6396634,faiss,0.05753445625305176
+"Please tell me, Can I receive compensation for this order?",Refund Policy,Refund Policy,1,0.62195665,faiss,0.050962209701538086
+Urgent: Can I return this purchase? please.,Return Policy,Return Policy,1,0.63907236,faiss,0.05074810981750488
+"Could you explain, Can I retrn this item? because I am confused.",Return Policy,Return Policy,1,0.6346119,faiss,0.058449745178222656
+Urgent: Why is my package delayed? please.,Shipping Policy,Shipping Policy,1,0.6472053,faiss,0.05192852020263672
+"Could you explain, I want reimbursement for my purchase.",Refund Policy,Refund Policy,1,0.62558377,faiss,0.0579531192779541
+I need help: What is the return process? for my recent order.,Return Policy,Return Policy,1,0.6441435,faiss,0.05527639389038086
+Urgent: The product is not functioning properly. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.6530254,faiss,0.05310940742492676
+"Please tell me, Can I get my money back? because I am confused.",Refund Policy,Refund Policy,1,0.61645097,faiss,0.05856800079345703
+Can I stop this order from being processed? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.63367945,faiss,0.0592496395111084
+I need help: The item is defective. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.6512224,faiss,0.05338001251220703
+I need help: Where is my parcel? because I am confused.,Shipping Policy,Shipping Policy,1,0.629681,faiss,0.056085824966430664
+"Could you explain, The item is damged.",Damaged Product Policy,Damaged Product Policy,1,0.5676157,faiss,0.10108590126037598
+"Could you explain, Can I cancle before shiping?",Cancellation Policy,Cancellation Policy,1,0.6639788,faiss,0.14994049072265625
+Can I retrn this item? for my recent order.,Return Policy,Return Policy,1,0.63898355,faiss,0.0500025749206543
+I need help: I wish to send this item back. please.,Return Policy,Return Policy,1,0.59229225,faiss,0.04975247383117676
+"Could you explain, Can I receive compensation for this order? for my recent order.",Refund Policy,Refund Policy,1,0.6395512,faiss,0.05632901191711426
+What is the return process? as soon as possible.,Return Policy,Return Policy,1,0.657585,faiss,0.05611014366149902
+Urgent: Can I get a refnd?,Refund Policy,Refund Policy,1,0.6145916,faiss,0.05234026908874512
+I need help: My screan is crackd. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.57124555,faiss,0.052863121032714844
+"Could you explain, Why is my package delayed? for my recent order.",Shipping Policy,Shipping Policy,1,0.6507142,faiss,0.05580615997314453
+"Could you explain, Can I track my shipment? please.",Shipping Policy,Shipping Policy,1,0.68099225,faiss,0.05553078651428223
+Urgent: I received an item with parts missing. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.6375543,faiss,0.05399465560913086
+"Please tell me, Can I stop this order from being processed? please.",Cancellation Policy,Cancellation Policy,1,0.61101156,faiss,0.04973411560058594
+Can I rescind the order? please.,Cancellation Policy,Cancellation Policy,1,0.66264737,faiss,0.04646134376525879
+"Please tell me, Can I cancle before shiping? as soon as possible.",Cancellation Policy,Cancellation Policy,1,0.6671797,faiss,0.05755758285522461
+I need help: What is the return process? as soon as possible.,Return Policy,Return Policy,1,0.6527674,faiss,0.05452871322631836
+Why is my package delayed? for my recent order.,Shipping Policy,Shipping Policy,1,0.6520277,faiss,0.05511665344238281
+Urgent: Can I stop this order from being processed? because I am confused.,Cancellation Policy,Cancellation Policy,1,0.62663746,faiss,0.0524754524230957
+I need help: Can I return this purchase? for my recent order.,Return Policy,Return Policy,1,0.6507088,faiss,0.057158708572387695
+Urgent: Can I retrn this item? for my recent order.,Return Policy,Return Policy,1,0.6369329,faiss,0.05821990966796875
+How much time will delivery take?,Shipping Policy,Shipping Policy,1,0.6941696,faiss,0.048854827880859375
+Urgent: Can I return this purchase? as soon as possible.,Return Policy,Return Policy,1,0.6485915,faiss,0.04973459243774414
+"Could you explain, Can I stop this order from being processed? as soon as possible.",Cancellation Policy,Cancellation Policy,1,0.6320624,faiss,0.055672407150268555
+"Please tell me, Can I return this purchase? because I am confused.",Return Policy,Return Policy,1,0.62729114,faiss,0.05455636978149414
+"Could you explain, Can I exchange this product? because I am confused.",Return Policy,Return Policy,1,0.6433848,faiss,0.053313493728637695
+"Could you explain, I don't need this purchase anymore. as soon as possible.",Cancellation Policy,Cancellation Policy,1,0.5465894,faiss,0.06345486640930176
+I don't need this purchase anymore. please.,Cancellation Policy,Cancellation Policy,1,0.5231588,faiss,0.04554462432861328
+Urgent: Can I recover my payment? as soon as possible.,Refund Policy,Refund Policy,1,0.5937149,faiss,0.049129486083984375
+How do I get reimbursed? as soon as possible.,Refund Policy,Refund Policy,1,0.6269996,faiss,0.0569157600402832
+"Please tell me, I placed the wrong order and want to cancel it. for my recent order.",Cancellation Policy,Cancellation Policy,1,0.63422036,faiss,0.06351256370544434
+I need help: May I withdraw my purchase request? please.,Cancellation Policy,Cancellation Policy,1,0.6526068,faiss,0.058803558349609375
+Can I rescind the order? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.68312305,faiss,0.0493464469909668
+"Please tell me, I need my payment returned. as soon as possible.",Refund Policy,Return Policy,0,0.6346236,faiss,0.052939414978027344
+I need help: May I withdraw my purchase request? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.6762221,faiss,0.05793905258178711
+Urgent: Can I receive compensation for this order? please.,Refund Policy,Refund Policy,1,0.63617676,faiss,0.05334615707397461
+My screan is crackd. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.55790854,faiss,0.04982113838195801
+"Please tell me, The item is defective.",Damaged Product Policy,Damaged Product Policy,1,0.6078675,faiss,0.04392075538635254
+Can I get my mony back? because I am confused.,Refund Policy,Refund Policy,1,0.5970498,faiss,0.05138683319091797
+Urgent: Can I get my money back?,Refund Policy,Refund Policy,1,0.6219667,faiss,0.05795454978942871
+Urgent: The product has a manufacturing fault.,Damaged Product Policy,Damaged Product Policy,1,0.6269344,faiss,0.04865670204162598
+Urgent: Can I get my mony back? please.,Refund Policy,Refund Policy,1,0.592156,faiss,0.0526735782623291
+"Please tell me, Why is my package delayed? as soon as possible.",Shipping Policy,Shipping Policy,1,0.6562875,faiss,0.0555720329284668
+"Could you explain, Can I cancel after payment? as soon as possible.",Cancellation Policy,Cancellation Policy,1,0.63621396,faiss,0.05355644226074219
+"Could you explain, Where is my parcel? because I am confused.",Shipping Policy,Shipping Policy,1,0.6360591,faiss,0.05477118492126465
+"Please tell me, Can I cancle before shiping? for my recent order.",Cancellation Policy,Cancellation Policy,1,0.6821118,faiss,0.05285239219665527
+I received an item with parts missing. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.6382044,faiss,0.051445960998535156
+The product is not functioning properly. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.660206,faiss,0.05202078819274902
+I need help: How do I withdraw my order? as soon as possible.,Cancellation Policy,Cancellation Policy,1,0.6588657,faiss,0.052680253982543945
+I need help: Where is my parcel? as soon as possible.,Shipping Policy,Shipping Policy,1,0.64770466,faiss,0.05349993705749512
+"Could you explain, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,0.6515817,faiss,0.05656147003173828
+How long for delivry?,Shipping Policy,Shipping Policy,1,0.5377218,faiss,0.04752182960510254
+Urgent: I need to send the package back.,Return Policy,Shipping Policy,0,0.60816664,faiss,0.05013680458068848
+"Please tell me, Can I receive compensation for this order? for my recent order.",Refund Policy,Refund Policy,1,0.6330461,faiss,0.05572986602783203
+"Please tell me, May I withdraw my purchase request? please.",Cancellation Policy,Cancellation Policy,1,0.6527837,faiss,0.0511322021484375
+"Please tell me, Can I retrn this item? as soon as possible.",Return Policy,Return Policy,1,0.6260004,faiss,0.07290172576904297
+"Please tell me, Can I get my mony back? for my recent order.",Refund Policy,Refund Policy,1,0.6170849,faiss,0.18047285079956055
+"Please tell me, Can I get my mony back?",Refund Policy,Refund Policy,1,0.58176255,faiss,0.050510406494140625
+I placed the wrong order and want to cancel it. because I am confused.,Cancellation Policy,Cancellation Policy,1,0.636352,faiss,0.055687665939331055
+"Please tell me, The charger stopped functioning.",Damaged Product Policy,Damaged Product Policy,1,0.5401133,faiss,0.05226325988769531
+I need help: The laptop arrived broken. for my recent order.,Damaged Product Policy,Damaged Product Policy,1,0.6092054,faiss,0.053963422775268555
+Urgent: The laptop arrived broken. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.608783,faiss,0.04930615425109863
+Urgent: Can I revoke my order? for my recent order.,Cancellation Policy,Cancellation Policy,1,0.6843407,faiss,0.05321478843688965
+I need help: The product is not functioning properly. as soon as possible.,Damaged Product Policy,Damaged Product Policy,1,0.65231824,faiss,0.058310508728027344
+Urgent: My package has not reached me. because I am confused.,Shipping Policy,Shipping Policy,1,0.63219875,faiss,0.05933523178100586

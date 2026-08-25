@@ -1,0 +1,6 @@
+customer_id,name,order_id,order_status,order_item,amount,complaints,member_since,tier
+C4521,Rahul Sharma,45231,Shipped,Laptop,8200,0,2023,regular
+C1190,Priya Mehta,45100,Delivered,Laptop,120000,5,2019,VIP
+C3310,Amit Kumar,33891,Processing,Phone,15000,1,2022,regular
+C7720,Sneha Patel,77201,Cancelled,Headphones,3500,0,2024,regular
+C5512,Rohan Verma,55120,Shipped,Tablet,25000,2,2021,VIP

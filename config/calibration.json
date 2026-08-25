@@ -1,0 +1,6 @@
+{
+  "low_confidence_threshold": 0.60,
+  "calibration_method": "default_uncalibrated",
+  "n_samples": 0,
+  "target_p_correct": 0.75
+}
