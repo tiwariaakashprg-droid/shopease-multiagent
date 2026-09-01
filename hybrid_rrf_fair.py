@@ -1,25 +1,37 @@
 """
-Fair RRF-only ablation.
+Weighted RRF-only evaluation.
 
-Uses the EXACT same preprocessing as evaluate.py:
-    guardrail_agent -> intent_agent -> query construction
+Pipeline:
+    Guardrail Agent
+          ↓
+    Intent Agent
+          ↓
+    FAISS Top-5 + BM25 Top-5
+          ↓
+    Weighted RRF
+          ↓
+    Top-5 documents
+          ↓
+    Retrieval-driven classification
 
-Then performs:
-    FAISS top-5 + BM25 top-5
-              ↓
-          RRF fusion
-              ↓
-          top-5 documents
-              ↓
-        majority vote
+Weights:
+    FAISS = 0.8
+    BM25  = 0.2
 
-NO cross-encoder reranker.
+NO Cross-Encoder.
+
+Dataset:
+    data/test_dataset.csv
 
 Output:
-    research_results/hybrid_rrf_fair_results.csv
+    research_results/new_evaluation/evaluation_results_rrf.csv
+
+The CSV includes per-query latency so that mean/median/min/max
+latency can be calculated reliably after evaluation.
 """
 
 import os
+import time
 import pandas as pd
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
@@ -34,12 +46,33 @@ from graph.nodes.intent_agent import intent_agent
 from graph.nodes.retrieval_utils import (
     load_policy_chunks,
     classify_from_documents,
-    reciprocal_rank_fusion,
 )
 
 
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
 VECTOR_STORE_PATH = "data/faiss_index"
 
+DATASET_PATH = "data/test_dataset.csv"
+
+OUTPUT_PATH = (
+    "research_results/new_evaluation/"
+    "evaluation_results_rrf.csv"
+)
+
+FAISS_WEIGHT = 0.8
+BM25_WEIGHT = 0.2
+
+RRF_K = 60
+
+TOP_K = 5
+
+
+# ============================================================
+# LOAD INDEXES
+# ============================================================
 
 def load_indexes():
 
@@ -47,7 +80,12 @@ def load_indexes():
 
     documents = load_policy_chunks()
 
-    # ---------------- BM25 ----------------
+    print(f"Loaded {len(documents)} policy chunks.")
+
+    # --------------------------------------------------------
+    # BM25
+    # --------------------------------------------------------
+
     tokenized_docs = [
         doc.page_content.lower().split()
         for doc in documents
@@ -55,7 +93,10 @@ def load_indexes():
 
     bm25 = BM25Okapi(tokenized_docs)
 
-    # ---------------- FAISS ----------------
+    # --------------------------------------------------------
+    # FAISS
+    # --------------------------------------------------------
+
     embeddings = OllamaEmbeddings(
         model="nomic-embed-text"
     )
@@ -83,119 +124,262 @@ def load_indexes():
             VECTOR_STORE_PATH
         )
 
-    print(f"Loaded {len(documents)} policy chunks.")
+        print("[FAISS] Vector store saved.")
 
     return vectorstore, bm25, documents
 
 
-def run_fair_rrf(vectorstore, bm25, documents):
+# ============================================================
+# WEIGHTED RRF
+# ============================================================
 
-    dataset_path = "data/test_queries_clean.csv"
+def weighted_rrf(
+    faiss_docs,
+    bm25_docs,
+    k=60,
+    faiss_weight=0.8,
+    bm25_weight=0.2
+):
+    """
+    Weighted Reciprocal Rank Fusion.
 
-    df = pd.read_csv(dataset_path)
+    Documents are LangChain Document objects, which are not
+    directly hashable. Therefore page_content is used as the
+    stable fusion key.
+    """
+
+    scores = {}
+
+    docs_by_key = {}
+
+    # --------------------------------------------------------
+    # FAISS ranking
+    # --------------------------------------------------------
+
+    for rank, doc in enumerate(
+        faiss_docs,
+        start=1
+    ):
+
+        key = doc.page_content
+
+        docs_by_key[key] = doc
+
+        score = (
+            faiss_weight /
+            (k + rank)
+        )
+
+        scores[key] = (
+            scores.get(key, 0.0)
+            + score
+        )
+
+    # --------------------------------------------------------
+    # BM25 ranking
+    # --------------------------------------------------------
+
+    for rank, doc in enumerate(
+        bm25_docs,
+        start=1
+    ):
+
+        key = doc.page_content
+
+        docs_by_key[key] = doc
+
+        score = (
+            bm25_weight /
+            (k + rank)
+        )
+
+        scores[key] = (
+            scores.get(key, 0.0)
+            + score
+        )
+
+    # --------------------------------------------------------
+    # Sort by fused score
+    # --------------------------------------------------------
+
+    ranked_keys = sorted(
+        scores,
+        key=scores.get,
+        reverse=True
+    )
+
+    return [
+        docs_by_key[key]
+        for key in ranked_keys
+    ]
+
+
+# ============================================================
+# EVALUATION
+# ============================================================
+
+def run_weighted_rrf(
+    vectorstore,
+    bm25,
+    documents
+):
+
+    df = pd.read_csv(
+        DATASET_PATH
+    )
 
     total = len(df)
+
     correct = 0
 
     results = []
 
     print("\n" + "=" * 60)
-    print("FAIR RRF-ONLY EVALUATION")
+    print("WEIGHTED RRF EVALUATION")
     print("=" * 60)
+
+    print(
+        f"FAISS Weight : {FAISS_WEIGHT}"
+    )
+
+    print(
+        f"BM25 Weight  : {BM25_WEIGHT}"
+    )
+
+    print(
+        f"Total Queries: {total}"
+    )
+
+    # ========================================================
+    # QUERY LOOP
+    # ========================================================
 
     for index, row in df.iterrows():
 
+        # ----------------------------------------------------
+        # Start latency timer
+        # ----------------------------------------------------
+
+        start_time = time.perf_counter()
+
         query = row["query"]
+
         expected = row["expected_policy"]
 
-        # ==================================================
-        # EXACT SAME PREPROCESSING AS evaluate.py
-        # ==================================================
+        # ----------------------------------------------------
+        # SAME PREPROCESSING AS evaluate.py
+        # ----------------------------------------------------
 
         state = {
+
             "user_message": query,
+
             "customer_id": "C4521",
+
             "chat_history": [],
+
             "agent_timings": {},
         }
 
-        state = guardrail_agent(state)
-
-        state = intent_agent(state)
-
-        intent = state.get("intent", "general")
-
-        message = (
-            state.get("sanitized_message")
-            or state.get("user_message", "")
+        state = guardrail_agent(
+            state
         )
 
-        # EXACT query construction used by rag_agent.py,
-        # rag_faiss.py and rag_bm25.py
-        retrieval_query = f"{intent} {message}"
+        state = intent_agent(
+            state
+        )
 
-        # ==================================================
+        intent = state.get(
+            "intent",
+            "general"
+        )
+
+        message = (
+            state.get(
+                "sanitized_message"
+            )
+            or state.get(
+                "user_message",
+                ""
+            )
+        )
+
+        # EXACT retrieval query construction
+        retrieval_query = (
+            f"{intent} {message}"
+        )
+
+        # ----------------------------------------------------
         # FAISS TOP-5
-        # ==================================================
+        # ----------------------------------------------------
 
-        faiss_results = vectorstore.similarity_search_with_score(
-            retrieval_query,
-            k=5
+        faiss_results = (
+            vectorstore
+            .similarity_search_with_score(
+                retrieval_query,
+                k=TOP_K
+            )
         )
 
         faiss_ranked = [
-            doc for doc, _ in faiss_results
+            doc
+            for doc, _ in faiss_results
         ]
 
-        # ==================================================
+        # ----------------------------------------------------
         # BM25 TOP-5
-        # ==================================================
+        # ----------------------------------------------------
 
-        tokenized_query = retrieval_query.lower().split()
+        tokenized_query = (
+            retrieval_query
+            .lower()
+            .split()
+        )
 
-        scores = bm25.get_scores(
+        bm25_scores = bm25.get_scores(
             tokenized_query
         )
 
         top_indices = sorted(
-            range(len(scores)),
-            key=lambda i: scores[i],
+            range(
+                len(bm25_scores)
+            ),
+            key=lambda i:
+                bm25_scores[i],
             reverse=True
-        )[:5]
+        )[:TOP_K]
 
         bm25_ranked = [
             documents[i]
             for i in top_indices
         ]
 
-        # ==================================================
-        # RRF FUSION
-        # ==================================================
+        # ----------------------------------------------------
+        # WEIGHTED RRF
+        # ----------------------------------------------------
 
-        fused = reciprocal_rank_fusion(
-            [
-                faiss_ranked,
-                bm25_ranked
-            ]
+        fused = weighted_rrf(
+            faiss_ranked,
+            bm25_ranked,
+            k=RRF_K,
+            faiss_weight=FAISS_WEIGHT,
+            bm25_weight=BM25_WEIGHT
         )
 
-        # IMPORTANT:
-        # NO CROSS-ENCODER HERE.
-        #
-        # This is:
-        # FAISS + BM25 -> RRF -> top-5
-        #
-        # NOT:
-        # FAISS + BM25 -> RRF -> Cross-Encoder
+        # ----------------------------------------------------
+        # TOP-5 FUSED DOCUMENTS
+        # ----------------------------------------------------
 
-        top_docs = fused[:5]
+        top_docs = fused[:TOP_K]
 
-        # ==================================================
-        # RETRIEVAL-DRIVEN CLASSIFICATION
-        # ==================================================
+        # ----------------------------------------------------
+        # CLASSIFICATION
+        # ----------------------------------------------------
 
-        predicted, cited_sources = classify_from_documents(
-            top_docs
+        predicted, cited_sources = (
+            classify_from_documents(
+                top_docs
+            )
         )
 
         is_correct = int(
@@ -204,71 +388,175 @@ def run_fair_rrf(vectorstore, bm25, documents):
 
         correct += is_correct
 
+        # ----------------------------------------------------
+        # END LATENCY TIMER
+        # ----------------------------------------------------
+
+        latency = (
+            time.perf_counter()
+            - start_time
+        )
+
+        # ----------------------------------------------------
+        # SAVE RESULT
+        # ----------------------------------------------------
+
         results.append({
+
             "query": query,
+
             "expected": expected,
+
             "predicted": predicted,
+
             "correct": is_correct,
-            "retrieval_method": "rrf_only",
-            "intent": intent,
-            "sources": "|".join(cited_sources),
+
+            "confidence": None,
+
+            "retrieval_method":
+                "weighted_rrf",
+
+            "latency":
+                latency,
+
+            "intent":
+                intent,
+
+            "sources":
+                "|".join(
+                    cited_sources
+                ),
         })
 
-        # Progress every 50 queries
+        # ----------------------------------------------------
+        # PROGRESS
+        # ----------------------------------------------------
+
         if (index + 1) % 50 == 0:
 
             current_accuracy = (
-                correct / (index + 1)
+                correct /
+                (index + 1)
             )
 
             print(
-                f"Processed {index + 1}/{total} "
-                f"| Accuracy: {current_accuracy:.2%}"
+                f"Processed "
+                f"{index + 1}/{total} "
+                f"| Accuracy: "
+                f"{current_accuracy:.2%}"
             )
 
-    # ======================================================
-    # SAVE RESULTS
-    # ======================================================
+    # ========================================================
+    # SAVE CSV
+    # ========================================================
 
-    results_df = pd.DataFrame(results)
+    results_df = pd.DataFrame(
+        results
+    )
 
-    output_path = (
-        "research_results/"
-        "hybrid_rrf_fair_results.csv"
+    os.makedirs(
+        "research_results/new_evaluation",
+        exist_ok=True
     )
 
     results_df.to_csv(
-        output_path,
+        OUTPUT_PATH,
         index=False
     )
 
-    accuracy = correct / total
+    # ========================================================
+    # FINAL METRICS
+    # ========================================================
+
+    accuracy = (
+        correct / total
+    )
+
+    latency_values = (
+        results_df["latency"]
+    )
+
+    mean_latency = (
+        latency_values.mean()
+    )
+
+    median_latency = (
+        latency_values.median()
+    )
+
+    min_latency = (
+        latency_values.min()
+    )
+
+    max_latency = (
+        latency_values.max()
+    )
+
+    std_latency = (
+        latency_values.std()
+    )
+
+    # ========================================================
+    # PRINT RESULTS
+    # ========================================================
 
     print("\n" + "=" * 60)
-    print("FAIR RRF-ONLY RESULTS")
+    print("WEIGHTED RRF RESULTS")
     print("=" * 60)
 
-    print(f"Total Queries : {total}")
-    print(f"Correct       : {correct}")
-    print(f"Accuracy      : {accuracy:.2%}")
+    print(
+        f"Total Queries : {total}"
+    )
 
-    print(f"\nSaved -> {output_path}")
+    print(
+        f"Correct       : {correct}"
+    )
 
-    print("\n" + "=" * 60)
-    print("CURRENT COMPARISON")
-    print("=" * 60)
+    print(
+        f"Accuracy      : {accuracy:.2%}"
+    )
 
-    print("BM25-only              : 50.34%")
-    print("FAISS-only             : 92.71%")
-    print(f"RRF-only (fair)         : {accuracy:.2%}")
-    print("RRF + Cross-Encoder     : 90.68%")
+    print(
+        f"Mean Latency  : "
+        f"{mean_latency:.6f} sec"
+    )
 
+    print(
+        f"Median Latency: "
+        f"{median_latency:.6f} sec"
+    )
+
+    print(
+        f"Min Latency   : "
+        f"{min_latency:.6f} sec"
+    )
+
+    print(
+        f"Max Latency   : "
+        f"{max_latency:.6f} sec"
+    )
+
+    print(
+        f"Std Latency   : "
+        f"{std_latency:.6f} sec"
+    )
+
+    print(
+        f"\nSaved -> {OUTPUT_PATH}"
+    )
+
+
+# ============================================================
+# MAIN
+# ============================================================
 
 if __name__ == "__main__":
 
-    vectorstore, bm25, documents = load_indexes()
+    vectorstore, bm25, documents = (
+        load_indexes()
+    )
 
-    run_fair_rrf(
+    run_weighted_rrf(
         vectorstore,
         bm25,
         documents

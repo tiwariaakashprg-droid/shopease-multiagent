@@ -1,0 +1,310 @@
+Statistical Significance Tests V2
+================================================================================
+
+Test: McNemar's test
+Significance level: alpha = 0.05
+Continuity correction: applied
+Multiple-comparison correction: Holm correction
+Evaluation set: 2,632 held-out queries
+
+================================================================================
+
+BM25 vs FAISS
+--------------------------------------------------------------------------------
+Queries: 2632
+BM25 accuracy: 55.7371%
+FAISS accuracy: 85.3723%
+Accuracy difference (B - A): 29.6353 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           1387        80
+A Wrong              860       305
+
+Chi-square: 645.575532
+Raw p-value: 0.0000000000
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000000000
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+BM25 vs Fair RRF
+--------------------------------------------------------------------------------
+Queries: 2632
+BM25 accuracy: 55.7371%
+Fair RRF accuracy: 82.2948%
+Accuracy difference (B - A): 26.5578 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           1337       130
+A Wrong              829       336
+
+Chi-square: 508.033368
+Raw p-value: 0.0000000000
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000000000
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+BM25 vs Weighted RRF
+--------------------------------------------------------------------------------
+Queries: 2632
+BM25 accuracy: 55.7371%
+Weighted RRF accuracy: 85.0684%
+Accuracy difference (B - A): 29.3313 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           1358       109
+A Wrong              881       284
+
+Chi-square: 600.445455
+Raw p-value: 0.0000000000
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000000000
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+BM25 vs Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+BM25 accuracy: 55.7371%
+Hybrid + Cross-Encoder accuracy: 83.2447%
+Accuracy difference (B - A): 27.5076 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           1375        92
+A Wrong              816       349
+
+Chi-square: 575.692731
+Raw p-value: 0.0000000000
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000000000
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+BM25 vs Top-10 Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+BM25 accuracy: 55.7371%
+Top-10 Hybrid + Cross-Encoder accuracy: 81.8769%
+Accuracy difference (B - A): 26.1398 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           1353       114
+A Wrong              802       363
+
+Chi-square: 515.250000
+Raw p-value: 0.0000000000
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000000000
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+FAISS vs Fair RRF
+--------------------------------------------------------------------------------
+Queries: 2632
+FAISS accuracy: 85.3723%
+Fair RRF accuracy: 82.2948%
+Accuracy difference (B - A): -3.0775 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2043       204
+A Wrong              123       262
+
+Chi-square: 19.571865
+Raw p-value: 0.0000096885
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000678198
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+FAISS vs Weighted RRF
+--------------------------------------------------------------------------------
+Queries: 2632
+FAISS accuracy: 85.3723%
+Weighted RRF accuracy: 85.0684%
+Accuracy difference (B - A): -0.3040 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2204        43
+A Wrong               35       350
+
+Chi-square: 0.628205
+Raw p-value: 0.4280144499
+Raw significant at alpha=0.05: NO
+Holm-adjusted p-value: 0.8560288999
+Significant after Holm correction: NO
+
+--------------------------------------------------------------------------------
+
+FAISS vs Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+FAISS accuracy: 85.3723%
+Hybrid + Cross-Encoder accuracy: 83.2447%
+Accuracy difference (B - A): -2.1277 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2138       109
+A Wrong               53       332
+
+Chi-square: 18.672840
+Raw p-value: 0.0000155177
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000931063
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+FAISS vs Top-10 Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+FAISS accuracy: 85.3723%
+Top-10 Hybrid + Cross-Encoder accuracy: 81.8769%
+Accuracy difference (B - A): -3.4954 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2109       138
+A Wrong               46       339
+
+Chi-square: 45.005435
+Raw p-value: 0.0000000000
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000000002
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+Fair RRF vs Weighted RRF
+--------------------------------------------------------------------------------
+Queries: 2632
+Fair RRF accuracy: 82.2948%
+Weighted RRF accuracy: 85.0684%
+Accuracy difference (B - A): 2.7736 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2074        92
+A Wrong              165       301
+
+Chi-square: 20.171206
+Raw p-value: 0.0000070811
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000566487
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+Fair RRF vs Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+Fair RRF accuracy: 82.2948%
+Hybrid + Cross-Encoder accuracy: 83.2447%
+Accuracy difference (B - A): 0.9498 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2029       137
+A Wrong              162       304
+
+Chi-square: 1.926421
+Raw p-value: 0.1651504935
+Raw significant at alpha=0.05: NO
+Holm-adjusted p-value: 0.4954514806
+Significant after Holm correction: NO
+
+--------------------------------------------------------------------------------
+
+Fair RRF vs Top-10 Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+Fair RRF accuracy: 82.2948%
+Top-10 Hybrid + Cross-Encoder accuracy: 81.8769%
+Accuracy difference (B - A): -0.4179 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           1993       173
+A Wrong              162       304
+
+Chi-square: 0.298507
+Raw p-value: 0.5848196240
+Raw significant at alpha=0.05: NO
+Holm-adjusted p-value: 0.8560288999
+Significant after Holm correction: NO
+
+--------------------------------------------------------------------------------
+
+Weighted RRF vs Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+Weighted RRF accuracy: 85.0684%
+Hybrid + Cross-Encoder accuracy: 83.2447%
+Accuracy difference (B - A): -1.8237 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2140        99
+A Wrong               51       342
+
+Chi-square: 14.726667
+Raw p-value: 0.0001242761
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0006213803
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+Weighted RRF vs Top-10 Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+Weighted RRF accuracy: 85.0684%
+Top-10 Hybrid + Cross-Encoder accuracy: 81.8769%
+Accuracy difference (B - A): -3.1915 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2096       143
+A Wrong               59       334
+
+Chi-square: 34.103960
+Raw p-value: 0.0000000052
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0000000470
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------
+
+Hybrid + Cross-Encoder vs Top-10 Hybrid + Cross-Encoder
+--------------------------------------------------------------------------------
+Queries: 2632
+Hybrid + Cross-Encoder accuracy: 83.2447%
+Top-10 Hybrid + Cross-Encoder accuracy: 81.8769%
+Accuracy difference (B - A): -1.3678 percentage points
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct           2101        90
+A Wrong               54       387
+
+Chi-square: 8.506944
+Raw p-value: 0.0035379365
+Raw significant at alpha=0.05: YES
+Holm-adjusted p-value: 0.0141517459
+Significant after Holm correction: YES
+
+--------------------------------------------------------------------------------

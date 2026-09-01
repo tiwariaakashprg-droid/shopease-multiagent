@@ -1,0 +1,1166 @@
+query,expected,predicted,correct,confidence,retrieval_method,latency
+What is the refund policy for damaged products?,Damaged Product Policy,Refund Policy,0,0.6807290309386161,bm25,0.0107691287994384
+My laptop arrived broken. What should I do?,Damaged Product Policy,Shipping Policy,0,0.3518641021442406,bm25,0.0007076263427734
+What happens if my product is damaged?,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0004475116729736
+My package arrived damaged. Can I return it?,Damaged Product Policy,Shipping Policy,0,0.5120095279239788,bm25,0.0005023479461669
+Can I get my money back?,Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.000472068786621
+How long does it take to receive a refund?,Refund Policy,Damaged Product Policy,0,0.6516193806686778,bm25,0.0005326271057128
+I want to return my order.,Return Policy,Cancellation Policy,0,0.719658511108513,bm25,0.0008811950683593
+How many days do I have to return an item?,Return Policy,Cancellation Policy,0,0.5486730545732518,bm25,0.0007038116455078
+Do you provide free shipping?,Shipping Policy,Cancellation Policy,0,0.3939571478940447,bm25,0.0007407665252685
+What is the company's quantum computing policy?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0008714199066162
+What is your Mars colony insurance policy?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0013699531555175
+Do you reimburse cryptocurrency mining expenses?,Unknown,Cancellation Policy,0,0.0,bm25,0.0006039142608642
+What is your space travel policy?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0008246898651123
+Explain your artificial consciousness policy.,Unknown,Cancellation Policy,0,0.3470785831681534,bm25,0.0012900829315185
+Where can I request a refund?,Refund Policy,Cancellation Policy,0,0.4601176542486102,bm25,0.0008549690246582
+I received the wrong item and need my money back.,Refund Policy,Return Policy,0,0.6961518743667263,bm25,0.0009117126464843
+Can I receive a refund for a defective product?,Refund Policy,Damaged Product Policy,0,0.7358008799871755,bm25,0.0010097026824951
+What is the process for getting a refund?,Refund Policy,Return Policy,0,0.4949257836225534,bm25,0.0015039443969726
+How many days will it take to receive my refund?,Refund Policy,Cancellation Policy,0,0.6516193806686778,bm25,0.0006666183471679
+Can I request a partial refund?,Refund Policy,Cancellation Policy,0,0.4601176542486102,bm25,0.000598669052124
+I accidentally ordered the wrong item. Can I get a refund?,Refund Policy,Shipping Policy,0,1.0,bm25,0.0016787052154541
+I have not received my refund yet.,Refund Policy,Shipping Policy,0,0.4282149194254858,bm25,0.0006489753723144
+What are the conditions for receiving a refund?,Refund Policy,Shipping Policy,0,0.4962967656161908,bm25,0.0005891323089599
+What documents are required for returning a product?,Return Policy,Shipping Policy,0,0.2565104239762743,bm25,0.0006844997406005
+Is there a return window for electronics?,Return Policy,Shipping Policy,0,0.514137023668467,bm25,0.0009262561798095
+Do you offer same-day delivery?,Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0004739761352539
+Can I change my shipping address after placing the order?,Shipping Policy,Cancellation Policy,0,0.5053179427974848,bm25,0.0014221668243408
+Do you ship internationally?,Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0004525184631347
+Will I receive a tracking ID?,Shipping Policy,Cancellation Policy,0,0.5840099971307453,bm25,0.0004549026489257
+Can I modify my order instead of cancelling it?,Cancellation Policy,Shipping Policy,0,0.5063554149232103,bm25,0.0008432865142822
+What if my package arrives in poor condition?,Damaged Product Policy,Shipping Policy,0,0.5519281880157662,bm25,0.0007750988006591
+I received an item with missing parts.,Damaged Product Policy,Return Policy,0,0.7427918822629069,bm25,0.0005106925964355
+I need my money returned because the item is unusable.,Refund Policy,Return Policy,0,0.6961518743667263,bm25,0.000633955001831
+The screen shattered during shipping.,Damaged Product Policy,Refund Policy,0,0.4660646815204364,bm25,0.0006232261657714
+I no longer want this purchase.,Cancellation Policy,Return Policy,0,1.0,bm25,0.0004017353057861
+The charger is not functioning properly.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.00040864944458
+The package has not reached me yet.,Shipping Policy,Cancellation Policy,0,0.8519209202007246,bm25,0.0006892681121826
+I received an item with parts missing.,Damaged Product Policy,Return Policy,0,0.7860238750073937,bm25,0.0005817413330078
+How do I get reimbursed?,Refund Policy,Cancellation Policy,0,0.0,bm25,0.0004863739013671
+Urgent: Can I recover my payment? because I am confused.,Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.000460147857666
+"Could you explain, My device became unusable.",Damaged Product Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0006473064422607
+"Please tell me, Can I give this item back? as soon as possible.",Return Policy,Damaged Product Policy,0,0.7532736819386455,bm25,0.0005655288696289
+I need help: Where is my parcel? as soon as possible.,Shipping Policy,Damaged Product Policy,0,0.862551965664716,bm25,0.0006129741668701
+Can I get a refnd?,Refund Policy,Shipping Policy,0,0.4516175723157616,bm25,0.0007708072662353
+I need help: Can I receive compensation for this order? as soon as possible.,Refund Policy,Damaged Product Policy,0,0.7341316910679097,bm25,0.0007715225219726
+Urgent: How do I withdraw my order? as soon as possible.,Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0006806850433349
+I need help: Can I return this purchase? as soon as possible.,Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005156993865966
+I need help: Can I return the order after delivery? please.,Return Policy,Cancellation Policy,0,0.700011764622093,bm25,0.0005395412445068
+Urgent: Can I retrn this item? for my recent order.,Return Policy,Shipping Policy,0,0.4220518744224608,bm25,0.0004024505615234
+Can I get my mony back? please.,Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0006434917449951
+Urgent: The item is defective. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0008654594421386
+Urgent: Can I revoke my order? as soon as possible.,Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004541873931884
+The screen shattered during shipping. for my recent order.,Damaged Product Policy,Refund Policy,0,0.4660646815204364,bm25,0.0010678768157958
+"Please tell me, Can I get my mony back?",Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0006046295166015
+"Could you explain, I want reimbursement for my purchase.",Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0010473728179931
+I need help: Can I get my mony back? for my recent order.,Refund Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0005698204040527
+Is there any way to reverse this payment? as soon as possible.,Refund Policy,Damaged Product Policy,0,0.862551965664716,bm25,0.0005309581756591
+I need help: Can I get my money back? please.,Refund Policy,Shipping Policy,0,0.4356179821551998,bm25,0.000856876373291
+"Please tell me, I don't need this purchase anymore. as soon as possible.",Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005912780761718
+"Please tell me, The product has a manufacturing fault. please.",Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0005996227264404
+I need help: The product is not functioning properly. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0007944107055664
+Urgent: Can I retrn this item? please.,Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.0012035369873046
+"Could you explain, Can I return this purchase? as soon as possible.",Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0012927055358886
+I need help: The product has a manufacturing fault.,Damaged Product Policy,Cancellation Policy,0,0.5383691971307341,bm25,0.0006752014160156
+"Could you explain, Can I retrn this item? please.",Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.0013368129730224
+"Please tell me, When can I expect my order? as soon as possible.",Shipping Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0006437301635742
+Can I retrn this item? as soon as possible.,Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004911422729492
+"Please tell me, Is there any way to reverse this payment? for my recent order.",Refund Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0007081031799316
+Urgent: Can I stop this order from being processed? as soon as possible.,Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.0007739067077636
+"Could you explain, Can I get my mony back? as soon as possible.",Refund Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0012385845184326
+"Please tell me, I received an item with parts missing. for my recent order.",Damaged Product Policy,Return Policy,0,0.8403596976996335,bm25,0.0006945133209228
+Is there any way to reverse this payment?,Refund Policy,Shipping Policy,0,0.3579415057325276,bm25,0.0030488967895507
+"Could you explain, Can I recover my payment? for my recent order.",Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0020391941070556
+"Could you explain, The item is defective. because I am confused.",Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0019028186798095
+Urgent: The laptop arrived broken. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.4220518744224608,bm25,0.0021784305572509
+"Please tell me, How do I get reimbursed?",Refund Policy,Cancellation Policy,0,0.0,bm25,0.0009784698486328
+"Could you explain, Can I get my mony back?",Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0005686283111572
+"Please tell me, Can I retrn this item? for my recent order.",Return Policy,Shipping Policy,0,0.4220518744224608,bm25,0.0005667209625244
+Urgent: Can I recover my payment? please.,Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0005581378936767
+"Could you explain, The item is damged. please.",Damaged Product Policy,Return Policy,0,0.2892508497146243,bm25,0.0008225440979003
+My screan is crackd. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0005078315734863
+I need help: I need to send the package back. as soon as possible.,Return Policy,Damaged Product Policy,0,0.8712359643103996,bm25,0.0007402896881103
+Urgent: Can I exchange this product? because I am confused.,Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.0004286766052246
+"Could you explain, I want reimbursement for my purchase. for my recent order.",Refund Policy,Shipping Policy,0,0.486383519095593,bm25,0.0009894371032714
+My screan is crackd. as soon as possible.,Damaged Product Policy,Shipping Policy,0,0.862551965664716,bm25,0.000596284866333
+Can I exchange this product? as soon as possible.,Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005881786346435
+I need help: Can I retrn this item? as soon as possible.,Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005998611450195
+"Could you explain, I need my payment returned. because I am confused.",Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0006039142608642
+"Please tell me, The item is damged. because I am confused.",Damaged Product Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0010943412780761
+I need help: The item is defective. because I am confused.,Damaged Product Policy,Cancellation Policy,0,0.6961518743667263,bm25,0.0005357265472412
+I need help: Can I get my money back?,Refund Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0005097389221191
+Urgent: I received an item with parts missing. because I am confused.,Damaged Product Policy,Return Policy,0,0.7860238750073937,bm25,0.0005598068237304
+"Please tell me, The laptop arrived broken. for my recent order.",Damaged Product Policy,Shipping Policy,0,0.4220518744224608,bm25,0.0005862712860107
+My package has not reached me.,Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0005443096160888
+"Please tell me, Can I receive compensation for this order?",Refund Policy,Damaged Product Policy,0,0.3997056369683521,bm25,0.0005440711975097
+"Please tell me, Can I recover my payment? because I am confused.",Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0005741119384765
+"Could you explain, Can I retrn this item? as soon as possible.",Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.000582218170166
+I need help: How much time will delivery take? please.,Shipping Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0004448890686035
+"Could you explain, How do I get reimbursed? please.",Refund Policy,Cancellation Policy,0,0.0,bm25,0.0006492137908935
+"Please tell me, The item is damged.",Damaged Product Policy,Return Policy,0,0.2892508497146243,bm25,0.0003385543823242
+The product has a manufacturing fault. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.8567333159168147,bm25,0.000474214553833
+I need help: The item is damged. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.6961518743667263,bm25,0.0007414817810058
+"Please tell me, My package has not reached me. please.",Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0008714199066162
+I need help: My pakage has not arived. for my recent order.,Shipping Policy,Cancellation Policy,0,0.5241709280589295,bm25,0.0007007122039794
+"Please tell me, My package has not reached me. for my recent order.",Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0005910396575927
+I need help: My package has not reached me. please.,Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.000758409500122
+Urgent: The screen shattered during shipping. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0004308223724365
+"Could you explain, My package has not reached me. please.",Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0003800392150878
+"Please tell me, Can I stop this order from being processed? for my recent order.",Cancellation Policy,Shipping Policy,0,0.6811762243223809,bm25,0.0004937648773193
+"Please tell me, What is the return process? for my recent order.",Return Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0006542205810546
+I need help: How do I get reimbursed? because I am confused.,Refund Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0006883144378662
+"Please tell me, Do you deliver internationally? as soon as possible.",Shipping Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004241466522216
+Urgent: My package has not reached me.,Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0003407001495361
+Urgent: The item is damged. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0004198551177978
+Can I give this item back? as soon as possible.,Return Policy,Damaged Product Policy,0,0.7532736819386455,bm25,0.0003738403320312
+I wish to send this item back. as soon as possible.,Return Policy,Damaged Product Policy,0,0.7532736819386455,bm25,0.0004370212554931
+I need help: Can I get my money back? for my recent order.,Refund Policy,Shipping Policy,0,0.4356179821551998,bm25,0.00067138671875
+The product has a manufacturing fault. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0006484985351562
+"Please tell me, Can I get a refnd?",Refund Policy,Shipping Policy,0,0.4516175723157616,bm25,0.0004656314849853
+The item is defective. please.,Damaged Product Policy,Return Policy,0,0.4660646815204364,bm25,0.0003023147583007
+"Could you explain, I wish to send this item back. as soon as possible.",Return Policy,Damaged Product Policy,0,0.7532736819386455,bm25,0.000467300415039
+"Could you explain, Can I get a refnd? for my recent order.",Refund Policy,Shipping Policy,0,0.5588110817127141,bm25,0.0005104541778564
+"Please tell me, The charger stopped functioning. please.",Damaged Product Policy,Shipping Policy,0,0.0275505339637525,bm25,0.0004150867462158
+I need help: The screen shattered during shipping.,Damaged Product Policy,Refund Policy,0,0.4660646815204364,bm25,0.0003502368927001
+Can I get my money back? because I am confused.,Refund Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0004465579986572
+Urgent: How do I cancle my order? as soon as possible.,Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004017353057861
+"Please tell me, How much time will delivery take? for my recent order.",Shipping Policy,Cancellation Policy,0,0.5862353226465874,bm25,0.0004289150238037
+I need help: I need my payment returned. as soon as possible.,Refund Policy,Damaged Product Policy,0,0.8712359643103996,bm25,0.0004620552062988
+"Could you explain, My package has not reached me.",Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0006053447723388
+"Please tell me, The screen shattered during shipping. please.",Damaged Product Policy,Refund Policy,0,0.4660646815204364,bm25,0.0006382465362548
+The item is damged. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0004305839538574
+Is there any way to reverse this payment? because I am confused.,Refund Policy,Shipping Policy,0,0.3579415057325276,bm25,0.0005793571472167
+"Please tell me, The product has a manufacturing fault. because I am confused.",Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0004775524139404
+"Please tell me, My screan is crackd. please.",Damaged Product Policy,Shipping Policy,0,0.2011491936113274,bm25,0.0004069805145263
+"Please tell me, My screan is crackd. for my recent order.",Damaged Product Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0004582405090332
+Urgent: Can I get a refnd? please.,Refund Policy,Shipping Policy,0,0.4516175723157616,bm25,0.0003402233123779
+Can I get my mony back?,Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0003247261047363
+I need help: My pakage has not arived.,Shipping Policy,Cancellation Policy,0,0.5241709280589295,bm25,0.0004055500030517
+"Could you explain, Can I stop this order from being processed? as soon as possible.",Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.0005528926849365
+The charger stopped functioning. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0011031627655029
+How do I get reimbursed? please.,Refund Policy,Cancellation Policy,0,0.0,bm25,0.0003151893615722
+How do I get reimbursed? as soon as possible.,Refund Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004236698150634
+"Please tell me, I need my payment returned. as soon as possible.",Refund Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005867481231689
+Urgent: The item is damged. please.,Damaged Product Policy,Return Policy,0,0.2892508497146243,bm25,0.0003848075866699
+The product is not functioning properly. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0006637573242187
+I need help: My package has not reached me. because I am confused.,Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0006864070892333
+Urgent: Can I give this item back? because I am confused.,Return Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0010263919830322
+"Could you explain, Can I return the order after delivery? please.",Return Policy,Cancellation Policy,0,0.700011764622093,bm25,0.0005862712860107
+"Please tell me, Can I retrn this item? because I am confused.",Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.000547170639038
+I need help: What is the return process? for my recent order.,Return Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0005121231079101
+"Could you explain, When can I expect my order? as soon as possible.",Shipping Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005359649658203
+Urgent: I want reimbursement for my purchase. please.,Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0003950595855712
+"Please tell me, Can I recover my payment? please.",Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0004308223724365
+"Please tell me, I want reimbursement for my purchase. for my recent order.",Refund Policy,Shipping Policy,0,0.486383519095593,bm25,0.0004241466522216
+"Could you explain, Can I recover my payment?",Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.000420331954956
+"Please tell me, Can I trak my shipmnt? as soon as possible.",Shipping Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0007412433624267
+Can I return the order after delivery? because I am confused.,Return Policy,Cancellation Policy,0,0.700011764622093,bm25,0.0006747245788574
+I need help: Can I get a refnd? for my recent order.,Refund Policy,Cancellation Policy,0,0.5588110817127141,bm25,0.0010874271392822
+I need help: How much time will delivery take? for my recent order.,Shipping Policy,Cancellation Policy,0,0.5862353226465874,bm25,0.0006153583526611
+Can I retrn this item? for my recent order.,Return Policy,Shipping Policy,0,0.4220518744224608,bm25,0.0003788471221923
+"Please tell me, I received an item with parts missing. because I am confused.",Damaged Product Policy,Return Policy,0,0.7860238750073937,bm25,0.0004506111145019
+I need help: Is there any way to reverse this payment?,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.000417947769165
+"Please tell me, Can I return the order after delivery? please.",Return Policy,Cancellation Policy,0,0.700011764622093,bm25,0.0004074573516845
+"Could you explain, The charger stopped functioning. please.",Damaged Product Policy,Shipping Policy,0,0.0275505339637525,bm25,0.0003421306610107
+"Could you explain, The product is not functioning properly. because I am confused.",Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0004694461822509
+Urgent: Is there any way to reverse this payment?,Refund Policy,Shipping Policy,0,0.3579415057325276,bm25,0.0005507469177246
+Urgent: My screan is crackd. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0003762245178222
+Urgent: My pakage has not arived. because I am confused.,Shipping Policy,Cancellation Policy,0,0.5241709280589295,bm25,0.0003612041473388
+I need help: My package has not reached me.,Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0003752708435058
+"Please tell me, What is the return process? because I am confused.",Return Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0006544589996337
+"Please tell me, The product has a manufacturing fault. for my recent order.",Damaged Product Policy,Shipping Policy,0,0.8567333159168147,bm25,0.0009803771972656
+My screan is crackd. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0004136562347412
+"Please tell me, Can I get a refnd? because I am confused.",Refund Policy,Shipping Policy,0,0.4516175723157616,bm25,0.000434398651123
+I need my payment returned. as soon as possible.,Refund Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0003798007965087
+When can I expect my order? as soon as possible.,Shipping Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004293918609619
+"Could you explain, The screen shattered during shipping. please.",Damaged Product Policy,Refund Policy,0,0.4660646815204364,bm25,0.0003857612609863
+"Could you explain, What is the return process? as soon as possible.",Return Policy,Damaged Product Policy,0,0.862551965664716,bm25,0.0005326271057128
+"Please tell me, The product has a manufacturing fault.",Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0004129409790039
+How much time will delivery take?,Shipping Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0003864765167236
+"Could you explain, I want reimbursement for my purchase. as soon as possible.",Refund Policy,Damaged Product Policy,0,0.7341316910679097,bm25,0.0004901885986328
+Urgent: I received an item with parts missing. please.,Damaged Product Policy,Return Policy,0,0.7860238750073937,bm25,0.0003719329833984
+"Please tell me, The product is not functioning properly. because I am confused.",Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0005583763122558
+"Could you explain, Is there any way to reverse this payment?",Refund Policy,Shipping Policy,0,0.3579415057325276,bm25,0.0004675388336181
+Can I recover my payment? please.,Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0005257129669189
+"Could you explain, Can I retrn this item?",Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.001105785369873
+"Please tell me, Is there any way to reverse this payment?",Refund Policy,Shipping Policy,0,0.3579415057325276,bm25,0.0005464553833007
+My screan is crackd. please.,Damaged Product Policy,Shipping Policy,0,0.2011491936113274,bm25,0.0009355545043945
+Urgent: Can I retrn this item?,Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.0003743171691894
+"Please tell me, Can I stop this order from being processed? as soon as possible.",Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.0005383491516113
+"Please tell me, My pakage has not arived. as soon as possible.",Shipping Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004665851593017
+"Please tell me, Can I get my money back?",Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0003910064697265
+"Please tell me, I need to send the package back. as soon as possible.",Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004892349243164
+The screen shattered during shipping. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0003829002380371
+I need help: Is there any way to reverse this payment? for my recent order.,Refund Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0005311965942382
+"Could you explain, The item is damged.",Damaged Product Policy,Return Policy,0,0.2892508497146243,bm25,0.0003447532653808
+Can I stop this order from being processed? please.,Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.0004563331604003
+Urgent: Can I receive compensation for this order? for my recent order.,Refund Policy,Damaged Product Policy,0,0.486383519095593,bm25,0.0004990100860595
+I need help: My screan is crackd. please.,Damaged Product Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0005974769592285
+Urgent: The product is not functioning properly. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.000568151473999
+Urgent: Can I return the order after delivery? as soon as possible.,Return Policy,Damaged Product Policy,0,0.7071956763357866,bm25,0.0004885196685791
+The charger stopped functioning. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.4220518744224608,bm25,0.0004522800445556
+"Please tell me, How do I get reimbursed? please.",Refund Policy,Cancellation Policy,0,0.0,bm25,0.0003657341003417
+I need help: How much time will delivery take? because I am confused.,Shipping Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0005295276641845
+I need help: How much time will delivery take?,Shipping Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.000420331954956
+"Please tell me, The charger stopped functioning.",Damaged Product Policy,Shipping Policy,0,0.0275505339637525,bm25,0.0003690719604492
+My package has not reached me. because I am confused.,Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0004570484161376
+"Please tell me, I want reimbursement for my purchase. please.",Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0006239414215087
+Can I give this item back? because I am confused.,Return Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0004565715789794
+I need help: Can I retrn this item? for my recent order.,Return Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0005569458007812
+"Could you explain, How do I get reimbursed? as soon as possible.",Refund Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005180835723876
+Can I stop this order from being processed? because I am confused.,Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.0011610984802246
+The laptop arrived broken. please.,Damaged Product Policy,Shipping Policy,0,0.0275505339637525,bm25,0.0003750324249267
+"Could you explain, Do you deliver internationally? please.",Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0004694461822509
+Can I receive compensation for this order? for my recent order.,Refund Policy,Damaged Product Policy,0,0.486383519095593,bm25,0.0004794597625732
+Urgent: My package has not reached me. because I am confused.,Shipping Policy,Cancellation Policy,0,0.8326519363497716,bm25,0.0004546642303466
+"Please tell me, The laptop arrived broken. because I am confused.",Damaged Product Policy,Shipping Policy,0,0.3067083490908476,bm25,0.000462532043457
+Urgent: Can I receive compensation for this order?,Refund Policy,Damaged Product Policy,0,0.3997056369683521,bm25,0.0007007122039794
+"Could you explain, Can I retrn this item? because I am confused.",Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.0004744529724121
+"Please tell me, Can I get my money back? because I am confused.",Refund Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0005106925964355
+Can I stop this order from being processed? for my recent order.,Cancellation Policy,Shipping Policy,0,0.6811762243223809,bm25,0.0005521774291992
+"Could you explain, Can I receive compensation for this order? for my recent order.",Refund Policy,Damaged Product Policy,0,0.486383519095593,bm25,0.0005874633789062
+What is the return process? as soon as possible.,Return Policy,Damaged Product Policy,0,0.862551965664716,bm25,0.0005919933319091
+Urgent: Can I get a refnd?,Refund Policy,Shipping Policy,0,0.4516175723157616,bm25,0.0005600452423095
+I need help: My screan is crackd. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.6108663477006525,bm25,0.0006732940673828
+"Please tell me, Can I stop this order from being processed? please.",Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.000542402267456
+"Please tell me, Can I cancle before shiping? as soon as possible.",Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0009636878967285
+I need help: What is the return process? as soon as possible.,Return Policy,Damaged Product Policy,0,0.862551965664716,bm25,0.000577688217163
+Urgent: Can I stop this order from being processed? because I am confused.,Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.0004940032958984
+Urgent: Can I return this purchase? as soon as possible.,Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004303455352783
+"Could you explain, Can I exchange this product? because I am confused.",Return Policy,Shipping Policy,0,0.3453698142761124,bm25,0.0004544258117675
+"Could you explain, I don't need this purchase anymore. as soon as possible.",Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0011839866638183
+Urgent: Can I recover my payment? as soon as possible.,Refund Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.000502586364746
+Can I rescind the order? as soon as possible.,Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0003776550292968
+Urgent: Can I receive compensation for this order? please.,Refund Policy,Damaged Product Policy,0,0.3997056369683521,bm25,0.0008783340454101
+"Please tell me, The item is defective.",Damaged Product Policy,Return Policy,0,0.4660646815204364,bm25,0.0004222393035888
+Can I get my mony back? because I am confused.,Refund Policy,Shipping Policy,0,0.3067083490908476,bm25,0.0005452632904052
+Urgent: Can I get my money back?,Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0003976821899414
+Urgent: The product has a manufacturing fault.,Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0003840923309326
+Urgent: Can I get my mony back? please.,Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0003788471221923
+"Please tell me, Why is my package delayed? as soon as possible.",Shipping Policy,Damaged Product Policy,0,0.862551965664716,bm25,0.0004403591156005
+"Please tell me, Can I receive compensation for this order? for my recent order.",Refund Policy,Damaged Product Policy,0,0.486383519095593,bm25,0.0005812644958496
+"Please tell me, Can I retrn this item? as soon as possible.",Return Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0005044937133789
+"Please tell me, Can I get my mony back? for my recent order.",Refund Policy,Shipping Policy,0,0.4220518744224608,bm25,0.0006017684936523
+I need help: The laptop arrived broken. for my recent order.,Damaged Product Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0005004405975341
+How can I request the money back for my order?,Refund Policy,Return Policy,0,0.5694516531685778,bm25,0.0004124641418457
+I paid for an order and want the payment refunded.,Refund Policy,Cancellation Policy,0,0.6560532329635402,bm25,0.0004234313964843
+What do I need to do to get a refund?,Refund Policy,Shipping Policy,0,0.5410605818445104,bm25,0.0004129409790039
+I would like to get my payment back for this purchase.,Refund Policy,Return Policy,0,0.6412282482551255,bm25,0.0004456043243408
+How do I ask for my money to be refunded?,Refund Policy,Cancellation Policy,0,0.3326688691961012,bm25,0.0003871917724609
+I want the payment for my purchase returned.,Refund Policy,Cancellation Policy,0,0.4503272920655227,bm25,0.0004374980926513
+What's the procedure for getting a refund?,Refund Policy,Shipping Policy,0,0.2334965375589441,bm25,0.0003774166107177
+How can I have my purchase refunded?,Refund Policy,Cancellation Policy,0,0.7095885009757282,bm25,0.0003652572631835
+Where do I start if I want a refund?,Refund Policy,Return Policy,0,0.6009401530996135,bm25,0.0003752708435058
+Can you tell me how to claim a refund?,Refund Policy,Return Policy,0,0.4947914666015522,bm25,0.0005476474761962
+What is the process for asking for my money back?,Refund Policy,Return Policy,0,0.4337519830708852,bm25,0.0009362697601318
+Can I ask for the purchase amount to be refunded?,Refund Policy,Cancellation Policy,0,0.5185996536142538,bm25,0.0005104541778564
+I'd like to request my money back from this order.,Refund Policy,Shipping Policy,0,0.4663318421106474,bm25,0.000537633895874
+How do customers normally request refunds?,Refund Policy,Cancellation Policy,0,0.3596929513301338,bm25,0.0004420280456542
+What steps should I follow to get a refund?,Refund Policy,Shipping Policy,0,0.4346814414943538,bm25,0.0004410743713378
+I'd like the payment returned for an order I placed.,Refund Policy,Cancellation Policy,0,0.6560532329635402,bm25,0.0004413127899169
+How do I claim back the money I spent?,Refund Policy,Return Policy,0,0.3480212696634092,bm25,0.0009443759918212
+Can the money charged for my order be refunded?,Refund Policy,Cancellation Policy,0,0.4928498729469447,bm25,0.0004158020019531
+What should I do if I want my purchase refunded?,Refund Policy,Shipping Policy,0,0.5458335499145989,bm25,0.0004613399505615
+I need help getting the money from my purchase returned.,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0004158020019531
+How do I go about asking for a refund?,Refund Policy,Shipping Policy,0,0.4224891364548129,bm25,0.0004186630249023
+Can I have the cost of my order returned?,Refund Policy,Shipping Policy,0,0.4928498729469447,bm25,0.0004310607910156
+Is my purchase eligible for a refund?,Refund Policy,Cancellation Policy,0,0.5981115854605724,bm25,0.0004029273986816
+How can I request reimbursement for an order?,Refund Policy,Cancellation Policy,0,0.4940866060901029,bm25,0.0004045963287353
+I'd like to have my order payment returned.,Refund Policy,Cancellation Policy,0,0.481309249811601,bm25,0.000373363494873
+What is the usual way to request a refund?,Refund Policy,Cancellation Policy,0,0.5183919364063125,bm25,0.0003793239593505
+Can I get the amount charged for my purchase back?,Refund Policy,Cancellation Policy,0,0.4898286346161263,bm25,0.0006330013275146
+I want to reclaim the money I paid.,Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0008139610290527
+How do I initiate a request for my money back?,Refund Policy,Return Policy,0,0.6009401530996135,bm25,0.0014617443084716
+I'd like to reverse the charge on my purchase.,Refund Policy,Shipping Policy,0,0.3525421017656714,bm25,0.0007514953613281
+I want the money I spent on this order back.,Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0005238056182861
+How can I get reimbursed for my purchase?,Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.00034761428833
+I'd like to request that my order be refunded.,Refund Policy,Cancellation Policy,0,0.6691408668186571,bm25,0.0004229545593261
+I paid for this item and want the money back.,Refund Policy,Return Policy,0,0.719658511108513,bm25,0.0004992485046386
+Can my payment be returned after making the purchase?,Refund Policy,Return Policy,0,0.5844728969930453,bm25,0.000434398651123
+What do I do if I need a refund?,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.000425100326538
+I'd like to know how refunds are requested.,Refund Policy,Shipping Policy,0,0.5883173134885716,bm25,0.000382661819458
+Can I submit a request to get my purchase amount back?,Refund Policy,Cancellation Policy,0,0.6759713786067703,bm25,0.0006756782531738
+I need to have the charge for my order refunded.,Refund Policy,Cancellation Policy,0,0.6467064496404353,bm25,0.0005557537078857
+I'd like to get back the amount I was charged.,Refund Policy,Return Policy,0,0.3480212696634092,bm25,0.0004873275756835
+Can you guide me through requesting a refund?,Refund Policy,Shipping Policy,0,0.5120095279239788,bm25,0.0004136562347412
+I'd like the money from this transaction returned.,Refund Policy,Damaged Product Policy,0,0.3453698142761124,bm25,0.0006487369537353
+Can I request the amount charged to me back?,Refund Policy,Cancellation Policy,0,0.5829644207815307,bm25,0.0005285739898681
+What is the process if I want the payment returned?,Refund Policy,Return Policy,0,0.5133580718886023,bm25,0.0011234283447265
+I need my purchase payment refunded.,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0006120204925537
+How do I submit a request for reimbursement?,Refund Policy,Cancellation Policy,0,0.4345533064677679,bm25,0.0007245540618896
+Can I get back what I paid for the order?,Refund Policy,Return Policy,0,0.5694516531685778,bm25,0.0005841255187988
+Where can I make a request for a refund?,Refund Policy,Cancellation Policy,0,0.6618851304547204,bm25,0.0005679130554199
+How do I request that my order payment be returned?,Refund Policy,Cancellation Policy,0,0.5581161699846048,bm25,0.0004796981811523
+Can I get reimbursed for something I purchased?,Refund Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0003678798675537
+What should I do to claim back my payment?,Refund Policy,Return Policy,0,0.3518641021442406,bm25,0.0004353523254394
+I would like the charge on my order refunded.,Refund Policy,Shipping Policy,0,0.3120011873622501,bm25,0.0005252361297607
+How can I apply to have my money returned?,Refund Policy,Cancellation Policy,0,0.3876088376674653,bm25,0.0004408359527587
+I need to ask for my order amount back.,Refund Policy,Cancellation Policy,0,0.6467064496404353,bm25,0.0005214214324951
+Can you tell me where to request a refund?,Refund Policy,Cancellation Policy,0,0.6759713786067703,bm25,0.0003941059112548
+What should I do to recover the money from my order?,Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0004515647888183
+I'd like to get the charge refunded for my purchase.,Refund Policy,Return Policy,0,0.3803461267150461,bm25,0.0004513263702392
+I'd like to claim my money back from the order.,Refund Policy,Shipping Policy,0,0.4820149571415393,bm25,0.0005145072937011
+How can I have this purchase payment returned?,Refund Policy,Shipping Policy,0,0.7095885009757282,bm25,0.0006771087646484
+What is the correct way to request my money back?,Refund Policy,Cancellation Policy,0,0.4112093074722255,bm25,0.0006589889526367
+How do I get the payment for my order back?,Refund Policy,Cancellation Policy,0,0.481309249811601,bm25,0.0006093978881835
+Can I request that the money paid for this order be returned?,Refund Policy,Cancellation Policy,0,0.6529607613359358,bm25,0.0011050701141357
+What do I need to do to claim back my purchase amount?,Refund Policy,Shipping Policy,0,0.5410605818445104,bm25,0.0005815029144287
+Can you help me get the money I paid returned?,Refund Policy,Shipping Policy,0,0.4898286346161263,bm25,0.0004591941833496
+My refund is still missing from my account.,Refund Policy,Shipping Policy,0,0.4261353045075194,bm25,0.0004267692565917
+I requested my money back and I'm waiting for it.,Refund Policy,Return Policy,0,0.3859189094650147,bm25,0.000542402267456
+How long should I wait before my refund shows up?,Refund Policy,Shipping Policy,0,0.7291848399838907,bm25,0.0004518032073974
+My refund hasn't been credited yet. What should I do?,Refund Policy,Cancellation Policy,0,0.4261353045075194,bm25,0.0004036426544189
+I am still waiting for the money from my refund.,Refund Policy,Shipping Policy,0,0.3816336303007233,bm25,0.0004706382751464
+When can I expect the money from my refund?,Refund Policy,Shipping Policy,0,0.3258532868334569,bm25,0.0005247592926025
+The amount I was supposed to get back is not showing.,Refund Policy,Return Policy,0,0.5347900524738204,bm25,0.0004911422729492
+My refund seems to be taking longer than expected.,Refund Policy,Shipping Policy,0,0.4261353045075194,bm25,0.0003767013549804
+Is there a reason my refund has not arrived yet?,Refund Policy,Cancellation Policy,0,0.6568617516524475,bm25,0.0004189014434814
+What can I do about a refund that hasn't arrived?,Refund Policy,Shipping Policy,0,0.6813187061630863,bm25,0.0004951953887939
+I have been waiting for my refunded amount.,Refund Policy,Cancellation Policy,0,0.7095885009757282,bm25,0.0005500316619873
+Why am I still waiting for my money back?,Refund Policy,Shipping Policy,0,0.3447884116192653,bm25,0.0006144046783447
+When will I actually receive the refunded amount?,Refund Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0004584789276123
+How much longer will I have to wait for my refund?,Refund Policy,Cancellation Policy,0,0.4962106773351111,bm25,0.000446081161499
+The money hasn't been returned to me yet.,Refund Policy,Return Policy,0,0.5090645132247433,bm25,0.0007984638214111
+My refund is taking longer than I expected.,Refund Policy,Shipping Policy,0,0.4261353045075194,bm25,0.0004205703735351
+Could the refund for my order still be pending?,Refund Policy,Cancellation Policy,0,0.4685112489317627,bm25,0.0004878044128417
+"I was told I would get my money back, but it hasn't appeared.",Refund Policy,Cancellation Policy,0,0.3967410144163437,bm25,0.0007805824279785
+What should I do if the refund doesn't show up?,Refund Policy,Shipping Policy,0,0.5458335499145989,bm25,0.000472068786621
+The refunded amount is still not visible.,Refund Policy,Cancellation Policy,0,0.5389664881961345,bm25,0.0003890991210937
+I am still waiting to receive my reimbursement.,Refund Policy,Damaged Product Policy,0,0.4887615622887246,bm25,0.0004212856292724
+Can you tell me the status of my refund?,Refund Policy,Shipping Policy,0,0.7342224100118415,bm25,0.0003814697265625
+Why hasn't my reimbursement reached me?,Refund Policy,Shipping Policy,0,0.3810890897464224,bm25,0.0003354549407958
+I expected the payment to be returned by now.,Refund Policy,Return Policy,0,0.8195426562392012,bm25,0.0004069805145263
+I need to know when my refund will be credited.,Refund Policy,Cancellation Policy,0,0.6130258221730523,bm25,0.000533103942871
+My money back request is taking too long.,Refund Policy,Return Policy,0,0.3281016389917751,bm25,0.0009312629699707
+I haven't received the amount that was supposed to be refunded.,Refund Policy,Cancellation Policy,0,0.5214874134075548,bm25,0.0006544589996337
+I am waiting for the refund from my order.,Refund Policy,Shipping Policy,0,0.4261353045075194,bm25,0.0009834766387939
+"I requested reimbursement, but the money is still not there.",Refund Policy,Cancellation Policy,0,0.556040248427301,bm25,0.0007243156433105
+When should I see the refund in my account?,Refund Policy,Shipping Policy,0,0.4261353045075194,bm25,0.000453233718872
+Why is the refunded money not showing up?,Refund Policy,Cancellation Policy,0,0.3803461267150461,bm25,0.0004494190216064
+Can you explain the delay with my refund?,Refund Policy,Shipping Policy,0,0.3145359312889281,bm25,0.0003995895385742
+The amount hasn't been credited back to me.,Refund Policy,Return Policy,0,0.3822448928715821,bm25,0.0004913806915283
+When will the refunded amount become available?,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0004715919494628
+My refund is pending and I need to know when it will arrive.,Refund Policy,Cancellation Policy,0,0.4962106773351111,bm25,0.0005464553833007
+"I requested my payment back, but it is not showing in my account.",Refund Policy,Cancellation Policy,0,0.8450997377782639,bm25,0.0004971027374267
+My refund has not appeared after I requested it.,Refund Policy,Cancellation Policy,0,0.5241709280589295,bm25,0.0005087852478027
+Could my refund still be in processing?,Refund Policy,Shipping Policy,0,0.7091565312380942,bm25,0.0005500316619873
+I haven't seen the refunded payment in my account.,Refund Policy,Cancellation Policy,0,0.3803461267150461,bm25,0.0004746913909912
+I expected the refund sooner. Can you explain the delay?,Refund Policy,Shipping Policy,0,0.4687624595759224,bm25,0.0006165504455566
+My reimbursement has not reached my account.,Refund Policy,Shipping Policy,0,0.8326519363497716,bm25,0.0005533695220947
+When can I expect my refunded payment to show?,Refund Policy,Cancellation Policy,0,0.463803472502902,bm25,0.0012464523315429
+The amount I requested back hasn't been credited.,Refund Policy,Return Policy,0,0.3822448928715821,bm25,0.0004751682281494
+My refund is overdue. What should I do?,Refund Policy,Shipping Policy,0,0.5021324011646124,bm25,0.0004513263702392
+"I requested my money back, but nothing has been credited yet.",Refund Policy,Cancellation Policy,0,1.0,bm25,0.0004909038543701
+"My payment should have been returned, but I haven't received it.",Refund Policy,Cancellation Policy,0,0.999818082904092,bm25,0.0004661083221435
+I am checking on a refund that has not arrived.,Refund Policy,Shipping Policy,0,0.8083446170846328,bm25,0.0004243850708007
+I have not seen the refund from my purchase yet.,Refund Policy,Cancellation Policy,0,0.7095885009757282,bm25,0.0004119873046875
+Can you explain when I should receive the money back?,Refund Policy,Damaged Product Policy,0,0.7037282042884813,bm25,0.0008215904235839
+The amount due back to me has not arrived.,Refund Policy,Shipping Policy,0,0.571484997568283,bm25,0.0004663467407226
+"I requested a refund, and the balance hasn't changed.",Refund Policy,Damaged Product Policy,0,0.2437230867076984,bm25,0.0004198551177978
+I'm still waiting for the money from a returned payment.,Refund Policy,Shipping Policy,0,0.5835305284745684,bm25,0.0004727840423583
+How long should a refund take to appear after it is requested?,Refund Policy,Shipping Policy,0,0.8347656955889855,bm25,0.0006511211395263
+I need an update because my refund has not arrived.,Refund Policy,Cancellation Policy,0,0.6989149112108688,bm25,0.0009207725524902
+The refund for my purchase is still not showing.,Refund Policy,Cancellation Policy,0,0.5842086531938101,bm25,0.0004808902740478
+I need the money from my order returned.,Refund Policy,Cancellation Policy,0,0.6467064496404353,bm25,0.000436782836914
+Can I have the charge for my order reversed?,Refund Policy,Shipping Policy,0,0.4928498729469447,bm25,0.0006330013275146
+I want to ask for a refund on this order.,Refund Policy,Return Policy,0,0.6009401530996135,bm25,0.0009007453918457
+Can the payment for this purchase be sent back to me?,Refund Policy,Return Policy,0,0.6767920026663332,bm25,0.0005159378051757
+I need to get back the amount charged for my order.,Refund Policy,Return Policy,0,0.4356179821551998,bm25,0.0004863739013671
+Is there a way to claim back what I paid?,Refund Policy,Return Policy,0,0.5383691971307341,bm25,0.0004112720489501
+I'd like to request that the purchase amount be returned.,Refund Policy,Cancellation Policy,0,0.7313795729111066,bm25,0.0004506111145019
+What should I do if I want my payment back?,Refund Policy,Shipping Policy,0,0.5458335499145989,bm25,0.0004189014434814
+Can I get the money I spent on this order returned?,Refund Policy,Shipping Policy,0,0.4928498729469447,bm25,0.0004529953002929
+How can I request a payment reversal for my order?,Refund Policy,Cancellation Policy,0,0.9573506239912508,bm25,0.0006699562072753
+Can I ask for the charge on my order to be returned?,Refund Policy,Cancellation Policy,0,0.673891739231592,bm25,0.0005896091461181
+I'd like to get back the amount deducted for my purchase.,Refund Policy,Return Policy,0,0.659887745769054,bm25,0.0004262924194335
+Can you explain how to request money back for an order?,Refund Policy,Return Policy,0,0.709940330448263,bm25,0.0005171298980712
+I want to claim back the amount I paid.,Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0005085468292236
+I'd like to receive the money charged for this purchase back.,Refund Policy,Damaged Product Policy,0,0.5262184362455644,bm25,0.0009615421295166
+Can my order payment be reversed?,Refund Policy,Cancellation Policy,0,0.4928498729469447,bm25,0.0008430480957031
+What is the way to request reimbursement for a purchase?,Refund Policy,Cancellation Policy,0,0.7519262712034818,bm25,0.0004680156707763
+I want to get the amount spent on this order back.,Refund Policy,Return Policy,0,0.4757996385913366,bm25,0.0005981922149658
+Could I recover the money taken for my order?,Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0004897117614746
+I need my order payment sent back.,Refund Policy,Cancellation Policy,0,0.6467064496404353,bm25,0.0004260540008544
+Is there a form or process for requesting a refund?,Refund Policy,Return Policy,0,0.8111819009970326,bm25,0.000608205795288
+Can you help me get my order payment back?,Refund Policy,Cancellation Policy,0,0.4928498729469447,bm25,0.0004291534423828
+I want to have the payment for this order returned.,Refund Policy,Cancellation Policy,0,0.5437706588370708,bm25,0.0004031658172607
+How can I reclaim the money charged for my purchase?,Refund Policy,Shipping Policy,0,0.5319693270579895,bm25,0.0005409717559814
+What do I need to provide when asking for a refund?,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0004782676696777
+How do I request that the money I paid be returned?,Refund Policy,Cancellation Policy,0,0.4487100245519795,bm25,0.0004587173461914
+I want to recover what was charged to me.,Refund Policy,Shipping Policy,0,0.5410605818445104,bm25,0.0004229545593261
+Can I have my order amount refunded?,Refund Policy,Shipping Policy,0,0.6380694205024745,bm25,0.0003538131713867
+Where do I go to ask for reimbursement?,Refund Policy,Shipping Policy,0,0.2705302909222552,bm25,0.0003845691680908
+I'd like to get the payment from this order back.,Refund Policy,Shipping Policy,0,0.4820149571415393,bm25,0.0004100799560546
+I need to request that my purchase payment be reversed.,Refund Policy,Cancellation Policy,0,0.7313795729111066,bm25,0.0005106925964355
+What's the process for getting an order payment back?,Refund Policy,Cancellation Policy,0,0.6988904684696158,bm25,0.0004818439483642
+I'd like to have my money returned for this purchase.,Refund Policy,Return Policy,0,0.4843413711402091,bm25,0.0007092952728271
+How do I ask for the money charged to me back?,Refund Policy,Shipping Policy,0,0.2705302909222552,bm25,0.0006403923034667
+Can the payment I made for my order be refunded?,Refund Policy,Cancellation Policy,0,0.4928498729469447,bm25,0.0004892349243164
+I'd like to request the return of my purchase payment.,Refund Policy,Cancellation Policy,0,0.6028770569117375,bm25,0.0004692077636718
+How can I get back the money deducted for this order?,Refund Policy,Return Policy,0,0.5694516531685778,bm25,0.0005421638488769
+Can you help me submit a request for reimbursement?,Refund Policy,Cancellation Policy,0,0.4601176542486102,bm25,0.0006699562072753
+How do I get the charge from my order reversed?,Refund Policy,Shipping Policy,0,0.3258532868334569,bm25,0.0006284713745117
+Can I request the money I paid for this item back?,Refund Policy,Cancellation Policy,0,0.5068116713543249,bm25,0.0010337829589843
+I'd like to know how to get a purchase refunded.,Refund Policy,Shipping Policy,0,0.5410605818445104,bm25,0.0004587173461914
+I need the payment from this purchase returned.,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0005130767822265
+Can I ask for my order to be reimbursed?,Refund Policy,Cancellation Policy,0,0.6597160681227445,bm25,0.0004489421844482
+How do I claim back the amount I was charged?,Refund Policy,Return Policy,0,0.3480212696634092,bm25,0.0004665851593017
+I want to request a return of the money I paid.,Refund Policy,Return Policy,0,0.8702713721426036,bm25,0.0004620552062988
+How can I get the amount from my order back?,Refund Policy,Shipping Policy,0,0.6529607613359358,bm25,0.0004546642303466
+I'd like the money deducted for my purchase returned.,Refund Policy,Cancellation Policy,0,0.3822448928715821,bm25,0.0006258487701416
+What's the process for asking that my order be refunded?,Refund Policy,Cancellation Policy,0,0.5943991806896112,bm25,0.000542402267456
+How can I request the funds from my order back?,Refund Policy,Cancellation Policy,0,0.5224027820407086,bm25,0.0005216598510742
+I'd like to ask for my order payment to be returned.,Refund Policy,Cancellation Policy,0,0.7038146791715993,bm25,0.000474214553833
+What do I do to recover a payment from an order?,Refund Policy,Cancellation Policy,0,0.866171791846584,bm25,0.0007991790771484
+I need to get my purchase amount back.,Refund Policy,Cancellation Policy,0,0.4616239674824892,bm25,0.000422716140747
+Can the money charged for this item be returned?,Refund Policy,Return Policy,0,0.3997056369683521,bm25,0.0004241466522216
+How do I ask to have the purchase amount reimbursed?,Refund Policy,Shipping Policy,0,0.7095885009757282,bm25,0.0004580020904541
+I'd like to request the money spent on this purchase back.,Refund Policy,Cancellation Policy,0,0.6569795505965546,bm25,0.0004305839538574
+What steps are involved in claiming a refund?,Refund Policy,Shipping Policy,0,0.4087329750236884,bm25,0.0003819465637207
+I want the amount paid for this item returned.,Refund Policy,Return Policy,0,0.719658511108513,bm25,0.000399112701416
+Can I reclaim the charge made for my order?,Refund Policy,Shipping Policy,0,0.5319693270579895,bm25,0.0027744770050048
+I'd like to have the funds from my purchase returned.,Refund Policy,Shipping Policy,0,0.7095885009757282,bm25,0.0005249977111816
+Can I get the payment for my purchase back?,Refund Policy,Cancellation Policy,0,0.3822448928715821,bm25,0.0004322528839111
+How can I get my order refunded?,Refund Policy,Shipping Policy,0,0.4928498729469447,bm25,0.0003385543823242
+Can I have the purchase payment sent back?,Refund Policy,Shipping Policy,0,0.7095885009757282,bm25,0.0013544559478759
+How do I request the money back from a purchase?,Refund Policy,Return Policy,0,0.5383691971307341,bm25,0.0004692077636718
+How can I claim the money back from my purchase?,Refund Policy,Return Policy,0,0.5694516531685778,bm25,0.0005733966827392
+I want the charge for this order refunded.,Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0003943443298339
+I'd like to recover my order payment.,Refund Policy,Cancellation Policy,0,0.5010872308612879,bm25,0.0009992122650146
+How do I submit a request to get my money back?,Refund Policy,Cancellation Policy,0,0.5042162652974651,bm25,0.0009136199951171
+Can I get back the amount charged for this purchase?,Refund Policy,Return Policy,0,0.5694516531685778,bm25,0.0006229877471923
+How can I ask for my purchase to be refunded?,Refund Policy,Cancellation Policy,0,0.5044239825054064,bm25,0.0004935264587402
+I'd like to get the money charged for this order back.,Refund Policy,Cancellation Policy,0,0.5262184362455644,bm25,0.0005381107330322
+Can I have the cost of this purchase returned?,Refund Policy,Shipping Policy,0,0.7095885009757282,bm25,0.0004627704620361
+What should I do to reclaim the money I paid?,Refund Policy,Shipping Policy,0,0.3518641021442406,bm25,0.0012884140014648
+I want my purchase amount refunded.,Refund Policy,Cancellation Policy,0,0.4503272920655227,bm25,0.0005104541778564
+Can you tell me how to request reimbursement?,Refund Policy,Cancellation Policy,0,0.5687887496726833,bm25,0.0007514953613281
+Can I request my order payment back?,Refund Policy,Cancellation Policy,0,0.5082271109318611,bm25,0.0013086795806884
+What is the procedure for recovering a payment?,Refund Policy,Shipping Policy,0,0.3955883717020397,bm25,0.0009331703186035
+I'd like to have my purchase charge returned.,Refund Policy,Cancellation Policy,0,0.7095885009757282,bm25,0.0004246234893798
+I want to recover the money spent on my order.,Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0007133483886718
+Can the amount deducted for this purchase be returned?,Refund Policy,Cancellation Policy,0,0.4973592696724352,bm25,0.0006067752838134
+I need my purchase payment returned.,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.000333547592163
+Can I reverse the amount charged for my order?,Refund Policy,Shipping Policy,0,0.4898286346161263,bm25,0.0005326271057128
+I'd like to get back the money I paid.,Refund Policy,Return Policy,0,0.3480212696634092,bm25,0.0005207061767578
+What is the right way to request reimbursement for an order?,Refund Policy,Cancellation Policy,0,0.7519262712034818,bm25,0.0005748271942138
+I want the payment from this purchase back.,Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0003607273101806
+Can my order be refunded after payment?,Refund Policy,Cancellation Policy,0,0.5785981422472452,bm25,0.0060076713562011
+I'd like to ask for the charge to be reversed.,Refund Policy,Cancellation Policy,0,0.5626982646631088,bm25,0.0004734992980957
+I need to get the money from this purchase back.,Refund Policy,Cancellation Policy,0,0.4820149571415393,bm25,0.0005066394805908
+Can I reclaim what I paid for the order?,Refund Policy,Shipping Policy,0,0.8264803177372814,bm25,0.0006277561187744
+What steps should I take to recover my payment?,Refund Policy,Shipping Policy,0,0.6516193806686778,bm25,0.0004308223724365
+I want the money paid for this item returned.,Refund Policy,Return Policy,0,0.719658511108513,bm25,0.0004167556762695
+Can you help me ask for my order to be refunded?,Refund Policy,Cancellation Policy,0,0.6597160681227445,bm25,0.0004854202270507
+I need the amount charged to me refunded.,Refund Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0003724098205566
+Can I ask for my purchase payment to be reversed?,Refund Policy,Cancellation Policy,0,0.5262213461067353,bm25,0.0004253387451171
+What do I need to do to claim reimbursement?,Refund Policy,Shipping Policy,0,0.5410605818445104,bm25,0.0003974437713623
+Can the money taken from my account for this order be returned?,Refund Policy,Shipping Policy,0,0.4928498729469447,bm25,0.0005877017974853
+How do I make a request for my purchase payment back?,Refund Policy,Cancellation Policy,0,0.5931159357678182,bm25,0.0005698204040527
+Can I get the funds I used for this purchase returned?,Refund Policy,Cancellation Policy,0,0.3997056369683521,bm25,0.000446081161499
+What is the process for reclaiming money from an order?,Refund Policy,Return Policy,0,0.6122227571212914,bm25,0.0005102157592773
+I want the charge associated with my purchase reversed.,Refund Policy,Return Policy,0,0.4503272920655227,bm25,0.0004661083221435
+Can I recover the money charged for the item?,Refund Policy,Shipping Policy,0,0.5010872308612879,bm25,0.0003871917724609
+I need to ask for my purchase amount to be refunded.,Refund Policy,Cancellation Policy,0,0.5485225935542614,bm25,0.0004520416259765
+I'd like to reclaim the money I spent on this order.,Refund Policy,Shipping Policy,0,0.3577202297493286,bm25,0.0005378723144531
+Can my purchase payment be sent back to me?,Refund Policy,Return Policy,0,0.6767920026663332,bm25,0.0005645751953125
+What should I do if I need the order amount returned?,Refund Policy,Cancellation Policy,0,0.6467064496404353,bm25,0.0003848075866699
+I'd like to have the amount charged for this item refunded.,Refund Policy,Return Policy,0,0.3997056369683521,bm25,0.000406265258789
+I'd like to return something I purchased.,Return Policy,Cancellation Policy,0,0.4120263840630504,bm25,0.0003046989440917
+How can I arrange a return?,Return Policy,Shipping Policy,0,0.4516175723157616,bm25,0.0002503395080566
+What are the rules for returning a product?,Return Policy,Shipping Policy,0,0.2565104239762743,bm25,0.0002937316894531
+I need to send my purchase back. How do I do that?,Return Policy,Cancellation Policy,0,0.4616239674824892,bm25,0.0003614425659179
+Is this item eligible for return?,Return Policy,Damaged Product Policy,0,0.4613523781703191,bm25,0.000262975692749
+I'd like to know how product returns work.,Return Policy,Shipping Policy,0,0.3853863874650563,bm25,0.0003235340118408
+What steps are involved in returning my order?,Return Policy,Shipping Policy,0,0.2932233517797805,bm25,0.0003421306610107
+I want to return this item. What should I do?,Return Policy,Cancellation Policy,0,0.719658511108513,bm25,0.0006051063537597
+Can a delivered product be sent back?,Return Policy,Shipping Policy,0,0.8870595608052921,bm25,0.0004634857177734
+I'd like to start the return process.,Return Policy,Cancellation Policy,0,0.742169531613429,bm25,0.0003857612609863
+What do I need to do to return my purchase?,Return Policy,Cancellation Policy,0,0.6233751981558322,bm25,0.0003879070281982
+Is there a time limit for returning an item?,Return Policy,Shipping Policy,0,0.570007068281538,bm25,0.0003614425659179
+How many days do I have to send something back?,Return Policy,Shipping Policy,0,0.4218391959805082,bm25,0.0004019737243652
+How long do I have to return my purchase?,Return Policy,Cancellation Policy,0,0.4120263840630504,bm25,0.0003080368041992
+Does the return window start after delivery?,Return Policy,Cancellation Policy,0,0.5103611317414476,bm25,0.0003316402435302
+What is the deadline for returning a product?,Return Policy,Shipping Policy,0,0.3955883717020397,bm25,0.0003416538238525
+How much time is allowed for a return?,Return Policy,Refund Policy,0,0.4404602850251216,bm25,0.0003049373626708
+What happens if I have already opened the item?,Return Policy,Shipping Policy,0,0.8102854452147327,bm25,0.0003211498260498
+Do I need the invoice to return something?,Return Policy,Cancellation Policy,0,0.4356179821551998,bm25,0.0003590583801269
+Can I return my order if I don't have the invoice?,Return Policy,Cancellation Policy,0,0.5328906194750026,bm25,0.0003614425659179
+What documents are needed for a return?,Return Policy,Shipping Policy,0,0.2565104239762743,bm25,0.0003130435943603
+Do I need any paperwork to request a return?,Return Policy,Cancellation Policy,0,0.6818957612979981,bm25,0.0003037452697753
+How do I request a pickup for my return?,Return Policy,Cancellation Policy,0,0.6592537253004422,bm25,0.0003426074981689
+Can I swap my purchase for another item?,Return Policy,Cancellation Policy,0,0.3997056369683521,bm25,0.0004057884216308
+What should I expect once my return is requested?,Return Policy,Shipping Policy,0,0.5021324011646124,bm25,0.0003864765167236
+What happens after I start a return?,Return Policy,Cancellation Policy,0,0.3995980895412589,bm25,0.000378131866455
+What is the next step after requesting a return?,Return Policy,Shipping Policy,0,0.3995980895412589,bm25,0.0003738403320312
+What happens once the return request is accepted?,Return Policy,Cancellation Policy,0,0.3870233325535774,bm25,0.0003886222839355
+I changed my mind about the product. Can I return it?,Return Policy,Shipping Policy,0,0.6813187061630863,bm25,0.0004017353057861
+Can I return something because I changed my mind?,Return Policy,Shipping Policy,0,0.510681233219793,bm25,0.0003120899200439
+I ordered this but no longer need it. Can I return it?,Return Policy,Cancellation Policy,0,1.0,bm25,0.0003669261932373
+The order has arrived. Can I start a return?,Return Policy,Cancellation Policy,0,0.6898122781021284,bm25,0.0003542900085449
+I have received the order but need to return it.,Return Policy,Cancellation Policy,0,0.6467064496404353,bm25,0.0003347396850585
+What's the easiest way to return a delivered product?,Return Policy,Cancellation Policy,0,0.5288797738406065,bm25,0.0003035068511962
+How do I return an item that has already been delivered?,Return Policy,Cancellation Policy,0,1.0,bm25,0.0003590583801269
+Is a damaged accessory eligible for return?,Return Policy,Shipping Policy,0,0.5981115854605725,bm25,0.0004308223724365
+What is the procedure for returning an accessory?,Return Policy,Shipping Policy,0,0.4332478609912848,bm25,0.0004138946533203
+Can accessories be included in a return?,Return Policy,Shipping Policy,0,0.5589579218135169,bm25,0.0003204345703125
+Are electronics covered by the return policy?,Return Policy,Damaged Product Policy,0,0.5782276137654713,bm25,0.0003445148468017
+What do I need to do to send an order back?,Return Policy,Cancellation Policy,0,0.8385737347669668,bm25,0.0003936290740966
+Is there a way to request a return for this product?,Return Policy,Cancellation Policy,0,0.8030666436710641,bm25,0.0004260540008544
+Can this purchase be returned?,Return Policy,Cancellation Policy,0,0.4973592696724352,bm25,0.0003049373626708
+What steps should I take to return my order?,Return Policy,Cancellation Policy,0,0.6516193806686778,bm25,0.0003125667572021
+How do returns work for purchased items?,Return Policy,Shipping Policy,0,0.4503272920655227,bm25,0.0002772808074951
+I need to return a product I received.,Return Policy,Cancellation Policy,0,0.8077004161737242,bm25,0.0003466606140136
+What is the procedure for sending an order back?,Return Policy,Cancellation Policy,0,0.6685929012927694,bm25,0.0003635883331298
+I'd like to return one of the things I purchased.,Return Policy,Cancellation Policy,0,0.4295756967933859,bm25,0.0003597736358642
+Can you explain how I can return my order?,Return Policy,Shipping Policy,0,0.7520312473965957,bm25,0.0003135204315185
+Is this purchase covered by the return policy?,Return Policy,Cancellation Policy,0,0.6550163333944166,bm25,0.0002913475036621
+I changed my mind about this purchase. Can it be returned?,Return Policy,Shipping Policy,0,0.6813187061630863,bm25,0.0003869533538818
+How do I send back something that was delivered to me?,Return Policy,Shipping Policy,0,0.7291848399838907,bm25,0.000359296798706
+Is there a way to send my purchase back?,Return Policy,Cancellation Policy,0,0.4219082342990415,bm25,0.0006399154663085
+I opened the package. Can I still return the product?,Return Policy,Shipping Policy,0,0.7892348462828319,bm25,0.0003445148468017
+Are opened products accepted for return?,Return Policy,Damaged Product Policy,0,0.4993008040243263,bm25,0.0003740787506103
+Can an opened package still be returned?,Return Policy,Shipping Policy,0,0.5120095279239788,bm25,0.0003039836883544
+What are the rules if the item has been opened?,Return Policy,Cancellation Policy,0,0.9031878557223972,bm25,0.0004003047943115
+I opened the item before deciding to return it. Is that okay?,Return Policy,Cancellation Policy,0,0.621825457254024,bm25,0.000669240951538
+I don't have my invoice anymore. Can I still return the product?,Return Policy,Cancellation Policy,0,0.568849292778232,bm25,0.0004198551177978
+What if I lost the invoice for my purchase?,Return Policy,Shipping Policy,0,0.4003580735973756,bm25,0.0003664493560791
+Do I need the original invoice to request a return?,Return Policy,Cancellation Policy,0,0.6818957612979981,bm25,0.0003378391265869
+I cannot find my invoice. Is a return still possible?,Return Policy,Shipping Policy,0,0.8032636166553442,bm25,0.0003397464752197
+What documents do I need when returning an item?,Return Policy,Cancellation Policy,0,0.6274852672817314,bm25,0.0002992153167724
+I purchased this during a sale. Is it returnable?,Return Policy,Damaged Product Policy,0,0.4608794375200203,bm25,0.0003125667572021
+I got this product during a promotion. Can I return it?,Return Policy,Damaged Product Policy,0,1.0,bm25,0.0003266334533691
+How long after delivery can I request a return?,Return Policy,Cancellation Policy,0,0.6409481037180618,bm25,0.0002975463867187
+What is the return period for my purchase?,Return Policy,Refund Policy,0,0.3347527055541078,bm25,0.0002810955047607
+How much time do I have before the return window closes?,Return Policy,Shipping Policy,0,0.4101570471066747,bm25,0.000342845916748
+When is the last day I can request a return?,Return Policy,Cancellation Policy,0,0.4742933253574576,bm25,0.0003468990325927
+How many days is the return window?,Return Policy,Shipping Policy,0,0.5324728080574896,bm25,0.0002903938293457
+What is the allowed time for returning a product?,Return Policy,Refund Policy,0,0.4565717235167351,bm25,0.0003423690795898
+I ordered several things but want to return just one.,Return Policy,Cancellation Policy,0,0.719658511108513,bm25,0.0004701614379882
+Are accessories covered by the return policy?,Return Policy,Damaged Product Policy,0,0.5782276137654713,bm25,0.0003831386566162
+I need to return an accessory I received.,Return Policy,Cancellation Policy,0,0.6274852672817314,bm25,0.0003750324249267
+What should I do if I want to return an accessory?,Return Policy,Shipping Policy,0,0.9180044896641256,bm25,0.000432014465332
+Can I return a phone after it has been delivered?,Return Policy,Cancellation Policy,0,0.910279322761052,bm25,0.0004501342773437
+Is a delivered electronic item returnable?,Return Policy,Shipping Policy,0,0.4224891364548129,bm25,0.0003154277801513
+How does the return policy apply to electronic purchases?,Return Policy,Cancellation Policy,0,0.4946132920667083,bm25,0.0003318786621093
+I'd rather exchange this product than keep it. Is that possible?,Return Policy,Damaged Product Policy,0,0.512726507061194,bm25,0.0003361701965332
+Is an exchange available when I request a return?,Return Policy,Cancellation Policy,0,0.6129970528259089,bm25,0.0003862380981445
+What should I do if I want another product instead?,Return Policy,Shipping Policy,0,0.5958444684082012,bm25,0.000413179397583
+What is the next step once I request a return?,Return Policy,Refund Policy,0,0.4345533064677679,bm25,0.0003173351287841
+How is my return handled after I submit the request?,Return Policy,Cancellation Policy,0,0.5103611317414476,bm25,0.0003154277801513
+Is there a way to return this order?,Return Policy,Cancellation Policy,0,0.5147041027317591,bm25,0.0006041526794433
+What do I have to do to return an item?,Return Policy,Cancellation Policy,0,0.764526778931412,bm25,0.0003755092620849
+How can I return something that has already arrived?,Return Policy,Cancellation Policy,0,0.7169621403492579,bm25,0.0004515647888183
+I need instructions for returning my order.,Return Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0003883838653564
+Can I request a return after the product has been delivered?,Return Policy,Cancellation Policy,0,1.0,bm25,0.0004472732543945
+How do I go about returning this product?,Return Policy,Shipping Policy,0,0.4224891364548129,bm25,0.0003836154937744
+Is my order eligible to be returned?,Return Policy,Cancellation Policy,0,0.5197534678843592,bm25,0.0002844333648681
+Can you explain the rules for returning this purchase?,Return Policy,Shipping Policy,0,0.3997056369683521,bm25,0.0003097057342529
+Can a delivered order be returned?,Return Policy,Shipping Policy,0,0.5589579218135169,bm25,0.0002534389495849
+What is the procedure for returning a delivered item?,Return Policy,Shipping Policy,0,0.4224891364548129,bm25,0.0004060268402099
+I no longer want the product. Can I request a return?,Return Policy,Cancellation Policy,0,1.0,bm25,0.000504732131958
+Can I return something just because I changed my mind?,Return Policy,Shipping Policy,0,0.510681233219793,bm25,0.0003519058227539
+Can I return a product that I don't need now?,Return Policy,Cancellation Policy,0,1.0,bm25,0.0004191398620605
+I changed my mind after receiving the order. What are my return options?,Return Policy,Shipping Policy,0,0.5103611317414476,bm25,0.0004525184631347
+Is a change of mind covered by the return policy?,Return Policy,Cancellation Policy,0,0.6550163333944166,bm25,0.0003643035888671
+I don't want to keep this purchase. Can it be returned?,Return Policy,Cancellation Policy,0,0.5044239825054064,bm25,0.0004754066467285
+I have already opened the item. Can I still request a return?,Return Policy,Cancellation Policy,0,0.8102854452147327,bm25,0.0004634857177734
+Are opened products accepted under the return policy?,Return Policy,Damaged Product Policy,0,0.5841524076221276,bm25,0.0004017353057861
+I opened the box before deciding to return the product. Is that allowed?,Return Policy,Cancellation Policy,0,0.6393747699843596,bm25,0.0004451274871826
+What are the rules for returning an opened item?,Return Policy,Shipping Policy,0,0.3103116715823169,bm25,0.0003821849822998
+Can an item be returned if its packaging has been opened?,Return Policy,Cancellation Policy,0,1.0,bm25,0.0005383491516113
+I need to return an item but no longer have the invoice.,Return Policy,Cancellation Policy,0,1.0,bm25,0.0005042552947998
+I lost the invoice for my order. Can I still return it?,Return Policy,Shipping Policy,0,0.568849292778232,bm25,0.000528335571289
+What happens if I cannot find my purchase invoice?,Return Policy,Cancellation Policy,0,0.6889532419624299,bm25,0.0004384517669677
+Do I need to provide an invoice when requesting a return?,Return Policy,Cancellation Policy,0,0.6274852672817314,bm25,0.0003962516784667
+What documents should I have ready for a return?,Return Policy,Shipping Policy,0,0.499013086167486,bm25,0.000354528427124
+Are products bought on discount covered by the return policy?,Return Policy,Damaged Product Policy,0,0.7386542344310996,bm25,0.0006334781646728
+Can I send back a sale purchase after delivery?,Return Policy,Cancellation Policy,0,0.9690497427098368,bm25,0.0007905960083007
+Is the return period different for sale items?,Return Policy,Refund Policy,0,0.3347527055541078,bm25,0.0004096031188964
+How many days do I have to return my item?,Return Policy,Cancellation Policy,0,0.5324728080574896,bm25,0.000558853149414
+What is the deadline for requesting a return?,Return Policy,Shipping Policy,0,0.3955883717020397,bm25,0.0004117488861083
+How long is the return period after delivery?,Return Policy,Refund Policy,0,0.5103611317414476,bm25,0.0003859996795654
+Can I return something after several days?,Return Policy,Cancellation Policy,0,0.700011764622093,bm25,0.0003113746643066
+When should I submit a return request by?,Return Policy,Cancellation Policy,0,0.480030290378817,bm25,0.0003619194030761
+How long does a product remain eligible for return?,Return Policy,Shipping Policy,0,0.7072193463864815,bm25,0.0004036426544189
+Is it possible to make a partial return?,Return Policy,Cancellation Policy,0,0.4921025996620394,bm25,0.0004920959472656
+I want to keep the rest of the order but return one product.,Return Policy,Cancellation Policy,0,0.8428637210142117,bm25,0.0004172325134277
+Is return pickup available for my order?,Return Policy,Shipping Policy,0,0.4278436491318834,bm25,0.0003468990325927
+Will the return be collected from my address?,Return Policy,Cancellation Policy,0,0.6030155183632516,bm25,0.0003137588500976
+Is home pickup available for returns?,Return Policy,Shipping Policy,0,0.4278436491318834,bm25,0.0002989768981933
+I'd prefer a different product instead of keeping this one.,Return Policy,Damaged Product Policy,0,0.628107459845527,bm25,0.0006580352783203
+How do I request a return for my latest order?,Return Policy,Cancellation Policy,0,0.480030290378817,bm25,0.0004122257232666
+What do I need to do to give this purchase back?,Return Policy,Shipping Policy,0,0.5410605818445104,bm25,0.0004153251647949
+Is this item covered by the return rules?,Return Policy,Damaged Product Policy,0,0.6550163333944166,bm25,0.000307559967041
+How can I arrange for this purchase to be returned?,Return Policy,Cancellation Policy,0,0.5044239825054064,bm25,0.000401496887207
+I need to return something from my order. How does that work?,Return Policy,Cancellation Policy,0,0.6042761445236886,bm25,0.000417947769165
+I'd like to return this item and need to know the procedure.,Return Policy,Cancellation Policy,0,0.6961518743667263,bm25,0.0004217624664306
+What are the steps for returning a recently delivered item?,Return Policy,Shipping Policy,0,0.4224891364548129,bm25,0.00038743019104
+Can a purchase be returned after it has been delivered?,Return Policy,Cancellation Policy,0,0.8796041625440175,bm25,0.0004215240478515
+I'd like to know whether I can return this product.,Return Policy,Cancellation Policy,0,0.5792765871069773,bm25,0.0003609657287597
+What is the correct way to return an item?,Return Policy,Cancellation Policy,0,0.5628487256820992,bm25,0.0003552436828613
+Is there a return option for this product?,Return Policy,Damaged Product Policy,0,0.5152152602122599,bm25,0.0003514289855957
+I checked the product before deciding to return it. Is that allowed?,Return Policy,Cancellation Policy,0,0.6668384505222532,bm25,0.0004029273986816
+What if my invoice is missing when I request a return?,Return Policy,Damaged Product Policy,0,0.4345533064677679,bm25,0.0004148483276367
+I lost the receipt. Can I still return the item?,Return Policy,Shipping Policy,0,0.5863986055085675,bm25,0.0003674030303955
+What documents are needed to return my order?,Return Policy,Cancellation Policy,0,0.4120263840630504,bm25,0.0003597736358642
+Can a return be requested if I cannot provide the invoice?,Return Policy,Cancellation Policy,0,0.8282891408565073,bm25,0.0003833770751953
+I purchased this during a sale. Can I still return it?,Return Policy,Cancellation Policy,0,0.7209487913587519,bm25,0.0003952980041503
+Do sale purchases have different return conditions?,Return Policy,Shipping Policy,0,0.327343608104146,bm25,0.0005266666412353
+Is a discounted order eligible for a return?,Return Policy,Shipping Policy,0,0.7348707927508258,bm25,0.0005786418914794
+How long do I have to return this product?,Return Policy,Cancellation Policy,0,0.4120263840630504,bm25,0.0003430843353271
+How many days are available for a return?,Return Policy,Shipping Policy,0,0.5094945011459657,bm25,0.0008809566497802
+Can I request a return several days after delivery?,Return Policy,Cancellation Policy,0,0.910279322761052,bm25,0.0006451606750488
+What is the deadline for sending my purchase back?,Return Policy,Cancellation Policy,0,0.4702469227371567,bm25,0.0004780292510986
+How soon after delivery do I need to request a return?,Return Policy,Cancellation Policy,0,0.6818957612979981,bm25,0.0004620552062988
+Does the return period begin when I receive the item?,Return Policy,Refund Policy,0,0.380799168858821,bm25,0.00046968460083
+When is the final day I can start a return?,Return Policy,Shipping Policy,0,0.4516175723157616,bm25,0.0003604888916015
+Is an accessory eligible for a return?,Return Policy,Shipping Policy,0,0.7782133285005335,bm25,0.0002908706665039
+I need to return one of the accessories from my order.,Return Policy,Cancellation Policy,0,0.5880079971284827,bm25,0.0003807544708251
+Can I return a laptop after it has been delivered?,Return Policy,Cancellation Policy,0,0.910279322761052,bm25,0.0005946159362792
+Is a phone purchase eligible for return?,Return Policy,Cancellation Policy,0,0.5981115854605725,bm25,0.0008065700531005
+Can I send an electronic device back?,Return Policy,Damaged Product Policy,0,0.6352001423274198,bm25,0.0011045932769775
+Are electronics included in the return policy?,Return Policy,Shipping Policy,0,0.5056306160890279,bm25,0.0005042552947998
+Can an electronic item be returned after delivery?,Return Policy,Cancellation Policy,0,0.5644576374054868,bm25,0.0011141300201416
+Can I return a device that I already received?,Return Policy,Cancellation Policy,0,0.7209487913587518,bm25,0.000586986541748
+Are electronic purchases subject to the same return rules?,Return Policy,Cancellation Policy,0,0.4295756967933859,bm25,0.0004622936248779
+How quickly will my package be delivered?,Shipping Policy,Cancellation Policy,0,0.537603513255666,bm25,0.0003657341003417
+How long does it take for an order to reach the customer?,Shipping Policy,Cancellation Policy,0,0.6516193806686778,bm25,0.0007774829864501
+How long will my order be in transit?,Shipping Policy,Cancellation Policy,0,0.5524641834322302,bm25,0.0005342960357666
+What is the typical time needed to deliver an order?,Shipping Policy,Refund Policy,0,0.3754908184628632,bm25,0.000476598739624
+When is my order likely to be delivered?,Shipping Policy,Cancellation Policy,0,0.4879609548134391,bm25,0.0003840923309326
+How long does an order usually stay in transit?,Shipping Policy,Cancellation Policy,0,0.4660646815204364,bm25,0.0004420280456542
+Do you have an expedited shipping option?,Shipping Policy,Cancellation Policy,0,0.3340432171628965,bm25,0.0002737045288085
+Is there a quicker shipping method I can choose?,Shipping Policy,Return Policy,0,0.4516175723157616,bm25,0.0006556510925292
+What will I be charged for delivery?,Shipping Policy,Cancellation Policy,0,0.537603513255666,bm25,0.0003769397735595
+Will shipping be charged separately?,Shipping Policy,Cancellation Policy,0,0.7315140542082773,bm25,0.000274658203125
+What does it cost to have an order delivered?,Shipping Policy,Cancellation Policy,0,0.5122973907510777,bm25,0.0005004405975341
+How much will delivery add to my purchase?,Shipping Policy,Cancellation Policy,0,0.4962106773351111,bm25,0.0003116130828857
+Is free shipping available?,Shipping Policy,Damaged Product Policy,0,0.3939571478940447,bm25,0.0003600120544433
+Do you offer free delivery?,Shipping Policy,Cancellation Policy,0,0.3939571478940447,bm25,0.0003042221069335
+Do you provide complimentary shipping?,Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0002741813659667
+Can I place an order without paying a shipping charge?,Shipping Policy,Cancellation Policy,0,0.6589838012170527,bm25,0.0004732608795166
+Is there a free shipping option for customers?,Shipping Policy,Damaged Product Policy,0,0.4648055627922459,bm25,0.0004553794860839
+Is there a way to receive free shipping?,Shipping Policy,Damaged Product Policy,0,0.3955883717020397,bm25,0.0005795955657958
+Can I track my order after it has shipped?,Shipping Policy,Cancellation Policy,0,0.5751519707831301,bm25,0.0004429817199707
+How do I track something I ordered?,Shipping Policy,Cancellation Policy,0,0.3744616560228362,bm25,0.0004124641418457
+Will I receive a tracking number?,Shipping Policy,Cancellation Policy,0,0.5840099971307453,bm25,0.0005199909210205
+When will I receive my tracking information?,Shipping Policy,Damaged Product Policy,0,0.4224891364548129,bm25,0.0003759860992431
+Will the tracking details be sent to me?,Shipping Policy,Cancellation Policy,0,0.6272014932818997,bm25,0.0003149509429931
+Can I place an order from another country?,Shipping Policy,Cancellation Policy,0,0.6648441223670826,bm25,0.0003409385681152
+Will you ship my order internationally?,Shipping Policy,Cancellation Policy,0,0.4356490385942891,bm25,0.0003199577331542
+Do you send products to customers overseas?,Shipping Policy,Return Policy,0,0.4975352636441784,bm25,0.0002992153167724
+Can I get my purchase delivered internationally?,Shipping Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0004439353942871
+Do you provide cross-border shipping?,Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0002880096435546
+Why hasn't my order arrived yet?,Shipping Policy,Cancellation Policy,0,0.3120011873622501,bm25,0.0003297328948974
+My delivery appears to be running late.,Shipping Policy,Cancellation Policy,0,0.4709875742275383,bm25,0.0003349781036376
+Can I change the shipping address after placing an order?,Shipping Policy,Cancellation Policy,0,0.5378219727892897,bm25,0.0003504753112792
+I entered the wrong delivery address. Can it be changed?,Shipping Policy,Cancellation Policy,0,0.5410485991435298,bm25,0.0003361701965332
+How do I update the address for an order that hasn't shipped?,Shipping Policy,Cancellation Policy,0,0.6796477145179387,bm25,0.0004026889801025
+I need to send my package to a different address. What can I do?,Shipping Policy,Cancellation Policy,0,0.7106451909597125,bm25,0.0004775524139404
+Can the delivery address be updated after checkout?,Shipping Policy,Cancellation Policy,0,0.5380208950768581,bm25,0.0003912448883056
+How can I change where my order will be delivered?,Shipping Policy,Cancellation Policy,0,0.7242192967415354,bm25,0.0004012584686279
+I made a mistake in the shipping address. Can it be fixed?,Shipping Policy,Cancellation Policy,0,0.6902855111671318,bm25,0.0003716945648193
+I need to correct my address before shipment.,Shipping Policy,Cancellation Policy,0,1.0,bm25,0.0011930465698242
+Can the shipping address be modified after an order is placed?,Shipping Policy,Cancellation Policy,0,0.7339253941316722,bm25,0.0005979537963867
+How do I request an address change for my order?,Shipping Policy,Cancellation Policy,0,0.4381450642693298,bm25,0.0004608631134033
+What happens if I entered the wrong shipping address?,Shipping Policy,Cancellation Policy,0,0.7501713359591697,bm25,0.0004570484161376
+When will an international shipment normally reach me?,Shipping Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0006766319274902
+How long will my package be in transit?,Shipping Policy,Cancellation Policy,0,0.537603513255666,bm25,0.0003752708435058
+When will the order likely be delivered?,Shipping Policy,Cancellation Policy,0,0.5666398545410776,bm25,0.0002949237823486
+When is my order likely to reach me?,Shipping Policy,Cancellation Policy,0,0.371145809975498,bm25,0.0003211498260498
+Do you offer a quicker shipping method?,Shipping Policy,Cancellation Policy,0,0.3554314016285437,bm25,0.0003743171691894
+Do you provide priority shipping?,Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0002782344818115
+How do I request expedited delivery?,Shipping Policy,Cancellation Policy,0,0.2730324457918354,bm25,0.0004005432128906
+How much will shipping cost for my order?,Shipping Policy,Cancellation Policy,0,0.6163996774074242,bm25,0.0003468990325927
+Will I be charged for delivery?,Shipping Policy,Cancellation Policy,0,0.537603513255666,bm25,0.0002851486206054
+What will shipping add to the order total?,Shipping Policy,Cancellation Policy,0,0.6656784340612966,bm25,0.000340461730957
+What are the costs associated with shipping?,Shipping Policy,Damaged Product Policy,0,0.4556335017604485,bm25,0.0002884864807128
+Is delivery included in the purchase price?,Shipping Policy,Cancellation Policy,0,0.4490364544520348,bm25,0.0003309249877929
+Will there be a shipping charge at checkout?,Shipping Policy,Cancellation Policy,0,0.8930349148842097,bm25,0.0003631114959716
+What does it cost to have my order delivered?,Shipping Policy,Cancellation Policy,0,0.371145809975498,bm25,0.0003314018249511
+Do you offer free shipping?,Shipping Policy,Cancellation Policy,0,0.3939571478940447,bm25,0.0002896785736083
+When do orders qualify for free delivery?,Shipping Policy,Damaged Product Policy,0,0.7553332810609825,bm25,0.0003750324249267
+Do you have a free shipping option?,Shipping Policy,Cancellation Policy,0,0.3939571478940447,bm25,0.0010733604431152
+Do you provide complimentary delivery?,Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0003662109375
+Can customers receive free delivery?,Shipping Policy,Damaged Product Policy,0,0.438524607682539,bm25,0.0003905296325683
+How do I follow my order once it has been dispatched?,Shipping Policy,Cancellation Policy,0,0.8711390336453958,bm25,0.0004048347473144
+Is there a way to follow my parcel?,Shipping Policy,Damaged Product Policy,0,0.3955883717020397,bm25,0.0003111362457275
+Will I receive a tracking number for my order?,Shipping Policy,Cancellation Policy,0,0.5840099971307453,bm25,0.0006871223449707
+When should I receive the tracking information?,Shipping Policy,Damaged Product Policy,0,0.7037282042884813,bm25,0.0003132820129394
+Will I get a tracking number once the package is shipped?,Shipping Policy,Cancellation Policy,0,0.5840099971307453,bm25,0.0004031658172607
+Will you deliver products internationally?,Shipping Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0002405643463134
+Are foreign addresses supported for delivery?,Shipping Policy,Damaged Product Policy,0,0.1838507771907172,bm25,0.0002591609954833
+Can my purchase be shipped abroad?,Shipping Policy,Cancellation Policy,0,0.4973592696724352,bm25,0.0002555847167968
+Which countries do you ship to?,Shipping Policy,Cancellation Policy,0,0.0,bm25,0.0002791881561279
+Can an order be delivered outside the domestic area?,Shipping Policy,Cancellation Policy,0,0.5991895956490113,bm25,0.0003225803375244
+Can I change my delivery address after ordering?,Shipping Policy,Cancellation Policy,0,0.4781897226444914,bm25,0.0004360675811767
+I entered the wrong address for my order. Can it be changed?,Shipping Policy,Cancellation Policy,0,0.6074150817079534,bm25,0.000413179397583
+I need my package sent to a different address.,Shipping Policy,Cancellation Policy,0,0.5019857339967051,bm25,0.0003378391265869
+Is it possible to edit the address before shipment?,Shipping Policy,Cancellation Policy,0,0.6675085473646745,bm25,0.0003461837768554
+Can I change where my order will be delivered?,Shipping Policy,Cancellation Policy,0,0.7242192967415354,bm25,0.0003437995910644
+Can the address be changed after an order is placed?,Shipping Policy,Cancellation Policy,0,0.7339253941316722,bm25,0.0003468990325927
+I need to correct the address before my package ships.,Shipping Policy,Cancellation Policy,0,0.6274852672817314,bm25,0.0003285408020019
+How do I request an address change?,Shipping Policy,Cancellation Policy,0,0.4381450642693298,bm25,0.0003039836883544
+Can I update the delivery location after checkout?,Shipping Policy,Cancellation Policy,0,0.4306805455791028,bm25,0.0003025531768798
+Can I fix my address before dispatch?,Shipping Policy,Cancellation Policy,0,0.3129066940848848,bm25,0.0002758502960205
+Can the shipping address be edited after payment?,Shipping Policy,Cancellation Policy,0,0.5380208950768581,bm25,0.000303030014038
+How do I change the address attached to my order?,Shipping Policy,Cancellation Policy,0,0.3637799032741484,bm25,0.0003273487091064
+Is an address correction possible before shipping?,Shipping Policy,Cancellation Policy,0,0.8685667632565213,bm25,0.0002813339233398
+What is the process for cancelling an order?,Cancellation Policy,Return Policy,0,0.6122227571212914,bm25,0.0003702640533447
+I no longer want this purchase. Can I cancel it?,Cancellation Policy,Return Policy,0,1.0,bm25,0.000370979309082
+Is there a way to stop my order before it is shipped?,Cancellation Policy,Shipping Policy,0,0.6944898968865975,bm25,0.0003542900085449
+I'd like to cancel my order as soon as possible.,Cancellation Policy,Damaged Product Policy,0,0.667765208503486,bm25,0.0004441738128662
+I have already paid. Can I still cancel the order?,Cancellation Policy,Shipping Policy,0,0.8102854452147327,bm25,0.0004405975341796
+Can I stop one product from my order being processed?,Cancellation Policy,Damaged Product Policy,0,0.6811762243223809,bm25,0.0004386901855468
+Can I cancel an item and keep the other products?,Cancellation Policy,Return Policy,0,0.7476681247760331,bm25,0.0003936290740966
+I want to remove one product from my order.,Cancellation Policy,Shipping Policy,0,0.6556424639534292,bm25,0.000425100326538
+Can I cancel a product without cancelling the complete order?,Cancellation Policy,Return Policy,0,0.7797192113075367,bm25,0.000373363494873
+Will I get my money back after cancelling an order?,Cancellation Policy,Return Policy,0,0.9528753677079164,bm25,0.0004270076751708
+Can I cancel and receive the amount I paid back?,Cancellation Policy,Refund Policy,0,0.8869532299893244,bm25,0.0003607273101806
+What should I expect after cancelling a purchase?,Cancellation Policy,Shipping Policy,0,0.6919070919290359,bm25,0.0003328323364257
+I changed my mind about the purchase. Can I cancel?,Cancellation Policy,Shipping Policy,0,0.6813187061630863,bm25,0.0003571510314941
+I no longer need the item I ordered. Can I cancel?,Cancellation Policy,Return Policy,0,1.0,bm25,0.0003776550292968
+What can I do if I ordered something I don't need?,Cancellation Policy,Shipping Policy,0,0.7295555827313395,bm25,0.0003910064697265
+Is there a cost associated with cancelling a purchase?,Cancellation Policy,Shipping Policy,0,0.6503853294560109,bm25,0.000382661819458
+How do I stop my order from being processed?,Cancellation Policy,Shipping Policy,0,0.6811762243223809,bm25,0.0003173351287841
+Can I halt the processing of my order?,Cancellation Policy,Shipping Policy,0,0.5136377613295892,bm25,0.0003273487091064
+Is there a way to prevent my order from being processed?,Cancellation Policy,Shipping Policy,0,0.4783284389095851,bm25,0.0004069805145263
+Can I prevent my order from moving to the next stage?,Cancellation Policy,Shipping Policy,0,0.5570765943936508,bm25,0.0005030632019042
+How do I undo an order?,Cancellation Policy,Return Policy,0,0.2127110058726069,bm25,0.0003232955932617
+Can I call off an order after placing it?,Cancellation Policy,Shipping Policy,0,0.6029345781848836,bm25,0.0003738403320312
+Is there a way to call off my purchase?,Cancellation Policy,Damaged Product Policy,0,0.3955883717020397,bm25,0.0003516674041748
+I selected the wrong item. Can I cancel the order?,Cancellation Policy,Shipping Policy,0,0.9733608694965332,bm25,0.0005905628204345
+I changed my mind about buying this. Can I cancel?,Cancellation Policy,Shipping Policy,0,0.6813187061630863,bm25,0.0004098415374755
+Can I remove a product from an order I already placed?,Cancellation Policy,Return Policy,0,0.7797192113075367,bm25,0.000439167022705
+I only want to stop one item from my order.,Cancellation Policy,Return Policy,0,0.719658511108513,bm25,0.0003666877746582
+How can I remove one item from my order?,Cancellation Policy,Return Policy,0,0.310170171802565,bm25,0.0003366470336914
+I want to stop one item from being shipped.,Cancellation Policy,Return Policy,0,0.719658511108513,bm25,0.0003232955932617
+Can I cancel a product without cancelling the entire order?,Cancellation Policy,Return Policy,0,0.7797192113075367,bm25,0.0003628730773925
+I paid for this by mistake. Can I cancel it?,Cancellation Policy,Refund Policy,0,0.6303882103235495,bm25,0.0003943443298339
+Can I reverse a paid order?,Cancellation Policy,Refund Policy,0,0.4749372937826651,bm25,0.0002861022949218
+Can I stop my purchase after the payment was processed?,Cancellation Policy,Refund Policy,0,0.6036715768194907,bm25,0.0003950595855712
+How do I stop an unshipped order?,Cancellation Policy,Damaged Product Policy,0,0.4383631634023082,bm25,0.0002782344818115
+The package has been dispatched. Can I still cancel?,Cancellation Policy,Shipping Policy,0,0.6973029913833793,bm25,0.0003526210784912
+Can I cancel once the shipment has started?,Cancellation Policy,Shipping Policy,0,0.805768238459694,bm25,0.0004084110260009
+Do I get my money back after cancelling an order?,Cancellation Policy,Return Policy,0,0.5303862312531035,bm25,0.0003349781036376
+Will the amount I paid be returned after cancellation?,Cancellation Policy,Refund Policy,0,1.0,bm25,0.000361680984497
+"If I stop the order, will I receive the amount I paid back?",Cancellation Policy,Refund Policy,0,0.6501606753728115,bm25,0.0003871917724609
+Is there any fee when I stop an order?,Cancellation Policy,Shipping Policy,0,0.4383631634023082,bm25,0.0003559589385986
+I want to prevent my order from moving forward.,Cancellation Policy,Shipping Policy,0,0.4829418371105866,bm25,0.0008890628814697
+Can I stop the processing of my purchase?,Cancellation Policy,Shipping Policy,0,0.8349700012481488,bm25,0.000450849533081
+How can I keep my order from being dispatched?,Cancellation Policy,Shipping Policy,0,0.4928498729469447,bm25,0.0005652904510498
+Can I prevent my order from going to shipment?,Cancellation Policy,Shipping Policy,0,0.5429009232848033,bm25,0.000441551208496
+I want to prevent this purchase from being sent out.,Cancellation Policy,Return Policy,0,0.4663318421106474,bm25,0.0004138946533203
+Is there a way to halt fulfillment of my order?,Cancellation Policy,Damaged Product Policy,0,0.3955883717020397,bm25,0.0006854534149169
+How can I undo my order?,Cancellation Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0005273818969726
+What is the process for revoking an order?,Cancellation Policy,Return Policy,0,0.6122227571212914,bm25,0.000464916229248
+Can I undo an order that has not shipped?,Cancellation Policy,Shipping Policy,0,1.0,bm25,0.0003814697265625
+I ordered something a moment ago and changed my mind.,Cancellation Policy,Damaged Product Policy,0,0.4660646815204364,bm25,0.0005137920379638
+Can I reverse my recent order?,Cancellation Policy,Shipping Policy,0,0.2588295697082734,bm25,0.0003085136413574
+The item I received is broken. Can I get help?,Damaged Product Policy,Return Policy,0,0.2892508497146243,bm25,0.000399112701416
+My laptop arrived broken. How can I report it?,Damaged Product Policy,Shipping Policy,0,0.3545514894044103,bm25,0.0003445148468017
+The screen on my phone was cracked when it arrived.,Damaged Product Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0003721714019775
+My charger arrived damaged. What should I do?,Damaged Product Policy,Shipping Policy,0,0.3518641021442406,bm25,0.0003132820129394
+I received a product that doesn't function.,Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0003130435943603
+My order arrived in poor condition.,Damaged Product Policy,Shipping Policy,0,0.5519281880157662,bm25,0.0002844333648681
+The product I received is faulty.,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0003070831298828
+Something is wrong with the item I received.,Damaged Product Policy,Return Policy,0,0.5568801149527772,bm25,0.0010702610015869
+"The package was fine outside, but the product inside is broken.",Damaged Product Policy,Cancellation Policy,0,0.4867367074822922,bm25,0.0008378028869628
+I opened my package and found a damaged item.,Damaged Product Policy,Shipping Policy,0,0.5625786550599738,bm25,0.000425100326538
+Can I get a replacement for an item that arrived broken?,Damaged Product Policy,Return Policy,0,0.6182900586326936,bm25,0.0004010200500488
+My product has a manufacturing defect. What can I do?,Damaged Product Policy,Return Policy,0,0.7797192113075369,bm25,0.0003674030303955
+The item I received is unusable.,Damaged Product Policy,Return Policy,0,0.2892508497146243,bm25,0.0003273487091064
+The product was damaged in transit.,Damaged Product Policy,Shipping Policy,0,0.7369981236345678,bm25,0.0003151893615722
+I received an item with visible damage.,Damaged Product Policy,Return Policy,0,0.7240190569162694,bm25,0.0003261566162109
+The item I ordered doesn't work.,Damaged Product Policy,Return Policy,0,0.4866804347482666,bm25,0.0002763271331787
+Can a damaged product be replaced?,Damaged Product Policy,Return Policy,0,0.8870595608052921,bm25,0.0007758140563964
+I need help with a product that arrived broken.,Damaged Product Policy,Return Policy,0,0.5383691971307341,bm25,0.0003261566162109
+The product has a defect and I need assistance.,Damaged Product Policy,Cancellation Policy,0,0.6277195364173023,bm25,0.0006453990936279
+The item has a physical defect. What should I do?,Damaged Product Policy,Shipping Policy,0,0.4975625176414902,bm25,0.0003812313079833
+My purchase arrived damaged. How do I proceed?,Damaged Product Policy,Cancellation Policy,0,0.3822448928715821,bm25,0.000732421875
+I found damage on the product after opening the package.,Damaged Product Policy,Shipping Policy,0,0.5174321703940753,bm25,0.0003547668457031
+The product I received is not usable because it is damaged.,Damaged Product Policy,Shipping Policy,0,0.6755511807604837,bm25,0.0004663467407226
+Can I report an item that arrived defective?,Damaged Product Policy,Return Policy,0,0.4676771975986029,bm25,0.0004522800445556
+How do I report damage to an item I received?,Damaged Product Policy,Return Policy,0,0.4676771975986029,bm25,0.0004026889801025
+What can I do if the product is faulty on arrival?,Damaged Product Policy,Shipping Policy,0,0.5694516531685778,bm25,0.0003409385681152
+The item arrived with a crack. What are my options?,Damaged Product Policy,Return Policy,0,0.662733849543745,bm25,0.0005581378936767
+My product has been damaged in shipping.,Damaged Product Policy,Cancellation Policy,0,0.7213150086036759,bm25,0.0008096694946289
+Can you help me with an item that arrived broken?,Damaged Product Policy,Return Policy,0,0.7240190569162694,bm25,0.0005152225494384
+The product I received has a manufacturing fault.,Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0005264282226562
+The item doesn't work even though I just received it.,Damaged Product Policy,Return Policy,0,0.2892508497146243,bm25,0.0004775524139404
+The package arrived and the item has missing parts.,Damaged Product Policy,Shipping Policy,0,0.5988583801854385,bm25,0.0003700256347656
+I received an item with a component missing.,Damaged Product Policy,Return Policy,0,0.7240190569162694,bm25,0.0003228187561035
+My order came without all the required parts.,Damaged Product Policy,Return Policy,0,0.372920348239865,bm25,0.000525951385498
+The product I received isn't complete.,Damaged Product Policy,Return Policy,0,0.4010695024959482,bm25,0.0003280639648437
+Can I report an incomplete product?,Damaged Product Policy,Shipping Policy,0,0.3545514894044103,bm25,0.0002927780151367
+The product arrived with some pieces missing.,Damaged Product Policy,Shipping Policy,0,0.4224891364548129,bm25,0.0003330707550048
+I received a faulty charger. Can it be replaced?,Damaged Product Policy,Cancellation Policy,0,0.5589579218135169,bm25,0.0007061958312988
+My charger isn't working after delivery.,Damaged Product Policy,Refund Policy,0,0.3564307216426125,bm25,0.0003318786621093
+The charger I received is defective.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0003111362457275
+The charging adapter arrived damaged.,Damaged Product Policy,Shipping Policy,0,0.0275505339637525,bm25,0.0002977848052978
+The accessory I received is broken.,Damaged Product Policy,Shipping Policy,0,0.2204181774622806,bm25,0.0003044605255126
+One of the accessories in my order is defective.,Damaged Product Policy,Return Policy,0,0.4660646815204364,bm25,0.0003600120544433
+The cable that came with my product is not working.,Damaged Product Policy,Shipping Policy,0,0.5156851249002555,bm25,0.0003752708435058
+My laptop was damaged during shipping.,Damaged Product Policy,Refund Policy,0,0.336651683121155,bm25,0.0002808570861816
+The display on my product arrived cracked.,Damaged Product Policy,Shipping Policy,0,0.4010695024959482,bm25,0.0003759860992431
+My new device arrived unusable.,Damaged Product Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0002753734588623
+The package was handled badly and the product is broken.,Damaged Product Policy,Shipping Policy,0,0.5405073975856175,bm25,0.0003662109375
+The item seems to have been damaged during transit.,Damaged Product Policy,Return Policy,0,0.8524462138890969,bm25,0.0004529953002929
+My product was fine before delivery but arrived damaged.,Damaged Product Policy,Shipping Policy,0,0.6422074254681881,bm25,0.0003449916839599
+The shipment caused damage to the product.,Damaged Product Policy,Shipping Policy,0,0.4089053422211227,bm25,0.0003440380096435
+The product arrived with damage from shipping.,Damaged Product Policy,Shipping Policy,0,0.4010695024959482,bm25,0.0003354549407958
+The package was delivered but the product inside is damaged.,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0004069805145263
+I think the product was damaged in transit.,Damaged Product Policy,Shipping Policy,0,0.7369981236345678,bm25,0.0003304481506347
+What can I claim if my item arrives broken?,Damaged Product Policy,Return Policy,0,0.490780997836487,bm25,0.0004441738128662
+Is compensation available for a damaged product?,Damaged Product Policy,Shipping Policy,0,0.5459376052305928,bm25,0.0003068447113037
+Is there any compensation for damage caused in transit?,Damaged Product Policy,Shipping Policy,0,0.5459376052305928,bm25,0.0003979206085205
+Can I request assistance for a damaged delivery?,Damaged Product Policy,Cancellation Policy,0,0.4601176542486102,bm25,0.0004353523254394
+What should I do to make a damaged-product claim?,Damaged Product Policy,Shipping Policy,0,0.4346814414943538,bm25,0.0003869533538818
+Do I need proof that the product was damaged?,Damaged Product Policy,Return Policy,0,0.4356179821551998,bm25,0.0003662109375
+What proof should I provide for a damaged order?,Damaged Product Policy,Shipping Policy,0,0.499013086167486,bm25,0.0003221035003662
+How can I document the damage to my product?,Damaged Product Policy,Shipping Policy,0,0.4017845087763126,bm25,0.0003397464752197
+Do I need to show the damage before getting help?,Damaged Product Policy,Cancellation Policy,0,0.6274852672817314,bm25,0.0006332397460937
+What evidence should I keep if my item arrives broken?,Damaged Product Policy,Shipping Policy,0,0.5458335499145989,bm25,0.0008680820465087
+Will a broken product be replaced?,Damaged Product Policy,Cancellation Policy,0,0.6991243739315984,bm25,0.000840425491333
+Can a faulty item be replaced?,Damaged Product Policy,Return Policy,0,0.5589579218135169,bm25,0.0004348754882812
+I received a broken product. Can I request a replacement?,Damaged Product Policy,Cancellation Policy,0,0.7706383052284538,bm25,0.0004944801330566
+Can I get another product if mine arrived defective?,Damaged Product Policy,Return Policy,0,0.5694516531685778,bm25,0.0003643035888671
+How do I request a replacement for a broken item?,Damaged Product Policy,Refund Policy,0,0.5960741671437003,bm25,0.0003294944763183
+I want to report a defective item and request help.,Damaged Product Policy,Return Policy,0,0.8702713721426036,bm25,0.0003690719604492
+How do I report a product that doesn't work?,Damaged Product Policy,Shipping Policy,0,0.8585183296733943,bm25,0.0004072189331054
+How can I notify you about damage to my order?,Damaged Product Policy,Shipping Policy,0,0.6813187061630863,bm25,0.0004355907440185
+I need to report that my product arrived broken.,Damaged Product Policy,Cancellation Policy,0,0.7399378768694665,bm25,0.0009899139404296
+The item worked poorly from the moment I opened it.,Damaged Product Policy,Return Policy,0,0.3415364018643488,bm25,0.0004055500030517
+The device arrived but cannot be used.,Damaged Product Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0003120899200439
+The item has a fault straight out of the package.,Damaged Product Policy,Return Policy,0,0.4975625176414902,bm25,0.0003857612609863
+My purchase arrived with a functional problem.,Damaged Product Policy,Cancellation Policy,0,0.3822448928715821,bm25,0.0003018379211425
+The product doesn't function the way it should.,Damaged Product Policy,Return Policy,0,0.41675261752684,bm25,0.0003607273101806
+The item is faulty on arrival.,Damaged Product Policy,Shipping Policy,0,0.4829418371105866,bm25,0.0008580684661865
+The product appears to have a factory defect.,Damaged Product Policy,Return Policy,0,0.5383691971307341,bm25,0.0004692077636718
+The item has a defect that was present when it arrived.,Damaged Product Policy,Shipping Policy,0,0.6527045082096701,bm25,0.0004718303680419
+The product I received has a built-in defect.,Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0004599094390869
+I received an item with a factory defect.,Damaged Product Policy,Return Policy,0,0.7240190569162694,bm25,0.000406265258789
+The product has a defect that prevents it from working.,Damaged Product Policy,Shipping Policy,0,0.6527045082096701,bm25,0.0003638267517089
+My item appears to be defective from the manufacturer.,Damaged Product Policy,Shipping Policy,0,0.4820149571415393,bm25,0.0003256797790527
+My package arrived damaged and I don't know what to do.,Damaged Product Policy,Shipping Policy,0,0.4579635966898362,bm25,0.0003941059112548
+I just opened the package and found the product broken.,Damaged Product Policy,Shipping Policy,0,0.5248221986442664,bm25,0.000422716140747
+The product inside my delivery is damaged.,Damaged Product Policy,Shipping Policy,0,0.6509201557064187,bm25,0.0004591941833496
+My order arrived with a defective item inside.,Damaged Product Policy,Return Policy,0,0.5382206174388487,bm25,0.0003881454467773
+"I received the package, but the item is damaged.",Damaged Product Policy,Return Policy,0,0.3967410144163437,bm25,0.000368595123291
+My purchase is defective. What are my options?,Damaged Product Policy,Cancellation Policy,0,0.4660646815204364,bm25,0.0002849102020263
+I need help because the product I received is faulty.,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0003135204315185
+The item I received has serious damage.,Damaged Product Policy,Cancellation Policy,0,0.3648716940479722,bm25,0.0003149509429931
+The item has damage that was not there before shipping.,Damaged Product Policy,Cancellation Policy,0,0.752566481629956,bm25,0.0005156993865966
+I received a broken item and need to know what to do next.,Damaged Product Policy,Cancellation Policy,0,0.6961518743667263,bm25,0.0004160404205322
+My purchase arrived defective and I need a solution.,Damaged Product Policy,Cancellation Policy,0,0.4867291400543877,bm25,0.0009124279022216
+Can I get help with a product that arrived in bad condition?,Damaged Product Policy,Shipping Policy,0,0.7797192113075367,bm25,0.0006012916564941
+"My product arrived broken, and I want to report the issue.",Damaged Product Policy,Return Policy,0,0.8636905730177847,bm25,0.0010087490081787
+The item has missing parts and cannot be used properly.,Damaged Product Policy,Shipping Policy,0,0.8693429853530465,bm25,0.0004312992095947
+My order arrived incomplete because parts are missing.,Damaged Product Policy,Shipping Policy,0,0.4320347923162391,bm25,0.0003573894500732
+The product is missing a piece. What should I do?,Damaged Product Policy,Shipping Policy,0,0.921418148976646,bm25,0.0004239082336425
+One component was not included with my item.,Damaged Product Policy,Refund Policy,0,0.4660646815204364,bm25,0.0003321170806884
+The product arrived without one of its parts.,Damaged Product Policy,Return Policy,0,0.5252101220724911,bm25,0.0003166198730468
+My order has a product with missing pieces.,Damaged Product Policy,Cancellation Policy,0,0.6898122781021284,bm25,0.0003650188446044
+A required part was absent when the package arrived.,Damaged Product Policy,Shipping Policy,0,0.3365198284920211,bm25,0.0010657310485839
+The item is incomplete because something is missing.,Damaged Product Policy,Shipping Policy,0,0.421567371073608,bm25,0.0003769397735595
+The package arrived damaged and one part is missing.,Damaged Product Policy,Shipping Policy,0,0.5133791774326241,bm25,0.0004005432128906
+My monitor was damaged during shipping.,Damaged Product Policy,Shipping Policy,0,0.3939571478940447,bm25,0.0002686977386474
+My phone has a cracked screen and was delivered that way.,Damaged Product Policy,Shipping Policy,0,0.633435524358717,bm25,0.0003705024719238
+My new laptop has a broken hinge. What should I do?,Damaged Product Policy,Shipping Policy,0,0.4975625176414902,bm25,0.00065279006958
+The product arrived with a dent. Can I report it?,Damaged Product Policy,Shipping Policy,0,0.8742014447042863,bm25,0.0006792545318603
+My headphones arrived broken.,Damaged Product Policy,Cancellation Policy,0,0.0,bm25,0.0006320476531982
+The speaker I received is physically damaged.,Damaged Product Policy,Shipping Policy,0,0.4356179821551998,bm25,0.0004885196685791
+The mouse I ordered arrived damaged.,Damaged Product Policy,Shipping Policy,0,0.4866804347482666,bm25,0.0004546642303466
+The product has a crack that was there when it arrived.,Damaged Product Policy,Shipping Policy,0,0.6527045082096701,bm25,0.0003552436828613
+The product arrived with a loose component.,Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0003702640533447
+My new device has damage from transit.,Damaged Product Policy,Shipping Policy,0,0.712271736032633,bm25,0.0010409355163574
+My order contains a product with shipping damage.,Damaged Product Policy,Return Policy,0,0.5383691971307341,bm25,0.0003821849822998
+My phone won't turn on after arriving damaged.,Damaged Product Policy,Shipping Policy,0,0.4905732066072525,bm25,0.0003321170806884
+The laptop does not start and arrived damaged.,Damaged Product Policy,Cancellation Policy,0,0.2649140235886746,bm25,0.0003576278686523
+The item was working poorly from the moment I received it.,Damaged Product Policy,Return Policy,0,0.3415364018643488,bm25,0.0004098415374755
+The product is not working straight out of the package.,Damaged Product Policy,Shipping Policy,0,0.540893237103383,bm25,0.0006723403930664
+I received an item that fails to operate.,Damaged Product Policy,Return Policy,0,0.4881114158324297,bm25,0.000664472579956
+My new product is not functioning at all.,Damaged Product Policy,Shipping Policy,0,0.6166259531417382,bm25,0.0006279945373535
+The item powers on but does not work correctly.,Damaged Product Policy,Return Policy,0,0.556040248427301,bm25,0.0006163120269775
+The product has a functional defect from the start.,Damaged Product Policy,Shipping Policy,0,0.5383691971307341,bm25,0.0004680156707763
+My order arrived with an item that doesn't function.,Damaged Product Policy,Return Policy,0,0.7240190569162694,bm25,0.0003426074981689
+The product has a problem right after unboxing.,Damaged Product Policy,Return Policy,0,0.7276997285330342,bm25,0.0003137588500976
+My charger doesn't charge the device.,Damaged Product Policy,Shipping Policy,0,0.0275505339637525,bm25,0.0003061294555664
+The charging adapter I received is not working.,Damaged Product Policy,Shipping Policy,0,0.3600460693218812,bm25,0.000626802444458
+My charger arrived defective.,Damaged Product Policy,Cancellation Policy,0,0.4660646815204364,bm25,0.0004477500915527
+The charging cable is broken.,Damaged Product Policy,Shipping Policy,0,0.2204181774622806,bm25,0.0004222393035888
+The cable included with my order does not work.,Damaged Product Policy,Cancellation Policy,0,0.4739636651030701,bm25,0.0004003047943115
+The charger has a fault straight out of the box.,Damaged Product Policy,Cancellation Policy,0,0.4975625176414902,bm25,0.000335693359375
+The power adapter is defective.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0003378391265869
+My charging accessory arrived damaged.,Damaged Product Policy,Cancellation Policy,0,0.0,bm25,0.0003526210784912
+The cable in the package has a broken connector.,Damaged Product Policy,Shipping Policy,0,0.7214189167869144,bm25,0.0006141662597656
+The charger was faulty on delivery.,Damaged Product Policy,Shipping Policy,0,0.4829418371105866,bm25,0.0003533363342285
+The charging accessory isn't functioning properly.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0008826255798339
+My device charger arrived unusable.,Damaged Product Policy,Cancellation Policy,0,0.4224891364548129,bm25,0.0003013610839843
+The adapter does not work after delivery.,Damaged Product Policy,Refund Policy,0,0.3564307216426125,bm25,0.0003948211669921
+My charger has a manufacturing defect.,Damaged Product Policy,Shipping Policy,0,0.4975625176414902,bm25,0.0005507469177246
+The power cable I received is defective.,Damaged Product Policy,Shipping Policy,0,0.4660646815204364,bm25,0.0004980564117431
+The item arrived without one of its components.,Damaged Product Policy,Return Policy,0,0.638524165792415,bm25,0.0004785060882568
+My package does not contain all the parts of the item.,Damaged Product Policy,Refund Policy,0,0.5072961879760969,bm25,0.0005486011505126
+One component of my order is missing.,Damaged Product Policy,Shipping Policy,0,0.3120011873622501,bm25,0.0004081726074218
+The product came incomplete.,Damaged Product Policy,Return Policy,0,0.4010695024959482,bm25,0.0003211498260498
+My item is missing one of its pieces.,Damaged Product Policy,Return Policy,0,0.6296219959195698,bm25,0.0005097389221191
+The product arrived without an important component.,Damaged Product Policy,Return Policy,0,0.4780239772440616,bm25,0.0010604858398437
+I received the product but one part was not included.,Damaged Product Policy,Cancellation Policy,0,0.556040248427301,bm25,0.000443696975708
+My order came incomplete. What should I do?,Damaged Product Policy,Shipping Policy,0,0.3518641021442406,bm25,0.0003273487091064
+I received only part of the product.,Damaged Product Policy,Return Policy,0,0.4460061383346961,bm25,0.0009961128234863
+The product arrived without all its parts.,Damaged Product Policy,Return Policy,0,0.4010695024959482,bm25,0.0005745887756347
+I opened the box and found that a component was missing.,Damaged Product Policy,Shipping Policy,0,0.3881372633379999,bm25,0.0008368492126464
+My package arrived damaged and incomplete.,Damaged Product Policy,Shipping Policy,0,0.4579635966898362,bm25,0.0006213188171386
+The product was damaged in transit and a component is missing.,Damaged Product Policy,Shipping Policy,0,0.963648157555922,bm25,0.0004453659057617
+Can I get help with a damaged product that is also incomplete?,Damaged Product Policy,Shipping Policy,0,0.8398954614076036,bm25,0.0004487037658691
+Can I request a replacement for my broken product?,Damaged Product Policy,Cancellation Policy,0,0.4601176542486102,bm25,0.0003497600555419
+My item arrived damaged. Can you replace it?,Damaged Product Policy,Return Policy,0,0.2693312190429903,bm25,0.0003137588500976
+What are my options for replacing a damaged product?,Damaged Product Policy,Shipping Policy,0,0.4984686834424557,bm25,0.0003895759582519
+Can I get another unit because mine arrived broken?,Damaged Product Policy,Shipping Policy,0,0.3453698142761124,bm25,0.0004899501800537
+Will you replace an item that was defective on arrival?,Damaged Product Policy,Return Policy,0,0.4676771975986029,bm25,0.000462532043457
+I need a replacement because the product arrived broken.,Damaged Product Policy,Return Policy,0,0.5383691971307341,bm25,0.0007319450378417
+Can I have the defective item replaced?,Damaged Product Policy,Shipping Policy,0,0.3365198284920211,bm25,0.0005338191986083
+My product arrived unusable. Can I request another one?,Damaged Product Policy,Return Policy,0,0.5694516531685778,bm25,0.0004670619964599
+Can a product damaged in transit be replaced?,Damaged Product Policy,Shipping Policy,0,0.8870595608052921,bm25,0.0004339218139648
+My item is broken on arrival. Can I get a replacement?,Damaged Product Policy,Return Policy,0,0.4516175723157616,bm25,0.0005135536193847
+Can you replace the product I received in damaged condition?,Damaged Product Policy,Shipping Policy,0,0.7369981236345678,bm25,0.000467300415039
+What can I do if the product needs to be replaced because it is defective?,Damaged Product Policy,Return Policy,0,0.6767920026663331,bm25,0.0007026195526123
+Is replacement an option for an item damaged during delivery?,Damaged Product Policy,Return Policy,0,0.7318640476488707,bm25,0.0005388259887695
+How do I report damage to a delivered product?,Damaged Product Policy,Shipping Policy,0,0.473131942208338,bm25,0.00063157081604
+Where should I report an item that arrived broken?,Damaged Product Policy,Return Policy,0,0.5645751080168475,bm25,0.0005202293395996
+How can I notify you that my product arrived damaged?,Damaged Product Policy,Shipping Policy,0,0.5694516531685778,bm25,0.0004160404205322
+I need to report damage to an item I just received.,Damaged Product Policy,Cancellation Policy,0,0.8880191594932579,bm25,0.000417947769165
+Can I submit a damaged-product report?,Damaged Product Policy,Shipping Policy,0,0.4516175723157616,bm25,0.0003054141998291
+What information should I provide when reporting a damaged item?,Damaged Product Policy,Shipping Policy,0,0.614691288006765,bm25,0.000490665435791
+How do I tell support that my product is defective?,Damaged Product Policy,Shipping Policy,0,0.4867367074822922,bm25,0.0004858970642089
+I want to report that my order arrived damaged.,Damaged Product Policy,Cancellation Policy,0,0.4503272920655227,bm25,0.0003445148468017
+How do I raise an issue about a damaged product?,Damaged Product Policy,Shipping Policy,0,0.8090605633469575,bm25,0.0003168582916259
+I need to notify the company about a faulty item.,Damaged Product Policy,Return Policy,0,0.5250379635457535,bm25,0.0003247261047363
+Can I report physical damage after opening my package?,Damaged Product Policy,Shipping Policy,0,0.4306805455791028,bm25,0.0003514289855957
+What is the process for reporting a product defect?,Damaged Product Policy,Return Policy,0,0.6878275594456775,bm25,0.0003421306610107
+Where can I report that an item is not working?,Damaged Product Policy,Return Policy,0,0.607468173478255,bm25,0.0004937648773193
+What should I do first after finding damage in my order?,Damaged Product Policy,Shipping Policy,0,0.4846989613539284,bm25,0.0004293918609619
+Should I take pictures of the damage?,Damaged Product Policy,Shipping Policy,0,0.3810890897464224,bm25,0.0005195140838623
+Do you require evidence for a damaged-product claim?,Damaged Product Policy,Shipping Policy,0,0.3822448928715821,bm25,0.0003881454467773
+What kind of proof should I provide for a broken item?,Damaged Product Policy,Return Policy,0,0.5929090681160636,bm25,0.0003659725189208
+What evidence do I need to show that my product arrived damaged?,Damaged Product Policy,Shipping Policy,0,0.4829418371105866,bm25,0.0003976821899414
+Do I need proof of damage to request help?,Damaged Product Policy,Refund Policy,0,0.6818957612979981,bm25,0.0003063678741455
+What details are required for a damaged-product complaint?,Damaged Product Policy,Shipping Policy,0,0.2565104239762743,bm25,0.0003359317779541
+Do I need to provide evidence that the item was faulty on arrival?,Damaged Product Policy,Cancellation Policy,0,0.6961518743667263,bm25,0.0004193782806396
+What should I keep as proof if my product arrives broken?,Damaged Product Policy,Shipping Policy,0,0.5958444684082012,bm25,0.0003836154937744
+Can I report damage without photographs?,Damaged Product Policy,Return Policy,0,0.3545514894044103,bm25,0.0002675056457519
+Do I need evidence that the product was damaged during delivery?,Damaged Product Policy,Return Policy,0,0.7369981236345678,bm25,0.0003941059112548
+Is proof required for a replacement due to damage?,Damaged Product Policy,Refund Policy,0,0.6186749094715559,bm25,0.0003290176391601
+"The package looks fine, but the product inside is broken.",Damaged Product Policy,Cancellation Policy,0,0.4867367074822922,bm25,0.000335693359375
+"There was no visible damage to the box, but the item is faulty.",Damaged Product Policy,Return Policy,0,0.663288366937035,bm25,0.0003762245178222
+The product itself was damaged even though the package looked normal.,Damaged Product Policy,Shipping Policy,0,0.7526812386654597,bm25,0.0003659725189208
+I found the item broken after opening an undamaged package.,Damaged Product Policy,Return Policy,0,0.4875968282702369,bm25,0.000345230102539
+Everything looked normal until I opened the box and found the product damaged.,Damaged Product Policy,Shipping Policy,0,0.5248221986442664,bm25,0.000425100326538
+I received an apparently normal package with a broken product inside.,Damaged Product Policy,Return Policy,0,0.6147831845343148,bm25,0.0004076957702636
+"The package wasn't damaged externally, but the item has a defect.",Damaged Product Policy,Cancellation Policy,0,0.8943035320578339,bm25,0.0003807544708251
+The item was damaged even though the delivery box had no obvious damage.,Damaged Product Policy,Return Policy,0,0.663288366937035,bm25,0.0003821849822998
+I opened the package and discovered that the product itself was broken.,Damaged Product Policy,Shipping Policy,0,0.5248221986442664,bm25,0.0004017353057861
+The product has internal damage although the box looked fine.,Damaged Product Policy,Cancellation Policy,0,0.41675261752684,bm25,0.000356912612915
+What is the weather going to be tomorrow?,Unknown,Shipping Policy,0,0.5218225663200926,bm25,0.0003478527069091
+Will it rain this weekend?,Unknown,Cancellation Policy,0,0.4224891364548129,bm25,0.0002565383911132
+How hot will it be today?,Unknown,Cancellation Policy,0,0.537603513255666,bm25,0.0002987384796142
+Is there a storm coming?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0003204345703125
+What time does the sun set today?,Unknown,Shipping Policy,0,0.3515430239546163,bm25,0.0004184246063232
+Will there be heavy rain tonight?,Unknown,Cancellation Policy,0,0.537603513255666,bm25,0.0004291534423828
+How cold is it outside?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0003674030303955
+What is the forecast for next week?,Unknown,Shipping Policy,0,0.2889524281742234,bm25,0.0003702640533447
+Is the weather suitable for a picnic?,Unknown,Shipping Policy,0,0.4220518744224608,bm25,0.0003557205200195
+Do I need an umbrella today?,Unknown,Cancellation Policy,0,0.6274852672817314,bm25,0.0002834796905517
+How do I make pasta?,Unknown,Cancellation Policy,0,0.0,bm25,0.0003013610839843
+What ingredients do I need for pancakes?,Unknown,Shipping Policy,0,0.4356179821551998,bm25,0.0003209114074707
+Can you give me a simple biryani recipe?,Unknown,Return Policy,0,0.4516175723157616,bm25,0.0003015995025634
+How long should I boil an egg?,Unknown,Shipping Policy,0,0.5645751080168475,bm25,0.0003118515014648
+What is a good vegetarian dinner idea?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0003128051757812
+How do I bake a chocolate cake?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002813339233398
+Can I substitute butter with oil in cookies?,Unknown,Shipping Policy,0,0.3634228627488172,bm25,0.0003225803375244
+What spices are commonly used in curry?,Unknown,Shipping Policy,0,0.2932233517797805,bm25,0.0004498958587646
+How do I cook rice without making it sticky?,Unknown,Cancellation Policy,0,0.3204723867069096,bm25,0.0003905296325683
+What is an easy breakfast to prepare?,Unknown,Shipping Policy,0,0.3689162163181526,bm25,0.0003976821899414
+How do I reset my Wi-Fi router?,Unknown,Cancellation Policy,0,0.0,bm25,0.0003252029418945
+Why is my laptop running slowly?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0002992153167724
+How do I take a screenshot on Windows?,Unknown,Shipping Policy,0,0.4062271952075747,bm25,0.0003101825714111
+What does RAM do in a computer?,Unknown,Shipping Policy,0,0.4062271952075747,bm25,0.0002834796905517
+How can I free storage on my phone?,Unknown,Shipping Policy,0,0.3939571478940447,bm25,0.0002985000610351
+Why is my internet connection unstable?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0002989768981933
+How do I connect Bluetooth headphones?,Unknown,Cancellation Policy,0,0.0,bm25,0.0003018379211425
+What is the difference between SSD and HDD?,Unknown,Shipping Policy,0,0.4829418371105866,bm25,0.0003049373626708
+How do I update a graphics driver?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002985000610351
+My keyboard is typing the wrong characters. What can I do?,Unknown,Shipping Policy,0,0.4866804347482666,bm25,0.0003869533538818
+How do I learn Python from scratch?,Unknown,Cancellation Policy,0,0.310170171802565,bm25,0.0003888607025146
+What is a binary search tree?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0002713203430175
+Explain gradient descent in simple words.,Unknown,Shipping Policy,0,0.2888372879184283,bm25,0.0003018379211425
+What is the difference between AI and machine learning?,Unknown,Shipping Policy,0,0.4829418371105866,bm25,0.0003330707550048
+How does a neural network learn?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002710819244384
+What is overfitting in machine learning?,Unknown,Shipping Policy,0,0.2888372879184283,bm25,0.0003020763397216
+Can you explain precision and recall?,Unknown,Shipping Policy,0,0.2830399077972793,bm25,0.0003187656402587
+What is a transformer model?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.000281810760498
+How does attention work in NLP?,Unknown,Shipping Policy,0,0.2888372879184283,bm25,0.0002562999725341
+What is the purpose of a validation dataset?,Unknown,Refund Policy,0,0.3955883717020397,bm25,0.0002906322479248
+How do I prepare for a coding interview?,Unknown,Shipping Policy,0,0.2142275537079909,bm25,0.0002868175506591
+Which programming language should I learn first?,Unknown,Shipping Policy,0,0.3518641021442406,bm25,0.0002737045288085
+What are good resources for learning data structures?,Unknown,Damaged Product Policy,0,0.1838507771907172,bm25,0.0003135204315185
+How do I improve my C++ skills?,Unknown,Cancellation Policy,0,0.0,bm25,0.000331163406372
+What is dynamic programming?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.000356912612915
+Can you explain recursion with an example?,Unknown,Return Policy,0,0.4717259649909987,bm25,0.0004827976226806
+How should I practice LeetCode problems?,Unknown,Shipping Policy,0,0.3518641021442406,bm25,0.0003612041473388
+What is time complexity?,Unknown,Shipping Policy,0,0.336651683121155,bm25,0.0002670288085937
+How do hash tables work?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002543926239013
+What is the difference between stack and queue?,Unknown,Shipping Policy,0,0.4829418371105866,bm25,0.0003068447113037
+How do I write a professional resume?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003774166107177
+Can you help me prepare for an interview?,Unknown,Cancellation Policy,0,0.3129066940848848,bm25,0.000533103942871
+How should I introduce myself in an interview?,Unknown,Shipping Policy,0,0.5645751080168475,bm25,0.0003867149353027
+What should I wear to a job interview?,Unknown,Shipping Policy,0,0.4346814414943538,bm25,0.0003516674041748
+How do I answer the weakness question?,Unknown,Shipping Policy,0,0.0275505339637525,bm25,0.000373363494873
+How can I negotiate a salary?,Unknown,Shipping Policy,0,0.4516175723157616,bm25,0.0003602504730224
+What makes a good cover letter?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003345012664794
+How do I describe a project on my CV?,Unknown,Shipping Policy,0,0.4062271952075747,bm25,0.0003602504730224
+Should I include hobbies on my resume?,Unknown,Shipping Policy,0,0.3518641021442406,bm25,0.0002985000610351
+How can I improve my communication skills?,Unknown,Shipping Policy,0,0.2588295697082734,bm25,0.0002806186676025
+What are common behavioral interview questions?,Unknown,Damaged Product Policy,0,0.1169514060570317,bm25,0.0002636909484863
+How do I book a flight?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002956390380859
+What documents are needed for international travel?,Unknown,Shipping Policy,0,0.2946644483971983,bm25,0.0003230571746826
+How much luggage can I take on a flight?,Unknown,Shipping Policy,0,0.4516175723157616,bm25,0.0003514289855957
+What is the best time to visit Japan?,Unknown,Refund Policy,0,0.3754908184628632,bm25,0.0003068447113037
+How do I apply for a tourist visa?,Unknown,Shipping Policy,0,0.2142275537079909,bm25,0.0003304481506347
+What are some places to visit in Paris?,Unknown,Shipping Policy,0,0.4224891364548129,bm25,0.0003337860107421
+How long should I spend in Singapore?,Unknown,Shipping Policy,0,0.3518641021442406,bm25,0.0003788471221923
+What is the currency of Australia?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0003108978271484
+How do I convert dollars to euros?,Unknown,Shipping Policy,0,0.2705302909222552,bm25,0.0004224777221679
+What should I pack for a winter trip?,Unknown,Shipping Policy,0,0.499013086167486,bm25,0.0003819465637207
+How do I open a bank account?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002985000610351
+What is an index fund?,Unknown,Shipping Policy,0,0.3689162163181526,bm25,0.0002777576446533
+How does compound interest work?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002508163452148
+What is the difference between a debit card and a credit card?,Unknown,Shipping Policy,0,0.5963899862428492,bm25,0.0003731250762939
+How can I improve my credit score?,Unknown,Shipping Policy,0,0.2588295697082734,bm25,0.0003037452697753
+What is a fixed deposit?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0002830028533935
+How do mutual funds work?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002894401550292
+What is an emergency fund?,Unknown,Shipping Policy,0,0.3689162163181526,bm25,0.0002710819244384
+How should I make a monthly budget?,Unknown,Shipping Policy,0,0.4346814414943538,bm25,0.0002999305725097
+What is inflation?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0002357959747314
+How do interest rates affect loans?,Unknown,Cancellation Policy,0,0.0,bm25,0.000307559967041
+What is the capital of Canada?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0003197193145751
+Who wrote Pride and Prejudice?,Unknown,Damaged Product Policy,0,0.3483887145657105,bm25,0.0002610683441162
+What is the largest ocean?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0002756118774414
+How many planets are in the solar system?,Unknown,Shipping Policy,0,0.2937630310516716,bm25,0.0003345012664794
+When did the first computer become popular?,Unknown,Shipping Policy,0,0.4356179821551998,bm25,0.0002989768981933
+What is the chemical symbol for gold?,Unknown,Shipping Policy,0,0.2889524281742234,bm25,0.000453233718872
+Why is the sky blue?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0003974437713623
+How far is the Moon from Earth?,Unknown,Shipping Policy,0,0.3258532868334569,bm25,0.0003585815429687
+What causes an eclipse?,Unknown,Return Policy,0,0.2127110058726069,bm25,0.000309944152832
+Who invented the telephone?,Unknown,Damaged Product Policy,0,0.327343608104146,bm25,0.0002877712249755
+Can you explain how photosynthesis works?,Unknown,Shipping Policy,0,0.2588295697082734,bm25,0.0003392696380615
+What is the tallest mountain in the world?,Unknown,Shipping Policy,0,0.299071859913433,bm25,0.0003910064697265
+How deep is the Pacific Ocean?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0003304481506347
+What is the speed of light?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0003905296325683
+Why do leaves change color?,Unknown,Cancellation Policy,0,0.336651683121155,bm25,0.0002567768096923
+How do volcanoes erupt?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002565383911132
+What causes earthquakes?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002081394195556
+What is DNA?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0001976490020751
+How does gravity work?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002064704895019
+What is the boiling point of water?,Unknown,Shipping Policy,0,0.2204181774622806,bm25,0.0002651214599609
+How do I lose weight safely?,Unknown,Cancellation Policy,0,0.4077245947581214,bm25,0.0002391338348388
+What are some healthy breakfast options?,Unknown,Shipping Policy,0,0.4224891364548129,bm25,0.0002741813659667
+How many hours of sleep should an adult get?,Unknown,Shipping Policy,0,0.614691288006765,bm25,0.0003142356872558
+What are good exercises for beginners?,Unknown,Damaged Product Policy,0,0.1838507771907172,bm25,0.0002522468566894
+How much water should I drink each day?,Unknown,Shipping Policy,0,0.3518641021442406,bm25,0.0002872943878173
+Why do people get headaches?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002379417419433
+What foods are high in protein?,Unknown,Shipping Policy,0,0.2932233517797805,bm25,0.0002856254577636
+How can I improve my sleep schedule?,Unknown,Shipping Policy,0,0.2588295697082734,bm25,0.0002694129943847
+What is a balanced diet?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0002281665802001
+How often should I exercise?,Unknown,Shipping Policy,0,0.3518641021442406,bm25,0.0002596378326416
+What are common causes of back pain?,Unknown,Return Policy,0,0.4857766473330189,bm25,0.0003316402435302
+How do I care for a houseplant?,Unknown,Shipping Policy,0,0.2142275537079909,bm25,0.0002949237823486
+How often should I water a cactus?,Unknown,Shipping Policy,0,0.4346814414943538,bm25,0.0002977848052978
+Why are my plant leaves turning yellow?,Unknown,Damaged Product Policy,0,0.1169514060570317,bm25,0.0003068447113037
+What plants grow well indoors?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002651214599609
+How do I remove weeds from a garden?,Unknown,Shipping Policy,0,0.310170171802565,bm25,0.0002968311309814
+When is the best time to plant tomatoes?,Unknown,Refund Policy,0,0.3754908184628632,bm25,0.0003004074096679
+How much sunlight does a money plant need?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002896785736083
+What soil is good for succulents?,Unknown,Shipping Policy,0,0.2696834443232702,bm25,0.0002696514129638
+How do I propagate a pothos?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002546310424804
+Why is my plant wilting?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0002379417419433
+How do I train for a 5K run?,Unknown,Shipping Policy,0,0.2142275537079909,bm25,0.0004053115844726
+What are the rules of cricket?,Unknown,Shipping Policy,0,0.2560176811745945,bm25,0.0003809928894042
+How is a football league table calculated?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0003368854522705
+What is a tennis tie-break?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0002562999725341
+How long is a basketball game?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0003085136413574
+Who won the last World Cup?,Unknown,Damaged Product Policy,0,0.327343608104146,bm25,0.0003218650817871
+What equipment is needed for badminton?,Unknown,Shipping Policy,0,0.2696834443232702,bm25,0.0002999305725097
+How many players are on a cricket team?,Unknown,Shipping Policy,0,0.4062271952075747,bm25,0.000298261642456
+What is an offside rule?,Unknown,Shipping Policy,0,0.3689162163181526,bm25,0.0002753734588623
+How do marathon runners train?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002815723419189
+What are the basic rules of chess?,Unknown,Shipping Policy,0,0.2560176811745945,bm25,0.0004441738128662
+How do I make a presentation?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0015127658843994
+What is the best font for a report?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0005402565002441
+How can I make PowerPoint slides look professional?,Unknown,Shipping Policy,0,0.2588295697082734,bm25,0.0004096031188964
+How do I add page numbers in Word?,Unknown,Shipping Policy,0,0.2888372879184283,bm25,0.0003724098205566
+What is the difference between PDF and DOCX?,Unknown,Shipping Policy,0,0.4829418371105866,bm25,0.0003736019134521
+How do I create a table in Excel?,Unknown,Shipping Policy,0,0.4062271952075747,bm25,0.0003166198730468
+How can I freeze rows in a spreadsheet?,Unknown,Shipping Policy,0,0.4516175723157616,bm25,0.000303030014038
+How do I make a chart in Excel?,Unknown,Shipping Policy,0,0.4062271952075747,bm25,0.000291109085083
+What is a pivot table?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0002431869506835
+How do I convert a Word document to PDF?,Unknown,Shipping Policy,0,0.3230363532922471,bm25,0.0003068447113037
+How do I send a large file by email?,Unknown,Cancellation Policy,0,0.4218391959805082,bm25,0.0003924369812011
+How do I create a Gmail account?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003728866577148
+Why is my email not syncing?,Unknown,Shipping Policy,0,0.4738864303338382,bm25,0.0002973079681396
+How do I attach a file to an email?,Unknown,Cancellation Policy,0,0.4641879340678268,bm25,0.0003504753112792
+How can I organize my inbox?,Unknown,Shipping Policy,0,0.2588295697082734,bm25,0.0003905296325683
+What does CC mean in email?,Unknown,Shipping Policy,0,0.2888372879184283,bm25,0.0003764629364013
+How do I create an email signature?,Unknown,Return Policy,0,0.4663318421106474,bm25,0.0003345012664794
+Why are emails going to spam?,Unknown,Shipping Policy,0,0.2742997343517862,bm25,0.0003018379211425
+How do I recover a forgotten email password?,Unknown,Refund Policy,0,0.5010872308612879,bm25,0.0003368854522705
+What is two-factor authentication?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0002622604370117
+How do I use Google Drive?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002682209014892
+What is cloud storage?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.000274658203125
+How do I share a folder with someone?,Unknown,Damaged Product Policy,0,0.3052370891999209,bm25,0.0003225803375244
+How can I protect a document with a password?,Unknown,Cancellation Policy,0,0.6618851304547204,bm25,0.0005075931549072
+What is version control?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.000319480895996
+How does Git work?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002672672271728
+What is a Git branch?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0002753734588623
+How do I clone a repository?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003018379211425
+What is an API?,Unknown,Shipping Policy,0,0.3689162163181526,bm25,0.0002398490905761
+How does REST work?,Unknown,Cancellation Policy,0,0.0,bm25,0.000239610671997
+What is JSON?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0002152919769287
+How do I debug a Python program?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0002963542938232
+Why am I getting a segmentation fault in C++?,Unknown,Shipping Policy,0,0.4062271952075747,bm25,0.0003221035003662
+How do I install a Python package?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003249645233154
+What is Docker used for?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0002684593200683
+How does Kubernetes work?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002334117889404
+What is a database index?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.000279426574707
+What is SQL normalization?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.0003120899200439
+How do I write a SQL join?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003445148468017
+What is an operating system?,Unknown,Shipping Policy,0,0.3689162163181526,bm25,0.000425100326538
+How do I make my phone battery last longer?,Unknown,Cancellation Policy,0,0.0,bm25,0.0004324913024902
+Why does my phone get hot?,Unknown,Cancellation Policy,0,0.0,bm25,0.0007164478302001
+How do I transfer photos from phone to computer?,Unknown,Shipping Policy,0,0.4663318421106474,bm25,0.0004453659057617
+How do I clear app cache?,Unknown,Cancellation Policy,0,0.0,bm25,0.000345230102539
+Why is my phone storage full?,Unknown,Shipping Policy,0,0.2011491936113274,bm25,0.00040864944458
+How do I enable dark mode?,Unknown,Cancellation Policy,0,0.0,bm25,0.0003125667572021
+How do I block unwanted calls?,Unknown,Cancellation Policy,0,0.0,bm25,0.0002655982971191
+How do I scan a QR code?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003015995025634
+Why is my Bluetooth not connecting?,Unknown,Shipping Policy,0,0.3424967565915457,bm25,0.0003228187561035
+How do I back up my contacts?,Unknown,Return Policy,0,0.4356179821551998,bm25,0.0003032684326171
+What movie should I watch tonight?,Unknown,Shipping Policy,0,0.3518641021442406,bm25,0.0004105567932128
+Can you recommend a comedy movie?,Unknown,Shipping Policy,0,0.4516175723157616,bm25,0.0003128051757812
+What are some good science fiction books?,Unknown,Shipping Policy,0,0.4224891364548129,bm25,0.0003204345703125
+Who is the main character in this novel?,Unknown,Damaged Product Policy,0,0.5519281880157662,bm25,0.0003180503845214
+What is the best way to learn guitar?,Unknown,Shipping Policy,0,0.3754908184628632,bm25,0.0003516674041748
+How do I play a basic guitar chord?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0003538131713867
+What are some beginner photography tips?,Unknown,Shipping Policy,0,0.4224891364548129,bm25,0.0002918243408203
+How do I edit photos on my phone?,Unknown,Shipping Policy,0,0.2787434184835463,bm25,0.0003135204315185
+What camera settings work for night photography?,Unknown,Shipping Policy,0,0.0759795469876428,bm25,0.0003070831298828
+How can I improve my handwriting?,Unknown,Shipping Policy,0,0.2588295697082734,bm25,0.0002713203430175
+What are good books for personal development?,Unknown,Damaged Product Policy,0,0.1838507771907172,bm25,0.0003077983856201
+How do I build a morning routine?,Unknown,Return Policy,0,0.2102675581389589,bm25,0.0004239082336425
+What are some ways to stay focused while studying?,Unknown,Shipping Policy,0,0.4224891364548129,bm25,0.0003705024719238
+How can I stop procrastinating?,Unknown,Shipping Policy,0,0.4383631634023082,bm25,0.0003018379211425
+What is a good study timetable?,Unknown,Shipping Policy,0,0.3955883717020397,bm25,0.0002861022949218
+How do I take better notes?,Unknown,Cancellation Policy,0,0.3810890897464224,bm25,0.00028657913208

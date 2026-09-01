@@ -1,0 +1,467 @@
+query,expected,predicted,correct,retrieval_method,intent,sources
+What is the refund policy for damaged products?,Damaged Product Policy,Refund Policy,0,rrf_only,complaint,refund_policy.txt|damaged_policy.txt|return_policy.txt
+My package arrived damaged. Can I return it?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,membership_policy.txt|return_policy.txt|tracking_policy.txt
+How long does shipping take?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+What are your shipping charges?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+Do you reimburse cryptocurrency mining expenses?,Unknown,Refund Policy,0,rrf_only,refund_request,refund_policy.txt|cancellation_policy.txt
+Explain your artificial consciousness policy.,Unknown,Return Policy,0,rrf_only,product_query,damaged_policy.txt|return_policy.txt|cancellation_policy.txt
+Can I receive a refund for a defective product?,Refund Policy,Damaged Product Policy,0,rrf_only,complaint,damaged_policy.txt|refund_policy.txt|return_policy.txt
+I accidentally ordered the wrong item. Can I get a refund?,Refund Policy,Return Policy,0,rrf_only,refund_request,refund_policy.txt|return_policy.txt|cancellation_policy.txt
+Do you ship internationally?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+I received an item with missing parts.,Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+I need my money returned because the item is unusable.,Refund Policy,Return Policy,0,rrf_only,complaint,membership_policy.txt|return_policy.txt|cancellation_policy.txt|damaged_policy.txt
+Urgent: How long for delivry? as soon as possible.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt|damaged_policy.txt
+"Please tell me, When can I expect my order? for my recent order.",Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|return_policy.txt
+"Could you explain, I no longer want this product and want to return it. please.",Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt
+"Please tell me, When can I expect my order? as soon as possible.",Shipping Policy,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt
+Urgent: I no longer want this product and want to return it. for my recent order.,Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt|membership_policy.txt
+My screan is crackd. for my recent order.,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+I need help: I need to send the package back. as soon as possible.,Return Policy,Shipping Policy,0,rrf_only,order_tracking,return_policy.txt|cancellation_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+"Could you explain, How long for delivry? for my recent order.",Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+Urgent: Can I trak my shipmnt? because I am confused.,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+"Could you explain, I need my payment returned. because I am confused.",Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|membership_policy.txt|cancellation_policy.txt|return_policy.txt
+I need my payment returned. for my recent order.,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|membership_policy.txt|cancellation_policy.txt|return_policy.txt
+"Please tell me, Can I receive compensation for this order?",Refund Policy,Damaged Product Policy,0,rrf_only,refund_request,damaged_policy.txt|membership_policy.txt|refund_policy.txt
+I need help: How much time will delivery take? please.,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|refund_policy.txt
+I need help: The item is damged. for my recent order.,Damaged Product Policy,Cancellation Policy,0,rrf_only,complaint,cancellation_policy.txt|membership_policy.txt|damaged_policy.txt
+"Please tell me, I need to send the package back. because I am confused.",Return Policy,Shipping Policy,0,rrf_only,order_tracking,return_policy.txt|shipping_policy.txt|tracking_policy.txt
+I need help: How do I get reimbursed? because I am confused.,Refund Policy,Unknown,0,rrf_only,refund_request,membership_policy.txt|refund_policy.txt|cancellation_policy.txt
+"Please tell me, Do you deliver internationally? as soon as possible.",Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|damaged_policy.txt|tracking_policy.txt
+I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,rrf_only,order_tracking,return_policy.txt|shipping_policy.txt|tracking_policy.txt
+I need help: When can I expect my order? because I am confused.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+"Please tell me, Do you deliver internationally? because I am confused.",Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+"Please tell me, How much time will delivery take? for my recent order.",Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+I need help: I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|cancellation_policy.txt|return_policy.txt|damaged_policy.txt
+How long for delivry? because I am confused.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt
+"Could you explain, When can I expect my order? because I am confused.",Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt
+The item is damged. for my recent order.,Damaged Product Policy,Cancellation Policy,0,rrf_only,complaint,membership_policy.txt|cancellation_policy.txt
+"Please tell me, My screan is crackd. for my recent order.",Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+Urgent: How long for delivry?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt
+Do you deliver internationally? for my recent order.,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+I need help: Do you deliver internationally? because I am confused.,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+How do I get reimbursed? please.,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,refund_policy.txt|cancellation_policy.txt
+"Please tell me, I need my payment returned. as soon as possible.",Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|damaged_policy.txt|return_policy.txt|tracking_policy.txt
+"Please tell me, I no longer want this product and want to return it. because I am confused.",Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt|refund_policy.txt
+"Please tell me, Can I retrn this item? because I am confused.",Return Policy,Unknown,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|damaged_policy.txt
+"Could you explain, When can I expect my order? as soon as possible.",Shipping Policy,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt|shipping_policy.txt
+Urgent: How long for delivry? please.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt
+"Please tell me, How long for delivry? for my recent order.",Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+I need help: How much time will delivery take? for my recent order.,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+"Please tell me, I received an item with parts missing. because I am confused.",Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+Urgent: How long for delivry? because I am confused.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt
+How long for delivry?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt
+Urgent: My screan is crackd. for my recent order.,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+Urgent: When can I expect my order? for my recent order.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt|cancellation_policy.txt
+My screan is crackd. because I am confused.,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|refund_policy.txt
+Urgent: I no longer want this product and want to return it. because I am confused.,Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt|refund_policy.txt
+"Please tell me, Can I get a refnd? because I am confused.",Refund Policy,Unknown,0,rrf_only,refund_request,membership_policy.txt|refund_policy.txt|return_policy.txt
+I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|damaged_policy.txt|return_policy.txt|tracking_policy.txt
+Urgent: When can I expect my order? because I am confused.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+When can I expect my order? as soon as possible.,Shipping Policy,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt
+How much time will delivery take?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,shipping_policy.txt|membership_policy.txt|cancellation_policy.txt|refund_policy.txt
+Urgent: I need my payment returned. for my recent order.,Refund Policy,Return Policy,0,rrf_only,return_item,membership_policy.txt|refund_policy.txt|return_policy.txt|cancellation_policy.txt
+"Could you explain, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|membership_policy.txt|cancellation_policy.txt|return_policy.txt
+"Please tell me, I need to send the package back. as soon as possible.",Return Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|damaged_policy.txt|shipping_policy.txt|return_policy.txt
+"Please tell me, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|membership_policy.txt|cancellation_policy.txt|return_policy.txt
+Urgent: Can I receive compensation for this order? for my recent order.,Refund Policy,Damaged Product Policy,0,rrf_only,refund_request,membership_policy.txt|damaged_policy.txt|refund_policy.txt
+Urgent: I no longer want this product and want to return it. as soon as possible.,Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt|tracking_policy.txt
+I need help: My screan is crackd. please.,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+Urgent: Can I return the order after delivery? as soon as possible.,Return Policy,Cancellation Policy,0,rrf_only,return_item,cancellation_policy.txt|return_policy.txt|damaged_policy.txt
+The charger stopped functioning. for my recent order.,Damaged Product Policy,Unknown,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+I need help: How much time will delivery take? because I am confused.,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+I need help: How much time will delivery take?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|refund_policy.txt
+"Please tell me, How long for delivry?",Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt
+"Could you explain, I need to send the package back. please.",Return Policy,Shipping Policy,0,rrf_only,order_tracking,return_policy.txt|shipping_policy.txt|tracking_policy.txt
+I need help: When can I expect my order? for my recent order.,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+"Could you explain, Do you deliver internationally? please.",Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Can I receive compensation for this order? for my recent order.,Refund Policy,Damaged Product Policy,0,rrf_only,refund_request,membership_policy.txt|damaged_policy.txt|refund_policy.txt
+Urgent: Can I receive compensation for this order?,Refund Policy,Damaged Product Policy,0,rrf_only,refund_request,damaged_policy.txt|membership_policy.txt|refund_policy.txt
+"Could you explain, Can I retrn this item? because I am confused.",Return Policy,Unknown,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|damaged_policy.txt
+I need help: Where is my parcel? because I am confused.,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|tracking_policy.txt
+"Could you explain, Can I receive compensation for this order? for my recent order.",Refund Policy,Damaged Product Policy,0,rrf_only,refund_request,membership_policy.txt|damaged_policy.txt|refund_policy.txt
+I need help: My screan is crackd. for my recent order.,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+Urgent: Can I receive compensation for this order? please.,Refund Policy,Damaged Product Policy,0,rrf_only,refund_request,damaged_policy.txt|membership_policy.txt|refund_policy.txt
+"Please tell me, Can I receive compensation for this order? for my recent order.",Refund Policy,Damaged Product Policy,0,rrf_only,refund_request,membership_policy.txt|damaged_policy.txt|refund_policy.txt
+I need help: The laptop arrived broken. for my recent order.,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+Can you tell me how to claim a refund?,Refund Policy,Return Policy,0,rrf_only,refund_request,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+Can I ask for the purchase amount to be refunded?,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,refund_policy.txt|cancellation_policy.txt|return_policy.txt
+I need the amount from my order returned.,Refund Policy,Return Policy,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt|refund_policy.txt
+I'd like the payment returned for an order I placed.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+How do I claim back the money I spent?,Refund Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt
+What should I do if I want my purchase refunded?,Refund Policy,Return Policy,0,rrf_only,refund_request,return_policy.txt|refund_policy.txt|tracking_policy.txt
+I need help getting the money from my purchase returned.,Refund Policy,Cancellation Policy,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt|refund_policy.txt
+Can I have the cost of my order returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|tracking_policy.txt|cancellation_policy.txt
+Is my purchase eligible for a refund?,Refund Policy,Unknown,0,rrf_only,refund_request,membership_policy.txt|return_policy.txt|refund_policy.txt|damaged_policy.txt|cancellation_policy.txt
+How can I request reimbursement for an order?,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,refund_policy.txt|cancellation_policy.txt
+I'd like to request that my order be refunded.,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,cancellation_policy.txt|refund_policy.txt|return_policy.txt
+I paid for this item and want the money back.,Refund Policy,Return Policy,0,rrf_only,refund_request,return_policy.txt|refund_policy.txt|damaged_policy.txt
+Can my payment be returned after making the purchase?,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|return_policy.txt
+I'd like the money from this transaction returned.,Refund Policy,Return Policy,0,rrf_only,return_item,membership_policy.txt|refund_policy.txt|damaged_policy.txt|return_policy.txt
+What is the process if I want the payment returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+How do I request that my order payment be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+How can I apply to have my money returned?,Refund Policy,Cancellation Policy,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt|refund_policy.txt
+I need to ask for my order amount back.,Refund Policy,Cancellation Policy,0,rrf_only,general,refund_policy.txt|cancellation_policy.txt
+I want the amount charged for this purchase returned.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|damaged_policy.txt
+I have been waiting for my refunded amount.,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,cancellation_policy.txt|refund_policy.txt|return_policy.txt
+The money hasn't been returned to me yet.,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|return_policy.txt
+I expected the payment to be returned by now.,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|return_policy.txt
+My returned payment hasn't appeared in my account.,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|return_policy.txt
+The amount hasn't been credited back to me.,Refund Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+My refund has not appeared after I requested it.,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,refund_policy.txt|cancellation_policy.txt
+The amount I requested back hasn't been credited.,Refund Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+"My payment should have been returned, but I haven't received it.",Refund Policy,Cancellation Policy,0,rrf_only,return_item,refund_policy.txt|cancellation_policy.txt|return_policy.txt
+I am checking on a refund that has not arrived.,Refund Policy,Shipping Policy,0,rrf_only,refund_request,refund_policy.txt|tracking_policy.txt|return_policy.txt|shipping_policy.txt|damaged_policy.txt
+I'm still waiting for the money from a returned payment.,Refund Policy,Unknown,0,rrf_only,return_item,membership_policy.txt|refund_policy.txt|cancellation_policy.txt|return_policy.txt|tracking_policy.txt
+I need an update because my refund has not arrived.,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,refund_policy.txt|cancellation_policy.txt
+I need the money from my order returned.,Refund Policy,Return Policy,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt|refund_policy.txt
+Can the payment for this purchase be sent back to me?,Refund Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt|shipping_policy.txt
+I'd like to request that the purchase amount be returned.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|cancellation_policy.txt
+Can I get the money I spent on this order returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|tracking_policy.txt|refund_policy.txt|cancellation_policy.txt
+Can I ask for the charge on my order to be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|cancellation_policy.txt|tracking_policy.txt
+I'd like to get back the amount deducted for my purchase.,Refund Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt
+I want to claim back the amount I paid.,Refund Policy,Return Policy,0,rrf_only,general,refund_policy.txt|return_policy.txt
+How do I make a request for the payment to be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|return_policy.txt|cancellation_policy.txt
+I need my order payment sent back.,Refund Policy,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|refund_policy.txt|return_policy.txt
+I want to have the payment for this order returned.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+How do I request that the money I paid be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt
+I'd like to have my money returned for this purchase.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt
+Can I request the money I paid for this item back?,Refund Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+I'd like to know how to get a purchase refunded.,Refund Policy,Unknown,0,rrf_only,refund_request,membership_policy.txt|refund_policy.txt|shipping_policy.txt|return_policy.txt|cancellation_policy.txt
+I want to request a return of the money I paid.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+I'd like the money deducted for my purchase returned.,Refund Policy,Cancellation Policy,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt|refund_policy.txt
+What's the process for asking that my order be refunded?,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,cancellation_policy.txt|refund_policy.txt|return_policy.txt
+I'd like to ask for my order payment to be returned.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|cancellation_policy.txt|refund_policy.txt
+Can the money charged for this item be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|damaged_policy.txt|refund_policy.txt
+I'd like to have the funds from my purchase returned.,Refund Policy,Unknown,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt|refund_policy.txt
+I need to ask for a refund on something I ordered.,Refund Policy,Cancellation Policy,0,rrf_only,refund_request,refund_policy.txt|return_policy.txt|tracking_policy.txt|cancellation_policy.txt
+I want the money I paid for this order returned.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|damaged_policy.txt
+Can I ask for the amount I paid to be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt
+How can I claim the money back from my purchase?,Refund Policy,Return Policy,0,rrf_only,refund_request,return_policy.txt|membership_policy.txt|refund_policy.txt
+Can the amount I spent on this item be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt
+What do I do when I want my order payment returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|refund_policy.txt|cancellation_policy.txt
+Can I have the cost of this purchase returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|cancellation_policy.txt|tracking_policy.txt
+What is the procedure for recovering a payment?,Refund Policy,Unknown,0,rrf_only,general,membership_policy.txt|refund_policy.txt|damaged_policy.txt
+I'd like to have my purchase charge returned.,Refund Policy,Return Policy,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt|tracking_policy.txt
+Can the amount deducted for this purchase be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|cancellation_policy.txt|refund_policy.txt
+I want the money paid for this item returned.,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|damaged_policy.txt|refund_policy.txt
+Can the money taken from my account for this order be returned?,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|tracking_policy.txt|return_policy.txt|cancellation_policy.txt
+Can I get the funds I used for this purchase returned?,Refund Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|damaged_policy.txt|cancellation_policy.txt|refund_policy.txt
+Can my purchase payment be sent back to me?,Refund Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt|shipping_policy.txt
+What should I do if I need the order amount returned?,Refund Policy,Return Policy,0,rrf_only,return_item,refund_policy.txt|return_policy.txt|cancellation_policy.txt|tracking_policy.txt
+Can a delivered product be sent back?,Return Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|return_policy.txt|cancellation_policy.txt
+What is the deadline for returning a product?,Return Policy,Unknown,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|damaged_policy.txt
+I don't want the item anymore. Can I send it back?,Return Policy,Cancellation Policy,0,rrf_only,cancellation,return_policy.txt|cancellation_policy.txt
+I received the product but decided I don't want it.,Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt|damaged_policy.txt
+What is the procedure for sending an order back?,Return Policy,Cancellation Policy,0,rrf_only,general,return_policy.txt|membership_policy.txt|cancellation_policy.txt|refund_policy.txt
+Can I return an item if I no longer want it?,Return Policy,Cancellation Policy,0,rrf_only,cancellation,return_policy.txt|cancellation_policy.txt
+Can I return a phone after it has been delivered?,Return Policy,Cancellation Policy,0,rrf_only,return_item,return_policy.txt|cancellation_policy.txt
+I need instructions for returning my order.,Return Policy,Unknown,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|cancellation_policy.txt
+Can a delivered order be returned?,Return Policy,Cancellation Policy,0,rrf_only,return_item,membership_policy.txt|cancellation_policy.txt|return_policy.txt
+I no longer want the product. Can I request a return?,Return Policy,Cancellation Policy,0,rrf_only,cancellation,return_policy.txt|cancellation_policy.txt|refund_policy.txt
+I don't want to keep this purchase. Can it be returned?,Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt
+What happens if I cannot find my purchase invoice?,Return Policy,Cancellation Policy,0,rrf_only,general,membership_policy.txt|cancellation_policy.txt|tracking_policy.txt|return_policy.txt
+What is the deadline for requesting a return?,Return Policy,Unknown,0,rrf_only,return_item,membership_policy.txt|return_policy.txt|damaged_policy.txt
+How do I send back an item I no longer want?,Return Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt
+Can an accessory be sent back after delivery?,Return Policy,Shipping Policy,0,rrf_only,order_tracking,return_policy.txt|shipping_policy.txt|tracking_policy.txt
+What is the normal shipping duration?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|damaged_policy.txt
+How much time should I allow for delivery?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+What is the typical time needed to deliver an order?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|refund_policy.txt|cancellation_policy.txt
+What delivery timeframe should I expect?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt|damaged_policy.txt
+What should I expect in terms of delivery time?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+Is express shipping available for orders?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+Is there an express shipping service?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+What is the fastest shipping option available?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt
+Is there a quicker shipping method I can choose?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|return_policy.txt
+How much does shipping cost?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|cancellation_policy.txt|shipping_policy.txt|tracking_policy.txt
+What will I be charged for delivery?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Is there a shipping fee for my order?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|shipping_policy.txt
+What is the cost of shipping an order?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|return_policy.txt
+How much should I expect to pay for shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt|damaged_policy.txt
+Are delivery charges added to the order?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+What are the shipping fees?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+Is shipping included in the order price?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Do you charge for sending the package?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|return_policy.txt|tracking_policy.txt
+Is free shipping available?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|damaged_policy.txt
+Are there free shipping options?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|damaged_policy.txt
+Do some orders come with free shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|damaged_policy.txt|tracking_policy.txt
+Do you ship to other countries?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Is international shipping available?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+Can you deliver orders outside the country?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Do you offer overseas delivery?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+Can I place an order from another country?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|return_policy.txt|tracking_policy.txt|cancellation_policy.txt
+Are international deliveries supported?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+Will you ship my order internationally?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|cancellation_policy.txt|tracking_policy.txt
+Do you send products to customers overseas?,Shipping Policy,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt
+Is delivery available outside the country?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|international_shipping_policy.txt
+Which countries can you deliver to?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|return_policy.txt|shipping_policy.txt
+Do you support international orders?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|cancellation_policy.txt|tracking_policy.txt|shipping_policy.txt
+Can I get my purchase delivered internationally?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Are overseas addresses eligible for delivery?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|return_policy.txt
+Do you provide cross-border shipping?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+Is international delivery part of your shipping service?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|international_shipping_policy.txt|shipping_policy.txt
+Can customers outside the country receive orders?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|refund_policy.txt
+Do you deliver to foreign addresses?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+How do I request an address change for my order?,Shipping Policy,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|tracking_policy.txt
+Is it possible to correct the delivery address before dispatch?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt
+How long does international delivery take?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+What is the delivery time for overseas orders?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+How quickly are international packages delivered?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+What is the expected shipping time for an international order?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt
+When should I expect an international package?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|tracking_policy.txt
+What is the usual transit time for international orders?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt
+How long should an international shipment take to arrive?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|damaged_policy.txt
+How much time should I allow for international shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|refund_policy.txt
+What are the delivery timelines for international orders?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+When will an international shipment normally reach me?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|cancellation_policy.txt|tracking_policy.txt
+Is there an estimated delivery period for overseas purchases?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|international_shipping_policy.txt
+How long can international delivery take?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+What is the normal transit time for an order?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|shipping_policy.txt|refund_policy.txt
+How long should shipping take for my purchase?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt|refund_policy.txt
+How many days should I allow for my order to arrive?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+When should my shipment reach my address?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt|damaged_policy.txt
+Is there an option for faster shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt
+Can I upgrade to express shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|tracking_policy.txt
+Are there expedited shipping choices?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+Is express delivery available for my order?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+How much will shipping cost for my order?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|cancellation_policy.txt|shipping_policy.txt|tracking_policy.txt
+Is there a fee for shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|shipping_policy.txt
+Will I be charged for delivery?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|tracking_policy.txt
+Are shipping fees separate from the product price?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+What is the cost of sending my order?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|return_policy.txt|tracking_policy.txt
+What are the costs associated with shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|shipping_policy.txt|tracking_policy.txt
+Will there be a shipping charge at checkout?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,membership_policy.txt|cancellation_policy.txt|shipping_policy.txt|tracking_policy.txt
+Are some orders eligible for free shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|shipping_policy.txt
+Does the company ever waive shipping fees?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|return_policy.txt|cancellation_policy.txt
+How do I follow my order once it has been dispatched?,Shipping Policy,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|tracking_policy.txt
+Do you ship to international destinations?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+Can I have an order delivered to another country?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt|return_policy.txt
+Is overseas delivery available?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt
+Do you offer international shipping?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+Can I order from outside the country?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|refund_policy.txt
+Will you deliver products internationally?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|cancellation_policy.txt
+Are foreign addresses supported for delivery?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+Which countries do you ship to?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+Do you deliver to international addresses?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+Are international destinations included in your shipping service?,Shipping Policy,Unknown,0,rrf_only,order_tracking,tracking_policy.txt|membership_policy.txt|shipping_policy.txt
+Do you support overseas orders?,Shipping Policy,Unknown,0,rrf_only,general,membership_policy.txt|cancellation_policy.txt|shipping_policy.txt
+Can an order be delivered outside the domestic area?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|tracking_policy.txt
+Is international delivery offered to customers?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|international_shipping_policy.txt
+Do you ship packages abroad?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt
+Why is my package taking so long?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+I entered the wrong address for my order. Can it be changed?,Shipping Policy,Cancellation Policy,0,rrf_only,general,refund_policy.txt|membership_policy.txt|cancellation_policy.txt|return_policy.txt
+How do I request an address change?,Shipping Policy,Cancellation Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|return_policy.txt
+Can I fix my address before dispatch?,Shipping Policy,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|tracking_policy.txt|shipping_policy.txt|return_policy.txt
+Can the shipping address be edited after payment?,Shipping Policy,Cancellation Policy,0,rrf_only,order_tracking,cancellation_policy.txt|return_policy.txt|shipping_policy.txt|tracking_policy.txt
+Is an address correction possible before shipping?,Shipping Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|membership_policy.txt
+How long does international shipping usually take?,Shipping Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt
+Is there anything I can do if the order has already shipped?,Cancellation Policy,Shipping Policy,0,rrf_only,order_tracking,cancellation_policy.txt|tracking_policy.txt|shipping_policy.txt
+Is it possible to stop only one item from shipping?,Cancellation Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+What happens to my payment when I cancel?,Cancellation Policy,Refund Policy,0,rrf_only,cancellation,cancellation_policy.txt|refund_policy.txt
+Can I cancel and receive the amount I paid back?,Cancellation Policy,Refund Policy,0,rrf_only,cancellation,refund_policy.txt|cancellation_policy.txt
+I need to stop an order from moving to shipment.,Cancellation Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|tracking_policy.txt
+I want to prevent this purchase from being shipped.,Cancellation Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt
+I want to stop one item from being shipped.,Cancellation Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|return_policy.txt|shipping_policy.txt|cancellation_policy.txt
+I paid for this by mistake. Can I cancel it?,Cancellation Policy,Refund Policy,0,rrf_only,cancellation,cancellation_policy.txt|refund_policy.txt
+Does payment prevent me from cancelling my order?,Cancellation Policy,Refund Policy,0,rrf_only,cancellation,membership_policy.txt|refund_policy.txt|cancellation_policy.txt
+I want to stop a package that has already left the warehouse.,Cancellation Policy,Shipping Policy,0,rrf_only,order_tracking,cancellation_policy.txt|tracking_policy.txt|shipping_policy.txt
+Will the amount I paid be returned after cancellation?,Cancellation Policy,Refund Policy,0,rrf_only,cancellation,refund_policy.txt|cancellation_policy.txt
+"If I stop the order, will I receive the amount I paid back?",Cancellation Policy,Refund Policy,0,rrf_only,general,refund_policy.txt|cancellation_policy.txt
+Can I prevent my order from going to shipment?,Cancellation Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Can I get a replacement for an item that arrived broken?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+The item I received is unusable.,Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+I received an item with visible damage.,Damaged Product Policy,Return Policy,0,rrf_only,general,damaged_policy.txt|return_policy.txt
+The item I ordered doesn't work.,Damaged Product Policy,Return Policy,0,rrf_only,general,refund_policy.txt|return_policy.txt|damaged_policy.txt
+How do I report damage to an item I received?,Damaged Product Policy,Return Policy,0,rrf_only,general,damaged_policy.txt|return_policy.txt|refund_policy.txt
+The item doesn't work even though I just received it.,Damaged Product Policy,Return Policy,0,rrf_only,general,return_policy.txt|damaged_policy.txt
+I received an item with a component missing.,Damaged Product Policy,Return Policy,0,rrf_only,general,damaged_policy.txt|return_policy.txt
+The item is missing some pieces from the package.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,damaged_policy.txt|membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+My order came without all the required parts.,Damaged Product Policy,Return Policy,0,rrf_only,general,return_policy.txt|damaged_policy.txt|tracking_policy.txt
+The product I received isn't complete.,Damaged Product Policy,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|damaged_policy.txt
+My package is missing a component of the item.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|damaged_policy.txt|refund_policy.txt|shipping_policy.txt
+The accessory I received is broken.,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|return_policy.txt
+The item seems to have been damaged during transit.,Damaged Product Policy,Shipping Policy,0,rrf_only,complaint,tracking_policy.txt|return_policy.txt|damaged_policy.txt|cancellation_policy.txt
+The shipment caused damage to the product.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,shipping_policy.txt|damaged_policy.txt|refund_policy.txt
+Is there any compensation for damage caused in transit?,Damaged Product Policy,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|refund_policy.txt|tracking_policy.txt
+Can a faulty item be replaced?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+Can I get another product if mine arrived defective?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,membership_policy.txt|return_policy.txt|damaged_policy.txt
+How can I notify you about damage to my order?,Damaged Product Policy,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|damaged_policy.txt|shipping_policy.txt
+The device arrived but cannot be used.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,damaged_policy.txt|membership_policy.txt|tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt
+The item has a fault straight out of the package.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,cancellation_policy.txt|tracking_policy.txt|return_policy.txt|refund_policy.txt
+My purchase arrived with a functional problem.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt|damaged_policy.txt
+The item has a defect that was present when it arrived.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,damaged_policy.txt|tracking_policy.txt|shipping_policy.txt
+The item I received has serious damage.,Damaged Product Policy,Return Policy,0,rrf_only,general,return_policy.txt|cancellation_policy.txt|refund_policy.txt|tracking_policy.txt|damaged_policy.txt
+The item has damage that was not there before shipping.,Damaged Product Policy,Cancellation Policy,0,rrf_only,cancellation,cancellation_policy.txt|return_policy.txt
+My order arrived incomplete because parts are missing.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,damaged_policy.txt|membership_policy.txt|tracking_policy.txt|return_policy.txt
+A required part was absent when the package arrived.,Damaged Product Policy,Unknown,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|shipping_policy.txt
+The item is incomplete because something is missing.,Damaged Product Policy,Unknown,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|return_policy.txt
+The product has a crack that was there when it arrived.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,damaged_policy.txt|tracking_policy.txt|shipping_policy.txt
+The product is not working straight out of the package.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|tracking_policy.txt|damaged_policy.txt
+The device arrived but won't work.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|damaged_policy.txt|cancellation_policy.txt
+My order arrived with an item that doesn't function.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|return_policy.txt|cancellation_policy.txt
+The cable included with my order does not work.,Damaged Product Policy,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|membership_policy.txt|return_policy.txt|damaged_policy.txt
+The adapter does not work after delivery.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|refund_policy.txt|damaged_policy.txt|cancellation_policy.txt
+The item arrived without one of its components.,Damaged Product Policy,Return Policy,0,rrf_only,order_tracking,return_policy.txt|damaged_policy.txt|tracking_policy.txt|shipping_policy.txt
+There is a piece missing from the product I received.,Damaged Product Policy,Return Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|return_policy.txt
+My package does not contain all the parts of the item.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|refund_policy.txt|shipping_policy.txt|damaged_policy.txt
+The product came incomplete.,Damaged Product Policy,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|damaged_policy.txt
+A required part was missing when I opened the box.,Damaged Product Policy,Return Policy,0,rrf_only,general,damaged_policy.txt|return_policy.txt
+The product arrived without an important component.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|return_policy.txt|tracking_policy.txt|shipping_policy.txt|damaged_policy.txt
+The package is missing a component.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|cancellation_policy.txt|damaged_policy.txt|shipping_policy.txt
+My order came incomplete. What should I do?,Damaged Product Policy,Cancellation Policy,0,rrf_only,general,membership_policy.txt|cancellation_policy.txt|damaged_policy.txt|tracking_policy.txt
+The product is missing something from the original package.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|shipping_policy.txt|refund_policy.txt|tracking_policy.txt|damaged_policy.txt
+I received only part of the product.,Damaged Product Policy,Return Policy,0,rrf_only,general,return_policy.txt|refund_policy.txt
+A component is missing from my delivered item.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|damaged_policy.txt|refund_policy.txt|tracking_policy.txt|shipping_policy.txt
+The product arrived without all its parts.,Damaged Product Policy,Return Policy,0,rrf_only,order_tracking,return_policy.txt|damaged_policy.txt|tracking_policy.txt
+My package was missing a required accessory.,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,membership_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+My item arrived damaged. Can you replace it?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+Can I get another unit because mine arrived broken?,Damaged Product Policy,Unknown,0,rrf_only,complaint,membership_policy.txt|damaged_policy.txt|return_policy.txt
+Will you replace an item that was defective on arrival?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,return_policy.txt|damaged_policy.txt
+My item is broken on arrival. Can I get a replacement?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+What can I do if the product needs to be replaced because it is defective?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,membership_policy.txt|return_policy.txt|damaged_policy.txt
+Is replacement an option for an item damaged during delivery?,Damaged Product Policy,Return Policy,0,rrf_only,complaint,damaged_policy.txt|return_policy.txt
+Where can I report that an item is not working?,Damaged Product Policy,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|return_policy.txt|shipping_policy.txt|cancellation_policy.txt|damaged_policy.txt
+Do I need proof of damage to request help?,Damaged Product Policy,Return Policy,0,rrf_only,general,refund_policy.txt|damaged_policy.txt|cancellation_policy.txt|return_policy.txt
+Is proof required for a replacement due to damage?,Damaged Product Policy,Return Policy,0,rrf_only,return_item,return_policy.txt|damaged_policy.txt|tracking_policy.txt
+What is the weather going to be tomorrow?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|shipping_policy.txt|membership_policy.txt|refund_policy.txt
+Will it rain this weekend?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|damaged_policy.txt|shipping_policy.txt
+How hot will it be today?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt
+Is there a storm coming?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|international_shipping_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+Will there be heavy rain tonight?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt
+How cold is it outside?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+Is the weather suitable for a picnic?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|tracking_policy.txt|membership_policy.txt|damaged_policy.txt
+Do I need an umbrella today?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt|damaged_policy.txt
+How do I make pasta?,Unknown,Return Policy,0,rrf_only,general,return_policy.txt|cancellation_policy.txt|damaged_policy.txt
+Can you give me a simple biryani recipe?,Unknown,Return Policy,0,rrf_only,general,shipping_policy.txt|return_policy.txt|refund_policy.txt
+What is a good vegetarian dinner idea?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|cancellation_policy.txt|damaged_policy.txt|shipping_policy.txt
+How do I bake a chocolate cake?,Unknown,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|damaged_policy.txt|cancellation_policy.txt
+Can I substitute butter with oil in cookies?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|shipping_policy.txt|damaged_policy.txt
+What spices are commonly used in curry?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt|shipping_policy.txt
+How do I cook rice without making it sticky?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|cancellation_policy.txt|shipping_policy.txt
+How do I reset my Wi-Fi router?,Unknown,Cancellation Policy,0,rrf_only,general,refund_policy.txt|cancellation_policy.txt|damaged_policy.txt
+How do I take a screenshot on Windows?,Unknown,Shipping Policy,0,rrf_only,general,damaged_policy.txt|tracking_policy.txt|shipping_policy.txt
+What does RAM do in a computer?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|tracking_policy.txt
+How can I free storage on my phone?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|refund_policy.txt|shipping_policy.txt
+How do I connect Bluetooth headphones?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|cancellation_policy.txt|tracking_policy.txt
+What is the difference between SSD and HDD?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt|shipping_policy.txt|refund_policy.txt
+How do I update a graphics driver?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|return_policy.txt|tracking_policy.txt
+My keyboard is typing the wrong characters. What can I do?,Unknown,Shipping Policy,0,rrf_only,general,refund_policy.txt|return_policy.txt|damaged_policy.txt|shipping_policy.txt|tracking_policy.txt
+How do I learn Python from scratch?,Unknown,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|refund_policy.txt|cancellation_policy.txt
+What is a binary search tree?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|damaged_policy.txt|refund_policy.txt
+Explain gradient descent in simple words.,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|membership_policy.txt|shipping_policy.txt
+What is the difference between AI and machine learning?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt|return_policy.txt
+How does a neural network learn?,Unknown,Shipping Policy,0,rrf_only,general,return_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+What is overfitting in machine learning?,Unknown,Shipping Policy,0,rrf_only,general,refund_policy.txt|membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+Can you explain precision and recall?,Unknown,Refund Policy,0,rrf_only,general,refund_policy.txt|membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+What is a transformer model?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|membership_policy.txt|return_policy.txt
+How does attention work in NLP?,Unknown,Shipping Policy,0,rrf_only,general,refund_policy.txt|tracking_policy.txt|shipping_policy.txt
+What is the purpose of a validation dataset?,Unknown,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|damaged_policy.txt|refund_policy.txt
+How do I prepare for a coding interview?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|membership_policy.txt|tracking_policy.txt
+What are good resources for learning data structures?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|shipping_policy.txt|refund_policy.txt
+How do I improve my C++ skills?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|cancellation_policy.txt|return_policy.txt
+Can you explain recursion with an example?,Unknown,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|membership_policy.txt|refund_policy.txt|return_policy.txt|shipping_policy.txt
+How should I practice LeetCode problems?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt
+How do hash tables work?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|cancellation_policy.txt|tracking_policy.txt
+What is the difference between stack and queue?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt|refund_policy.txt
+How do I write a professional resume?,Unknown,Return Policy,0,rrf_only,general,return_policy.txt|damaged_policy.txt|refund_policy.txt
+How should I introduce myself in an interview?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+What should I wear to a job interview?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|return_policy.txt|damaged_policy.txt
+How do I answer the weakness question?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|return_policy.txt|cancellation_policy.txt
+How can I negotiate a salary?,Unknown,Refund Policy,0,rrf_only,general,refund_policy.txt|return_policy.txt|damaged_policy.txt|cancellation_policy.txt|shipping_policy.txt
+Should I include hobbies on my resume?,Unknown,Return Policy,0,rrf_only,general,return_policy.txt|damaged_policy.txt|cancellation_policy.txt
+How can I improve my communication skills?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|return_policy.txt|shipping_policy.txt
+What are common behavioral interview questions?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|membership_policy.txt|damaged_policy.txt
+How much luggage can I take on a flight?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|return_policy.txt|tracking_policy.txt
+What is the best time to visit Japan?,Unknown,Shipping Policy,0,rrf_only,general,international_shipping_policy.txt|membership_policy.txt|refund_policy.txt|shipping_policy.txt
+How do I open a bank account?,Unknown,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|damaged_policy.txt|cancellation_policy.txt
+What is an index fund?,Unknown,Refund Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|damaged_policy.txt|tracking_policy.txt
+How does compound interest work?,Unknown,Refund Policy,0,rrf_only,general,refund_policy.txt|cancellation_policy.txt|return_policy.txt
+How can I improve my credit score?,Unknown,Refund Policy,0,rrf_only,general,refund_policy.txt|tracking_policy.txt|return_policy.txt
+What is a fixed deposit?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|international_shipping_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+How do mutual funds work?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|cancellation_policy.txt|refund_policy.txt
+What is an emergency fund?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|shipping_policy.txt|return_policy.txt|tracking_policy.txt
+How should I make a monthly budget?,Unknown,Refund Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|damaged_policy.txt
+How do interest rates affect loans?,Unknown,Refund Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|cancellation_policy.txt
+How many planets are in the solar system?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|tracking_policy.txt|damaged_policy.txt
+When did the first computer become popular?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|damaged_policy.txt|return_policy.txt
+What causes an eclipse?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|damaged_policy.txt|return_policy.txt|tracking_policy.txt
+Who invented the telephone?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+Can you explain how photosynthesis works?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|tracking_policy.txt|return_policy.txt
+What is the tallest mountain in the world?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+What is the speed of light?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+Why do leaves change color?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|damaged_policy.txt
+How do volcanoes erupt?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|cancellation_policy.txt|refund_policy.txt
+What causes earthquakes?,Unknown,Cancellation Policy,0,rrf_only,general,shipping_policy.txt|cancellation_policy.txt|damaged_policy.txt|refund_policy.txt
+How does gravity work?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt
+What are some healthy breakfast options?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt
+How many hours of sleep should an adult get?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt
+How much water should I drink each day?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|damaged_policy.txt|tracking_policy.txt
+Why do people get headaches?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|cancellation_policy.txt
+What foods are high in protein?,Unknown,Return Policy,0,rrf_only,general,damaged_policy.txt|return_policy.txt|tracking_policy.txt|shipping_policy.txt
+How can I improve my sleep schedule?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|refund_policy.txt|return_policy.txt|shipping_policy.txt
+What is a balanced diet?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|cancellation_policy.txt|damaged_policy.txt
+How often should I exercise?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|damaged_policy.txt|return_policy.txt|tracking_policy.txt
+What are common causes of back pain?,Unknown,Return Policy,0,rrf_only,general,shipping_policy.txt|return_policy.txt|damaged_policy.txt|refund_policy.txt
+How often should I water a cactus?,Unknown,Refund Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|shipping_policy.txt|damaged_policy.txt
+Why are my plant leaves turning yellow?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|membership_policy.txt
+What plants grow well indoors?,Unknown,Cancellation Policy,0,rrf_only,general,damaged_policy.txt|cancellation_policy.txt|shipping_policy.txt|tracking_policy.txt
+How do I remove weeds from a garden?,Unknown,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt|cancellation_policy.txt|refund_policy.txt
+When is the best time to plant tomatoes?,Unknown,Shipping Policy,0,rrf_only,general,international_shipping_policy.txt|shipping_policy.txt|refund_policy.txt
+How much sunlight does a money plant need?,Unknown,Refund Policy,0,rrf_only,general,shipping_policy.txt|return_policy.txt|refund_policy.txt|damaged_policy.txt
+Why is my plant wilting?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt
+How do I train for a 5K run?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|membership_policy.txt|shipping_policy.txt|return_policy.txt
+How is a football league table calculated?,Unknown,Shipping Policy,0,rrf_only,general,international_shipping_policy.txt|membership_policy.txt|shipping_policy.txt|damaged_policy.txt|refund_policy.txt
+What is a tennis tie-break?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|cancellation_policy.txt|damaged_policy.txt|shipping_policy.txt|tracking_policy.txt
+How many players are on a cricket team?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|membership_policy.txt|tracking_policy.txt|refund_policy.txt
+How do marathon runners train?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt
+How do I make a presentation?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|return_policy.txt|shipping_policy.txt|damaged_policy.txt
+How can I make PowerPoint slides look professional?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|tracking_policy.txt|return_policy.txt
+How do I add page numbers in Word?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|shipping_policy.txt
+What is the difference between PDF and DOCX?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|tracking_policy.txt|refund_policy.txt
+How do I create a table in Excel?,Unknown,Shipping Policy,0,rrf_only,general,damaged_policy.txt|tracking_policy.txt|refund_policy.txt
+How can I freeze rows in a spreadsheet?,Unknown,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|return_policy.txt|tracking_policy.txt
+How do I make a chart in Excel?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|shipping_policy.txt
+What is a pivot table?,Unknown,Return Policy,0,rrf_only,general,damaged_policy.txt|membership_policy.txt|return_policy.txt|shipping_policy.txt
+How do I convert a Word document to PDF?,Unknown,Return Policy,0,rrf_only,general,return_policy.txt|cancellation_policy.txt|refund_policy.txt|shipping_policy.txt
+How do I send a large file by email?,Unknown,Return Policy,0,rrf_only,general,return_policy.txt|shipping_policy.txt|cancellation_policy.txt
+How do I create a Gmail account?,Unknown,Return Policy,0,rrf_only,general,return_policy.txt|shipping_policy.txt|damaged_policy.txt|cancellation_policy.txt
+Why is my email not syncing?,Unknown,Shipping Policy,0,rrf_only,general,cancellation_policy.txt|tracking_policy.txt|shipping_policy.txt|refund_policy.txt
+How do I attach a file to an email?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|cancellation_policy.txt|tracking_policy.txt|return_policy.txt
+How can I organize my inbox?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|return_policy.txt|shipping_policy.txt
+What does CC mean in email?,Unknown,Shipping Policy,0,rrf_only,general,refund_policy.txt|shipping_policy.txt|tracking_policy.txt|return_policy.txt
+How do I create an email signature?,Unknown,Shipping Policy,0,rrf_only,general,cancellation_policy.txt|tracking_policy.txt|shipping_policy.txt|return_policy.txt|damaged_policy.txt
+Why are emails going to spam?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|refund_policy.txt|shipping_policy.txt
+How do I recover a forgotten email password?,Unknown,Refund Policy,0,rrf_only,general,refund_policy.txt|cancellation_policy.txt|return_policy.txt|tracking_policy.txt
+What is two-factor authentication?,Unknown,Return Policy,0,rrf_only,general,membership_policy.txt|return_policy.txt
+How do I use Google Drive?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|refund_policy.txt|cancellation_policy.txt|shipping_policy.txt
+How can I protect a document with a password?,Unknown,Damaged Product Policy,0,rrf_only,general,return_policy.txt|damaged_policy.txt|cancellation_policy.txt
+How does Git work?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|shipping_policy.txt
+How do I clone a repository?,Unknown,Damaged Product Policy,0,rrf_only,general,return_policy.txt|tracking_policy.txt|damaged_policy.txt|cancellation_policy.txt
+What is an API?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+How does REST work?,Unknown,Cancellation Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|refund_policy.txt|damaged_policy.txt
+How do I debug a Python program?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|cancellation_policy.txt|return_policy.txt
+Why am I getting a segmentation fault in C++?,Unknown,Damaged Product Policy,0,rrf_only,general,damaged_policy.txt|tracking_policy.txt
+How do I install a Python package?,Unknown,Shipping Policy,0,rrf_only,order_tracking,tracking_policy.txt|return_policy.txt|damaged_policy.txt|shipping_policy.txt
+How does Kubernetes work?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+What is a database index?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+What is an operating system?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt
+How do I make my phone battery last longer?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|cancellation_policy.txt|tracking_policy.txt|refund_policy.txt
+Why does my phone get hot?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|cancellation_policy.txt|refund_policy.txt
+How do I transfer photos from phone to computer?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|tracking_policy.txt|shipping_policy.txt
+How do I clear app cache?,Unknown,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt
+How do I enable dark mode?,Unknown,Cancellation Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|cancellation_policy.txt
+How do I block unwanted calls?,Unknown,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt
+How do I scan a QR code?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|return_policy.txt|damaged_policy.txt
+Why is my Bluetooth not connecting?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|refund_policy.txt|cancellation_policy.txt
+How do I back up my contacts?,Unknown,Refund Policy,0,rrf_only,general,damaged_policy.txt|shipping_policy.txt|refund_policy.txt|return_policy.txt
+Can you recommend a comedy movie?,Unknown,Return Policy,0,rrf_only,general,return_policy.txt|damaged_policy.txt|cancellation_policy.txt
+What are some good science fiction books?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|return_policy.txt|tracking_policy.txt
+Who is the main character in this novel?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|damaged_policy.txt|shipping_policy.txt
+What is the best way to learn guitar?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|refund_policy.txt|shipping_policy.txt|cancellation_policy.txt
+What are some beginner photography tips?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|shipping_policy.txt|damaged_policy.txt|tracking_policy.txt
+What camera settings work for night photography?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|shipping_policy.txt
+How can I improve my handwriting?,Unknown,Shipping Policy,0,rrf_only,general,refund_policy.txt|tracking_policy.txt|return_policy.txt|shipping_policy.txt
+What are good books for personal development?,Unknown,Damaged Product Policy,0,rrf_only,general,membership_policy.txt|damaged_policy.txt|return_policy.txt|refund_policy.txt
+How do I build a morning routine?,Unknown,Shipping Policy,0,rrf_only,general,tracking_policy.txt|return_policy.txt|shipping_policy.txt|damaged_policy.txt
+What are some ways to stay focused while studying?,Unknown,Shipping Policy,0,rrf_only,general,membership_policy.txt|tracking_policy.txt|refund_policy.txt
+How can I stop procrastinating?,Unknown,Cancellation Policy,0,rrf_only,general,cancellation_policy.txt|damaged_policy.txt|refund_policy.txt|tracking_policy.txt
+How do I take better notes?,Unknown,Shipping Policy,0,rrf_only,general,shipping_policy.txt|tracking_policy.txt|refund_policy.txt

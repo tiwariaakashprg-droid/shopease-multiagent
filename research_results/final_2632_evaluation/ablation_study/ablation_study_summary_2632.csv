@@ -1,0 +1,5 @@
+config,groundedness,personalization,relevance,overall
+full_pipeline,5.0,4.73,4.03,4.03
+no_crm,5.0,2.07,4.01,4.01
+no_escalation,4.99,4.66,3.96,3.98
+no_memory,4.99,4.64,4.01,4.01

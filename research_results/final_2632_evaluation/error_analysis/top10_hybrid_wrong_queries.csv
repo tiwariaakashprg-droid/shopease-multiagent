@@ -1,0 +1,478 @@
+query,expected,predicted,correct,confidence,retrieval_method,latency
+My package arrived damaged. Can I return it?,Damaged Product Policy,Return Policy,0,0.61176467,hybrid_rrf_plus_cross_encoder,0.122370958328247
+What is the company's quantum computing policy?,Unknown,Damaged Product Policy,0,0.5339541,hybrid_rrf_plus_cross_encoder,0.1151289939880371
+What is your Mars colony insurance policy?,Unknown,Damaged Product Policy,0,0.5127118,hybrid_rrf_plus_cross_encoder,0.1161720752716064
+Do you reimburse cryptocurrency mining expenses?,Unknown,Refund Policy,0,0.5621412,hybrid_rrf_plus_cross_encoder,0.1573460102081298
+What is your space travel policy?,Unknown,Damaged Product Policy,0,0.53785396,hybrid_rrf_plus_cross_encoder+llm_fallback,8.506760597229004
+Explain your artificial consciousness policy.,Unknown,Damaged Product Policy,0,0.52783304,hybrid_rrf_plus_cross_encoder,0.2115414142608642
+I received the wrong item and need my money back.,Refund Policy,Return Policy,0,0.626356,hybrid_rrf_plus_cross_encoder,0.1368539333343505
+Can I receive a refund for a defective product?,Refund Policy,Damaged Product Policy,0,0.6489433,hybrid_rrf_plus_cross_encoder,0.1354460716247558
+I accidentally ordered the wrong item. Can I get a refund?,Refund Policy,Cancellation Policy,0,0.61154526,hybrid_rrf_plus_cross_encoder,0.1543266773223877
+What if my package arrives in poor condition?,Damaged Product Policy,Shipping Policy,0,0.6149853,hybrid_rrf_plus_cross_encoder,0.1280031204223632
+I need my money returned because the item is unusable.,Refund Policy,Return Policy,0,0.6196663,hybrid_rrf_plus_cross_encoder,0.1370849609375
+"Please tell me, When can I expect my order? for my recent order.",Shipping Policy,Cancellation Policy,0,0.57289636,hybrid_rrf_plus_cross_encoder,0.160088300704956
+"Could you explain, I no longer want this product and want to return it. please.",Return Policy,Cancellation Policy,0,0.60345024,hybrid_rrf_plus_cross_encoder,0.1496469974517822
+"Please tell me, Is there any way to reverse this payment? for my recent order.",Refund Policy,Cancellation Policy,0,0.58942807,hybrid_rrf_plus_cross_encoder,0.1651511192321777
+Urgent: I no longer want this product and want to return it. for my recent order.,Return Policy,Cancellation Policy,0,0.6384503,hybrid_rrf_plus_cross_encoder,0.1648097038269043
+"Could you explain, The item is damged. please.",Damaged Product Policy,Return Policy,0,0.55365914,hybrid_rrf_plus_cross_encoder,0.1343841552734375
+My screan is crackd. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.5482304,hybrid_rrf_plus_cross_encoder,0.1582951545715332
+I need help: I need to send the package back. as soon as possible.,Return Policy,Shipping Policy,0,0.60425097,hybrid_rrf_plus_cross_encoder,0.1851742267608642
+"Could you explain, I need my payment returned. because I am confused.",Refund Policy,Return Policy,0,0.62227863,hybrid_rrf_plus_cross_encoder,0.1677649021148681
+"Please tell me, The item is damged. because I am confused.",Damaged Product Policy,Return Policy,0,0.55036247,hybrid_rrf_plus_cross_encoder,0.158435583114624
+Urgent: I need to send the package back. please.,Return Policy,Shipping Policy,0,0.59493977,hybrid_rrf_plus_cross_encoder,0.1569652557373047
+I need my payment returned. for my recent order.,Refund Policy,Return Policy,0,0.6438459,hybrid_rrf_plus_cross_encoder,0.1706128120422363
+"Please tell me, The item is damged.",Damaged Product Policy,Return Policy,0,0.553709,hybrid_rrf_plus_cross_encoder,0.1366236209869384
+I need help: The item is damged. for my recent order.,Damaged Product Policy,Return Policy,0,0.5924517,hybrid_rrf_plus_cross_encoder,0.1654095649719238
+Urgent: The screen shattered during shipping. because I am confused.,Damaged Product Policy,Shipping Policy,0,0.57033956,hybrid_rrf_plus_cross_encoder,0.150620698928833
+"Please tell me, Do you deliver internationally? as soon as possible.",Shipping Policy,Unknown,0,0.66657835,hybrid_rrf_plus_cross_encoder,0.183720588684082
+Urgent: The item is damged. because I am confused.,Damaged Product Policy,Return Policy,0,0.5570987,hybrid_rrf_plus_cross_encoder,0.1539807319641113
+I need help: I need my payment returned.,Refund Policy,Return Policy,0,0.62803644,hybrid_rrf_plus_cross_encoder,0.158792495727539
+I need help: I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.5853949,hybrid_rrf_plus_cross_encoder,0.1767089366912841
+I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.5907646,hybrid_rrf_plus_cross_encoder,0.164799690246582
+"Please tell me, Do you deliver internationally? because I am confused.",Shipping Policy,Unknown,0,0.65190166,hybrid_rrf_plus_cross_encoder,0.1505651473999023
+I need help: I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,0.63257855,hybrid_rrf_plus_cross_encoder,0.1772656440734863
+The item is damged. for my recent order.,Damaged Product Policy,Return Policy,0,0.5896673,hybrid_rrf_plus_cross_encoder,0.1493992805480957
+"Please tell me, My screan is crackd. for my recent order.",Damaged Product Policy,Cancellation Policy,0,0.5510873,hybrid_rrf_plus_cross_encoder,0.1729218959808349
+Do you deliver internationally? for my recent order.,Shipping Policy,Unknown,0,0.6622444,hybrid_rrf_plus_cross_encoder,0.1390159130096435
+I need help: Do you deliver internationally? because I am confused.,Shipping Policy,Unknown,0,0.64707714,hybrid_rrf_plus_cross_encoder,0.1514875888824463
+"Please tell me, I need my payment returned. as soon as possible.",Refund Policy,Return Policy,0,0.6211052,hybrid_rrf_plus_cross_encoder,0.1811268329620361
+Urgent: The item is damged. please.,Damaged Product Policy,Return Policy,0,0.56230766,hybrid_rrf_plus_cross_encoder,0.1512894630432129
+"Please tell me, I no longer want this product and want to return it. because I am confused.",Return Policy,Cancellation Policy,0,0.58875513,hybrid_rrf_plus_cross_encoder,0.1696484088897705
+Urgent: I need my payment returned.,Refund Policy,Return Policy,0,0.6288518,hybrid_rrf_plus_cross_encoder,0.1551301479339599
+"Please tell me, I need my payment returned.",Refund Policy,Return Policy,0,0.6182598,hybrid_rrf_plus_cross_encoder,0.1610524654388427
+Urgent: My screan is crackd. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.5712835,hybrid_rrf_plus_cross_encoder,0.1640610694885254
+Urgent: When can I expect my order? for my recent order.,Shipping Policy,Cancellation Policy,0,0.5883276,hybrid_rrf_plus_cross_encoder,0.1763570308685302
+Urgent: I no longer want this product and want to return it. because I am confused.,Return Policy,Cancellation Policy,0,0.5996825,hybrid_rrf_plus_cross_encoder,0.202038288116455
+I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,0.6362121,hybrid_rrf_plus_cross_encoder,0.1689302921295166
+I need my payment returned.,Refund Policy,Return Policy,0,0.63626134,hybrid_rrf_plus_cross_encoder,0.1501636505126953
+Urgent: When can I expect my order?,Shipping Policy,Cancellation Policy,0,0.58784413,hybrid_rrf_plus_cross_encoder,0.1458711624145507
+Urgent: I need my payment returned. for my recent order.,Refund Policy,Return Policy,0,0.6409354,hybrid_rrf_plus_cross_encoder,0.1656749248504638
+"Could you explain, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,0.6425003,hybrid_rrf_plus_cross_encoder,0.1757476329803466
+"Please tell me, I need to send the package back. as soon as possible.",Return Policy,Shipping Policy,0,0.60754865,hybrid_rrf_plus_cross_encoder,0.1912662982940673
+Urgent: I need my payment returned. please.,Refund Policy,Return Policy,0,0.623244,hybrid_rrf_plus_cross_encoder,0.1652939319610595
+Urgent: I need to send the package back. for my recent order.,Return Policy,Cancellation Policy,0,0.61521465,hybrid_rrf_plus_cross_encoder,0.2124650478363037
+I need help: Is there any way to reverse this payment? for my recent order.,Refund Policy,Cancellation Policy,0,0.59858644,hybrid_rrf_plus_cross_encoder,0.1714165210723877
+"Could you explain, The item is damged.",Damaged Product Policy,Return Policy,0,0.55669993,hybrid_rrf_plus_cross_encoder,0.1509680747985839
+"Please tell me, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,0.62734157,hybrid_rrf_plus_cross_encoder,0.1656954288482666
+Urgent: I no longer want this product and want to return it. as soon as possible.,Return Policy,Cancellation Policy,0,0.6169907,hybrid_rrf_plus_cross_encoder,0.1723856925964355
+The charger stopped functioning. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.54300594,hybrid_rrf_plus_cross_encoder,0.1525804996490478
+I need help: When can I expect my order? for my recent order.,Shipping Policy,Cancellation Policy,0,0.5821906,hybrid_rrf_plus_cross_encoder,0.1756753921508789
+I need help: My screan is crackd. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.5624597,hybrid_rrf_plus_cross_encoder,0.1642982959747314
+Can I get my mony back? because I am confused.,Refund Policy,Return Policy,0,0.5850073,hybrid_rrf_plus_cross_encoder,0.1656703948974609
+Can the amount I paid be returned to me?,Refund Policy,Return Policy,0,0.6269729,hybrid_rrf_plus_cross_encoder,0.1395108699798584
+I want the payment for my purchase returned.,Refund Policy,Return Policy,0,0.6540188,hybrid_rrf_plus_cross_encoder,0.1503610610961914
+Could I have the amount I paid returned?,Refund Policy,Return Policy,0,0.6297992,hybrid_rrf_plus_cross_encoder,0.1397030353546142
+I need the amount from my order returned.,Refund Policy,Return Policy,0,0.61178046,hybrid_rrf_plus_cross_encoder,0.1475353240966797
+I'd like the payment returned for an order I placed.,Refund Policy,Return Policy,0,0.63629884,hybrid_rrf_plus_cross_encoder,0.1702535152435302
+How do I claim back the money I spent?,Refund Policy,Return Policy,0,0.5500451,hybrid_rrf_plus_cross_encoder,0.1592013835906982
+I need help getting the money from my purchase returned.,Refund Policy,Return Policy,0,0.61560297,hybrid_rrf_plus_cross_encoder,0.2028350830078125
+Can I have the cost of my order returned?,Refund Policy,Return Policy,0,0.6404899,hybrid_rrf_plus_cross_encoder,0.1679024696350097
+I'd like to have my order payment returned.,Refund Policy,Return Policy,0,0.6537876,hybrid_rrf_plus_cross_encoder,0.1671755313873291
+Can I get the amount charged for my purchase back?,Refund Policy,Return Policy,0,0.5987659,hybrid_rrf_plus_cross_encoder,0.1571862697601318
+What are the steps for getting my payment returned?,Refund Policy,Return Policy,0,0.62766194,hybrid_rrf_plus_cross_encoder,0.1639714241027832
+I paid for this item and want the money back.,Refund Policy,Return Policy,0,0.6281701,hybrid_rrf_plus_cross_encoder,0.1893820762634277
+Can my payment be returned after making the purchase?,Refund Policy,Return Policy,0,0.65924954,hybrid_rrf_plus_cross_encoder,0.1585335731506347
+Can I submit a request to get my purchase amount back?,Refund Policy,Return Policy,0,0.62095904,hybrid_rrf_plus_cross_encoder,0.1562261581420898
+Is it possible to reverse the payment for this purchase?,Refund Policy,Cancellation Policy,0,0.5904682,hybrid_rrf_plus_cross_encoder,0.1465823650360107
+I'd like to get back the amount I was charged.,Refund Policy,Return Policy,0,0.54703003,hybrid_rrf_plus_cross_encoder,0.18044114112854
+I'd like the money from this transaction returned.,Refund Policy,Return Policy,0,0.602421,hybrid_rrf_plus_cross_encoder,0.1713054180145263
+Can I request the amount charged to me back?,Refund Policy,Return Policy,0,0.552744,hybrid_rrf_plus_cross_encoder,0.1513779163360595
+What is the process if I want the payment returned?,Refund Policy,Return Policy,0,0.6421226,hybrid_rrf_plus_cross_encoder,0.154616117477417
+How do I request that my order payment be returned?,Refund Policy,Return Policy,0,0.642435,hybrid_rrf_plus_cross_encoder,0.1729962825775146
+How can I apply to have my money returned?,Refund Policy,Return Policy,0,0.62280846,hybrid_rrf_plus_cross_encoder,0.1713299751281738
+I need to ask for my order amount back.,Refund Policy,Cancellation Policy,0,0.5883389,hybrid_rrf_plus_cross_encoder,0.159055471420288
+Can I have my payment returned for this transaction?,Refund Policy,Return Policy,0,0.63775647,hybrid_rrf_plus_cross_encoder,0.1696059703826904
+I need to recover the amount I spent on this purchase.,Refund Policy,Return Policy,0,0.5624978,hybrid_rrf_plus_cross_encoder,0.1544864177703857
+How can I have this purchase payment returned?,Refund Policy,Return Policy,0,0.62982476,hybrid_rrf_plus_cross_encoder,0.1588494777679443
+I want the amount charged for this purchase returned.,Refund Policy,Return Policy,0,0.61185557,hybrid_rrf_plus_cross_encoder,0.157477855682373
+Can I request that the money paid for this order be returned?,Refund Policy,Return Policy,0,0.6409077,hybrid_rrf_plus_cross_encoder,0.1880488395690918
+What do I need to do to claim back my purchase amount?,Refund Policy,Return Policy,0,0.590969,hybrid_rrf_plus_cross_encoder,0.1662971973419189
+Can you help me get the money I paid returned?,Refund Policy,Return Policy,0,0.607161,hybrid_rrf_plus_cross_encoder,0.1645841598510742
+The amount I was supposed to get back is not showing.,Refund Policy,Return Policy,0,0.55626225,hybrid_rrf_plus_cross_encoder,0.1764523983001709
+The money hasn't been returned to me yet.,Refund Policy,Return Policy,0,0.5836624,hybrid_rrf_plus_cross_encoder,0.1829638481140136
+I expected the payment to be returned by now.,Refund Policy,Return Policy,0,0.6176919,hybrid_rrf_plus_cross_encoder,0.1632347106933593
+My returned payment hasn't appeared in my account.,Refund Policy,Return Policy,0,0.5914299,hybrid_rrf_plus_cross_encoder,0.1629045009613037
+The amount hasn't been credited back to me.,Refund Policy,Return Policy,0,0.5254094,hybrid_rrf_plus_cross_encoder,0.1582744121551513
+I am still waiting for my payment to be returned.,Refund Policy,Return Policy,0,0.60737115,hybrid_rrf_plus_cross_encoder,0.1685683727264404
+I am still waiting for the amount to come back.,Refund Policy,Return Policy,0,0.527113,hybrid_rrf_plus_cross_encoder,0.1635928153991699
+Why is my returned payment still missing?,Refund Policy,Return Policy,0,0.5971171,hybrid_rrf_plus_cross_encoder,0.1491258144378662
+"My payment should have been returned, but I haven't received it.",Refund Policy,Return Policy,0,0.61262465,hybrid_rrf_plus_cross_encoder,0.1984527111053466
+The amount due back to me has not arrived.,Refund Policy,Shipping Policy,0,0.5992124,hybrid_rrf_plus_cross_encoder,0.1673505306243896
+I'm still waiting for the money from a returned payment.,Refund Policy,Return Policy,0,0.60179716,hybrid_rrf_plus_cross_encoder,0.1777927875518798
+I need the money from my order returned.,Refund Policy,Return Policy,0,0.63214695,hybrid_rrf_plus_cross_encoder,0.1996688842773437
+Can the payment for this purchase be sent back to me?,Refund Policy,Return Policy,0,0.61438227,hybrid_rrf_plus_cross_encoder,0.1847665309906005
+I'd like to request that the purchase amount be returned.,Refund Policy,Return Policy,0,0.63275695,hybrid_rrf_plus_cross_encoder,0.2033407688140869
+Can I get the money I spent on this order returned?,Refund Policy,Return Policy,0,0.6319675,hybrid_rrf_plus_cross_encoder,0.1817986965179443
+I'd like to recover the cost of my purchase.,Refund Policy,Return Policy,0,0.56965894,hybrid_rrf_plus_cross_encoder,0.16548752784729
+How can I request a payment reversal for my order?,Refund Policy,Cancellation Policy,0,0.61684805,hybrid_rrf_plus_cross_encoder,0.160846471786499
+Can I ask for the charge on my order to be returned?,Refund Policy,Return Policy,0,0.62304795,hybrid_rrf_plus_cross_encoder,0.1825413703918457
+I'd like to get back the amount deducted for my purchase.,Refund Policy,Return Policy,0,0.58937335,hybrid_rrf_plus_cross_encoder,0.3481085300445556
+Is there a way to get my purchase payment returned?,Refund Policy,Return Policy,0,0.6467681,hybrid_rrf_plus_cross_encoder,0.4048881530761719
+I'd like to receive the money charged for this purchase back.,Refund Policy,Return Policy,0,0.588572,hybrid_rrf_plus_cross_encoder,0.2661347389221191
+Can my order payment be reversed?,Refund Policy,Cancellation Policy,0,0.58668125,hybrid_rrf_plus_cross_encoder,0.1428730487823486
+How do I make a request for the payment to be returned?,Refund Policy,Return Policy,0,0.62687296,hybrid_rrf_plus_cross_encoder,0.170353889465332
+I need my order payment sent back.,Refund Policy,Return Policy,0,0.5996939,hybrid_rrf_plus_cross_encoder,0.1711001396179199
+I want to have the payment for this order returned.,Refund Policy,Return Policy,0,0.6384674,hybrid_rrf_plus_cross_encoder,0.1763033866882324
+Can I request my payment back after buying the item?,Refund Policy,Return Policy,0,0.652754,hybrid_rrf_plus_cross_encoder,0.1725561618804931
+How do I request that the money I paid be returned?,Refund Policy,Return Policy,0,0.6200138,hybrid_rrf_plus_cross_encoder,0.5349812507629395
+I need to request that my purchase payment be reversed.,Refund Policy,Cancellation Policy,0,0.57968783,hybrid_rrf_plus_cross_encoder,0.1583545207977295
+I'd like to have my money returned for this purchase.,Refund Policy,Return Policy,0,0.62513095,hybrid_rrf_plus_cross_encoder,0.1623826026916504
+How do I ask for the money charged to me back?,Refund Policy,Return Policy,0,0.5476798,hybrid_rrf_plus_cross_encoder,0.1711647510528564
+I'd like to request the return of my purchase payment.,Refund Policy,Return Policy,0,0.649479,hybrid_rrf_plus_cross_encoder,0.1625289916992187
+I'd like the amount I paid returned to me.,Refund Policy,Return Policy,0,0.6043364,hybrid_rrf_plus_cross_encoder,0.1575424671173095
+How do I get the charge from my order reversed?,Refund Policy,Cancellation Policy,0,0.56155473,hybrid_rrf_plus_cross_encoder,0.1521008014678955
+Can I request the money I paid for this item back?,Refund Policy,Return Policy,0,0.61333364,hybrid_rrf_plus_cross_encoder,0.1737391948699951
+I need the payment from this purchase returned.,Refund Policy,Return Policy,0,0.6254325,hybrid_rrf_plus_cross_encoder,0.1610569953918457
+Can I ask for my order to be reimbursed?,Refund Policy,Cancellation Policy,0,0.6230192,hybrid_rrf_plus_cross_encoder,0.180396556854248
+I want to request a return of the money I paid.,Refund Policy,Return Policy,0,0.6244655,hybrid_rrf_plus_cross_encoder,0.1606054306030273
+I'd like the money deducted for my purchase returned.,Refund Policy,Return Policy,0,0.6219881,hybrid_rrf_plus_cross_encoder,0.1806583404541015
+I need to reverse the payment associated with my order.,Refund Policy,Cancellation Policy,0,0.6028556,hybrid_rrf_plus_cross_encoder,0.1412551403045654
+I'd like to ask for my order payment to be returned.,Refund Policy,Return Policy,0,0.6433416,hybrid_rrf_plus_cross_encoder,0.1685831546783447
+I need to get my purchase amount back.,Refund Policy,Return Policy,0,0.5797878,hybrid_rrf_plus_cross_encoder,0.1567630767822265
+Can the money charged for this item be returned?,Refund Policy,Return Policy,0,0.62258184,hybrid_rrf_plus_cross_encoder,0.1464695930480957
+I want the amount paid for this item returned.,Refund Policy,Return Policy,0,0.60437125,hybrid_rrf_plus_cross_encoder,0.152287483215332
+Can I reclaim the charge made for my order?,Refund Policy,Cancellation Policy,0,0.57741535,hybrid_rrf_plus_cross_encoder,0.1529717445373535
+I'd like to have the funds from my purchase returned.,Refund Policy,Return Policy,0,0.62447476,hybrid_rrf_plus_cross_encoder,0.166372537612915
+I want the money I paid for this order returned.,Refund Policy,Return Policy,0,0.6251238,hybrid_rrf_plus_cross_encoder,0.1547160148620605
+Can I have the purchase payment sent back?,Refund Policy,Return Policy,0,0.6162125,hybrid_rrf_plus_cross_encoder,0.1405951976776123
+Can I ask for the amount I paid to be returned?,Refund Policy,Return Policy,0,0.623962,hybrid_rrf_plus_cross_encoder,0.1630327701568603
+Can the amount I spent on this item be returned?,Refund Policy,Return Policy,0,0.61365,hybrid_rrf_plus_cross_encoder,0.1694154739379882
+Can I get back the amount charged for this purchase?,Refund Policy,Return Policy,0,0.58728653,hybrid_rrf_plus_cross_encoder,0.1535899639129638
+What do I do when I want my order payment returned?,Refund Policy,Return Policy,0,0.6514729,hybrid_rrf_plus_cross_encoder,0.1783852577209472
+Can the funds I paid for my order be returned?,Refund Policy,Return Policy,0,0.62995076,hybrid_rrf_plus_cross_encoder,0.1642951965332031
+Can I have the cost of this purchase returned?,Refund Policy,Return Policy,0,0.63245624,hybrid_rrf_plus_cross_encoder,0.1671569347381591
+I'd like to recover the charge from this purchase.,Refund Policy,Return Policy,0,0.55528814,hybrid_rrf_plus_cross_encoder,0.155186653137207
+I'd like to have my purchase charge returned.,Refund Policy,Return Policy,0,0.6258866,hybrid_rrf_plus_cross_encoder,0.1810276508331298
+Can the amount deducted for this purchase be returned?,Refund Policy,Return Policy,0,0.626134,hybrid_rrf_plus_cross_encoder,0.1843349933624267
+I need my purchase payment returned.,Refund Policy,Return Policy,0,0.65315473,hybrid_rrf_plus_cross_encoder,0.1606462001800537
+I want the payment from this purchase back.,Refund Policy,Return Policy,0,0.5872973,hybrid_rrf_plus_cross_encoder,0.1946303844451904
+I need to get the money from this purchase back.,Refund Policy,Return Policy,0,0.5662246,hybrid_rrf_plus_cross_encoder,0.1800661087036132
+How do I request a return of the payment?,Refund Policy,Return Policy,0,0.6281597,hybrid_rrf_plus_cross_encoder,0.1673452854156494
+I want the money paid for this item returned.,Refund Policy,Return Policy,0,0.6105315,hybrid_rrf_plus_cross_encoder,0.2006201744079589
+I'd like to recover the cost of this purchase.,Refund Policy,Return Policy,0,0.5530547,hybrid_rrf_plus_cross_encoder,0.1868948936462402
+Can I ask for my purchase payment to be reversed?,Refund Policy,Cancellation Policy,0,0.58530974,hybrid_rrf_plus_cross_encoder,0.4182233810424804
+I'd like to get my order amount back.,Refund Policy,Cancellation Policy,0,0.58862644,hybrid_rrf_plus_cross_encoder,0.4868812561035156
+Can the money taken from my account for this order be returned?,Refund Policy,Return Policy,0,0.6281913,hybrid_rrf_plus_cross_encoder,0.3339331150054931
+Can I get the funds I used for this purchase returned?,Refund Policy,Return Policy,0,0.62162405,hybrid_rrf_plus_cross_encoder,0.3670425415039062
+I'd like my payment returned for this order.,Refund Policy,Return Policy,0,0.62762696,hybrid_rrf_plus_cross_encoder,0.4092981815338135
+Can my purchase payment be sent back to me?,Refund Policy,Return Policy,0,0.61348855,hybrid_rrf_plus_cross_encoder,0.4844021797180176
+What should I do if I need the order amount returned?,Refund Policy,Return Policy,0,0.6230386,hybrid_rrf_plus_cross_encoder,0.5978138446807861
+I don't want the item anymore. Can I send it back?,Return Policy,Cancellation Policy,0,0.61579007,hybrid_rrf_plus_cross_encoder,0.1564056873321533
+I received the product but decided I don't want it.,Return Policy,Cancellation Policy,0,0.6003764,hybrid_rrf_plus_cross_encoder,0.1575806140899658
+"My package was delivered, and I want to send the item back.",Return Policy,Shipping Policy,0,0.60886186,hybrid_rrf_plus_cross_encoder,0.1639878749847412
+Can this item be sent back after delivery?,Return Policy,Cancellation Policy,0,0.6274787,hybrid_rrf_plus_cross_encoder,0.4828505516052246
+I don't want to keep this purchase. Can it be returned?,Return Policy,Cancellation Policy,0,0.6163997,hybrid_rrf_plus_cross_encoder,0.3604078292846679
+What happens if I cannot find my purchase invoice?,Return Policy,Cancellation Policy,0,0.561795,hybrid_rrf_plus_cross_encoder,0.3356730937957763
+I want to send the product back after it was delivered.,Return Policy,Cancellation Policy,0,0.6158227,hybrid_rrf_plus_cross_encoder,0.4831507205963135
+How do I send back an item I no longer want?,Return Policy,Cancellation Policy,0,0.6211106,hybrid_rrf_plus_cross_encoder,0.1889445781707763
+How many days are available for a return?,Return Policy,Refund Policy,0,0.62818056,hybrid_rrf_plus_cross_encoder,0.1633083820343017
+Can an accessory be sent back after delivery?,Return Policy,Cancellation Policy,0,0.62030244,hybrid_rrf_plus_cross_encoder,0.172109842300415
+Can I place an order without paying a shipping charge?,Shipping Policy,Cancellation Policy,0,0.60962474,hybrid_rrf_plus_cross_encoder,0.1753318309783935
+Do you waive delivery charges on eligible orders?,Shipping Policy,Unknown,0,0.6011833,hybrid_rrf_plus_cross_encoder,0.159114122390747
+Is international shipping available?,Shipping Policy,Unknown,0,0.68822455,hybrid_rrf_plus_cross_encoder,0.1250908374786377
+Can you deliver orders outside the country?,Shipping Policy,Unknown,0,0.61490166,hybrid_rrf_plus_cross_encoder,0.1547858715057373
+Can I place an order from another country?,Shipping Policy,Unknown,0,0.62023246,hybrid_rrf_plus_cross_encoder,0.155735969543457
+Are international deliveries supported?,Shipping Policy,Unknown,0,0.68144876,hybrid_rrf_plus_cross_encoder,0.1388759613037109
+Will you ship my order internationally?,Shipping Policy,Unknown,0,0.64765793,hybrid_rrf_plus_cross_encoder,0.1629235744476318
+Do you send products to customers overseas?,Shipping Policy,Unknown,0,0.61912423,hybrid_rrf_plus_cross_encoder,0.1460835933685302
+Is delivery available outside the country?,Shipping Policy,Unknown,0,0.6814986,hybrid_rrf_plus_cross_encoder,0.1257691383361816
+Which countries can you deliver to?,Shipping Policy,Unknown,0,0.63221127,hybrid_rrf_plus_cross_encoder,0.1509621143341064
+Can I get my purchase delivered internationally?,Shipping Policy,Unknown,0,0.6751322,hybrid_rrf_plus_cross_encoder,0.1564993858337402
+Are overseas addresses eligible for delivery?,Shipping Policy,Unknown,0,0.67792416,hybrid_rrf_plus_cross_encoder,0.1513490676879882
+Is international delivery part of your shipping service?,Shipping Policy,Unknown,0,0.6775854,hybrid_rrf_plus_cross_encoder,0.1450481414794922
+Can customers outside the country receive orders?,Shipping Policy,Unknown,0,0.6309914,hybrid_rrf_plus_cross_encoder,0.1441259384155273
+Do you deliver to foreign addresses?,Shipping Policy,Unknown,0,0.60303146,hybrid_rrf_plus_cross_encoder,0.1683070659637451
+Why hasn't my order arrived yet?,Shipping Policy,Cancellation Policy,0,0.62569135,hybrid_rrf_plus_cross_encoder,0.1783027648925781
+I entered the wrong delivery address. Can it be changed?,Shipping Policy,Cancellation Policy,0,0.58082414,hybrid_rrf_plus_cross_encoder,0.1885418891906738
+How do I request an address change for my order?,Shipping Policy,Cancellation Policy,0,0.54667956,hybrid_rrf_plus_cross_encoder,0.1647608280181884
+Can I update my delivery location after placing the order?,Shipping Policy,Cancellation Policy,0,0.61706007,hybrid_rrf_plus_cross_encoder,0.1934809684753418
+Is it possible to correct the delivery address before dispatch?,Shipping Policy,Cancellation Policy,0,0.6183286,hybrid_rrf_plus_cross_encoder,0.1772294044494629
+What is the delivery time for overseas orders?,Shipping Policy,Unknown,0,0.68972594,hybrid_rrf_plus_cross_encoder,0.142888069152832
+How quickly are international packages delivered?,Shipping Policy,Unknown,0,0.6662922,hybrid_rrf_plus_cross_encoder,0.1551709175109863
+What are the delivery timelines for international orders?,Shipping Policy,Unknown,0,0.6696109,hybrid_rrf_plus_cross_encoder,0.1369838714599609
+When will an international shipment normally reach me?,Shipping Policy,Unknown,0,0.6720861,hybrid_rrf_plus_cross_encoder,0.1710419654846191
+Is there an estimated delivery period for overseas purchases?,Shipping Policy,Unknown,0,0.6988729,hybrid_rrf_plus_cross_encoder,0.1553318500518798
+Is express delivery available for my order?,Shipping Policy,Unknown,0,0.6360504,hybrid_rrf_plus_cross_encoder,0.1533267498016357
+Are shipping fees separate from the product price?,Shipping Policy,Unknown,0,0.610339,hybrid_rrf_plus_cross_encoder,0.1672978401184082
+What are the costs associated with shipping?,Shipping Policy,Unknown,0,0.6295142,hybrid_rrf_plus_cross_encoder,0.1723229885101318
+How do I follow my order once it has been dispatched?,Shipping Policy,Cancellation Policy,0,0.58305717,hybrid_rrf_plus_cross_encoder,0.1871628761291504
+Do you ship to international destinations?,Shipping Policy,Unknown,0,0.66580904,hybrid_rrf_plus_cross_encoder,0.1761701107025146
+Is overseas delivery available?,Shipping Policy,Unknown,0,0.7001704,hybrid_rrf_plus_cross_encoder,0.2926943302154541
+Do you offer international shipping?,Shipping Policy,Unknown,0,0.6616415,hybrid_rrf_plus_cross_encoder,0.1323568820953369
+Can I order from outside the country?,Shipping Policy,Unknown,0,0.610048,hybrid_rrf_plus_cross_encoder,0.1445744037628173
+Will you deliver products internationally?,Shipping Policy,Unknown,0,0.66198057,hybrid_rrf_plus_cross_encoder,0.1629815101623535
+Can customers overseas place orders?,Shipping Policy,Unknown,0,0.6323934,hybrid_rrf_plus_cross_encoder,0.2526915073394775
+Do you deliver to international addresses?,Shipping Policy,Unknown,0,0.6461462,hybrid_rrf_plus_cross_encoder,0.3384158611297607
+Are international destinations included in your shipping service?,Shipping Policy,Unknown,0,0.6876933,hybrid_rrf_plus_cross_encoder,0.2726502418518066
+Is international delivery offered to customers?,Shipping Policy,Unknown,0,0.69556123,hybrid_rrf_plus_cross_encoder,0.2649331092834472
+My order is late. What should I do?,Shipping Policy,Cancellation Policy,0,0.58572507,hybrid_rrf_plus_cross_encoder,0.3591248989105224
+My order is overdue. How can I check it?,Shipping Policy,Cancellation Policy,0,0.5756447,hybrid_rrf_plus_cross_encoder,0.4507660865783691
+Can I get an update on my late order?,Shipping Policy,Cancellation Policy,0,0.5904929,hybrid_rrf_plus_cross_encoder,0.352689266204834
+I entered the wrong address for my order. Can it be changed?,Shipping Policy,Cancellation Policy,0,0.54127246,hybrid_rrf_plus_cross_encoder,0.4055240154266357
+Can the address be changed after an order is placed?,Shipping Policy,Cancellation Policy,0,0.5571728,hybrid_rrf_plus_cross_encoder,0.3373949527740478
+How do I request an address change?,Shipping Policy,Cancellation Policy,0,0.5091721,hybrid_rrf_plus_cross_encoder,0.3048396110534668
+Can I fix my address before dispatch?,Shipping Policy,Cancellation Policy,0,0.5461674,hybrid_rrf_plus_cross_encoder,0.3599536418914795
+How do I change the address attached to my order?,Shipping Policy,Cancellation Policy,0,0.51689905,hybrid_rrf_plus_cross_encoder,0.3531575202941894
+Is an address correction possible before shipping?,Shipping Policy,Cancellation Policy,0,0.60633993,hybrid_rrf_plus_cross_encoder,0.27663254737854
+What is the expected delivery time for overseas orders?,Shipping Policy,Unknown,0,0.68773687,hybrid_rrf_plus_cross_encoder,0.2824800014495849
+Is there anything I can do if the order has already shipped?,Cancellation Policy,Shipping Policy,0,0.6445573,hybrid_rrf_plus_cross_encoder,0.3244743347167969
+Is it possible to stop only one item from shipping?,Cancellation Policy,Shipping Policy,0,0.6113049,hybrid_rrf_plus_cross_encoder,0.1624116897583007
+Can I reverse a paid order?,Cancellation Policy,Refund Policy,0,0.597714,hybrid_rrf_plus_cross_encoder,0.150928258895874
+How can I reverse an order I submitted?,Cancellation Policy,Refund Policy,0,0.59169465,hybrid_rrf_plus_cross_encoder,0.3321375846862793
+My order arrived in poor condition.,Damaged Product Policy,Cancellation Policy,0,0.59138125,hybrid_rrf_plus_cross_encoder,0.1587898731231689
+Something is wrong with the item I received.,Damaged Product Policy,Return Policy,0,0.57339585,hybrid_rrf_plus_cross_encoder,0.1489045619964599
+Can I get a replacement for an item that arrived broken?,Damaged Product Policy,Return Policy,0,0.63469034,hybrid_rrf_plus_cross_encoder,0.348306655883789
+The item I received is unusable.,Damaged Product Policy,Return Policy,0,0.61221117,hybrid_rrf_plus_cross_encoder,0.2665340900421142
+The item I ordered doesn't work.,Damaged Product Policy,Cancellation Policy,0,0.57159996,hybrid_rrf_plus_cross_encoder,0.3234965801239013
+The item arrived with a crack. What are my options?,Damaged Product Policy,Shipping Policy,0,0.59286493,hybrid_rrf_plus_cross_encoder,0.3346860408782959
+The item doesn't work even though I just received it.,Damaged Product Policy,Return Policy,0,0.5502026,hybrid_rrf_plus_cross_encoder,0.3844337463378906
+My product arrived incomplete. What should I do?,Damaged Product Policy,Shipping Policy,0,0.6005005,hybrid_rrf_plus_cross_encoder,0.3282921314239502
+I received an item with a component missing.,Damaged Product Policy,Return Policy,0,0.56480646,hybrid_rrf_plus_cross_encoder,0.3927698135375976
+The item is missing some pieces from the package.,Damaged Product Policy,Shipping Policy,0,0.6114531,hybrid_rrf_plus_cross_encoder,0.3554854393005371
+My order came without all the required parts.,Damaged Product Policy,Cancellation Policy,0,0.547744,hybrid_rrf_plus_cross_encoder,0.3808848857879638
+A part of the product was missing when it arrived.,Damaged Product Policy,Shipping Policy,0,0.61603904,hybrid_rrf_plus_cross_encoder,0.3149795532226562
+The product I received isn't complete.,Damaged Product Policy,Return Policy,0,0.5756394,hybrid_rrf_plus_cross_encoder,0.3382906913757324
+What should I do if my item arrives with missing parts?,Damaged Product Policy,Return Policy,0,0.6197985,hybrid_rrf_plus_cross_encoder,0.292081356048584
+My package is missing a component of the item.,Damaged Product Policy,Shipping Policy,0,0.5879929,hybrid_rrf_plus_cross_encoder,0.3194301128387451
+The product arrived with some pieces missing.,Damaged Product Policy,Shipping Policy,0,0.60441303,hybrid_rrf_plus_cross_encoder,0.2862014770507812
+My charger isn't working after delivery.,Damaged Product Policy,Shipping Policy,0,0.5803637,hybrid_rrf_plus_cross_encoder,0.3557918071746826
+The shipment caused damage to the product.,Damaged Product Policy,Shipping Policy,0,0.61729956,hybrid_rrf_plus_cross_encoder,0.3902215957641601
+The product arrived with damage from shipping.,Damaged Product Policy,Shipping Policy,0,0.62253386,hybrid_rrf_plus_cross_encoder,0.336409330368042
+Is there any compensation for damage caused in transit?,Damaged Product Policy,Shipping Policy,0,0.5680019,hybrid_rrf_plus_cross_encoder,0.2702715396881103
+The device arrived but cannot be used.,Damaged Product Policy,Shipping Policy,0,0.61002934,hybrid_rrf_plus_cross_encoder,0.1337442398071289
+The item has a fault straight out of the package.,Damaged Product Policy,Shipping Policy,0,0.6086202,hybrid_rrf_plus_cross_encoder,0.1526050567626953
+My purchase arrived with a functional problem.,Damaged Product Policy,Shipping Policy,0,0.61652,hybrid_rrf_plus_cross_encoder,0.1486737728118896
+My order arrived with a non-working item.,Damaged Product Policy,Shipping Policy,0,0.6100686,hybrid_rrf_plus_cross_encoder,0.161264419555664
+The item has a defect that was present when it arrived.,Damaged Product Policy,Shipping Policy,0,0.62459975,hybrid_rrf_plus_cross_encoder,0.1753585338592529
+The item has damage that was not there before shipping.,Damaged Product Policy,Cancellation Policy,0,0.63071626,hybrid_rrf_plus_cross_encoder,0.3483428955078125
+The product arrived in a condition I cannot use.,Damaged Product Policy,Shipping Policy,0,0.61655915,hybrid_rrf_plus_cross_encoder,0.307849645614624
+My order arrived incomplete because parts are missing.,Damaged Product Policy,Shipping Policy,0,0.60557485,hybrid_rrf_plus_cross_encoder,0.2861080169677734
+One component was not included with my item.,Damaged Product Policy,Return Policy,0,0.52935296,hybrid_rrf_plus_cross_encoder,0.3336329460144043
+The product arrived without one of its parts.,Damaged Product Policy,Shipping Policy,0,0.5949695,hybrid_rrf_plus_cross_encoder+llm_fallback,5.362131357192993
+A required part was absent when the package arrived.,Damaged Product Policy,Shipping Policy,0,0.6102683,hybrid_rrf_plus_cross_encoder,0.4398229122161865
+Can I report missing components from a delivered product?,Damaged Product Policy,Shipping Policy,0,0.6071628,hybrid_rrf_plus_cross_encoder,0.3404970169067383
+My device has visible damage from shipping.,Damaged Product Policy,Shipping Policy,0,0.60428673,hybrid_rrf_plus_cross_encoder,0.3154199123382568
+The product has a crack that was there when it arrived.,Damaged Product Policy,Shipping Policy,0,0.6053754,hybrid_rrf_plus_cross_encoder,0.3755204677581787
+The product arrived with a loose component.,Damaged Product Policy,Shipping Policy,0,0.59665173,hybrid_rrf_plus_cross_encoder,0.3450028896331787
+My order contains a product with shipping damage.,Damaged Product Policy,Shipping Policy,0,0.6164053,hybrid_rrf_plus_cross_encoder,0.3034327030181885
+My device does not function properly after delivery.,Damaged Product Policy,Shipping Policy,0,0.6145408,hybrid_rrf_plus_cross_encoder,0.3404891490936279
+The product is not working straight out of the package.,Damaged Product Policy,Shipping Policy,0,0.6093133,hybrid_rrf_plus_cross_encoder,0.3462324142456054
+I received an item that fails to operate.,Damaged Product Policy,Return Policy,0,0.5881582,hybrid_rrf_plus_cross_encoder,0.438180923461914
+The device arrived but won't work.,Damaged Product Policy,Shipping Policy,0,0.6082729,hybrid_rrf_plus_cross_encoder,0.3070516586303711
+The item powers on but does not work correctly.,Damaged Product Policy,Return Policy,0,0.51287884,hybrid_rrf_plus_cross_encoder,0.3231136798858642
+My device arrived with a fault.,Damaged Product Policy,Shipping Policy,0,0.592632,hybrid_rrf_plus_cross_encoder,0.3124089241027832
+The product stopped working immediately after delivery.,Damaged Product Policy,Cancellation Policy,0,0.62280566,hybrid_rrf_plus_cross_encoder,0.2944943904876709
+My order arrived with an item that doesn't function.,Damaged Product Policy,Shipping Policy,0,0.60237217,hybrid_rrf_plus_cross_encoder,0.3902332782745361
+The cable included with my order does not work.,Damaged Product Policy,Cancellation Policy,0,0.5415871,hybrid_rrf_plus_cross_encoder,0.2865803241729736
+The cable came broken with the order.,Damaged Product Policy,Cancellation Policy,0,0.5571631,hybrid_rrf_plus_cross_encoder,0.3237316608428955
+The adapter does not work after delivery.,Damaged Product Policy,Shipping Policy,0,0.59090436,hybrid_rrf_plus_cross_encoder,0.3465266227722168
+My order is missing a part of the product.,Damaged Product Policy,Cancellation Policy,0,0.5655384,hybrid_rrf_plus_cross_encoder,0.3280603885650635
+The item arrived without one of its components.,Damaged Product Policy,Shipping Policy,0,0.6017458,hybrid_rrf_plus_cross_encoder,0.3888788223266601
+My package does not contain all the parts of the item.,Damaged Product Policy,Shipping Policy,0,0.6104575,hybrid_rrf_plus_cross_encoder,0.3364441394805908
+One component of my order is missing.,Damaged Product Policy,Cancellation Policy,0,0.546316,hybrid_rrf_plus_cross_encoder,0.2954432964324951
+My item is missing one of its pieces.,Damaged Product Policy,Return Policy,0,0.5510585,hybrid_rrf_plus_cross_encoder,0.3038074970245361
+The product arrived without an important component.,Damaged Product Policy,Shipping Policy,0,0.5976149,hybrid_rrf_plus_cross_encoder,0.3350729942321777
+I received the product but one part was not included.,Damaged Product Policy,Return Policy,0,0.5337088,hybrid_rrf_plus_cross_encoder,0.3457162380218506
+The package is missing a component.,Damaged Product Policy,Shipping Policy,0,0.57941705,hybrid_rrf_plus_cross_encoder,0.2854142189025879
+There are missing pieces in the item I received.,Damaged Product Policy,Return Policy,0,0.5685075,hybrid_rrf_plus_cross_encoder,0.3016247749328613
+My order came incomplete. What should I do?,Damaged Product Policy,Cancellation Policy,0,0.56831944,hybrid_rrf_plus_cross_encoder,0.2887320518493652
+The product is missing something from the original package.,Damaged Product Policy,Shipping Policy,0,0.60851526,hybrid_rrf_plus_cross_encoder,0.3145010471343994
+I received only part of the product.,Damaged Product Policy,Return Policy,0,0.53035396,hybrid_rrf_plus_cross_encoder,0.3030815124511719
+A component is missing from my delivered item.,Damaged Product Policy,Shipping Policy,0,0.59372216,hybrid_rrf_plus_cross_encoder,0.3176562786102295
+The item I received has missing pieces.,Damaged Product Policy,Return Policy,0,0.58137476,hybrid_rrf_plus_cross_encoder,0.2886793613433838
+The product arrived without all its parts.,Damaged Product Policy,Shipping Policy,0,0.59918284,hybrid_rrf_plus_cross_encoder,0.3437159061431885
+My package was missing a required accessory.,Damaged Product Policy,Shipping Policy,0,0.59009624,hybrid_rrf_plus_cross_encoder,0.3131265640258789
+How do I report damage to a delivered product?,Damaged Product Policy,Shipping Policy,0,0.60758215,hybrid_rrf_plus_cross_encoder,0.316443920135498
+Can I report physical damage after opening my package?,Damaged Product Policy,Shipping Policy,0,0.6057242,hybrid_rrf_plus_cross_encoder,0.337644100189209
+Where can I report that an item is not working?,Damaged Product Policy,Cancellation Policy,0,0.60352576,hybrid_rrf_plus_cross_encoder,0.408271312713623
+Is proof required for a replacement due to damage?,Damaged Product Policy,Return Policy,0,0.6370335,hybrid_rrf_plus_cross_encoder,0.2872800827026367
+What is the weather going to be tomorrow?,Unknown,Shipping Policy,0,0.49953592,hybrid_rrf_plus_cross_encoder,0.3090553283691406
+Will it rain this weekend?,Unknown,Shipping Policy,0,0.48120826,hybrid_rrf_plus_cross_encoder,0.312147855758667
+How hot will it be today?,Unknown,Shipping Policy,0,0.47888947,hybrid_rrf_plus_cross_encoder,0.2855367660522461
+Is there a storm coming?,Unknown,Shipping Policy,0,0.4993835,hybrid_rrf_plus_cross_encoder,0.3136618137359619
+What time does the sun set today?,Unknown,Shipping Policy,0,0.49331394,hybrid_rrf_plus_cross_encoder,0.3094346523284912
+Will there be heavy rain tonight?,Unknown,Shipping Policy,0,0.4809575,hybrid_rrf_plus_cross_encoder,0.3536739349365234
+How cold is it outside?,Unknown,Shipping Policy,0,0.48206678,hybrid_rrf_plus_cross_encoder,0.2474265098571777
+What is the forecast for next week?,Unknown,Shipping Policy,0,0.50523657,hybrid_rrf_plus_cross_encoder,0.2676901817321777
+Is the weather suitable for a picnic?,Unknown,Shipping Policy,0,0.4821838,hybrid_rrf_plus_cross_encoder,0.2327635288238525
+Do I need an umbrella today?,Unknown,Shipping Policy,0,0.4882376,hybrid_rrf_plus_cross_encoder,0.3085818290710449
+How do I make pasta?,Unknown,Damaged Product Policy,0,0.43646225,hybrid_rrf_plus_cross_encoder,0.3380851745605469
+What ingredients do I need for pancakes?,Unknown,Shipping Policy,0,0.46397984,hybrid_rrf_plus_cross_encoder,0.3938808441162109
+Can you give me a simple biryani recipe?,Unknown,Shipping Policy,0,0.4912707,hybrid_rrf_plus_cross_encoder,0.4029428958892822
+How long should I boil an egg?,Unknown,Shipping Policy,0,0.47762853,hybrid_rrf_plus_cross_encoder,0.2615029811859131
+What is a good vegetarian dinner idea?,Unknown,Damaged Product Policy,0,0.44810385,hybrid_rrf_plus_cross_encoder,0.2961869239807129
+How do I bake a chocolate cake?,Unknown,Shipping Policy,0,0.44364864,hybrid_rrf_plus_cross_encoder,0.2868216037750244
+Can I substitute butter with oil in cookies?,Unknown,Return Policy,0,0.47927567,hybrid_rrf_plus_cross_encoder,0.331484317779541
+What spices are commonly used in curry?,Unknown,Shipping Policy,0,0.4637633,hybrid_rrf_plus_cross_encoder,0.3123717308044433
+How do I cook rice without making it sticky?,Unknown,Cancellation Policy,0,0.45340508,hybrid_rrf_plus_cross_encoder,0.3086767196655273
+What is an easy breakfast to prepare?,Unknown,Shipping Policy,0,0.4685107,hybrid_rrf_plus_cross_encoder,0.2875187397003174
+How do I reset my Wi-Fi router?,Unknown,Cancellation Policy,0,0.46651798,hybrid_rrf_plus_cross_encoder,0.3395087718963623
+Why is my laptop running slowly?,Unknown,Shipping Policy,0,0.4685389,hybrid_rrf_plus_cross_encoder,0.3155179023742676
+How do I take a screenshot on Windows?,Unknown,Damaged Product Policy,0,0.45320064,hybrid_rrf_plus_cross_encoder,0.287280797958374
+What does RAM do in a computer?,Unknown,Damaged Product Policy,0,0.4471691,hybrid_rrf_plus_cross_encoder,0.3259716033935547
+How can I free storage on my phone?,Unknown,Damaged Product Policy,0,0.46426132,hybrid_rrf_plus_cross_encoder,0.301497220993042
+Why is my internet connection unstable?,Unknown,Damaged Product Policy,0,0.47298846,hybrid_rrf_plus_cross_encoder,0.3385782241821289
+How do I connect Bluetooth headphones?,Unknown,Damaged Product Policy,0,0.44004607,hybrid_rrf_plus_cross_encoder,0.345560073852539
+What is the difference between SSD and HDD?,Unknown,Damaged Product Policy,0,0.4643577,hybrid_rrf_plus_cross_encoder,0.2828872203826904
+How do I update a graphics driver?,Unknown,Shipping Policy,0,0.48351008,hybrid_rrf_plus_cross_encoder,0.3367848396301269
+My keyboard is typing the wrong characters. What can I do?,Unknown,Damaged Product Policy,0,0.47848704,hybrid_rrf_plus_cross_encoder,0.3051097393035888
+How do I learn Python from scratch?,Unknown,Cancellation Policy,0,0.4444476,hybrid_rrf_plus_cross_encoder,0.3408255577087402
+What is a binary search tree?,Unknown,Damaged Product Policy,0,0.45355454,hybrid_rrf_plus_cross_encoder,0.3309195041656494
+Explain gradient descent in simple words.,Unknown,Shipping Policy,0,0.46261802,hybrid_rrf_plus_cross_encoder,0.3332293033599853
+What is the difference between AI and machine learning?,Unknown,Damaged Product Policy,0,0.45475036,hybrid_rrf_plus_cross_encoder,0.2590939998626709
+How does a neural network learn?,Unknown,Damaged Product Policy,0,0.45311016,hybrid_rrf_plus_cross_encoder,0.3221595287322998
+What is overfitting in machine learning?,Unknown,Return Policy,0,0.46205,hybrid_rrf_plus_cross_encoder,0.2818117141723633
+Can you explain precision and recall?,Unknown,Return Policy,0,0.48918065,hybrid_rrf_plus_cross_encoder,0.3004560470581054
+What is a transformer model?,Unknown,Damaged Product Policy,0,0.4629706,hybrid_rrf_plus_cross_encoder,0.3139712810516357
+How does attention work in NLP?,Unknown,Shipping Policy,0,0.47185767,hybrid_rrf_plus_cross_encoder,0.3114073276519775
+What is the purpose of a validation dataset?,Unknown,Shipping Policy,0,0.4772487,hybrid_rrf_plus_cross_encoder,0.3450765609741211
+How do I prepare for a coding interview?,Unknown,Shipping Policy,0,0.45604655,hybrid_rrf_plus_cross_encoder,0.2587575912475586
+Which programming language should I learn first?,Unknown,Cancellation Policy,0,0.45905682,hybrid_rrf_plus_cross_encoder,0.2883009910583496
+What are good resources for learning data structures?,Unknown,Damaged Product Policy,0,0.4497116,hybrid_rrf_plus_cross_encoder,0.3246476650238037
+How do I improve my C++ skills?,Unknown,Damaged Product Policy,0,0.44284466,hybrid_rrf_plus_cross_encoder,0.3229744434356689
+What is dynamic programming?,Unknown,Damaged Product Policy,0,0.4645142,hybrid_rrf_plus_cross_encoder,0.2980506420135498
+Can you explain recursion with an example?,Unknown,Return Policy,0,0.4666412,hybrid_rrf_plus_cross_encoder,0.307880163192749
+How should I practice LeetCode problems?,Unknown,Damaged Product Policy,0,0.47545928,hybrid_rrf_plus_cross_encoder,0.3601984977722168
+What is time complexity?,Unknown,Shipping Policy,0,0.48381305,hybrid_rrf_plus_cross_encoder,0.2468481063842773
+How do hash tables work?,Unknown,Cancellation Policy,0,0.46303567,hybrid_rrf_plus_cross_encoder,0.3187921047210693
+What is the difference between stack and queue?,Unknown,Shipping Policy,0,0.48707289,hybrid_rrf_plus_cross_encoder,0.3056216239929199
+How do I write a professional resume?,Unknown,Refund Policy,0,0.44953552,hybrid_rrf_plus_cross_encoder,0.3224170207977295
+Can you help me prepare for an interview?,Unknown,Shipping Policy,0,0.4661637,hybrid_rrf_plus_cross_encoder,0.2860283851623535
+How should I introduce myself in an interview?,Unknown,Shipping Policy,0,0.45615727,hybrid_rrf_plus_cross_encoder,0.3618590831756592
+What should I wear to a job interview?,Unknown,Shipping Policy,0,0.4570474,hybrid_rrf_plus_cross_encoder,0.3248488903045654
+How do I answer the weakness question?,Unknown,Return Policy,0,0.49052465,hybrid_rrf_plus_cross_encoder,0.3474969863891601
+How can I negotiate a salary?,Unknown,Damaged Product Policy,0,0.47237733,hybrid_rrf_plus_cross_encoder,0.3130650520324707
+What makes a good cover letter?,Unknown,Return Policy,0,0.4698052,hybrid_rrf_plus_cross_encoder,0.2473049163818359
+How do I describe a project on my CV?,Unknown,Shipping Policy,0,0.45563078,hybrid_rrf_plus_cross_encoder,0.2809937000274658
+Should I include hobbies on my resume?,Unknown,Return Policy,0,0.45623165,hybrid_rrf_plus_cross_encoder,0.2716786861419678
+How can I improve my communication skills?,Unknown,Shipping Policy,0,0.45911938,hybrid_rrf_plus_cross_encoder,0.3168048858642578
+What are common behavioral interview questions?,Unknown,Refund Policy,0,0.46035165,hybrid_rrf_plus_cross_encoder,0.3005256652832031
+How do I book a flight?,Unknown,Shipping Policy,0,0.5101443,hybrid_rrf_plus_cross_encoder,0.2845683097839355
+What documents are needed for international travel?,Unknown,Shipping Policy,0,0.6193493,hybrid_rrf_plus_cross_encoder,0.251582384109497
+How much luggage can I take on a flight?,Unknown,Shipping Policy,0,0.4987315,hybrid_rrf_plus_cross_encoder,0.2476379871368408
+What is the best time to visit Japan?,Unknown,Shipping Policy,0,0.5044595,hybrid_rrf_plus_cross_encoder,0.2664780616760254
+How do I apply for a tourist visa?,Unknown,Shipping Policy,0,0.5066057,hybrid_rrf_plus_cross_encoder,0.3163821697235107
+How long should I spend in Singapore?,Unknown,Shipping Policy,0,0.5083381,hybrid_rrf_plus_cross_encoder,0.2861742973327636
+What is the currency of Australia?,Unknown,Shipping Policy,0,0.47456133,hybrid_rrf_plus_cross_encoder,0.2449052333831787
+How do I convert dollars to euros?,Unknown,Shipping Policy,0,0.4702159,hybrid_rrf_plus_cross_encoder,0.2954449653625488
+What should I pack for a winter trip?,Unknown,Shipping Policy,0,0.49782646,hybrid_rrf_plus_cross_encoder,0.2970306873321533
+How do I open a bank account?,Unknown,Return Policy,0,0.46255505,hybrid_rrf_plus_cross_encoder,0.377936840057373
+What is an index fund?,Unknown,Damaged Product Policy,0,0.4404362,hybrid_rrf_plus_cross_encoder,0.4056944847106933
+How does compound interest work?,Unknown,Refund Policy,0,0.4735264,hybrid_rrf_plus_cross_encoder,0.3224713802337646
+What is the difference between a debit card and a credit card?,Unknown,Return Policy,0,0.47368944,hybrid_rrf_plus_cross_encoder,0.3147451877593994
+How can I improve my credit score?,Unknown,Damaged Product Policy,0,0.4661358,hybrid_rrf_plus_cross_encoder,0.329341173171997
+What is a fixed deposit?,Unknown,Refund Policy,0,0.49487394,hybrid_rrf_plus_cross_encoder,0.230832815170288
+How do mutual funds work?,Unknown,Refund Policy,0,0.4576901,hybrid_rrf_plus_cross_encoder,0.3215115070343017
+What is an emergency fund?,Unknown,Damaged Product Policy,0,0.4626416,hybrid_rrf_plus_cross_encoder,0.2592637538909912
+How should I make a monthly budget?,Unknown,Refund Policy,0,0.45292398,hybrid_rrf_plus_cross_encoder,0.3676550388336181
+What is inflation?,Unknown,Shipping Policy,0,0.4556732,hybrid_rrf_plus_cross_encoder,0.2590267658233642
+How do interest rates affect loans?,Unknown,Cancellation Policy,0,0.46555328,hybrid_rrf_plus_cross_encoder,0.3333771228790283
+What is the capital of Canada?,Unknown,Shipping Policy,0,0.45482907,hybrid_rrf_plus_cross_encoder,0.2628431320190429
+What is the largest ocean?,Unknown,Shipping Policy,0,0.4650187,hybrid_rrf_plus_cross_encoder,0.254291296005249
+How many planets are in the solar system?,Unknown,Damaged Product Policy,0,0.447426,hybrid_rrf_plus_cross_encoder,0.2927148342132568
+When did the first computer become popular?,Unknown,Damaged Product Policy,0,0.4637087,hybrid_rrf_plus_cross_encoder,0.2880749702453613
+What is the chemical symbol for gold?,Unknown,Damaged Product Policy,0,0.45719513,hybrid_rrf_plus_cross_encoder,0.2829952239990234
+Why is the sky blue?,Unknown,Damaged Product Policy,0,0.46125278,hybrid_rrf_plus_cross_encoder,0.2388472557067871
+How far is the Moon from Earth?,Unknown,Shipping Policy,0,0.48897764,hybrid_rrf_plus_cross_encoder,0.2573909759521484
+What causes an eclipse?,Unknown,Shipping Policy,0,0.47145897,hybrid_rrf_plus_cross_encoder,0.3137495517730713
+Who invented the telephone?,Unknown,Damaged Product Policy,0,0.46420363,hybrid_rrf_plus_cross_encoder,0.2746133804321289
+Can you explain how photosynthesis works?,Unknown,Damaged Product Policy,0,0.45228013,hybrid_rrf_plus_cross_encoder,0.3495206832885742
+What is the tallest mountain in the world?,Unknown,Shipping Policy,0,0.4628629,hybrid_rrf_plus_cross_encoder,0.3274276256561279
+How deep is the Pacific Ocean?,Unknown,Damaged Product Policy,0,0.4658898,hybrid_rrf_plus_cross_encoder,0.2469754219055175
+What is the speed of light?,Unknown,Shipping Policy,0,0.4716969,hybrid_rrf_plus_cross_encoder,0.2741162776947021
+Why do leaves change color?,Unknown,Cancellation Policy,0,0.46458355,hybrid_rrf_plus_cross_encoder,0.3677141666412353
+How do volcanoes erupt?,Unknown,Cancellation Policy,0,0.4435325,hybrid_rrf_plus_cross_encoder,0.2944679260253906
+What causes earthquakes?,Unknown,Shipping Policy,0,0.46434963,hybrid_rrf_plus_cross_encoder,0.3574965000152588
+What is DNA?,Unknown,Shipping Policy,0,0.43958512,hybrid_rrf_plus_cross_encoder,0.2265825271606445
+How does gravity work?,Unknown,Cancellation Policy,0,0.45990413,hybrid_rrf_plus_cross_encoder,0.2949607372283935
+What is the boiling point of water?,Unknown,Shipping Policy,0,0.45882383,hybrid_rrf_plus_cross_encoder,0.2318792343139648
+How many hours of sleep should an adult get?,Unknown,Shipping Policy,0,0.46661997,hybrid_rrf_plus_cross_encoder,0.3229548931121826
+What are good exercises for beginners?,Unknown,Return Policy,0,0.45286146,hybrid_rrf_plus_cross_encoder,0.2723543643951416
+How much water should I drink each day?,Unknown,Refund Policy,0,0.45806012,hybrid_rrf_plus_cross_encoder,0.3122656345367431
+Why do people get headaches?,Unknown,Cancellation Policy,0,0.46486056,hybrid_rrf_plus_cross_encoder,0.333420991897583
+What foods are high in protein?,Unknown,Damaged Product Policy,0,0.46026593,hybrid_rrf_plus_cross_encoder,0.3855516910552978
+How can I improve my sleep schedule?,Unknown,Shipping Policy,0,0.4610033,hybrid_rrf_plus_cross_encoder,0.3590514659881592
+What is a balanced diet?,Unknown,Damaged Product Policy,0,0.47449115,hybrid_rrf_plus_cross_encoder,0.2615852355957031
+How often should I exercise?,Unknown,Shipping Policy,0,0.48094076,hybrid_rrf_plus_cross_encoder,0.3273060321807861
+What are common causes of back pain?,Unknown,Damaged Product Policy,0,0.4799514,hybrid_rrf_plus_cross_encoder,0.3297321796417236
+How do I care for a houseplant?,Unknown,Damaged Product Policy,0,0.464016,hybrid_rrf_plus_cross_encoder,0.2883663177490234
+How often should I water a cactus?,Unknown,Refund Policy,0,0.4716097,hybrid_rrf_plus_cross_encoder,0.3753316402435303
+Why are my plant leaves turning yellow?,Unknown,Damaged Product Policy,0,0.4632964,hybrid_rrf_plus_cross_encoder,0.2889773845672607
+What plants grow well indoors?,Unknown,Damaged Product Policy,0,0.46090195,hybrid_rrf_plus_cross_encoder,0.3590166568756103
+When is the best time to plant tomatoes?,Unknown,Shipping Policy,0,0.46621457,hybrid_rrf_plus_cross_encoder,0.2946181297302246
+How much sunlight does a money plant need?,Unknown,Shipping Policy,0,0.48335412,hybrid_rrf_plus_cross_encoder,0.318526029586792
+What soil is good for succulents?,Unknown,Shipping Policy,0,0.44377455,hybrid_rrf_plus_cross_encoder,0.2922897338867187
+How do I propagate a pothos?,Unknown,Shipping Policy,0,0.46786895,hybrid_rrf_plus_cross_encoder,0.288785457611084
+Why is my plant wilting?,Unknown,Damaged Product Policy,0,0.46408102,hybrid_rrf_plus_cross_encoder,0.2754418849945068
+How do I train for a 5K run?,Unknown,Shipping Policy,0,0.46457976,hybrid_rrf_plus_cross_encoder,0.3253085613250732
+What are the rules of cricket?,Unknown,Damaged Product Policy,0,0.4707496,hybrid_rrf_plus_cross_encoder+llm_fallback,2.502416610717773
+How is a football league table calculated?,Unknown,Refund Policy,0,0.4709058,hybrid_rrf_plus_cross_encoder,0.2947652339935303
+What is a tennis tie-break?,Unknown,Shipping Policy,0,0.47772002,hybrid_rrf_plus_cross_encoder,0.2930002212524414
+How long is a basketball game?,Unknown,Shipping Policy,0,0.47956452,hybrid_rrf_plus_cross_encoder,0.2981302738189697
+What equipment is needed for badminton?,Unknown,Damaged Product Policy,0,0.48191386,hybrid_rrf_plus_cross_encoder,0.3024470806121826
+How many players are on a cricket team?,Unknown,Shipping Policy,0,0.4569434,hybrid_rrf_plus_cross_encoder,0.2987186908721924
+What is an offside rule?,Unknown,Return Policy,0,0.47692966,hybrid_rrf_plus_cross_encoder,0.3085763454437256
+How do marathon runners train?,Unknown,Shipping Policy,0,0.45808813,hybrid_rrf_plus_cross_encoder,0.3116769790649414
+What are the basic rules of chess?,Unknown,Shipping Policy,0,0.45651543,hybrid_rrf_plus_cross_encoder,0.3034596443176269
+How do I make a presentation?,Unknown,Return Policy,0,0.47622338,hybrid_rrf_plus_cross_encoder,0.3104116916656494
+What is the best font for a report?,Unknown,Damaged Product Policy,0,0.48216394,hybrid_rrf_plus_cross_encoder,0.3284089565277099
+How can I make PowerPoint slides look professional?,Unknown,Damaged Product Policy,0,0.45344034,hybrid_rrf_plus_cross_encoder,0.3507382869720459
+How do I add page numbers in Word?,Unknown,Shipping Policy,0,0.44302806,hybrid_rrf_plus_cross_encoder,0.3248138427734375
+What is the difference between PDF and DOCX?,Unknown,Shipping Policy,0,0.46588504,hybrid_rrf_plus_cross_encoder,0.3199515342712402
+How do I create a table in Excel?,Unknown,Damaged Product Policy,0,0.4448078,hybrid_rrf_plus_cross_encoder,0.3253507614135742
+How can I freeze rows in a spreadsheet?,Unknown,Cancellation Policy,0,0.4626088,hybrid_rrf_plus_cross_encoder,0.3568034172058105
+How do I make a chart in Excel?,Unknown,Shipping Policy,0,0.45617786,hybrid_rrf_plus_cross_encoder,0.3647763729095459
+What is a pivot table?,Unknown,Return Policy,0,0.4632171,hybrid_rrf_plus_cross_encoder,0.2531936168670654
+How do I convert a Word document to PDF?,Unknown,Return Policy,0,0.4454618,hybrid_rrf_plus_cross_encoder,0.5308854579925537
+How do I send a large file by email?,Unknown,Return Policy,0,0.48677164,hybrid_rrf_plus_cross_encoder,0.3550662994384765
+How do I create a Gmail account?,Unknown,Return Policy,0,0.45165393,hybrid_rrf_plus_cross_encoder,0.3219914436340332
+Why is my email not syncing?,Unknown,Shipping Policy,0,0.4999423,hybrid_rrf_plus_cross_encoder,0.3252882957458496
+How do I attach a file to an email?,Unknown,Shipping Policy,0,0.46040472,hybrid_rrf_plus_cross_encoder,0.321868896484375
+How can I organize my inbox?,Unknown,Shipping Policy,0,0.48466107,hybrid_rrf_plus_cross_encoder,0.2960054874420166
+What does CC mean in email?,Unknown,Shipping Policy,0,0.4783984,hybrid_rrf_plus_cross_encoder,0.3424041271209717
+How do I create an email signature?,Unknown,Return Policy,0,0.4714084,hybrid_rrf_plus_cross_encoder,0.2709074020385742
+Why are emails going to spam?,Unknown,Shipping Policy,0,0.48058465,hybrid_rrf_plus_cross_encoder,0.399195909500122
+How do I recover a forgotten email password?,Unknown,Return Policy,0,0.50194615,hybrid_rrf_plus_cross_encoder,0.3188588619232178
+What is two-factor authentication?,Unknown,Return Policy,0,0.4874355,hybrid_rrf_plus_cross_encoder,0.361579418182373
+How do I use Google Drive?,Unknown,Cancellation Policy,0,0.4576867,hybrid_rrf_plus_cross_encoder,0.3142352104187011
+What is cloud storage?,Unknown,Damaged Product Policy,0,0.4582019,hybrid_rrf_plus_cross_encoder,0.2777111530303955
+How do I share a folder with someone?,Unknown,Return Policy,0,0.4708363,hybrid_rrf_plus_cross_encoder,0.3208508491516113
+How can I protect a document with a password?,Unknown,Return Policy,0,0.46920004,hybrid_rrf_plus_cross_encoder,0.3243837356567383
+What is version control?,Unknown,Damaged Product Policy,0,0.49114108,hybrid_rrf_plus_cross_encoder,0.2760422229766845
+How does Git work?,Unknown,Cancellation Policy,0,0.46919343,hybrid_rrf_plus_cross_encoder,0.3151454925537109
+How do I clone a repository?,Unknown,Return Policy,0,0.46555912,hybrid_rrf_plus_cross_encoder,0.3436193466186523
+How does REST work?,Unknown,Return Policy,0,0.47673613,hybrid_rrf_plus_cross_encoder,0.3418440818786621
+How do I debug a Python program?,Unknown,Cancellation Policy,0,0.4781378,hybrid_rrf_plus_cross_encoder,0.3706796169281006
+Why am I getting a segmentation fault in C++?,Unknown,Damaged Product Policy,0,0.48211583,hybrid_rrf_plus_cross_encoder,0.3498783111572265
+How do I install a Python package?,Unknown,Shipping Policy,0,0.53153586,hybrid_rrf_plus_cross_encoder,0.4170355796813965
+How does Kubernetes work?,Unknown,Cancellation Policy,0,0.46926263,hybrid_rrf_plus_cross_encoder,0.3377015590667724
+What is a database index?,Unknown,Shipping Policy,0,0.45859605,hybrid_rrf_plus_cross_encoder,0.2999002933502197
+What is SQL normalization?,Unknown,Damaged Product Policy,0,0.46875662,hybrid_rrf_plus_cross_encoder,0.2889750003814697
+How do I write a SQL join?,Unknown,Cancellation Policy,0,0.45092696,hybrid_rrf_plus_cross_encoder,0.3239665031433105
+What is an operating system?,Unknown,Damaged Product Policy,0,0.45293647,hybrid_rrf_plus_cross_encoder,0.2917685508728027
+How do I make my phone battery last longer?,Unknown,Shipping Policy,0,0.47538766,hybrid_rrf_plus_cross_encoder,0.4360039234161377
+Why does my phone get hot?,Unknown,Damaged Product Policy,0,0.46828988,hybrid_rrf_plus_cross_encoder,0.346787691116333
+How do I transfer photos from phone to computer?,Unknown,Damaged Product Policy,0,0.4662441,hybrid_rrf_plus_cross_encoder,0.3682234287261963
+How do I clear app cache?,Unknown,Cancellation Policy,0,0.45180655,hybrid_rrf_plus_cross_encoder,0.24664306640625
+Why is my phone storage full?,Unknown,Damaged Product Policy,0,0.47548434,hybrid_rrf_plus_cross_encoder,0.2811779975891113
+How do I enable dark mode?,Unknown,Cancellation Policy,0,0.43922338,hybrid_rrf_plus_cross_encoder,0.3389735221862793
+How do I block unwanted calls?,Unknown,Cancellation Policy,0,0.4921509,hybrid_rrf_plus_cross_encoder,0.3576116561889648
+How do I scan a QR code?,Unknown,Shipping Policy,0,0.47632667,hybrid_rrf_plus_cross_encoder,0.3146917819976806
+Why is my Bluetooth not connecting?,Unknown,Damaged Product Policy,0,0.46669972,hybrid_rrf_plus_cross_encoder,0.3162031173706054
+How do I back up my contacts?,Unknown,Return Policy,0,0.50567734,hybrid_rrf_plus_cross_encoder,0.3280508518218994
+What movie should I watch tonight?,Unknown,Shipping Policy,0,0.45682535,hybrid_rrf_plus_cross_encoder,0.3120810985565185
+Can you recommend a comedy movie?,Unknown,Damaged Product Policy,0,0.45700797,hybrid_rrf_plus_cross_encoder,0.3740668296813965
+What are some good science fiction books?,Unknown,Damaged Product Policy,0,0.4491182,hybrid_rrf_plus_cross_encoder,0.3203036785125732
+Who is the main character in this novel?,Unknown,Shipping Policy,0,0.45374897,hybrid_rrf_plus_cross_encoder,0.2610218524932861
+What is the best way to learn guitar?,Unknown,Shipping Policy,0,0.44042677,hybrid_rrf_plus_cross_encoder,0.2953391075134277
+How do I play a basic guitar chord?,Unknown,Shipping Policy,0,0.4378833,hybrid_rrf_plus_cross_encoder,0.2897872924804687
+What are some beginner photography tips?,Unknown,Shipping Policy,0,0.4529898,hybrid_rrf_plus_cross_encoder,0.308396577835083
+How do I edit photos on my phone?,Unknown,Damaged Product Policy,0,0.45318493,hybrid_rrf_plus_cross_encoder,0.3249557018280029
+What camera settings work for night photography?,Unknown,Damaged Product Policy,0,0.46527869,hybrid_rrf_plus_cross_encoder,0.2478549480438232
+How can I improve my handwriting?,Unknown,Shipping Policy,0,0.45858046,hybrid_rrf_plus_cross_encoder,0.3071677684783935
+What are good books for personal development?,Unknown,Damaged Product Policy,0,0.4558806,hybrid_rrf_plus_cross_encoder,0.278266429901123
+How do I build a morning routine?,Unknown,Shipping Policy,0,0.45637092,hybrid_rrf_plus_cross_encoder,0.3310236930847168
+What are some ways to stay focused while studying?,Unknown,Shipping Policy,0,0.45355868,hybrid_rrf_plus_cross_encoder,0.2976627349853515
+How can I stop procrastinating?,Unknown,Cancellation Policy,0,0.48235452,hybrid_rrf_plus_cross_encoder,0.3066725730895996
+What is a good study timetable?,Unknown,Shipping Policy,0,0.49483475,hybrid_rrf_plus_cross_encoder,0.5225226879119873
+How do I take better notes?,Unknown,Cancellation Policy,0,0.46373954,hybrid_rrf_plus_cross_encoder,0.4549529552459717

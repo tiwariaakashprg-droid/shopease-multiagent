@@ -15,7 +15,7 @@ the right policy topic at all". The full pipeline is scored the normal way
 (policy_source == expected_policy).
 
 Usage:
-    python baseline_compare.py --n 100      # sample size (full 590 is slow — single-agent has no shortcuts)
+    python baseline_compare.py --n 100      # sample size (full 2632 is slow — single-agent has no shortcuts)
 """
 import argparse
 import time
@@ -101,3 +101,4 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
     main(args.n, args.seed)
+

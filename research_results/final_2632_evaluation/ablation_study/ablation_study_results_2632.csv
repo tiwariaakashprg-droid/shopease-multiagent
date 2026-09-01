@@ -1,0 +1,401 @@
+query_id,query,config,expected_policy,predicted_policy,escalated,groundedness,personalization,relevance,overall
+0,What is the refund policy for damaged products?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+0,What is the refund policy for damaged products?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+0,What is the refund policy for damaged products?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+0,What is the refund policy for damaged products?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+1,My laptop arrived broken. What should I do?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+1,My laptop arrived broken. What should I do?,no_crm,Damaged Product Policy,Damaged Product Policy,True,5,2,4,4
+1,My laptop arrived broken. What should I do?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+1,My laptop arrived broken. What should I do?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+2,What happens if my product is damaged?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+2,What happens if my product is damaged?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+2,What happens if my product is damaged?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+2,What happens if my product is damaged?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+3,Can I get a replacement for a defective product?,full_pipeline,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+3,Can I get a replacement for a defective product?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+3,Can I get a replacement for a defective product?,no_memory,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+3,Can I get a replacement for a defective product?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+4,My package arrived damaged. Can I return it?,full_pipeline,Damaged Product Policy,Return Policy,True,5,5,4,4
+4,My package arrived damaged. Can I return it?,no_crm,Damaged Product Policy,Return Policy,False,5,2,4,4
+4,My package arrived damaged. Can I return it?,no_memory,Damaged Product Policy,Return Policy,True,5,5,4,4
+4,My package arrived damaged. Can I return it?,no_escalation,Damaged Product Policy,Return Policy,False,5,5,4,4
+5,What is your refund policy?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+5,What is your refund policy?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+5,What is your refund policy?,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+5,What is your refund policy?,no_escalation,Refund Policy,Refund Policy,False,5,4,4,4
+6,Can I get my money back?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+6,Can I get my money back?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+6,Can I get my money back?,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+6,Can I get my money back?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+7,How long does it take to receive a refund?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+7,How long does it take to receive a refund?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+7,How long does it take to receive a refund?,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+7,How long does it take to receive a refund?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+8,When will my refund be processed?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+8,When will my refund be processed?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+8,When will my refund be processed?,no_memory,Refund Policy,Refund Policy,True,5,4,4,4
+8,When will my refund be processed?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+9,I want a refund for my order.,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+9,I want a refund for my order.,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+9,I want a refund for my order.,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+9,I want a refund for my order.,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+10,Can I return my laptop?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+10,Can I return my laptop?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+10,Can I return my laptop?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+10,Can I return my laptop?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+11,I want to return my order.,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+11,I want to return my order.,no_crm,Return Policy,Return Policy,False,5,2,4,4
+11,I want to return my order.,no_memory,Return Policy,Return Policy,True,5,5,4,4
+11,I want to return my order.,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+12,What is your return policy?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+12,What is your return policy?,no_crm,Return Policy,Return Policy,False,5,1,4,4
+12,What is your return policy?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+12,What is your return policy?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+13,Can I return a product after delivery?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+13,Can I return a product after delivery?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+13,Can I return a product after delivery?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+13,Can I return a product after delivery?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+14,How many days do I have to return an item?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+14,How many days do I have to return an item?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+14,How many days do I have to return an item?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+14,How many days do I have to return an item?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+15,How long does shipping take?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+15,How long does shipping take?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+15,How long does shipping take?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+15,How long does shipping take?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+16,When will my package arrive?,full_pipeline,Shipping Policy,Shipping Policy,False,5,2,4,4
+16,When will my package arrive?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+16,When will my package arrive?,no_memory,Shipping Policy,Shipping Policy,False,5,2,4,4
+16,When will my package arrive?,no_escalation,Shipping Policy,Shipping Policy,False,5,2,4,4
+17,What are your shipping charges?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+17,What are your shipping charges?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+17,What are your shipping charges?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+17,What are your shipping charges?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+18,Do you provide free shipping?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+18,Do you provide free shipping?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+18,Do you provide free shipping?,no_memory,Shipping Policy,Shipping Policy,False,5,2,4,4
+18,Do you provide free shipping?,no_escalation,Shipping Policy,Shipping Policy,False,5,2,4,4
+19,Can I track my shipment?,full_pipeline,Shipping Policy,Shipping Policy,False,5,2,4,4
+19,Can I track my shipment?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+19,Can I track my shipment?,no_memory,Shipping Policy,Shipping Policy,False,5,2,4,4
+19,Can I track my shipment?,no_escalation,Shipping Policy,Shipping Policy,False,5,2,4,4
+20,Can I cancel my order?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,4,4,4
+20,Can I cancel my order?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+20,Can I cancel my order?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+20,Can I cancel my order?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+21,What is your cancellation policy?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+21,What is your cancellation policy?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+21,What is your cancellation policy?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+21,What is your cancellation policy?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+22,Can I cancel after placing an order?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+22,Can I cancel after placing an order?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+22,Can I cancel after placing an order?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+22,Can I cancel after placing an order?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+23,How do I cancel my order?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+23,How do I cancel my order?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+23,How do I cancel my order?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+23,How do I cancel my order?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,4,4,4
+24,Can I cancel before shipment?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+24,Can I cancel before shipment?,no_crm,Cancellation Policy,Cancellation Policy,False,5,3,4,4
+24,Can I cancel before shipment?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+24,Can I cancel before shipment?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+25,What is the company's quantum computing policy?,full_pipeline,Unknown,Refund Policy,True,5,5,4,4
+25,What is the company's quantum computing policy?,no_crm,Unknown,Refund Policy,True,5,2,4,4
+25,What is the company's quantum computing policy?,no_memory,Unknown,Refund Policy,True,5,5,4,4
+25,What is the company's quantum computing policy?,no_escalation,Unknown,Refund Policy,False,5,4,3,4
+26,What is your Mars colony insurance policy?,full_pipeline,Unknown,Damaged Product Policy,True,5,4,4,4
+26,What is your Mars colony insurance policy?,no_crm,Unknown,Damaged Product Policy,True,5,2,4,4
+26,What is your Mars colony insurance policy?,no_memory,Unknown,Damaged Product Policy,True,5,4,4,4
+26,What is your Mars colony insurance policy?,no_escalation,Unknown,Damaged Product Policy,False,5,4,2,3
+27,Do you reimburse cryptocurrency mining expenses?,full_pipeline,Unknown,Refund Policy,True,5,5,4,4
+27,Do you reimburse cryptocurrency mining expenses?,no_crm,Unknown,Refund Policy,True,5,2,4,4
+27,Do you reimburse cryptocurrency mining expenses?,no_memory,Unknown,Refund Policy,True,5,5,4,4
+27,Do you reimburse cryptocurrency mining expenses?,no_escalation,Unknown,Refund Policy,False,5,4,4,4
+28,What is your space travel policy?,full_pipeline,Unknown,Shipping Policy,True,5,5,4,4
+28,What is your space travel policy?,no_crm,Unknown,Shipping Policy,True,5,2,4,4
+28,What is your space travel policy?,no_memory,Unknown,Shipping Policy,True,5,5,4,4
+28,What is your space travel policy?,no_escalation,Unknown,Shipping Policy,False,5,5,4,4
+29,Explain your artificial consciousness policy.,full_pipeline,Unknown,Return Policy,True,5,2,4,4
+29,Explain your artificial consciousness policy.,no_crm,Unknown,Return Policy,True,5,2,4,4
+29,Explain your artificial consciousness policy.,no_memory,Unknown,Return Policy,True,5,5,4,4
+29,Explain your artificial consciousness policy.,no_escalation,Unknown,Return Policy,False,5,5,4,4
+30,Where can I request a refund?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+30,Where can I request a refund?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+30,Where can I request a refund?,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+30,Where can I request a refund?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+31,I received the wrong item and need my money back.,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+31,I received the wrong item and need my money back.,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+31,I received the wrong item and need my money back.,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+31,I received the wrong item and need my money back.,no_escalation,Refund Policy,Refund Policy,False,5,4,4,4
+32,Can I receive a refund for a defective product?,full_pipeline,Refund Policy,Damaged Product Policy,True,5,5,4,4
+32,Can I receive a refund for a defective product?,no_crm,Refund Policy,Damaged Product Policy,False,5,2,4,4
+32,Can I receive a refund for a defective product?,no_memory,Refund Policy,Damaged Product Policy,True,5,5,4,4
+32,Can I receive a refund for a defective product?,no_escalation,Refund Policy,Damaged Product Policy,False,5,5,4,4
+33,What is the process for getting a refund?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+33,What is the process for getting a refund?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+33,What is the process for getting a refund?,no_memory,Refund Policy,Refund Policy,True,5,3,4,4
+33,What is the process for getting a refund?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+34,Is my refund credited to the original payment method?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+34,Is my refund credited to the original payment method?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+34,Is my refund credited to the original payment method?,no_memory,Refund Policy,Refund Policy,True,5,4,4,4
+34,Is my refund credited to the original payment method?,no_escalation,Refund Policy,Refund Policy,False,5,4,4,4
+35,How many days will it take to receive my refund?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+35,How many days will it take to receive my refund?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+35,How many days will it take to receive my refund?,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+35,How many days will it take to receive my refund?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+36,Can I request a partial refund?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+36,Can I request a partial refund?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+36,Can I request a partial refund?,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+36,Can I request a partial refund?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+37,I accidentally ordered the wrong item. Can I get a refund?,full_pipeline,Refund Policy,Return Policy,True,5,5,4,4
+37,I accidentally ordered the wrong item. Can I get a refund?,no_crm,Refund Policy,Return Policy,False,5,2,4,4
+37,I accidentally ordered the wrong item. Can I get a refund?,no_memory,Refund Policy,Return Policy,True,5,5,4,4
+37,I accidentally ordered the wrong item. Can I get a refund?,no_escalation,Refund Policy,Return Policy,False,5,5,4,4
+38,I have not received my refund yet.,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+38,I have not received my refund yet.,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+38,I have not received my refund yet.,no_memory,Refund Policy,Refund Policy,True,5,5,4,4
+38,I have not received my refund yet.,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+39,What are the conditions for receiving a refund?,full_pipeline,Refund Policy,Refund Policy,True,5,5,4,4
+39,What are the conditions for receiving a refund?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+39,What are the conditions for receiving a refund?,no_memory,Refund Policy,Refund Policy,True,5,3,4,4
+39,What are the conditions for receiving a refund?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+40,Can I exchange my product instead of returning it?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+40,Can I exchange my product instead of returning it?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+40,Can I exchange my product instead of returning it?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+40,Can I exchange my product instead of returning it?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+41,What documents are required for returning a product?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+41,What documents are required for returning a product?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+41,What documents are required for returning a product?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+41,What documents are required for returning a product?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+42,Can I return an item without the invoice?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+42,Can I return an item without the invoice?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+42,Can I return an item without the invoice?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+42,Can I return an item without the invoice?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+43,Is there a return window for electronics?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+43,Is there a return window for electronics?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+43,Is there a return window for electronics?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+43,Is there a return window for electronics?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+44,Can I return an item purchased during a sale?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+44,Can I return an item purchased during a sale?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+44,Can I return an item purchased during a sale?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+44,Can I return an item purchased during a sale?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+45,Can I return an opened product?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+45,Can I return an opened product?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+45,Can I return an opened product?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+45,Can I return an opened product?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+46,How can I initiate a return request?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+46,How can I initiate a return request?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+46,How can I initiate a return request?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+46,How can I initiate a return request?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+47,What happens after I submit a return request?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+47,What happens after I submit a return request?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+47,What happens after I submit a return request?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+47,What happens after I submit a return request?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+48,Can I return a damaged accessory?,full_pipeline,Return Policy,Return Policy,True,5,5,4,4
+48,Can I return a damaged accessory?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+48,Can I return a damaged accessory?,no_memory,Return Policy,Return Policy,True,5,5,4,4
+48,Can I return a damaged accessory?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+49,Is pickup available for returned products?,full_pipeline,Return Policy,Return Policy,True,5,5,5,5
+49,Is pickup available for returned products?,no_crm,Return Policy,Return Policy,False,5,2,4,4
+49,Is pickup available for returned products?,no_memory,Return Policy,Return Policy,True,5,4,4,4
+49,Is pickup available for returned products?,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+50,Do you provide express delivery?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+50,Do you provide express delivery?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+50,Do you provide express delivery?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+50,Do you provide express delivery?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+51,How much do you charge for shipping?,full_pipeline,Shipping Policy,Shipping Policy,False,5,3,4,4
+51,How much do you charge for shipping?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+51,How much do you charge for shipping?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+51,How much do you charge for shipping?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+52,Can I track my order online?,full_pipeline,Shipping Policy,Shipping Policy,False,5,2,4,4
+52,Can I track my order online?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+52,Can I track my order online?,no_memory,Shipping Policy,Shipping Policy,False,5,2,4,4
+52,Can I track my order online?,no_escalation,Shipping Policy,Shipping Policy,False,5,2,4,4
+53,Do you offer same-day delivery?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+53,Do you offer same-day delivery?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+53,Do you offer same-day delivery?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+53,Do you offer same-day delivery?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+54,How long does standard shipping take?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+54,How long does standard shipping take?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+54,How long does standard shipping take?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+54,How long does standard shipping take?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+55,What if my package is delayed?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+55,What if my package is delayed?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+55,What if my package is delayed?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+55,What if my package is delayed?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+56,Can I change my shipping address after placing the order?,full_pipeline,Shipping Policy,Shipping Policy,True,5,4,4,4
+56,Can I change my shipping address after placing the order?,no_crm,Shipping Policy,Shipping Policy,True,5,3,4,4
+56,Can I change my shipping address after placing the order?,no_memory,Shipping Policy,Shipping Policy,True,5,5,4,4
+56,Can I change my shipping address after placing the order?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+57,Do you ship internationally?,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+57,Do you ship internationally?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+57,Do you ship internationally?,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+57,Do you ship internationally?,no_escalation,Shipping Policy,Shipping Policy,False,5,2,4,4
+58,Will I receive a tracking ID?,full_pipeline,Shipping Policy,Shipping Policy,False,5,2,4,4
+58,Will I receive a tracking ID?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+58,Will I receive a tracking ID?,no_memory,Shipping Policy,Shipping Policy,False,5,2,4,4
+58,Will I receive a tracking ID?,no_escalation,Shipping Policy,Shipping Policy,False,5,2,4,4
+59,What are your delivery timelines?,full_pipeline,Shipping Policy,Shipping Policy,False,5,2,4,4
+59,What are your delivery timelines?,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+59,What are your delivery timelines?,no_memory,Shipping Policy,Shipping Policy,False,5,2,4,4
+59,What are your delivery timelines?,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+60,Can I cancel my order after payment?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+60,Can I cancel my order after payment?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+60,Can I cancel my order after payment?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+60,Can I cancel my order after payment?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+61,Can I cancel an order that has not been shipped?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+61,Can I cancel an order that has not been shipped?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+61,Can I cancel an order that has not been shipped?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+61,Can I cancel an order that has not been shipped?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+62,What happens if I cancel my order?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+62,What happens if I cancel my order?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+62,What happens if I cancel my order?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+62,What happens if I cancel my order?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+63,Will I receive a refund after cancellation?,full_pipeline,Cancellation Policy,Cancellation Policy,True,5,5,4,4
+63,Will I receive a refund after cancellation?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+63,Will I receive a refund after cancellation?,no_memory,Cancellation Policy,Cancellation Policy,True,5,3,4,4
+63,Will I receive a refund after cancellation?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+64,Can I cancel only one item from my order?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+64,Can I cancel only one item from my order?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+64,Can I cancel only one item from my order?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+64,Can I cancel only one item from my order?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+65,Is there a cancellation fee?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+65,Is there a cancellation fee?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+65,Is there a cancellation fee?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+65,Is there a cancellation fee?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+66,Can I cancel an order after dispatch?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+66,Can I cancel an order after dispatch?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+66,Can I cancel an order after dispatch?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+66,Can I cancel an order after dispatch?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+67,How do I withdraw my purchase request?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+67,How do I withdraw my purchase request?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+67,How do I withdraw my purchase request?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+67,How do I withdraw my purchase request?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+68,Can I modify my order instead of cancelling it?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+68,Can I modify my order instead of cancelling it?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+68,Can I modify my order instead of cancelling it?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+68,Can I modify my order instead of cancelling it?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+69,What is the deadline for order cancellation?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+69,What is the deadline for order cancellation?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+69,What is the deadline for order cancellation?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+69,What is the deadline for order cancellation?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+70,My phone arrived with a cracked screen. What should I do?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+70,My phone arrived with a cracked screen. What should I do?,no_crm,Damaged Product Policy,Damaged Product Policy,True,5,2,4,4
+70,My phone arrived with a cracked screen. What should I do?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+70,My phone arrived with a cracked screen. What should I do?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+71,The product was broken during delivery.,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,5,5
+71,The product was broken during delivery.,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+71,The product was broken during delivery.,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,5,5
+71,The product was broken during delivery.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+72,I received a defective charger.,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+72,I received a defective charger.,no_crm,Damaged Product Policy,Damaged Product Policy,True,5,2,4,4
+72,I received a defective charger.,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+72,I received a defective charger.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+73,Can I replace a damaged product?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+73,Can I replace a damaged product?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+73,Can I replace a damaged product?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+73,Can I replace a damaged product?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+74,What if my package arrives in poor condition?,full_pipeline,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+74,What if my package arrives in poor condition?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+74,What if my package arrives in poor condition?,no_memory,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+74,What if my package arrives in poor condition?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+75,I received an item with missing parts.,full_pipeline,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+75,I received an item with missing parts.,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+75,I received an item with missing parts.,no_memory,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+75,I received an item with missing parts.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+76,How do I report a damaged item?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,5,5
+76,How do I report a damaged item?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+76,How do I report a damaged item?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+76,How do I report a damaged item?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+77,Can I claim compensation for a broken product?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+77,Can I claim compensation for a broken product?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+77,Can I claim compensation for a broken product?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+77,Can I claim compensation for a broken product?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+78,What proof is required for a damaged product claim?,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+78,What proof is required for a damaged product claim?,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+78,What proof is required for a damaged product claim?,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,4,4,4
+78,What proof is required for a damaged product claim?,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+79,I received a faulty product and need assistance.,full_pipeline,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+79,I received a faulty product and need assistance.,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+79,I received a faulty product and need assistance.,no_memory,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+79,I received a faulty product and need assistance.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+80,I need my money returned because the item is unusable.,full_pipeline,Refund Policy,Return Policy,True,5,5,4,4
+80,I need my money returned because the item is unusable.,no_crm,Refund Policy,Return Policy,False,5,2,4,4
+80,I need my money returned because the item is unusable.,no_memory,Refund Policy,Return Policy,True,5,5,4,4
+80,I need my money returned because the item is unusable.,no_escalation,Refund Policy,Return Policy,False,5,5,4,4
+81,The screen shattered during shipping.,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+81,The screen shattered during shipping.,no_crm,Damaged Product Policy,Damaged Product Policy,True,5,5,5,5
+81,The screen shattered during shipping.,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,5,5
+81,The screen shattered during shipping.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+82,I no longer want this purchase.,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+82,I no longer want this purchase.,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+82,I no longer want this purchase.,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+82,I no longer want this purchase.,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+83,The charger is not functioning properly.,full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+83,The charger is not functioning properly.,no_crm,Damaged Product Policy,Damaged Product Policy,True,5,2,4,4
+83,The charger is not functioning properly.,no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+83,The charger is not functioning properly.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+84,I wish to send the item back.,full_pipeline,Return Policy,Return Policy,False,5,5,4,4
+84,I wish to send the item back.,no_crm,Return Policy,Return Policy,False,5,2,4,4
+84,I wish to send the item back.,no_memory,Return Policy,Return Policy,False,5,5,4,4
+84,I wish to send the item back.,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+85,The package has not reached me yet.,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+85,The package has not reached me yet.,no_crm,Shipping Policy,Shipping Policy,False,5,3,4,4
+85,The package has not reached me yet.,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+85,The package has not reached me yet.,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+86,Can I withdraw my purchase request?,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+86,Can I withdraw my purchase request?,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+86,Can I withdraw my purchase request?,no_memory,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+86,Can I withdraw my purchase request?,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+87,I received an item with parts missing.,full_pipeline,Damaged Product Policy,Return Policy,False,5,5,4,4
+87,I received an item with parts missing.,no_crm,Damaged Product Policy,Return Policy,False,5,2,4,4
+87,I received an item with parts missing.,no_memory,Damaged Product Policy,Return Policy,False,5,5,4,4
+87,I received an item with parts missing.,no_escalation,Damaged Product Policy,Return Policy,False,5,5,4,4
+88,How do I get reimbursed?,full_pipeline,Refund Policy,Refund Policy,False,5,5,4,4
+88,How do I get reimbursed?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+88,How do I get reimbursed?,no_memory,Refund Policy,Refund Policy,False,5,5,4,4
+88,How do I get reimbursed?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+89,My parcel is taking too long to arrive.,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+89,My parcel is taking too long to arrive.,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+89,My parcel is taking too long to arrive.,no_memory,Shipping Policy,Shipping Policy,False,4,2,3,3
+89,My parcel is taking too long to arrive.,no_escalation,Shipping Policy,Shipping Policy,False,4,2,3,3
+90,Urgent: Can I recover my payment? because I am confused.,full_pipeline,Refund Policy,Refund Policy,False,5,5,4,4
+90,Urgent: Can I recover my payment? because I am confused.,no_crm,Refund Policy,Refund Policy,False,5,3,4,4
+90,Urgent: Can I recover my payment? because I am confused.,no_memory,Refund Policy,Refund Policy,False,5,5,4,4
+90,Urgent: Can I recover my payment? because I am confused.,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+91,I need help: The product is not functioning properly.,full_pipeline,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+91,I need help: The product is not functioning properly.,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+91,I need help: The product is not functioning properly.,no_memory,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+91,I need help: The product is not functioning properly.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+92,Can I return the order after delivery? for my recent order.,full_pipeline,Return Policy,Return Policy,True,5,4,4,4
+92,Can I return the order after delivery? for my recent order.,no_crm,Return Policy,Return Policy,False,5,3,4,4
+92,Can I return the order after delivery? for my recent order.,no_memory,Return Policy,Return Policy,True,5,5,4,4
+92,Can I return the order after delivery? for my recent order.,no_escalation,Return Policy,Return Policy,False,5,5,4,4
+93,"Could you explain, My device became unusable.",full_pipeline,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+93,"Could you explain, My device became unusable.",no_crm,Damaged Product Policy,Damaged Product Policy,True,5,2,4,4
+93,"Could you explain, My device became unusable.",no_memory,Damaged Product Policy,Damaged Product Policy,True,5,5,4,4
+93,"Could you explain, My device became unusable.",no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+94,"Please tell me, Can I give this item back? as soon as possible.",full_pipeline,Return Policy,Return Policy,False,5,5,4,4
+94,"Please tell me, Can I give this item back? as soon as possible.",no_crm,Return Policy,Return Policy,False,5,2,4,4
+94,"Please tell me, Can I give this item back? as soon as possible.",no_memory,Return Policy,Return Policy,False,5,5,4,4
+94,"Please tell me, Can I give this item back? as soon as possible.",no_escalation,Return Policy,Return Policy,False,5,5,4,4
+95,I need help: Where is my parcel? as soon as possible.,full_pipeline,Shipping Policy,Shipping Policy,False,5,5,4,4
+95,I need help: Where is my parcel? as soon as possible.,no_crm,Shipping Policy,Shipping Policy,False,5,2,4,4
+95,I need help: Where is my parcel? as soon as possible.,no_memory,Shipping Policy,Shipping Policy,False,5,5,4,4
+95,I need help: Where is my parcel? as soon as possible.,no_escalation,Shipping Policy,Shipping Policy,False,5,5,4,4
+96,Can I get a refnd?,full_pipeline,Refund Policy,Refund Policy,False,5,5,4,4
+96,Can I get a refnd?,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+96,Can I get a refnd?,no_memory,Refund Policy,Refund Policy,False,5,5,4,4
+96,Can I get a refnd?,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+97,Urgent: The product is not functioning properly. please.,full_pipeline,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+97,Urgent: The product is not functioning properly. please.,no_crm,Damaged Product Policy,Damaged Product Policy,False,5,2,4,4
+97,Urgent: The product is not functioning properly. please.,no_memory,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+97,Urgent: The product is not functioning properly. please.,no_escalation,Damaged Product Policy,Damaged Product Policy,False,5,5,4,4
+98,I need help: Can I receive compensation for this order? as soon as possible.,full_pipeline,Refund Policy,Refund Policy,False,5,5,4,4
+98,I need help: Can I receive compensation for this order? as soon as possible.,no_crm,Refund Policy,Refund Policy,False,5,2,4,4
+98,I need help: Can I receive compensation for this order? as soon as possible.,no_memory,Refund Policy,Refund Policy,False,5,5,4,4
+98,I need help: Can I receive compensation for this order? as soon as possible.,no_escalation,Refund Policy,Refund Policy,False,5,5,4,4
+99,I placed the wrong order and want to cancel it. as soon as possible.,full_pipeline,Cancellation Policy,Cancellation Policy,False,5,5,4,4
+99,I placed the wrong order and want to cancel it. as soon as possible.,no_crm,Cancellation Policy,Cancellation Policy,False,5,2,4,4
+99,I placed the wrong order and want to cancel it. as soon as possible.,no_memory,Cancellation Policy,Cancellation Policy,False,5,4,4,4
+99,I placed the wrong order and want to cancel it. as soon as possible.,no_escalation,Cancellation Policy,Cancellation Policy,False,5,5,4,4

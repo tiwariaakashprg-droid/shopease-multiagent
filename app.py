@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 import time
 from graph.workflow import run_graph
+from utils.db import get_all_customers
 
 st.set_page_config(
     page_title="ShopEase · Multi-Agent AI",
@@ -93,7 +94,9 @@ for k,v in {"messages":[],"customer_id":"","escalated_case":None,
 
 @st.cache_data
 def load_customers():
-    return pd.read_csv("data/customers.csv")
+    # Backed by SQLite now (utils/db.py) — runs a real SQL query instead
+    # of reading the CSV straight into a DataFrame.
+    return get_all_customers()
 
 def ts():
     return time.strftime("%I:%M %p")
@@ -310,76 +313,255 @@ st.markdown(
         font-size:12px;
         margin-bottom:20px;
     ">
-        ShopEase evaluation on 590 valid test queries
+        ShopEase evaluation on 2,632 test queries
     </div>
     """,
     unsafe_allow_html=True
 )
 
-# ------------------------------------------------------------
-# Load evaluation summary
-# ------------------------------------------------------------
 
-SUMMARY_PATH = "research_results/retrieval_comparison_summary.csv"
+# ============================================================
+# EVALUATION PATHS
+# ============================================================
 
-try:
-    summary_df = pd.read_csv(SUMMARY_PATH)
+EVAL_DIR = "research_results/final_2632_evaluation"
 
-    # Current evaluation accuracy
-    bm25_acc = float(
-        summary_df.loc[
-            summary_df["mode"].str.lower() == "bm25", "accuracy"
-        ].iloc[0]
-    ) * 100
+RESULT_FILES = {
+    "BM25-only":
+        os.path.join(EVAL_DIR, "evaluation_results_bm25.csv"),
 
-    faiss_acc = float(
-        summary_df.loc[
-            summary_df["mode"].str.lower() == "faiss", "accuracy"
-        ].iloc[0]
-    ) * 100
+    "FAISS-only":
+        os.path.join(EVAL_DIR, "evaluation_results_faiss.csv"),
 
-    hybrid_acc = float(
-        summary_df.loc[
-            summary_df["mode"].str.lower() == "hybrid", "accuracy"
-        ].iloc[0]
-    ) * 100
+    "Fair RRF":
+        os.path.join(EVAL_DIR, "evaluation_results_fair_rrf.csv"),
 
-except Exception:
-    # Fallback values from the current 590-query evaluation
-    bm25_acc = 49.92
-    faiss_acc = 92.71
-    hybrid_acc = 90.68
+    "Weighted RRF":
+        os.path.join(EVAL_DIR, "evaluation_results_weighted_rrf.csv"),
 
-# Fair RRF result comes from its dedicated evaluation
-try:
-    rrf_df = pd.read_csv(
-        "research_results/hybrid_rrf_fair_results.csv"
+    "RRF + Cross-Encoder":
+        os.path.join(EVAL_DIR, "evaluation_results_hybrid.csv"),
+
+    "Top-10 Hybrid":
+        os.path.join(EVAL_DIR, "evaluation_results_top10_hybrid.csv"),
+}
+
+
+# ============================================================
+# HELPER FUNCTIONS
+# ============================================================
+
+def load_evaluation_file(path):
+    """
+    Load an evaluation CSV and validate its structure.
+    """
+
+    if not os.path.exists(path):
+        return None
+
+    try:
+        df = pd.read_csv(path)
+
+        required_columns = [
+            "query",
+            "expected",
+            "predicted",
+            "correct"
+        ]
+
+        for column in required_columns:
+            if column not in df.columns:
+                return None
+
+        return df
+
+    except Exception:
+        return None
+
+
+def calculate_accuracy(df):
+    """
+    Calculate accuracy directly from the evaluation CSV.
+
+    correct = 1 -> correct prediction
+    correct = 0 -> incorrect prediction
+    """
+
+    if df is None or len(df) == 0:
+        return 0.0
+
+    return df["correct"].astype(int).mean() * 100
+
+
+def calculate_correct(df):
+    """
+    Calculate number of correct predictions.
+    """
+
+    if df is None:
+        return 0
+
+    return int(df["correct"].astype(int).sum())
+
+
+def calculate_latency(df):
+    """
+    Calculate average latency if latency column exists.
+    """
+
+    if df is None:
+        return None
+
+    if "latency" not in df.columns:
+        return None
+
+    try:
+        return float(
+            pd.to_numeric(
+                df["latency"],
+                errors="coerce"
+            ).dropna().mean()
+        )
+
+    except Exception:
+        return None
+
+
+# ============================================================
+# LOAD ALL EVALUATION RESULTS
+# ============================================================
+
+evaluation_data = {}
+
+for method, path in RESULT_FILES.items():
+
+    df = load_evaluation_file(path)
+
+    if df is not None:
+        evaluation_data[method] = df
+
+
+# ============================================================
+# GLOBAL QUERY COUNT
+# ============================================================
+
+query_counts = []
+
+for method, df in evaluation_data.items():
+    query_counts.append(len(df))
+
+if query_counts:
+    TOTAL_QUERIES = max(query_counts)
+else:
+    TOTAL_QUERIES = 2632
+
+
+# ============================================================
+# CALCULATE CURRENT RESULTS
+# ============================================================
+
+results_summary = []
+
+for method, df in evaluation_data.items():
+
+    correct = calculate_correct(df)
+    accuracy = calculate_accuracy(df)
+    latency = calculate_latency(df)
+
+    results_summary.append(
+        {
+            "Method": method,
+            "Queries": len(df),
+            "Correct": correct,
+            "Accuracy (%)": accuracy,
+            "Average Latency (s)": latency
+        }
     )
 
-    rrf_acc = (
-        rrf_df["correct"].mean() * 100
-    )
 
-except Exception:
-    rrf_acc = 83.39
+results_df = pd.DataFrame(results_summary)
 
 
-# ------------------------------------------------------------
+# ============================================================
 # TOP METRIC CARDS
-# ------------------------------------------------------------
+# ============================================================
+
+best_method = None
+best_accuracy = 0.0
+
+if not results_df.empty:
+
+    best_row = results_df.loc[
+        results_df["Accuracy (%)"].idxmax()
+    ]
+
+    best_method = best_row["Method"]
+    best_accuracy = float(
+        best_row["Accuracy (%)"]
+    )
+
 
 m1, m2, m3, m4, m5 = st.columns(5)
 
+
+# BM25
+bm25_value = "—"
+
+if "BM25-only" in evaluation_data:
+    bm25_value = (
+        f"{calculate_accuracy(evaluation_data['BM25-only']):.2f}%"
+    )
+
+
+# FAISS
+faiss_value = "—"
+
+if "FAISS-only" in evaluation_data:
+    faiss_value = (
+        f"{calculate_accuracy(evaluation_data['FAISS-only']):.2f}%"
+    )
+
+
+# Fair RRF
+fair_rrf_value = "—"
+
+if "Fair RRF" in evaluation_data:
+    fair_rrf_value = (
+        f"{calculate_accuracy(evaluation_data['Fair RRF']):.2f}%"
+    )
+
+
+# Weighted RRF
+weighted_rrf_value = "—"
+
+if "Weighted RRF" in evaluation_data:
+    weighted_rrf_value = (
+        f"{calculate_accuracy(evaluation_data['Weighted RRF']):.2f}%"
+    )
+
+
+# Main Hybrid
+hybrid_value = "—"
+
+if "RRF + Cross-Encoder" in evaluation_data:
+    hybrid_value = (
+        f"{calculate_accuracy(evaluation_data['RRF + Cross-Encoder']):.2f}%"
+    )
+
+
 metrics = [
-    (m1, f"{bm25_acc:.2f}%", "BM25 Accuracy"),
-    (m2, f"{faiss_acc:.2f}%", "FAISS Accuracy"),
-    (m3, f"{rrf_acc:.2f}%", "Fair RRF Accuracy"),
-    (m4, f"{hybrid_acc:.2f}%", "Hybrid Accuracy"),
-    (m5, "590", "Valid Queries"),
+    (m1, bm25_value, "BM25 Accuracy"),
+    (m2, faiss_value, "FAISS Accuracy"),
+    (m3, fair_rrf_value, "Fair RRF Accuracy"),
+    (m4, weighted_rrf_value, "Weighted RRF Accuracy"),
+    (m5, f"{TOTAL_QUERIES:,}", "Evaluation Queries"),
 ]
 
+
 for col, value, label in metrics:
+
     with col:
+
         st.markdown(
             f"""
             <div class="mcard" style="min-height:90px">
@@ -391,23 +573,56 @@ for col, value, label in metrics:
         )
 
 
-# ------------------------------------------------------------
-# RESEARCH TABS
-# ------------------------------------------------------------
+# ============================================================
+# BEST RESULT HIGHLIGHT
+# ============================================================
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(
+if best_method is not None:
+
+    best_correct = int(best_row["Correct"])
+
+    st.markdown(
+        f"""<div class="tracebox" style="margin-top:8px">
+<div class="ttitle">🏆 BEST ACCURACY</div>
+
+<div class="trow">
+<span class="tkey">Configuration</span>
+<span class="tval"><span class="tn">{best_method}</span></span>
+</div>
+
+<div class="trow">
+<span class="tkey">Accuracy</span>
+<span class="tval">{best_accuracy:.2f}%</span>
+</div>
+
+<div class="trow">
+<span class="tkey">Correct</span>
+<span class="tval">{best_correct:,} / {TOTAL_QUERIES:,}</span>
+</div>
+
+</div>""",
+        unsafe_allow_html=True
+    )
+
+# ============================================================
+# RESEARCH TABS
+# ============================================================
+
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
     [
         "📈 Accuracy & Latency",
         "🔍 Retrieval Ablation",
         "🧩 Component Ablation",
         "🎯 Confusion Matrix",
-        "📋 Statistical Analysis",
+        "📋 Classification Reports",
+        "📊 Statistical Analysis",
     ]
 )
 
 
 # ============================================================
-# TAB 1 — ACCURACY + LATENCY
+# TAB 1
+# ACCURACY + LATENCY
 # ============================================================
 
 with tab1:
@@ -417,52 +632,131 @@ with tab1:
         unsafe_allow_html=True
     )
 
-    c1, c2 = st.columns(2)
 
-    with c1:
+    # --------------------------------------------------------
+    # Accuracy Graph
+    # --------------------------------------------------------
+
+    accuracy_graph = os.path.join(
+        EVAL_DIR,
+        "graphs",
+        "accuracy_comparison_2632.png"
+    )
+
+    if os.path.exists(accuracy_graph):
+
         st.image(
-            "research_results/accuracy_comparison.png",
-            caption="Accuracy Comparison",
+            accuracy_graph,
+            caption="Accuracy Comparison — 2,632 Queries",
             use_container_width=True
         )
 
-    with c2:
+    else:
+
+        st.warning(
+            "Accuracy comparison graph not found."
+        )
+
+
+    # --------------------------------------------------------
+    # Latency Graph
+    # --------------------------------------------------------
+
+    latency_graph = os.path.join(
+        EVAL_DIR,
+        "graphs",
+        "latency_comparison_2632.png"
+    )
+
+    if os.path.exists(latency_graph):
+
         st.image(
-            "research_results/latency_comparison.png",
-            caption="Average Response Latency",
+            latency_graph,
+            caption="Average Latency Comparison",
             use_container_width=True
         )
 
-    # Current numerical summary
+    else:
+
+        st.warning(
+            "Latency comparison graph not found."
+        )
+
+
+    # --------------------------------------------------------
+    # Numerical Results
+    # --------------------------------------------------------
+
     st.markdown(
         '<div class="phead">Numerical Results</div>',
         unsafe_allow_html=True
     )
 
-    display_df = pd.DataFrame({
-        "Retrieval Method": [
-            "BM25-only",
-            "FAISS-only",
-            "RRF-only (Fair)",
-            "RRF + Cross-Encoder"
-        ],
-        "Accuracy (%)": [
-            bm25_acc,
-            faiss_acc,
-            rrf_acc,
-            hybrid_acc
-        ]
-    })
 
-    st.dataframe(
-        display_df,
-        use_container_width=True,
-        hide_index=True
-    )
+    if not results_df.empty:
+
+        display_df = results_df.copy()
+
+        display_df["Accuracy (%)"] = (
+            display_df["Accuracy (%)"]
+            .round(2)
+        )
+
+        if "Average Latency (s)" in display_df.columns:
+
+            display_df["Average Latency (s)"] = (
+                display_df["Average Latency (s)"]
+                .round(4)
+            )
+
+
+        st.dataframe(
+            display_df,
+            use_container_width=True,
+            hide_index=True
+        )
+
+    else:
+
+        st.warning(
+            "No evaluation result files were found."
+        )
+
+
+    # --------------------------------------------------------
+    # Detailed Accuracy Summary
+    # --------------------------------------------------------
+
+    if not results_df.empty:
+
+        st.markdown(
+            '<div class="phead">Correct Predictions</div>',
+            unsafe_allow_html=True
+        )
+
+        correct_df = results_df[
+            [
+                "Method",
+                "Queries",
+                "Correct",
+                "Accuracy (%)"
+            ]
+        ].copy()
+
+        correct_df["Accuracy (%)"] = (
+            correct_df["Accuracy (%)"].round(2)
+        )
+
+        st.dataframe(
+            correct_df,
+            use_container_width=True,
+            hide_index=True
+        )
 
 
 # ============================================================
-# TAB 2 — RETRIEVAL ABLATION
+# TAB 2
+# RETRIEVAL ABLATION
 # ============================================================
 
 with tab2:
@@ -472,29 +766,55 @@ with tab2:
         unsafe_allow_html=True
     )
 
+
     st.markdown(
         """
         <div class="tracebox">
-        <div class="ttitle">Retrieval Configurations</div>
+
+        <div class="ttitle">
+            Retrieval Configurations
+        </div>
 
         <div class="trow">
             <span class="tkey">BM25-only</span>
-            <span class="tval">Sparse lexical retrieval</span>
+            <span class="tval">
+                Sparse lexical retrieval
+            </span>
         </div>
 
         <div class="trow">
             <span class="tkey">FAISS-only</span>
-            <span class="tval">Dense semantic retrieval</span>
+            <span class="tval">
+                Dense semantic retrieval
+            </span>
         </div>
 
         <div class="trow">
-            <span class="tkey">RRF-only</span>
-            <span class="tval">FAISS + BM25 → RRF → majority vote</span>
+            <span class="tkey">Fair RRF</span>
+            <span class="tval">
+                FAISS + BM25 → RRF
+            </span>
         </div>
 
         <div class="trow">
-            <span class="tkey">Hybrid</span>
-            <span class="tval">RRF + Cross-Encoder reranking</span>
+            <span class="tkey">Weighted RRF</span>
+            <span class="tval">
+                Weighted FAISS + BM25 → RRF
+            </span>
+        </div>
+
+        <div class="trow">
+            <span class="tkey">RRF + Cross-Encoder</span>
+            <span class="tval">
+                RRF → Cross-Encoder reranking
+            </span>
+        </div>
+
+        <div class="trow">
+            <span class="tkey">Top-10 Hybrid</span>
+            <span class="tval">
+                Top-10 hybrid retrieval configuration
+            </span>
         </div>
 
         </div>
@@ -502,40 +822,94 @@ with tab2:
         unsafe_allow_html=True
     )
 
-    st.image(
-        "research_results/retrieval_ablation_comparison.png",
-        caption="Retrieval Ablation Comparison",
-        use_container_width=True
+
+    # --------------------------------------------------------
+    # Retrieval Ablation Graph
+    # --------------------------------------------------------
+
+    retrieval_graph = os.path.join(
+        EVAL_DIR,
+        "graphs",
+        "retrieval_ablation_comparison_2632.png"
     )
 
-    # Show raw RRF evaluation
-    try:
-        rrf_results = pd.read_csv(
-            "research_results/hybrid_rrf_fair_results.csv"
+    if os.path.exists(retrieval_graph):
+
+        st.image(
+            retrieval_graph,
+            caption="Retrieval Ablation — 2,632 Queries",
+            use_container_width=True
         )
 
+    else:
+
+        st.warning(
+            "Retrieval ablation graph not found."
+        )
+
+
+    # --------------------------------------------------------
+    # Retrieval Ablation CSV
+    # --------------------------------------------------------
+
+    retrieval_csv = os.path.join(
+        EVAL_DIR,
+        "graphs",
+        "retrieval_ablation_comparison_2632.csv"
+    )
+
+    if os.path.exists(retrieval_csv):
+
         st.markdown(
-            '<div class="phead">Fair RRF Evaluation</div>',
+            '<div class="phead">Ablation Results</div>',
             unsafe_allow_html=True
         )
 
-        st.write(
-            f"Correct: {int(rrf_results['correct'].sum())} / "
-            f"{len(rrf_results)}"
+        retrieval_df = pd.read_csv(
+            retrieval_csv
         )
 
         st.dataframe(
-            rrf_results.head(20),
+            retrieval_df,
             use_container_width=True,
             hide_index=True
         )
 
-    except Exception as e:
-        st.warning(f"RRF results unavailable: {e}")
+
+    # --------------------------------------------------------
+    # Individual Method Summary
+    # --------------------------------------------------------
+
+    if not results_df.empty:
+
+        st.markdown(
+            '<div class="phead">Method-wise Comparison</div>',
+            unsafe_allow_html=True
+        )
+
+        method_compare = results_df[
+            [
+                "Method",
+                "Correct",
+                "Queries",
+                "Accuracy (%)"
+            ]
+        ].copy()
+
+        method_compare["Accuracy (%)"] = (
+            method_compare["Accuracy (%)"].round(2)
+        )
+
+        st.dataframe(
+            method_compare,
+            use_container_width=True,
+            hide_index=True
+        )
 
 
 # ============================================================
-# TAB 3 — COMPONENT ABLATION
+# TAB 3
+# COMPONENT ABLATION
 # ============================================================
 
 with tab3:
@@ -545,15 +919,55 @@ with tab3:
         unsafe_allow_html=True
     )
 
-    st.image(
-        "research_results/ablation_comparison.png",
-        caption="Component Ablation Study",
-        use_container_width=True
+
+    component_dir = os.path.join(
+        EVAL_DIR,
+        "ablation_study"
     )
 
-    try:
+
+    # --------------------------------------------------------
+    # Ablation Graph
+    # --------------------------------------------------------
+
+    component_graph = os.path.join(
+        component_dir,
+        "ablation_comparison_100.png"
+    )
+
+    if os.path.exists(component_graph):
+
+        st.image(
+            component_graph,
+            caption="Multi-Agent Component Ablation",
+            use_container_width=True
+        )
+
+    else:
+
+        st.warning(
+            "Component ablation graph not found."
+        )
+
+
+    # --------------------------------------------------------
+    # Ablation Summary
+    # --------------------------------------------------------
+
+    component_summary = os.path.join(
+        component_dir,
+        "ablation_study_summary_2632.csv"
+    )
+
+    if os.path.exists(component_summary):
+
+        st.markdown(
+            '<div class="phead">Component Ablation Results</div>',
+            unsafe_allow_html=True
+        )
+
         component_df = pd.read_csv(
-            "research_results/ablation_study_summary.csv"
+            component_summary
         )
 
         st.dataframe(
@@ -562,101 +976,473 @@ with tab3:
             hide_index=True
         )
 
-    except Exception as e:
-        st.warning(
-            f"Component ablation data unavailable: {e}"
+    else:
+
+        st.info(
+            "Component ablation summary CSV not found."
         )
 
 
+    # --------------------------------------------------------
+    # Detailed Ablation Results
+    # --------------------------------------------------------
+
+    component_results = os.path.join(
+        component_dir,
+        "ablation_study_results_2632.csv"
+    )
+
+    if os.path.exists(component_results):
+
+        with st.expander(
+            "View Detailed Ablation Results"
+        ):
+
+            detailed_ablation_df = pd.read_csv(
+                component_results
+            )
+
+            st.dataframe(
+                detailed_ablation_df,
+                use_container_width=True,
+                hide_index=True
+            )
+
+
 # ============================================================
-# TAB 4 — CONFUSION MATRIX
+# TAB 4
+# CONFUSION MATRICES
 # ============================================================
 
 with tab4:
 
     st.markdown(
-        '<div class="phead">Main Hybrid RAG Confusion Matrix</div>',
+        '<div class="phead">Confusion Matrices</div>',
         unsafe_allow_html=True
     )
 
-    st.caption(
-        "Main result: RRF + Cross-Encoder on 590 valid queries."
+
+    confusion_dir = os.path.join(
+        EVAL_DIR,
+        "confusion_matrices"
     )
 
-    st.image(
-        "research_results/confusion_matrix.png",
-        caption="Confusion Matrix — RRF + Cross-Encoder",
-        use_container_width=True
+
+    confusion_files = {
+        "BM25-only":
+            "confusion_matrix_bm25.png",
+
+        "FAISS-only":
+            "confusion_matrix_faiss.png",
+
+        "Fair RRF":
+            "confusion_matrix_fair_rrf.png",
+
+        "Weighted RRF":
+            "confusion_matrix_weighted_rrf.png",
+
+        "RRF + Cross-Encoder":
+            "confusion_matrix_hybrid.png",
+
+        "Top-10 Hybrid":
+            "confusion_matrix_top10_hybrid.png",
+    }
+
+
+    selected_method = st.selectbox(
+        "Select Retrieval Configuration",
+        list(confusion_files.keys())
     )
 
-    # Also provide the fair RRF matrix separately if available
-    if os.path.exists(
-        "research_results/confusion_matrix_rrf_fair.png"
-    ):
+
+    selected_confusion = os.path.join(
+        confusion_dir,
+        confusion_files[selected_method]
+    )
+
+
+    if os.path.exists(selected_confusion):
+
+        st.image(
+            selected_confusion,
+            caption=f"Confusion Matrix — {selected_method}",
+            use_container_width=True
+        )
+
+    else:
+
+        st.warning(
+            f"Confusion matrix not found for {selected_method}."
+        )
+
+
+    # --------------------------------------------------------
+    # CSV Confusion Matrix
+    # --------------------------------------------------------
+
+    confusion_csv_name = (
+        confusion_files[selected_method]
+        .replace(".png", ".csv")
+    )
+
+    confusion_csv = os.path.join(
+        confusion_dir,
+        confusion_csv_name
+    )
+
+
+    if os.path.exists(confusion_csv):
+
         st.markdown(
-            '<div class="phead">Fair RRF-only Confusion Matrix</div>',
+            '<div class="phead">Confusion Matrix Values</div>',
             unsafe_allow_html=True
         )
 
-        st.image(
-            "research_results/confusion_matrix_rrf_fair.png",
-            caption="Confusion Matrix — Fair RRF-only",
+        confusion_df = pd.read_csv(
+            confusion_csv,
+            index_col=0
+        )
+
+        st.dataframe(
+            confusion_df,
             use_container_width=True
         )
 
 
 # ============================================================
-# TAB 5 — CLASSIFICATION + STATISTICAL ANALYSIS
+# TAB 5
+# CLASSIFICATION REPORTS
 # ============================================================
 
 with tab5:
 
     st.markdown(
-        '<div class="phead">Classification Report</div>',
+        '<div class="phead">Classification Reports</div>',
         unsafe_allow_html=True
     )
 
-    try:
+
+    reports_dir = os.path.join(
+        EVAL_DIR,
+        "classification_reports"
+    )
+
+
+    report_files = {
+        "BM25-only":
+            "classification_report_bm25.txt",
+
+        "FAISS-only":
+            "classification_report_faiss.txt",
+
+        "Fair RRF":
+            "classification_report_fair_rrf.txt",
+
+        "Weighted RRF":
+            "classification_report_weighted_rrf.txt",
+
+        "RRF + Cross-Encoder":
+            "classification_report_hybrid.txt",
+
+        "Top-10 Hybrid":
+            "classification_report_top10_hybrid.txt",
+    }
+
+
+    selected_report_method = st.selectbox(
+        "Select Configuration",
+        list(report_files.keys()),
+        key="classification_report_method"
+    )
+
+
+    selected_report = os.path.join(
+        reports_dir,
+        report_files[selected_report_method]
+    )
+
+
+    if os.path.exists(selected_report):
+
         with open(
-            "research_results/classification_report.txt",
+            selected_report,
             "r",
             encoding="utf-8"
         ) as f:
+
             report_text = f.read()
+
 
         st.code(
             report_text,
             language="text"
         )
 
-    except Exception as e:
+    else:
+
         st.warning(
-            f"Classification report unavailable: {e}"
+            f"Classification report not found for "
+            f"{selected_report_method}."
         )
 
 
+# ============================================================
+# TAB 6
+# STATISTICAL ANALYSIS
+# ============================================================
+
+with tab6:
+
     st.markdown(
-        '<div class="phead">McNemar Significance Test</div>',
+        '<div class="phead">Statistical Significance Analysis</div>',
         unsafe_allow_html=True
     )
 
-    try:
-        sig_df = pd.read_csv(
-            "research_results/significance_test_results.csv"
+
+    statistical_dir = os.path.join(
+        EVAL_DIR,
+        "statistical_tests"
+    )
+
+
+    # --------------------------------------------------------
+    # Main Statistical Test
+    # --------------------------------------------------------
+
+    statistical_csv = os.path.join(
+        statistical_dir,
+        "statistical_significance_tests.csv"
+    )
+
+
+    if os.path.exists(statistical_csv):
+
+        st.markdown(
+            '<div class="phead">McNemar Statistical Test</div>',
+            unsafe_allow_html=True
+        )
+
+        statistical_df = pd.read_csv(
+            statistical_csv
         )
 
         st.dataframe(
-            sig_df,
+            statistical_df,
             use_container_width=True,
             hide_index=True
         )
 
         st.caption(
-            "McNemar's test evaluates paired prediction differences "
-            "between retrieval methods."
+            "McNemar's test evaluates paired prediction "
+            "differences between retrieval configurations."
         )
 
-    except Exception as e:
+    else:
+
         st.warning(
-            f"Significance test results unavailable: {e}"
+            "Statistical significance CSV not found."
+        )
+
+
+    # --------------------------------------------------------
+    # V2 Statistical Test
+    # --------------------------------------------------------
+
+    statistical_csv_v2 = os.path.join(
+        statistical_dir,
+        "statistical_significance_tests_v2.csv"
+    )
+
+
+    if os.path.exists(statistical_csv_v2):
+
+        st.markdown(
+            '<div class="phead">Statistical Analysis — Version 2</div>',
+            unsafe_allow_html=True
+        )
+
+        statistical_v2_df = pd.read_csv(
+            statistical_csv_v2
+        )
+
+        st.dataframe(
+            statistical_v2_df,
+            use_container_width=True,
+            hide_index=True
+        )
+
+
+    # --------------------------------------------------------
+    # TXT Results
+    # --------------------------------------------------------
+
+    statistical_txt = os.path.join(
+        statistical_dir,
+        "statistical_significance_tests.txt"
+    )
+
+
+    if os.path.exists(statistical_txt):
+
+        with st.expander(
+            "View Detailed Statistical Test Report"
+        ):
+
+            with open(
+                statistical_txt,
+                "r",
+                encoding="utf-8"
+            ) as f:
+
+                statistical_text = f.read()
+
+
+            st.code(
+                statistical_text,
+                language="text"
+            )
+
+
+# ============================================================
+# ERROR ANALYSIS
+# ============================================================
+
+st.markdown("---")
+
+st.markdown(
+    '<div class="phead">🔎 Error Analysis</div>',
+    unsafe_allow_html=True
+)
+
+
+error_dir = os.path.join(
+    EVAL_DIR,
+    "error_analysis"
+)
+
+
+error_files = {
+    "BM25-only":
+        "bm25_wrong_queries.csv",
+
+    "FAISS-only":
+        "faiss_wrong_queries.csv",
+
+    "Fair RRF":
+        "fair_rrf_wrong_queries.csv",
+
+    "Weighted RRF":
+        "weighted_rrf_wrong_queries.csv",
+
+    "RRF + Cross-Encoder":
+        "hybrid_wrong_queries.csv",
+
+    "Top-10 Hybrid":
+        "top10_hybrid_wrong_queries.csv",
+}
+
+
+error_method = st.selectbox(
+    "Select Configuration for Error Analysis",
+    list(error_files.keys()),
+    key="error_analysis_method"
+)
+
+
+error_path = os.path.join(
+    error_dir,
+    error_files[error_method]
+)
+
+
+if os.path.exists(error_path):
+
+    error_df = pd.read_csv(
+        error_path
+    )
+
+
+    st.write(
+        f"Incorrect predictions: "
+        f"**{len(error_df):,}**"
+    )
+
+
+    st.dataframe(
+        error_df,
+        use_container_width=True,
+        hide_index=True
+    )
+
+else:
+
+    st.info(
+        f"Error analysis file not found for {error_method}."
+    )
+
+
+# ============================================================
+# LATENCY SUMMARY
+# ============================================================
+
+st.markdown(
+    '<div class="phead">⏱️ Latency Analysis</div>',
+    unsafe_allow_html=True
+)
+
+
+latency_summary_path = os.path.join(
+    EVAL_DIR,
+    "latency_analysis",
+    "latency_summary.csv"
+)
+
+
+if os.path.exists(latency_summary_path):
+
+    latency_summary_df = pd.read_csv(
+        latency_summary_path
+    )
+
+    st.dataframe(
+        latency_summary_df,
+        use_container_width=True,
+        hide_index=True
+    )
+
+else:
+
+    # Build latency summary directly from evaluation files
+    latency_rows = []
+
+    for method, df in evaluation_data.items():
+
+        latency = calculate_latency(df)
+
+        latency_rows.append(
+            {
+                "Method": method,
+                "Average Latency (s)": latency
+            }
+        )
+
+
+    latency_df = pd.DataFrame(
+        latency_rows
+    )
+
+
+    if not latency_df.empty:
+
+        latency_df[
+            "Average Latency (s)"
+        ] = latency_df[
+            "Average Latency (s)"
+        ].round(4)
+
+
+        st.dataframe(
+            latency_df,
+            use_container_width=True,
+            hide_index=True
         )

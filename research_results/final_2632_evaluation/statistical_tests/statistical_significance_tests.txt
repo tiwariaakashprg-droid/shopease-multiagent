@@ -1,0 +1,56 @@
+Statistical Significance Tests
+============================================================
+
+Test: McNemar's test
+Significance level: alpha = 0.05
+Continuity correction: applied
+Evaluation set: 2,632 held-out queries
+
+------------------------------------------------------------
+FAISS-only vs Weighted RRF
+------------------------------------------------------------
+Queries: 2632
+FAISS-only accuracy: 85.3723%
+Weighted RRF accuracy: 85.0684%
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct          2204        43
+A Wrong              35       350
+
+Chi-square: 0.6282
+p-value: 0.428014
+Significant at alpha=0.05: NO
+
+------------------------------------------------------------
+FAISS-only vs Hybrid RAG + Cross-Encoder
+------------------------------------------------------------
+Queries: 2632
+FAISS-only accuracy: 85.3723%
+Hybrid RAG + Cross-Encoder accuracy: 83.2447%
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct          2138       109
+A Wrong              53       332
+
+Chi-square: 18.6728
+p-value: 0.000016
+Significant at alpha=0.05: YES
+
+------------------------------------------------------------
+FAISS-only vs Fair RRF
+------------------------------------------------------------
+Queries: 2632
+FAISS-only accuracy: 85.3723%
+Fair RRF accuracy: 82.2948%
+
+Contingency Table:
+                B Correct   B Wrong
+A Correct          2043       204
+A Wrong             123       262
+
+Chi-square: 19.5719
+p-value: 0.000010
+Significant at alpha=0.05: YES
+

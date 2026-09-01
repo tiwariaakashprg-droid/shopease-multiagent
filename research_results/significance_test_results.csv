@@ -1,4 +1,0 @@
-comparison,a_wrong_b_right,a_right_b_wrong,chi2_statistic,p_value,significant_at_0.05
-bm25_vs_faiss,273,23,209.4628,0.0,True
-bm25_vs_rrf,235,40,136.8582,0.0,True
-faiss_vs_rrf,14,69,35.1325,0.0,True

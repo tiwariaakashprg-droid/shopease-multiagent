@@ -1,27 +1,24 @@
-import pandas as pd
 from graph.state import AgentState
 from utils.timing import track_latency
+from utils.db import get_customer_by_id
 
 
 @track_latency("crm_agent")
 def crm_agent(state: AgentState) -> AgentState:
     """
-    CRM Agent — customers.csv se customer data fetch karta hai.
+    CRM Agent — SQLite (data/shopease.db) se ek parameterized SQL query
+    ke through customer data fetch karta hai.
     Input  : state["customer_id"]
     Output : state["customer_data"], state["customer_context"]
     """
     customer_id = state.get("customer_id", "").strip()
 
     try:
-        df = pd.read_csv("data/customers.csv")
-        df["customer_id"] = df["customer_id"].astype(str).str.strip()
-        row = df[df["customer_id"] == customer_id]
+        customer_data = get_customer_by_id(customer_id)
 
-        if row.empty:
-            customer_data = {}
+        if not customer_data:
             context = "Customer not found in system."
         else:
-            customer_data = row.iloc[0].to_dict()
             context = (
                 f"Name: {customer_data.get('name')}\n"
                 f"Tier: {customer_data.get('tier', 'regular').upper()}\n"

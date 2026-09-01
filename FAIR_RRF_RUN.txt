@@ -1,0 +1,7 @@
+Existing hybrid_rrf_fair.py KEPT unchanged (Weighted RRF 0.8/0.2).
+New rrf_fair.py = Fair/Equal-weight RRF (1.0/1.0).
+FAISS Top-5 + BM25 Top-5 -> equal RRF -> top-5.
+No Cross-Encoder.
+Dataset: data/test_dataset.csv (2,632 queries).
+
+Run: python rrf_fair.py

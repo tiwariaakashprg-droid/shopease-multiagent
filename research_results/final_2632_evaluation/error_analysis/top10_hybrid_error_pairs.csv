@@ -1,0 +1,20 @@
+expected,predicted,error_count,error_percentage
+Refund Policy,Return Policy,102,21.38
+Unknown,Shipping Policy,82,17.19
+Unknown,Damaged Product Policy,58,12.16
+Damaged Product Policy,Shipping Policy,42,8.81
+Shipping Policy,Unknown,36,7.55
+Damaged Product Policy,Return Policy,25,5.24
+Unknown,Return Policy,24,5.03
+Unknown,Cancellation Policy,21,4.4
+Shipping Policy,Cancellation Policy,20,4.19
+Damaged Product Policy,Cancellation Policy,16,3.35
+Return Policy,Cancellation Policy,14,2.94
+Refund Policy,Cancellation Policy,14,2.94
+Unknown,Refund Policy,10,2.1
+Return Policy,Shipping Policy,6,1.26
+Cancellation Policy,Shipping Policy,2,0.42
+Cancellation Policy,Refund Policy,2,0.42
+Return Policy,Refund Policy,1,0.21
+Refund Policy,Shipping Policy,1,0.21
+Refund Policy,Damaged Product Policy,1,0.21

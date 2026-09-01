@@ -1,0 +1,19 @@
+Classification Report — hybrid
+======================================================================
+Input File    : evaluation_results_hybrid.csv
+Total Queries : 2632
+Correct       : 2191
+Accuracy      : 83.24%
+
+                        precision    recall  f1-score   support
+
+         Refund Policy      0.957     0.788     0.864       481
+         Return Policy      0.768     0.952     0.851       502
+       Shipping Policy      0.761     0.902     0.826       481
+   Cancellation Policy      0.873     0.981     0.924       482
+Damaged Product Policy      0.901     0.850     0.875       481
+               Unknown      0.375     0.088     0.142       205
+
+              accuracy                          0.832      2632
+             macro avg      0.773     0.760     0.747      2632
+          weighted avg      0.814     0.832     0.811      2632

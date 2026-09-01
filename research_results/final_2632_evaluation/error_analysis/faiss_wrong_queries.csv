@@ -1,0 +1,386 @@
+query,expected,predicted,correct,confidence,retrieval_method,latency
+My package arrived damaged. Can I return it?,Damaged Product Policy,Return Policy,0,0.6249571,faiss,0.0493171215057373
+What is the company's quantum computing policy?,Unknown,Damaged Product Policy,0,0.5386177,faiss,0.0372326374053955
+What is your Mars colony insurance policy?,Unknown,Damaged Product Policy,0,0.52096456,faiss,0.0432906150817871
+Do you reimburse cryptocurrency mining expenses?,Unknown,Refund Policy,0,0.5740219,faiss,0.0697247982025146
+What is your space travel policy?,Unknown,Shipping Policy,0,0.5496587,faiss,0.0378048419952392
+Explain your artificial consciousness policy.,Unknown,Return Policy,0,0.53386295,faiss,0.0383944511413574
+Can I receive a refund for a defective product?,Refund Policy,Damaged Product Policy,0,0.6719962,faiss,0.0427033901214599
+I accidentally ordered the wrong item. Can I get a refund?,Refund Policy,Return Policy,0,0.63359827,faiss,0.0481464862823486
+I need my money returned because the item is unusable.,Refund Policy,Return Policy,0,0.6330381,faiss,0.0482678413391113
+"Could you explain, I no longer want this product and want to return it. please.",Return Policy,Cancellation Policy,0,0.6166728,faiss,0.0511853694915771
+Urgent: I no longer want this product and want to return it. for my recent order.,Return Policy,Cancellation Policy,0,0.6576008,faiss,0.0518157482147216
+I need help: I need to send the package back. as soon as possible.,Return Policy,Shipping Policy,0,0.6159015,faiss,0.0569970607757568
+"Could you explain, I need my payment returned. because I am confused.",Refund Policy,Return Policy,0,0.6338406,faiss,0.047145128250122
+I need my payment returned. for my recent order.,Refund Policy,Return Policy,0,0.6540351,faiss,0.046342134475708
+I need help: The item is damged. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.6002058,faiss,0.0508098602294921
+"Please tell me, I need to send the package back. because I am confused.",Return Policy,Shipping Policy,0,0.5987207,faiss,0.0523798465728759
+I need help: I need my payment returned.,Refund Policy,Return Policy,0,0.6424726,faiss,0.0443537235260009
+I need help: I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.5958527,faiss,0.0524008274078369
+I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.6032807,faiss,0.0478112697601318
+I need help: I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,0.6462223,faiss,0.0499203205108642
+The item is damged. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.59488267,faiss,0.0448577404022216
+"Please tell me, I need my payment returned. as soon as possible.",Refund Policy,Return Policy,0,0.6346236,faiss,0.052077293395996
+"Please tell me, I no longer want this product and want to return it. because I am confused.",Return Policy,Cancellation Policy,0,0.5999714,faiss,0.0578346252441406
+Urgent: I need my payment returned.,Refund Policy,Return Policy,0,0.6427713,faiss,0.0452151298522949
+"Please tell me, I need my payment returned.",Refund Policy,Return Policy,0,0.63387144,faiss,0.0475409030914306
+Urgent: My screan is crackd. for my recent order.,Damaged Product Policy,Cancellation Policy,0,0.5793115,faiss,0.045642614364624
+Urgent: I no longer want this product and want to return it. because I am confused.,Return Policy,Cancellation Policy,0,0.613847,faiss,0.0460050106048584
+I need my payment returned. as soon as possible.,Refund Policy,Return Policy,0,0.6505698,faiss,0.0470049381256103
+I need my payment returned.,Refund Policy,Return Policy,0,0.6522328,faiss,0.0424096584320068
+Urgent: I need to send the package back.,Return Policy,Shipping Policy,0,0.60816664,faiss,0.0506312847137451
+"Could you explain, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,0.6515817,faiss,0.0481464862823486
+"Please tell me, I need to send the package back. as soon as possible.",Return Policy,Shipping Policy,0,0.618844,faiss,0.0546894073486328
+Urgent: I need my payment returned. please.,Refund Policy,Return Policy,0,0.63653326,faiss,0.046940803527832
+Urgent: I need to send the package back. for my recent order.,Return Policy,Shipping Policy,0,0.62359035,faiss,0.0505852699279785
+"Please tell me, I need my payment returned. for my recent order.",Refund Policy,Return Policy,0,0.63771963,faiss,0.044863224029541
+Urgent: I no longer want this product and want to return it. as soon as possible.,Return Policy,Cancellation Policy,0,0.6350359,faiss,0.0472958087921142
+Urgent: I need to send the package back. because I am confused.,Return Policy,Shipping Policy,0,0.60347056,faiss,0.0519216060638427
+"Could you explain, I need to send the package back. please.",Return Policy,Shipping Policy,0,0.6007546,faiss,0.0485537052154541
+Can the amount I paid be returned to me?,Refund Policy,Return Policy,0,0.647374,faiss,0.0687663555145263
+I want the payment for my purchase returned.,Refund Policy,Return Policy,0,0.66945213,faiss,0.0419797897338867
+Could I have the amount I paid returned?,Refund Policy,Return Policy,0,0.650142,faiss,0.0442125797271728
+I need the amount from my order returned.,Refund Policy,Return Policy,0,0.62157834,faiss,0.0499475002288818
+I'd like the payment returned for an order I placed.,Refund Policy,Return Policy,0,0.65038383,faiss,0.0472915172576904
+What should I do if I want my purchase refunded?,Refund Policy,Return Policy,0,0.64644784,faiss,0.0500333309173584
+I need help getting the money from my purchase returned.,Refund Policy,Return Policy,0,0.62525964,faiss,0.0415527820587158
+Can I have the cost of my order returned?,Refund Policy,Return Policy,0,0.65142727,faiss,0.0483205318450927
+Is my purchase eligible for a refund?,Refund Policy,Return Policy,0,0.6314187,faiss,0.0414264202117919
+I'd like to have my order payment returned.,Refund Policy,Return Policy,0,0.6688606,faiss,0.0446817874908447
+What are the steps for getting my payment returned?,Refund Policy,Return Policy,0,0.6422143,faiss,0.0429885387420654
+I paid for this item and want the money back.,Refund Policy,Return Policy,0,0.6424691,faiss,0.0461659431457519
+I'd like the money from this transaction returned.,Refund Policy,Return Policy,0,0.61506593,faiss,0.0490195751190185
+What is the process if I want the payment returned?,Refund Policy,Return Policy,0,0.6588987,faiss,0.056675910949707
+How do I request that my order payment be returned?,Refund Policy,Return Policy,0,0.65587366,faiss,0.0514130592346191
+How can I apply to have my money returned?,Refund Policy,Return Policy,0,0.6331972,faiss,0.0469717979431152
+Can I have my payment returned for this transaction?,Refund Policy,Return Policy,0,0.6550344,faiss,0.0509614944458007
+How can I have this purchase payment returned?,Refund Policy,Return Policy,0,0.64736557,faiss,0.0413908958435058
+I want the amount charged for this purchase returned.,Refund Policy,Return Policy,0,0.62250006,faiss,0.0511820316314697
+Can I request that the money paid for this order be returned?,Refund Policy,Return Policy,0,0.6548008,faiss,0.052093505859375
+Can you help me get the money I paid returned?,Refund Policy,Return Policy,0,0.62098014,faiss,0.0476388931274414
+The money hasn't been returned to me yet.,Refund Policy,Return Policy,0,0.5934781,faiss,0.0469560623168945
+I expected the payment to be returned by now.,Refund Policy,Return Policy,0,0.6309248,faiss,0.0469157695770263
+My returned payment hasn't appeared in my account.,Refund Policy,Return Policy,0,0.6017765,faiss,0.064481496810913
+I am still waiting for my payment to be returned.,Refund Policy,Return Policy,0,0.61827636,faiss,0.0501031875610351
+Why is my returned payment still missing?,Refund Policy,Return Policy,0,0.6108956,faiss,0.0528175830841064
+"My payment should have been returned, but I haven't received it.",Refund Policy,Return Policy,0,0.6234057,faiss,0.0517387390136718
+I'm still waiting for the money from a returned payment.,Refund Policy,Return Policy,0,0.6114354,faiss,0.0443074703216552
+I need the money from my order returned.,Refund Policy,Return Policy,0,0.64215696,faiss,0.0406355857849121
+I'd like to request that the purchase amount be returned.,Refund Policy,Return Policy,0,0.64629513,faiss,0.0462331771850585
+Can I get the money I spent on this order returned?,Refund Policy,Return Policy,0,0.63985306,faiss,0.0452501773834228
+Can I ask for the charge on my order to be returned?,Refund Policy,Return Policy,0,0.6408112,faiss,0.0457196235656738
+Is there a way to get my purchase payment returned?,Refund Policy,Return Policy,0,0.66379786,faiss,0.0453987121582031
+How do I make a request for the payment to be returned?,Refund Policy,Return Policy,0,0.64421654,faiss,0.0521824359893798
+I want to have the payment for this order returned.,Refund Policy,Return Policy,0,0.6522605,faiss,0.0510227680206298
+Can I request my payment back after buying the item?,Refund Policy,Return Policy,0,0.67406523,faiss,0.056302785873413
+How do I request that the money I paid be returned?,Refund Policy,Return Policy,0,0.6338069,faiss,0.0577025413513183
+I'd like to have my money returned for this purchase.,Refund Policy,Return Policy,0,0.6350646,faiss,0.0515096187591552
+I'd like to request the return of my purchase payment.,Refund Policy,Return Policy,0,0.6672299,faiss,0.0458288192749023
+I'd like the amount I paid returned to me.,Refund Policy,Return Policy,0,0.61650205,faiss,0.0502886772155761
+Can I request the money I paid for this item back?,Refund Policy,Return Policy,0,0.6245441,faiss,0.0555891990661621
+I need the payment from this purchase returned.,Refund Policy,Return Policy,0,0.6375911,faiss,0.0698318481445312
+I want to request a return of the money I paid.,Refund Policy,Return Policy,0,0.64073503,faiss,0.044184923171997
+I'd like the money deducted for my purchase returned.,Refund Policy,Return Policy,0,0.63191986,faiss,0.0486664772033691
+What's the process for asking that my order be refunded?,Refund Policy,Cancellation Policy,0,0.6579263,faiss,0.05354905128479
+I'd like to ask for my order payment to be returned.,Refund Policy,Return Policy,0,0.65956604,faiss,0.04852294921875
+Can the money charged for this item be returned?,Refund Policy,Return Policy,0,0.6362733,faiss,0.0424325466156005
+I'd like to request the money spent on this purchase back.,Refund Policy,Return Policy,0,0.5913411,faiss,0.0485091209411621
+I want the amount paid for this item returned.,Refund Policy,Return Policy,0,0.61678565,faiss,0.0421576499938964
+I'd like to have the funds from my purchase returned.,Refund Policy,Return Policy,0,0.6338934,faiss,0.046074628829956
+I need to ask for a refund on something I ordered.,Refund Policy,Return Policy,0,0.6296944,faiss,0.0465543270111084
+I want the money I paid for this order returned.,Refund Policy,Return Policy,0,0.63527405,faiss,0.0479407310485839
+Can I ask for the amount I paid to be returned?,Refund Policy,Return Policy,0,0.6390923,faiss,0.0579900741577148
+Can the amount I spent on this item be returned?,Refund Policy,Return Policy,0,0.62726265,faiss,0.0474390983581543
+What do I do when I want my order payment returned?,Refund Policy,Return Policy,0,0.6665069,faiss,0.0497777462005615
+Can the funds I paid for my order be returned?,Refund Policy,Return Policy,0,0.637859,faiss,0.0541484355926513
+How can I ask for my purchase to be refunded?,Refund Policy,Return Policy,0,0.6258145,faiss,0.0531916618347168
+Can I have the cost of this purchase returned?,Refund Policy,Return Policy,0,0.6442122,faiss,0.047116994857788
+I'd like to have my purchase charge returned.,Refund Policy,Return Policy,0,0.64001846,faiss,0.0530080795288085
+Can the amount deducted for this purchase be returned?,Refund Policy,Return Policy,0,0.6411947,faiss,0.0543253421783447
+I need my purchase payment returned.,Refund Policy,Return Policy,0,0.6671055,faiss,0.0412120819091796
+How do I request a return of the payment?,Refund Policy,Return Policy,0,0.64750946,faiss,0.0481739044189453
+I want the money paid for this item returned.,Refund Policy,Return Policy,0,0.62241614,faiss,0.0471017360687255
+I'd like to get my order amount back.,Refund Policy,Cancellation Policy,0,0.5994896,faiss,0.0393667221069335
+Can I get the funds I used for this purchase returned?,Refund Policy,Return Policy,0,0.6355479,faiss,0.0452487468719482
+I'd like my payment returned for this order.,Refund Policy,Return Policy,0,0.640065,faiss,0.0468971729278564
+What should I do if I need the order amount returned?,Refund Policy,Return Policy,0,0.6358987,faiss,0.0495240688323974
+Can a delivered product be sent back?,Return Policy,Shipping Policy,0,0.6376719,faiss,0.0428912639617919
+I don't want the item anymore. Can I send it back?,Return Policy,Cancellation Policy,0,0.62783486,faiss,0.051856517791748
+I received the product but decided I don't want it.,Return Policy,Cancellation Policy,0,0.6241704,faiss,0.0528607368469238
+Can I send back an item that I simply don't want?,Return Policy,Cancellation Policy,0,0.64971673,faiss,0.048924446105957
+"My package was delivered, and I want to send the item back.",Return Policy,Shipping Policy,0,0.6182014,faiss,0.0479247570037841
+Can I send an item back if I don't want it?,Return Policy,Cancellation Policy,0,0.65649927,faiss,0.0421028137207031
+Can I return an item if I no longer want it?,Return Policy,Cancellation Policy,0,0.67537206,faiss,0.0478136539459228
+What if I lost the invoice for my purchase?,Return Policy,Cancellation Policy,0,0.57881474,faiss,0.0404238700866699
+Can this item be sent back after delivery?,Return Policy,Shipping Policy,0,0.6379379,faiss,0.0444836616516113
+I ordered this by mistake and want to send it back.,Return Policy,Refund Policy,0,0.564103,faiss,0.0428435802459716
+I don't want to keep this purchase. Can it be returned?,Return Policy,Cancellation Policy,0,0.62745595,faiss,0.0487520694732666
+I opened the package and now want to send the item back.,Return Policy,Shipping Policy,0,0.6115844,faiss,0.0424377918243408
+What happens if I cannot find my purchase invoice?,Return Policy,Damaged Product Policy,0,0.57129633,faiss,0.0420000553131103
+How do I send back an item I no longer want?,Return Policy,Cancellation Policy,0,0.6411687,faiss,0.0476276874542236
+How do I request an address change for my order?,Shipping Policy,Cancellation Policy,0,0.5573629,faiss,0.0381407737731933
+I entered the wrong address for my order. Can it be changed?,Shipping Policy,Refund Policy,0,0.55222726,faiss,0.0489883422851562
+Can I fix my address before dispatch?,Shipping Policy,Cancellation Policy,0,0.55743694,faiss,0.0401351451873779
+Is an address correction possible before shipping?,Shipping Policy,Cancellation Policy,0,0.62351835,faiss,0.0379319190979003
+I want to stop a package that has already been sent.,Cancellation Policy,Shipping Policy,0,0.61163217,faiss,0.0478439331054687
+Is there anything I can do if the order has already shipped?,Cancellation Policy,Shipping Policy,0,0.6557142,faiss,0.0561590194702148
+Is it possible to stop only one item from shipping?,Cancellation Policy,Shipping Policy,0,0.623969,faiss,0.0455000400543212
+Can I cancel and receive the amount I paid back?,Cancellation Policy,Refund Policy,0,0.61630374,faiss,0.0442221164703369
+Can I reverse an order I made accidentally?,Cancellation Policy,Refund Policy,0,0.6282026,faiss,0.0412750244140625
+I need to stop an order from moving to shipment.,Cancellation Policy,Shipping Policy,0,0.6232344,faiss,0.0432329177856445
+I want to prevent this purchase from being shipped.,Cancellation Policy,Shipping Policy,0,0.62015295,faiss,0.0473155975341796
+Can I reverse a purchase request?,Cancellation Policy,Refund Policy,0,0.63365257,faiss,0.040910005569458
+I want to stop a purchase I made accidentally.,Cancellation Policy,Refund Policy,0,0.579639,faiss,0.0474286079406738
+Is it possible to undo a purchase request?,Cancellation Policy,Refund Policy,0,0.6353832,faiss,0.0463240146636962
+I want to stop one item from being shipped.,Cancellation Policy,Shipping Policy,0,0.6194036,faiss,0.0489797592163085
+Can I reverse a paid order?,Cancellation Policy,Refund Policy,0,0.6222189,faiss,0.0423505306243896
+I want to stop a package that has already left the warehouse.,Cancellation Policy,Shipping Policy,0,0.6299008,faiss,0.0449500083923339
+Will the amount I paid be returned after cancellation?,Cancellation Policy,Refund Policy,0,0.6052011,faiss,0.0416154861450195
+Can I prevent my order from going to shipment?,Cancellation Policy,Shipping Policy,0,0.6373125,faiss,0.0353567600250244
+The product isn't working properly after delivery.,Damaged Product Policy,Shipping Policy,0,0.6445779,faiss,0.0390286445617675
+The item arrived with a crack. What are my options?,Damaged Product Policy,Shipping Policy,0,0.6041445,faiss,0.0469007492065429
+The item is missing some pieces from the package.,Damaged Product Policy,Shipping Policy,0,0.620535,faiss,0.0457425117492675
+A part of the product was missing when it arrived.,Damaged Product Policy,Shipping Policy,0,0.62290204,faiss,0.0499794483184814
+My package is missing a component of the item.,Damaged Product Policy,Shipping Policy,0,0.598105,faiss,0.0424449443817138
+The product arrived with some pieces missing.,Damaged Product Policy,Shipping Policy,0,0.614343,faiss,0.0401153564453125
+My charger isn't working after delivery.,Damaged Product Policy,Shipping Policy,0,0.5917932,faiss,0.043689489364624
+The item seems to have been damaged during transit.,Damaged Product Policy,Shipping Policy,0,0.6099498,faiss,0.0429682731628418
+The shipment caused damage to the product.,Damaged Product Policy,Shipping Policy,0,0.6252818,faiss,0.0416576862335205
+Is there any compensation for damage caused in transit?,Damaged Product Policy,Shipping Policy,0,0.5784962,faiss,0.038097858428955
+How can I notify you about damage to my order?,Damaged Product Policy,Cancellation Policy,0,0.5846815,faiss,0.0417919158935546
+The device arrived but cannot be used.,Damaged Product Policy,Shipping Policy,0,0.6165024,faiss,0.0307679176330566
+The item has a fault straight out of the package.,Damaged Product Policy,Shipping Policy,0,0.61394215,faiss,0.0381183624267578
+My purchase arrived with a functional problem.,Damaged Product Policy,Shipping Policy,0,0.6216358,faiss,0.0352225303649902
+My order arrived with a non-working item.,Damaged Product Policy,Shipping Policy,0,0.6182695,faiss,0.0346484184265136
+The item has damage that was not there before shipping.,Damaged Product Policy,Cancellation Policy,0,0.64219636,faiss,0.041802167892456
+My order arrived incomplete because parts are missing.,Damaged Product Policy,Shipping Policy,0,0.61686504,faiss,0.042325735092163
+One component was not included with my item.,Damaged Product Policy,Return Policy,0,0.5427719,faiss,0.0390574932098388
+The product arrived without one of its parts.,Damaged Product Policy,Shipping Policy,0,0.60744816,faiss,0.0418155193328857
+I am missing a component from the product I received.,Damaged Product Policy,Return Policy,0,0.5669012,faiss,0.0437085628509521
+A required part was absent when the package arrived.,Damaged Product Policy,Shipping Policy,0,0.6184692,faiss,0.0426445007324218
+My device has visible damage from shipping.,Damaged Product Policy,Shipping Policy,0,0.6116668,faiss,0.0434684753417968
+The product arrived with a loose component.,Damaged Product Policy,Shipping Policy,0,0.6033559,faiss,0.0450406074523925
+My new device has damage from transit.,Damaged Product Policy,Shipping Policy,0,0.556837,faiss,0.0435788631439209
+My device does not function properly after delivery.,Damaged Product Policy,Shipping Policy,0,0.62599504,faiss,0.0401961803436279
+The product is not working straight out of the package.,Damaged Product Policy,Shipping Policy,0,0.6185983,faiss,0.0437874794006347
+The device arrived but won't work.,Damaged Product Policy,Shipping Policy,0,0.61529595,faiss,0.0440113544464111
+My device arrived with a fault.,Damaged Product Policy,Shipping Policy,0,0.59981376,faiss,0.0392038822174072
+My order arrived with an item that doesn't function.,Damaged Product Policy,Shipping Policy,0,0.60678196,faiss,0.0517134666442871
+The cable included with my order does not work.,Damaged Product Policy,Cancellation Policy,0,0.5491928,faiss,0.0477344989776611
+The adapter does not work after delivery.,Damaged Product Policy,Shipping Policy,0,0.60027933,faiss,0.0429062843322753
+The item arrived without one of its components.,Damaged Product Policy,Shipping Policy,0,0.6112986,faiss,0.0491585731506347
+There is a piece missing from the product I received.,Damaged Product Policy,Return Policy,0,0.5708364,faiss,0.0480575561523437
+My package does not contain all the parts of the item.,Damaged Product Policy,Shipping Policy,0,0.62511736,faiss,0.0493726730346679
+A required part was missing when I opened the box.,Damaged Product Policy,Return Policy,0,0.5633199,faiss,0.0473558902740478
+The product arrived without an important component.,Damaged Product Policy,Shipping Policy,0,0.60515636,faiss,0.0426933765411376
+I received the product but one part was not included.,Damaged Product Policy,Return Policy,0,0.5441628,faiss,0.039421796798706
+The package is missing a component.,Damaged Product Policy,Shipping Policy,0,0.5887559,faiss,0.037046194076538
+There are missing pieces in the item I received.,Damaged Product Policy,Return Policy,0,0.58519214,faiss,0.0479588508605957
+My order came incomplete. What should I do?,Damaged Product Policy,Cancellation Policy,0,0.57381725,faiss,0.0419929027557373
+The product is missing something from the original package.,Damaged Product Policy,Shipping Policy,0,0.6168978,faiss,0.0409140586853027
+I received only part of the product.,Damaged Product Policy,Return Policy,0,0.54032844,faiss,0.0378601551055908
+A component is missing from my delivered item.,Damaged Product Policy,Shipping Policy,0,0.6016936,faiss,0.0446960926055908
+The item I received has missing pieces.,Damaged Product Policy,Return Policy,0,0.6002505,faiss,0.0412955284118652
+The product arrived without all its parts.,Damaged Product Policy,Shipping Policy,0,0.61130553,faiss,0.0433287620544433
+My package was missing a required accessory.,Damaged Product Policy,Shipping Policy,0,0.5976739,faiss,0.0404932498931884
+Is proof required for a replacement due to damage?,Damaged Product Policy,Return Policy,0,0.65799916,faiss,0.0505013465881347
+What is the weather going to be tomorrow?,Unknown,Shipping Policy,0,0.5099757,faiss,0.046058177947998
+Will it rain this weekend?,Unknown,Shipping Policy,0,0.4887749,faiss,0.0433671474456787
+How hot will it be today?,Unknown,Shipping Policy,0,0.48697725,faiss,0.0463221073150634
+Is there a storm coming?,Unknown,Shipping Policy,0,0.5076053,faiss,0.0465118885040283
+What time does the sun set today?,Unknown,Shipping Policy,0,0.49846348,faiss,0.0440814495086669
+Will there be heavy rain tonight?,Unknown,Shipping Policy,0,0.4891243,faiss,0.0360884666442871
+How cold is it outside?,Unknown,Shipping Policy,0,0.4900989,faiss,0.0356483459472656
+What is the forecast for next week?,Unknown,Shipping Policy,0,0.5150668,faiss,0.0415446758270263
+Is the weather suitable for a picnic?,Unknown,Shipping Policy,0,0.4911161,faiss,0.0384001731872558
+Do I need an umbrella today?,Unknown,Shipping Policy,0,0.49514455,faiss,0.0417957305908203
+How do I make pasta?,Unknown,Return Policy,0,0.4389111,faiss,0.0396976470947265
+What ingredients do I need for pancakes?,Unknown,Damaged Product Policy,0,0.47052267,faiss,0.0417866706848144
+Can you give me a simple biryani recipe?,Unknown,Shipping Policy,0,0.5040421,faiss,0.0471835136413574
+How long should I boil an egg?,Unknown,Shipping Policy,0,0.48272312,faiss,0.0415625572204589
+What is a good vegetarian dinner idea?,Unknown,Cancellation Policy,0,0.45219243,faiss,0.0478684902191162
+How do I bake a chocolate cake?,Unknown,Return Policy,0,0.44772133,faiss,0.0605533123016357
+Can I substitute butter with oil in cookies?,Unknown,Return Policy,0,0.48487684,faiss,0.0510194301605224
+What spices are commonly used in curry?,Unknown,Shipping Policy,0,0.4735208,faiss,0.0412468910217285
+How do I cook rice without making it sticky?,Unknown,Shipping Policy,0,0.4593033,faiss,0.0977652072906494
+What is an easy breakfast to prepare?,Unknown,Shipping Policy,0,0.47506455,faiss,0.2504868507385254
+How do I reset my Wi-Fi router?,Unknown,Cancellation Policy,0,0.47316366,faiss,0.1507084369659423
+Why is my laptop running slowly?,Unknown,Shipping Policy,0,0.4754806,faiss,0.0526139736175537
+How do I take a screenshot on Windows?,Unknown,Damaged Product Policy,0,0.4593718,faiss,0.0654604434967041
+What does RAM do in a computer?,Unknown,Damaged Product Policy,0,0.45163953,faiss,0.0469555854797363
+How can I free storage on my phone?,Unknown,Shipping Policy,0,0.46991837,faiss,0.054244041442871
+Why is my internet connection unstable?,Unknown,Damaged Product Policy,0,0.48019627,faiss,0.0526525974273681
+How do I connect Bluetooth headphones?,Unknown,Damaged Product Policy,0,0.4431156,faiss,0.0532102584838867
+What is the difference between SSD and HDD?,Unknown,Damaged Product Policy,0,0.46871534,faiss,0.056351900100708
+How do I update a graphics driver?,Unknown,Damaged Product Policy,0,0.49330992,faiss,0.0453705787658691
+My keyboard is typing the wrong characters. What can I do?,Unknown,Damaged Product Policy,0,0.48463818,faiss,0.0603077411651611
+How do I learn Python from scratch?,Unknown,Return Policy,0,0.44767168,faiss,0.0560457706451416
+What is a binary search tree?,Unknown,Return Policy,0,0.45590052,faiss,0.0471847057342529
+Explain gradient descent in simple words.,Unknown,Shipping Policy,0,0.46631673,faiss,0.0506231784820556
+What is the difference between AI and machine learning?,Unknown,Shipping Policy,0,0.46082878,faiss,0.0450444221496582
+How does a neural network learn?,Unknown,Shipping Policy,0,0.4567433,faiss,0.0464036464691162
+What is overfitting in machine learning?,Unknown,Shipping Policy,0,0.46860293,faiss,0.043407917022705
+Can you explain precision and recall?,Unknown,Shipping Policy,0,0.49669215,faiss,0.0479156970977783
+What is a transformer model?,Unknown,Damaged Product Policy,0,0.46782848,faiss,0.0419340133666992
+How does attention work in NLP?,Unknown,Shipping Policy,0,0.47765324,faiss,0.0425009727478027
+What is the purpose of a validation dataset?,Unknown,Return Policy,0,0.4817259,faiss,0.0481867790222168
+How do I prepare for a coding interview?,Unknown,Shipping Policy,0,0.4590895,faiss,0.0500116348266601
+Which programming language should I learn first?,Unknown,Shipping Policy,0,0.46377698,faiss,0.0477538108825683
+What are good resources for learning data structures?,Unknown,Shipping Policy,0,0.45316285,faiss,0.0450313091278076
+How do I improve my C++ skills?,Unknown,Damaged Product Policy,0,0.44574818,faiss,0.0417425632476806
+What is dynamic programming?,Unknown,Shipping Policy,0,0.46718425,faiss,0.0358431339263916
+Can you explain recursion with an example?,Unknown,Refund Policy,0,0.47235793,faiss,0.0476481914520263
+How should I practice LeetCode problems?,Unknown,Damaged Product Policy,0,0.47839388,faiss,0.0494589805603027
+What is time complexity?,Unknown,Shipping Policy,0,0.48921797,faiss,0.0480532646179199
+How do hash tables work?,Unknown,Shipping Policy,0,0.4657776,faiss,0.0454137325286865
+What is the difference between stack and queue?,Unknown,Shipping Policy,0,0.48910633,faiss,0.0480997562408447
+How do I write a professional resume?,Unknown,Return Policy,0,0.45248199,faiss,0.047182559967041
+Can you help me prepare for an interview?,Unknown,Shipping Policy,0,0.46970826,faiss,0.0825884342193603
+How should I introduce myself in an interview?,Unknown,Shipping Policy,0,0.46062025,faiss,0.131380558013916
+What should I wear to a job interview?,Unknown,Shipping Policy,0,0.46070576,faiss,0.048457384109497
+How do I answer the weakness question?,Unknown,Damaged Product Policy,0,0.49593636,faiss,0.0535790920257568
+How can I negotiate a salary?,Unknown,Shipping Policy,0,0.4804519,faiss,0.0479524135589599
+What makes a good cover letter?,Unknown,Shipping Policy,0,0.47233197,faiss,0.0608801841735839
+How do I describe a project on my CV?,Unknown,Shipping Policy,0,0.46158615,faiss,0.0591158866882324
+Should I include hobbies on my resume?,Unknown,Return Policy,0,0.46288517,faiss,0.0499999523162841
+How can I improve my communication skills?,Unknown,Shipping Policy,0,0.46279013,faiss,0.0493159294128418
+What are common behavioral interview questions?,Unknown,Shipping Policy,0,0.46265715,faiss,0.0788581371307373
+How do I book a flight?,Unknown,Shipping Policy,0,0.5169887,faiss,0.0485119819641113
+What documents are needed for international travel?,Unknown,Shipping Policy,0,0.6379247,faiss,0.0442240238189697
+How much luggage can I take on a flight?,Unknown,Shipping Policy,0,0.5061895,faiss,0.0465617179870605
+What is the best time to visit Japan?,Unknown,Shipping Policy,0,0.51626426,faiss,0.0410943031311035
+How do I apply for a tourist visa?,Unknown,Shipping Policy,0,0.51456463,faiss,0.0427005290985107
+What are some places to visit in Paris?,Unknown,Shipping Policy,0,0.47614202,faiss,0.0400810241699218
+How long should I spend in Singapore?,Unknown,Shipping Policy,0,0.51819617,faiss,0.0394394397735595
+What is the currency of Australia?,Unknown,Shipping Policy,0,0.4773634,faiss,0.0354208946228027
+How do I convert dollars to euros?,Unknown,Shipping Policy,0,0.4741743,faiss,0.0387632846832275
+What should I pack for a winter trip?,Unknown,Shipping Policy,0,0.5025797,faiss,0.047060489654541
+How do I open a bank account?,Unknown,Return Policy,0,0.46623757,faiss,0.0409643650054931
+What is an index fund?,Unknown,Refund Policy,0,0.44251052,faiss,0.0357134342193603
+How does compound interest work?,Unknown,Refund Policy,0,0.47765884,faiss,0.036259651184082
+What is the difference between a debit card and a credit card?,Unknown,Refund Policy,0,0.47863883,faiss,0.0432074069976806
+How can I improve my credit score?,Unknown,Refund Policy,0,0.47032216,faiss,0.0389206409454345
+What is a fixed deposit?,Unknown,Shipping Policy,0,0.49970996,faiss,0.0403683185577392
+How do mutual funds work?,Unknown,Shipping Policy,0,0.46161407,faiss,0.0353353023529052
+What is an emergency fund?,Unknown,Refund Policy,0,0.4707044,faiss,0.0364346504211425
+How should I make a monthly budget?,Unknown,Refund Policy,0,0.45686144,faiss,0.0408904552459716
+What is inflation?,Unknown,Shipping Policy,0,0.45871267,faiss,0.0305173397064209
+How do interest rates affect loans?,Unknown,Refund Policy,0,0.47172555,faiss,0.035215139389038
+What is the capital of Canada?,Unknown,Shipping Policy,0,0.46056044,faiss,0.0357828140258789
+Who wrote Pride and Prejudice?,Unknown,Shipping Policy,0,0.44298998,faiss,0.0416321754455566
+What is the largest ocean?,Unknown,Shipping Policy,0,0.4686703,faiss,0.0406301021575927
+How many planets are in the solar system?,Unknown,Shipping Policy,0,0.45258135,faiss,0.0405516624450683
+When did the first computer become popular?,Unknown,Damaged Product Policy,0,0.46834198,faiss,0.0484704971313476
+What is the chemical symbol for gold?,Unknown,Damaged Product Policy,0,0.460378,faiss,0.0386841297149658
+Why is the sky blue?,Unknown,Shipping Policy,0,0.46332523,faiss,0.0379097461700439
+How far is the Moon from Earth?,Unknown,Shipping Policy,0,0.49887732,faiss,0.0367250442504882
+What causes an eclipse?,Unknown,Shipping Policy,0,0.48077068,faiss,0.0374107360839843
+Who invented the telephone?,Unknown,Shipping Policy,0,0.46780613,faiss,0.037844181060791
+Can you explain how photosynthesis works?,Unknown,Damaged Product Policy,0,0.45603362,faiss,0.0392432212829589
+What is the tallest mountain in the world?,Unknown,Shipping Policy,0,0.46764675,faiss,0.0391662120819091
+How deep is the Pacific Ocean?,Unknown,Shipping Policy,0,0.47591338,faiss,0.0383720397949218
+What is the speed of light?,Unknown,Shipping Policy,0,0.4751097,faiss,0.0713286399841308
+Why do leaves change color?,Unknown,Shipping Policy,0,0.46699527,faiss,0.0363667011260986
+How do volcanoes erupt?,Unknown,Shipping Policy,0,0.44776818,faiss,0.0357871055603027
+What causes earthquakes?,Unknown,Shipping Policy,0,0.47024128,faiss,0.0363616943359375
+What is DNA?,Unknown,Damaged Product Policy,0,0.4416184,faiss,0.0348494052886962
+How does gravity work?,Unknown,Shipping Policy,0,0.46235824,faiss,0.035550832748413
+What is the boiling point of water?,Unknown,Shipping Policy,0,0.46119392,faiss,0.0402390956878662
+How do I lose weight safely?,Unknown,Shipping Policy,0,0.46477363,faiss,0.0381848812103271
+What are some healthy breakfast options?,Unknown,Damaged Product Policy,0,0.47149104,faiss,0.0364868640899658
+How many hours of sleep should an adult get?,Unknown,Shipping Policy,0,0.47152114,faiss,0.0432839393615722
+What are good exercises for beginners?,Unknown,Shipping Policy,0,0.45674655,faiss,0.038672924041748
+How much water should I drink each day?,Unknown,Shipping Policy,0,0.46358532,faiss,0.0366578102111816
+Why do people get headaches?,Unknown,Damaged Product Policy,0,0.4698474,faiss,0.0381054878234863
+What foods are high in protein?,Unknown,Damaged Product Policy,0,0.46297956,faiss,0.0420262813568115
+How can I improve my sleep schedule?,Unknown,Shipping Policy,0,0.46458772,faiss,0.0423998832702636
+What is a balanced diet?,Unknown,Cancellation Policy,0,0.47809157,faiss,0.0368003845214843
+How often should I exercise?,Unknown,Shipping Policy,0,0.48532322,faiss,0.0365545749664306
+What are common causes of back pain?,Unknown,Damaged Product Policy,0,0.48341513,faiss,0.0403254032135009
+How do I care for a houseplant?,Unknown,Refund Policy,0,0.46586436,faiss,0.0408570766448974
+How often should I water a cactus?,Unknown,Refund Policy,0,0.47512358,faiss,0.0401563644409179
+Why are my plant leaves turning yellow?,Unknown,Damaged Product Policy,0,0.46793118,faiss,0.0386905670166015
+What plants grow well indoors?,Unknown,Shipping Policy,0,0.46639976,faiss,0.0376551151275634
+How do I remove weeds from a garden?,Unknown,Return Policy,0,0.4552914,faiss,0.0387501716613769
+When is the best time to plant tomatoes?,Unknown,Shipping Policy,0,0.46912336,faiss,0.0410928726196289
+How much sunlight does a money plant need?,Unknown,Shipping Policy,0,0.48794636,faiss,0.0429263114929199
+What soil is good for succulents?,Unknown,Return Policy,0,0.4474887,faiss,0.0430703163146972
+How do I propagate a pothos?,Unknown,Shipping Policy,0,0.47250813,faiss,0.0431559085845947
+Why is my plant wilting?,Unknown,Damaged Product Policy,0,0.4671308,faiss,0.0378320217132568
+How do I train for a 5K run?,Unknown,Shipping Policy,0,0.47073486,faiss,0.0426492691040039
+What are the rules of cricket?,Unknown,Shipping Policy,0,0.4750773,faiss,0.0403792858123779
+How is a football league table calculated?,Unknown,Shipping Policy,0,0.47871646,faiss,0.0377180576324462
+What is a tennis tie-break?,Unknown,Shipping Policy,0,0.48238024,faiss,0.0415811538696289
+How long is a basketball game?,Unknown,Shipping Policy,0,0.49169558,faiss,0.0389404296875
+Who won the last World Cup?,Unknown,Shipping Policy,0,0.46719912,faiss,0.036787986755371
+What equipment is needed for badminton?,Unknown,Damaged Product Policy,0,0.49073762,faiss,0.0372874736785888
+How many players are on a cricket team?,Unknown,Shipping Policy,0,0.46256796,faiss,0.0386312007904052
+What is an offside rule?,Unknown,Return Policy,0,0.4801464,faiss,0.0387430191040039
+How do marathon runners train?,Unknown,Shipping Policy,0,0.46393433,faiss,0.0368866920471191
+What are the basic rules of chess?,Unknown,Return Policy,0,0.45975032,faiss,0.0418798923492431
+How do I make a presentation?,Unknown,Shipping Policy,0,0.4782545,faiss,0.0377190113067626
+What is the best font for a report?,Unknown,Refund Policy,0,0.4857477,faiss,0.0392572879791259
+How can I make PowerPoint slides look professional?,Unknown,Damaged Product Policy,0,0.45951414,faiss,0.0406572818756103
+How do I add page numbers in Word?,Unknown,Shipping Policy,0,0.45429346,faiss,0.0423154830932617
+What is the difference between PDF and DOCX?,Unknown,Shipping Policy,0,0.47116435,faiss,0.0406737327575683
+How do I create a table in Excel?,Unknown,Damaged Product Policy,0,0.44666985,faiss,0.0381395816802978
+How can I freeze rows in a spreadsheet?,Unknown,Cancellation Policy,0,0.46693882,faiss,0.04408860206604
+How do I make a chart in Excel?,Unknown,Shipping Policy,0,0.46253368,faiss,0.0452246665954589
+What is a pivot table?,Unknown,Return Policy,0,0.46444467,faiss,0.0404469966888427
+How do I convert a Word document to PDF?,Unknown,Return Policy,0,0.4487254,faiss,0.0439770221710205
+How do I send a large file by email?,Unknown,Shipping Policy,0,0.4959486,faiss,0.0426981449127197
+How do I create a Gmail account?,Unknown,Shipping Policy,0,0.45800737,faiss,0.0418460369110107
+Why is my email not syncing?,Unknown,Shipping Policy,0,0.50841117,faiss,0.0422568321228027
+How do I attach a file to an email?,Unknown,Shipping Policy,0,0.4682934,faiss,0.0451047420501709
+How can I organize my inbox?,Unknown,Shipping Policy,0,0.4919559,faiss,0.044090986251831
+What does CC mean in email?,Unknown,Return Policy,0,0.48187444,faiss,0.0461668968200683
+How do I create an email signature?,Unknown,Shipping Policy,0,0.48099548,faiss,0.0443289279937744
+Why are emails going to spam?,Unknown,Cancellation Policy,0,0.48683092,faiss,0.0423169136047363
+How do I recover a forgotten email password?,Unknown,Refund Policy,0,0.5139177,faiss,0.0629274845123291
+What is two-factor authentication?,Unknown,Return Policy,0,0.4956033,faiss,0.0742721557617187
+How do I use Google Drive?,Unknown,Shipping Policy,0,0.46026006,faiss,0.0420057773590087
+What is cloud storage?,Unknown,Damaged Product Policy,0,0.4608594,faiss,0.0406146049499511
+How do I share a folder with someone?,Unknown,Shipping Policy,0,0.47889248,faiss,0.043431282043457
+How can I protect a document with a password?,Unknown,Damaged Product Policy,0,0.4753451,faiss,0.0485334396362304
+What is version control?,Unknown,Shipping Policy,0,0.49616846,faiss,0.0381186008453369
+How does Git work?,Unknown,Shipping Policy,0,0.47263032,faiss,0.0429749488830566
+What is a Git branch?,Unknown,Shipping Policy,0,0.46249083,faiss,0.0454397201538085
+How do I clone a repository?,Unknown,Return Policy,0,0.4690823,faiss,0.0399811267852783
+What is an API?,Unknown,Shipping Policy,0,0.4669193,faiss,0.0388672351837158
+How does REST work?,Unknown,Shipping Policy,0,0.48027742,faiss,0.0399942398071289
+What is JSON?,Unknown,Shipping Policy,0,0.4443203,faiss,0.042039155960083
+How do I debug a Python program?,Unknown,Damaged Product Policy,0,0.48123702,faiss,0.0441539287567138
+Why am I getting a segmentation fault in C++?,Unknown,Damaged Product Policy,0,0.4858422,faiss,0.0454304218292236
+How do I install a Python package?,Unknown,Shipping Policy,0,0.5435036,faiss,0.0444271564483642
+What is Docker used for?,Unknown,Shipping Policy,0,0.46593913,faiss,0.0355226993560791
+How does Kubernetes work?,Unknown,Shipping Policy,0,0.47160167,faiss,0.0409822463989257
+What is a database index?,Unknown,Shipping Policy,0,0.4621758,faiss,0.036283254623413
+What is SQL normalization?,Unknown,Refund Policy,0,0.4757943,faiss,0.0338611602783203
+How do I write a SQL join?,Unknown,Shipping Policy,0,0.45320505,faiss,0.0417466163635253
+What is an operating system?,Unknown,Damaged Product Policy,0,0.463576,faiss,0.0372841358184814
+How do I make my phone battery last longer?,Unknown,Shipping Policy,0,0.48168966,faiss,0.0384297370910644
+Why does my phone get hot?,Unknown,Shipping Policy,0,0.47305128,faiss,0.0367460250854492
+How do I transfer photos from phone to computer?,Unknown,Damaged Product Policy,0,0.471082,faiss,0.0412402153015136
+How do I clear app cache?,Unknown,Cancellation Policy,0,0.4561041,faiss,0.0394699573516845
+Why is my phone storage full?,Unknown,Shipping Policy,0,0.4790133,faiss,0.0345020294189453
+How do I enable dark mode?,Unknown,Shipping Policy,0,0.4430956,faiss,0.0371749401092529
+How do I block unwanted calls?,Unknown,Cancellation Policy,0,0.5017564,faiss,0.0417642593383789
+How do I scan a QR code?,Unknown,Shipping Policy,0,0.4802134,faiss,0.0434405803680419
+Why is my Bluetooth not connecting?,Unknown,Damaged Product Policy,0,0.47427124,faiss,0.0475234985351562
+How do I back up my contacts?,Unknown,Refund Policy,0,0.5091698,faiss,0.0429306030273437
+What movie should I watch tonight?,Unknown,Shipping Policy,0,0.459492,faiss,0.0406925678253173
+Can you recommend a comedy movie?,Unknown,Return Policy,0,0.45936435,faiss,0.039210557937622
+What are some good science fiction books?,Unknown,Damaged Product Policy,0,0.4545413,faiss,0.0422351360321044
+Who is the main character in this novel?,Unknown,Shipping Policy,0,0.45621845,faiss,0.0466413497924804
+What is the best way to learn guitar?,Unknown,Shipping Policy,0,0.4465182,faiss,0.0441980361938476
+How do I play a basic guitar chord?,Unknown,Shipping Policy,0,0.4406473,faiss,0.0421724319458007
+What are some beginner photography tips?,Unknown,Shipping Policy,0,0.45656517,faiss,0.0371172428131103
+How do I edit photos on my phone?,Unknown,Damaged Product Policy,0,0.46181524,faiss,0.042466402053833
+What camera settings work for night photography?,Unknown,Shipping Policy,0,0.4694178,faiss,0.0395059585571289
+How can I improve my handwriting?,Unknown,Shipping Policy,0,0.46261117,faiss,0.0368001461029052
+What are good books for personal development?,Unknown,Damaged Product Policy,0,0.46054167,faiss,0.0401477813720703
+How do I build a morning routine?,Unknown,Shipping Policy,0,0.46081734,faiss,0.0379281044006347
+What are some ways to stay focused while studying?,Unknown,Shipping Policy,0,0.45948762,faiss,0.0416462421417236
+How can I stop procrastinating?,Unknown,Cancellation Policy,0,0.48569953,faiss,0.0391802787780761
+What is a good study timetable?,Unknown,Shipping Policy,0,0.50698376,faiss,0.0342521667480468
+How do I take better notes?,Unknown,Shipping Policy,0,0.4684967,faiss,0.0382990837097168

@@ -1,0 +1,19 @@
+Classification Report — weighted_rrf
+======================================================================
+Input File    : evaluation_results_weighted_rrf.csv
+Total Queries : 2632
+Correct       : 2239
+Accuracy      : 85.07%
+
+                        precision    recall  f1-score   support
+
+         Refund Policy      0.943     0.825     0.880       481
+         Return Policy      0.812     0.946     0.874       502
+       Shipping Policy      0.745     0.911     0.819       481
+   Cancellation Policy      0.934     0.973     0.953       482
+Damaged Product Policy      0.925     0.894     0.909       481
+               Unknown      0.423     0.146     0.217       205
+
+              accuracy                          0.851      2632
+             macro avg      0.797     0.783     0.776      2632
+          weighted avg      0.836     0.851     0.835      2632

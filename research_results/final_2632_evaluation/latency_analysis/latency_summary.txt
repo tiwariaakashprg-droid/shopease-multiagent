@@ -1,0 +1,71 @@
+FINAL 2632-QUERY LATENCY ANALYSIS
+================================================================================
+
+Experiment: bm25
+Total Queries   : 2632
+Latency Samples : 2632
+Status          : Available
+Mean Latency    : 0.000494 sec
+Median Latency  : 0.000410 sec
+Minimum Latency : 0.000198 sec
+Maximum Latency : 0.022928 sec
+Std Deviation   : 0.000548 sec
+
+--------------------------------------------------------------------------------
+
+Experiment: faiss
+Total Queries   : 2632
+Latency Samples : 2632
+Status          : Available
+Mean Latency    : 0.046205 sec
+Median Latency  : 0.044860 sec
+Minimum Latency : 0.028356 sec
+Maximum Latency : 0.951277 sec
+Std Deviation   : 0.019848 sec
+
+--------------------------------------------------------------------------------
+
+Experiment: fair_rrf
+Total Queries   : 2632
+Latency Samples : 0
+Status          : Not recorded
+Latency statistics: NOT RECORDED
+
+--------------------------------------------------------------------------------
+
+Experiment: weighted_rrf
+Total Queries   : 2632
+Latency Samples : 2632
+Status          : Available
+Mean Latency    : 0.041632 sec
+Median Latency  : 0.039754 sec
+Minimum Latency : 0.025253 sec
+Maximum Latency : 0.332629 sec
+Std Deviation   : 0.014609 sec
+
+--------------------------------------------------------------------------------
+
+Experiment: hybrid
+Total Queries   : 2632
+Latency Samples : 2632
+Status          : Available
+Mean Latency    : 0.142449 sec
+Median Latency  : 0.111598 sec
+Minimum Latency : 0.077048 sec
+Maximum Latency : 15.210859 sec
+Std Deviation   : 0.445607 sec
+
+--------------------------------------------------------------------------------
+
+Experiment: top10_hybrid
+Total Queries   : 2632
+Latency Samples : 2632
+Status          : Available
+Mean Latency    : 0.248934 sec
+Median Latency  : 0.177453 sec
+Minimum Latency : 0.092927 sec
+Maximum Latency : 18.114652 sec
+Std Deviation   : 0.502003 sec
+
+--------------------------------------------------------------------------------
+

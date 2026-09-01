@@ -1,0 +1,19 @@
+Classification Report — faiss
+======================================================================
+Input File    : evaluation_results_faiss.csv
+Total Queries : 2632
+Correct       : 2247
+Accuracy      : 85.37%
+
+                        precision    recall  f1-score   support
+
+         Refund Policy      0.943     0.830     0.883       481
+         Return Policy      0.813     0.944     0.874       502
+       Shipping Policy      0.726     0.992     0.838       481
+   Cancellation Policy      0.934     0.969     0.951       482
+Damaged Product Policy      0.917     0.894     0.905       481
+               Unknown      0.000     0.000     0.000       205
+
+              accuracy                          0.854      2632
+             macro avg      0.722     0.771     0.742      2632
+          weighted avg      0.799     0.854     0.821      2632
